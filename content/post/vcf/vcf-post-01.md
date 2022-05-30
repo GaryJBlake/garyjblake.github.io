@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "Configure VMware Cloud Builder as a Backup Target for SDDC Manager"
-date = "2021-11-23 "
+date = "2021-11-23"
 description = "Configure VMware Cloud Builder as a Backup Target for SDDC Manager"
 tags = [
     "API",

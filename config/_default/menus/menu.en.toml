@@ -10,7 +10,13 @@
 [[main]]
   parent = "Archive"
   name = "May 2019"
+  weight = -110
   url = "archive/may-2019/"
+[[main]]
+  parent = "Archive"
+  name = "Dec 2011"
+  weight = -1
+  url = "archive/dec-2011/"
 
 [[main]]
   name = "Links"
