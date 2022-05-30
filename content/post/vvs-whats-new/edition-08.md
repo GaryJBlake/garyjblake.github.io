@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "What's New for VMware Validated Solutions - Edition #8"
-date = "2022-05-30"
+date = "2022-05-31"
 description = "What's New for VMware Validated Solutions - Edition #8"
 tags = [
 
@@ -19,7 +19,7 @@ series = [
 Welcome to Edition #8 of the What's New for VMware Validated Solutions, today we are announcing the following updates:
 
 * Added support for VMware Cloud Foundation 4.4.1
-* Additional automation based on the PowerValidatedSolutions v1.6.0 release
+* Additional automation based on the PowerValidatedSolutions v1.7.0 release
 * Release of PowerValidatedSolutions v1.7.0, our PowerShell module developed to ensure robustness, consistency, and accelerate implementation
 
 ### Added Support for VMware Cloud Foundation 4.4.1
@@ -38,11 +38,10 @@ Delighted to announce support for VMware Cloud Foundation 4.4.1.
 ##### [Implementation](https://core.vmware.com/implementation-site-protection-and-disaster-recovery)
 
 **Additional PowerValidatedSolutions Automation**
-* Reconfigure DNS and Domain Search on the vRealize Automation Nodes (***Set-vRADnsConfig***)
-* Reconfigure NTP on vRealize Automation (***Set-vRANtpConfig***)
-* Create a Port Group for vSphere Replication Traffic (***New-vSRPortGroup***)
-* Create a Site Pair Between the Protected and Recovery VMware Cloud Foundation Instances (***New-SRMSitePair***)
-* Configure Mappings between the Protected and the Recovery VMware Cloud Foundation Instances (***Add-SRMMapping***)
+* Add a Network Adapter and Configure Static Routes for vSphere Replication (***Set-vSRNetworkConfig***)
+* Create a VMkernel Adapter on the ESXi Hosts for vSphere Replication Traffic (***New-vSRVMkernelPort***)
+* Configure ESXi Host Static Routes for vSphere Replication (***New-vSREsxiStaticRoute***)
+* Assign Licenses to Site Recovery Manager (***Set-SRMLicenseConfig***)
 
 
 ### General Availability of PowerValidatedSolutions v1.7.0
