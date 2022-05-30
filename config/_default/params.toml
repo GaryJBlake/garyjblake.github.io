@@ -1,13 +1,13 @@
 # enable search
 enableSearch = true
 
-# socials
+# Socials
 twitter = "@garyjblake"
 largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
-introDescription = "Technologist, perpetual student, teacher, continual incremental improvement."
+introDescription = "Technologist working with Cloud technologies."
 # introURL = "about/" # set the url for the 'read more' button below the introDescription, or set to false to not show the button
-# description = "A theme based on VMware's Clarity Design System for publishing technical blogs with Hugo." # Set your site's meta tag (SEO) description here. Alternatively set this description in your home page content file e.g. content/_index.md. Whatever is set in the latter will take precedence.
-# keywords = ["design", "clarity", "hugo theme"] # Set your site's meta tag (SEO) keywords here. Alternatively set these in your home page content file e.g. content/_index.md. Whatever is set in the latter will take precedence.
+description = "A theme based on VMware's Clarity Design System for publishing technical blogs with Hugo." # Set your site's meta tag (SEO) description here. Alternatively set this description in your home page content file e.g. content/_index.md. Whatever is set in the latter will take precedence.
+keywords = ["VMware", "cloud", "virtualization", "vcf", "cloud foundation"]
 
 # showShare = false # Uncomment to not show share buttons on each post. Also available in each post's front matter.
 
@@ -44,7 +44,7 @@ mainSections = ["post"] # see config details here https://gohugo.io/functions/wh
 # center logo on navbar
 centerLogo = false # Set to "true" for centering or "false" for left aligned.
 
-logo = "logos/logo.png"
+# logo = "logos/logo.png"
 
 # Label Non inline images on an article body
 figurePositionShow = false # toggle on or off globally
@@ -63,12 +63,11 @@ mobileNavigation = "left" # if you prefer right change to 'right'
 enforceLightMode = false
 # enforceDarkMode = false
 
-# customize footer icon. see issue https://github.com/chipzoller/hugo-clarity/issues/77
 # footerLogo = "icons/copy.svg"
 
 # Customize Sidebar Disclaimer Text
 # sidebardisclaimer = true
-# disclaimerText = "The opinions expressed on this site are my own personal opinions and do not represent my employer’s view in any way."
+disclaimerText = "The opinions expressed on this site are my own personal opinions and do not represent my employer’s view in any way."
 
 # Text for the languages menu.
 languageMenuName = "🌐"
@@ -97,7 +96,7 @@ languageMenuName = "🌐"
 
 # The year when ths website was created, this value is used in the copyright
 # notice of the footer.
-# since = 2016
+since = 2019
 
 # tell hugo where you store your icons e.g favicons. This is useful if you're using an apache server and there are conflicts >> see issue https://github.com/chipzoller/hugo-clarity/issues/74. If this is applicable to you, be sure to copy the contents of https://github.com/chipzoller/hugo-clarity/tree/master/static/icons to your preferred icons directory
 iconsDir = "icons/" # without a leading forward slash
@@ -108,8 +107,8 @@ iconsDir = "icons/" # without a leading forward slash
 
 # website author
 [author]
-name = "Jane Doe"
-# photo = "images/jane-doe.png" #include this if you would like to show the author photo on the sidebar
+name = "Gary Blake"
+photo = "images/gary-blake.png" #include this if you would like to show the author photo on the sidebar
 
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.
@@ -119,6 +118,6 @@ websiteDomain = "example.com" # domain name of your website, most cases same as 
 
 [matomo_analytics]
 enable = false # To enable matomo analytics change to `true`.
-websiteDomain = "example.com" # Set the domain name of your website, in most cases same as your base URL this is required.
-matomoDomain = "matomo.example.com" # Set to Matomo domain
+websiteDomain = "my-cloudy-world.com" # Set the domain name of your website, in most cases same as your base URL this is required.
+matomoDomain = "matomo.my-cloudy-world.com" # Set to Matomo domain
 matomoSiteID = "1" # Default is set to 1, change this to the siteid being tracked
