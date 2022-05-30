@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "What's New for VMware Validated Solutions - Edition #8"
-date = "2022-05-31"
+date = "2022-05-30"
 description = "What's New for VMware Validated Solutions - Edition #8"
 tags = [
 
