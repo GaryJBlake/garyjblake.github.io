@@ -4,11 +4,14 @@
   weight = -110
 
 [[main]]
-  name = "Archives"
-  url = "post/archives/"
+  name = "Archive"
+  identifier = "Archive"
   weight = -109
+[[main]]
+  parent = "Archive"
+  name = "May 2019"
+  url = "archive/may-2019/"
 
-# Submenus are done this way: parent -> identifier
 [[main]]
   name = "Links"
   identifier = "Links"
