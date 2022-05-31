@@ -7,16 +7,17 @@
   name = "Archive"
   identifier = "Archive"
   weight = -109
+
 [[main]]
   parent = "Archive"
-  name = "May 2019"
-  weight = -110
-  url = "archive/may-2019/"
+  name = "2016-2020"
+  weight = -2
+  url = "/archive/2016-2020/"
 [[main]]
   parent = "Archive"
-  name = "Dec 2011"
+  name = "2011-2015"
   weight = -1
-  url = "archive/dec-2011/"
+  url = "/archive/2011-2015/"
 
 [[main]]
   name = "Links"

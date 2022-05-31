@@ -13,7 +13,7 @@ DefaultContentLanguage = "en"
 # config/_default/languages.toml
 
 # [menus]
-# config/_default/menus/menu.xx.toml
+# config/_default/menus/menu.en.toml
 
 [taxonomies]
 category = "categories"
