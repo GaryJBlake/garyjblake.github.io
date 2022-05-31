@@ -21,7 +21,7 @@ I'm pleased to announce the general availability of PowerVCF v2.1.7 for download
 
 PowerVCF is a open source project and the team works on adding support when time permits.
 
-***Download It Here***: [PowerVCF PowerShell Library Download](https://www.powershellgallery.com/packages/PowerVCF) 
+***Download It Here***: [PowerVCF PowerShell Library Download](https://www.powershellgallery.com/packages/PowerVCF)
 
 - Fixed `New-VCFCluster`cmdlet where incorrect braces prevented the ability to retrieve response information.
 - Added `Get-VCFvRLIConnection` cmdlet to get the connection status of VI Workload Domains to vRealize Log Insight.
