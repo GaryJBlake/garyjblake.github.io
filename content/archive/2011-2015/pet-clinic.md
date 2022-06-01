@@ -14,7 +14,7 @@ series = [
 ]
 +++
 
-I don’t know how much experience any of you have in delivering the Spring Source Pet Clinic application which can be used as a good sample application when delivering vCloud Director. Based on recent experience I thought I would share:
+I don’t know how much experience any of you have in delivering the Spring Source Pet Clinic application which can be used as a good sample application when delivering VMware vCloud Director (vCD). Based on recent experience I thought I would share:
 
 Pet Clinic Spring Source Sample Application – The Pet Clinic application is a simple two VM application running on CentOS, it consist of a one VM running Tomcat and IMDB and a second VM running Apache Web Server.
 
