@@ -1,8 +1,8 @@
 +++
 author = "GaryJBlake"
-title = "What's New for VMware Validated Solutions - Edition #6"
+title = "What's New for VMware Validated Solutions - Edition #6 (Mar 2022)"
 date = "2022-03-29"
-description = "What's New for VMware Validated Solutions - Edition #6"
+description = "What's New for VMware Validated Solutions - Edition #6 (Mar 2022)"
 tags = [
 
 ]
@@ -111,12 +111,12 @@ Welcome to Edition #6 of the What's New for VMware Validated Solutions, today we
 ##### [Implementation](https://core.vmware.com/implementation-site-protection-and-disaster-recovery)
 
 **Additional PowerValidatedSolutions Automation**
-* Reconfigure DNS and Domain Search on the vRealize Suite Lifecycle Manager Appliance
-* Reconfigure NTP on the vRealize Suite Lifecycle Manager Appliance
-* Reconfigure DNS and Domain Search on the Clustered Workspace ONE Access Nodes
-* Reconfigure NTP on the Clustered Workspace ONE Access Nodes
-* Reconfigure DNS and Domain Search on the vRealize Operations Manager Analytics Cluster Nodes
-* Reconfigure NTP on the vRealize Operations Manager Analytics Cluster Nodes
+* Reconfigure DNS and Domain Search on the vRealize Suite Lifecycle Manager Appliance (***Set-vRSLCMDnsConfig***)
+* Reconfigure NTP on the vRealize Suite Lifecycle Manager Appliance (***Add-vRSLCMNtpServer***)
+* Reconfigure DNS and Domain Search on the Clustered Workspace ONE Access Nodes (***Set-WorkspaceOneDnsConfig***)
+* Reconfigure NTP on the Clustered Workspace ONE Access Nodes (***Set-WorkspaceOneNtpConfig***)
+* Reconfigure DNS and Domain Search on the vRealize Operations Manager Analytics Cluster Nodes (***Set-vROPSDnsConfig***)
+* Reconfigure NTP on the vRealize Operations Manager Analytics Cluster Nodes (***Add-vROPSNtpServer***)
 
 
 ##### [Solution Interoperability](https://core.vmware.com/solution-interoperability-site-protection-and-disaster-recovery)
@@ -157,7 +157,7 @@ Release of [PowerValidatedSolutions v1.5.0](https://www.powershellgallery.com/pa
 - Added `Undo-AntiAffinityRule` cmdlet to remove an Anti-Affinity Rule from vCenter Server.
 - Added `Undo-VmStartupRule` cmdlet to remove a VM to VM vSphere DRS Rule from vCenter Server.
 - Added `Undo-WorkspaceOneDirectoryGroup` cmdlet to remove Active Directory Groups from Workspace ONE Access Directory sync.
-- Added `Add-SupervisorClusterLicense` cmdlet to install and assign a license to a Tanzu Kubernetes Cluster.
+- Added `Add-SupervisorClusterLicense` cmdlet to install and assign a license to a Supervisor Cluster.
 - Added `Request-SignedCertificate` cmdlet to request a signed certificate from a Microsoft Certificate Authority.
 - Added `Set-vRSLCMDnsConfig` cmdlet to update the DNS configuration of vRealize Suite Lifecycle Manager.
 - Added `Undo-vRSLCMDnsConfig` cmdlet to revert the DNS configuration of vRealize Suite Lifecycle Manager to match SDDC Manager.

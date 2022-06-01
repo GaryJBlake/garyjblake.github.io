@@ -1,8 +1,8 @@
 +++
 author = "GaryJBlake"
-title = "What's New for VMware Validated Solutions - Edition #7"
+title = "What's New for VMware Validated Solutions - Edition #7 (Apr 2022)"
 date = "2022-04-28"
-description = "What's New for VMware Validated Solutions - Edition #7"
+description = "What's New for VMware Validated Solutions - Edition #7 (Apr 2022)"
 tags = [
 
 ]
@@ -18,19 +18,8 @@ series = [
 
 Welcome to Edition #7 of the What's New for VMware Validated Solutions, today we are announcing the following updates:
 
-* Added support for VMware Cloud Foundation 4.4.1
 * Additional automation based on the PowerValidatedSolutions v1.6.0 release
 * Release of PowerValidatedSolutions v1.6.0, our PowerShell module developed to ensure robustness, consistency, and accelerate implementation
-
-### Added Support for VMware Cloud Foundation 4.4.1
-Delighted to announce support for VMware Cloud Foundation 4.4.1.
-
-* [Identity and Access Management for VMware Cloud Foundation](https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation)
-* [Developer Ready Infrastructure for VMware Cloud Foundation](https://core.vmware.com/developer-ready-infrastructure-vmware-cloud-foundation)
-* [Intelligent Logging and Analytics for VMware Cloud Foundation](https://core.vmware.com/intelligent-logging-and-analytics-vmware-cloud-foundation)
-* [Intelligent Operations Management for VMware Cloud Foundation](https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation)
-* [Private Cloud Automation for VMware Cloud Foundation](https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation)
-* [Site Protection and Disaster Recovery for VMware Cloud Foundation](https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation)
 
 
 ### Identity and Access Management for VMware Cloud Foundation

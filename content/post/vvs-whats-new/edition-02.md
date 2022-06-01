@@ -1,8 +1,8 @@
 +++
 author = "GaryJBlake"
-title = "What's New for VMware Validated Solutions - Edition #2"
+title = "What's New for VMware Validated Solutions - Edition #2 (Oct 2021)"
 date = "2021-10-26"
-description = "What's New for VMware Validated Solutions - Edition #2"
+description = "What's New for VMware Validated Solutions - Edition #2 (Oct 2021)"
 tags = [
 
 ]
@@ -30,6 +30,7 @@ Delighted to announce support of the following Validated Solutions running on De
 * Private Cloud Automation for VMware Cloud Foundation
 
 ### Intelligent Logging and Analytics for VMware Cloud Foundation Updates
+
 ##### Implementation
 Added PowerValidatedSolutions automation to the following procedures:
 
@@ -41,6 +42,7 @@ Added PowerValidatedSolutions automation to the following procedures:
 * Added Shutdown and Startup procedures
 
 ### Intelligent Operations Management for VMware Cloud Foundation Updates
+
 ##### Implementation
 Added PowerValidatedSolutions automation to the following procedures:
 
@@ -52,6 +54,7 @@ Added PowerValidatedSolutions automation to the following procedures:
 * Added Shutdown and Startup procedures
 
 ### Private Cloud Automation for VMware Cloud Foundation Updates
+
 ##### Implementation
 Added PowerValidatedSolutions automation to the following procedures:
 
@@ -66,6 +69,7 @@ Added PowerValidatedSolutions automation to the following procedures:
 * Added Shutdown and Startup procedures
 
 ### Identity and Access Management for VMware Cloud Foundation Updates
+
 ##### Implementation
 Added a new procedure which is used when vRealize Log Insight is deployed under the Intelligent Logging and Analytics for VMware Cloud Foundation
 

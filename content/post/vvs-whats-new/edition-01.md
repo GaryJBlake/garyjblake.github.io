@@ -57,16 +57,16 @@ In addition to updated support for VMware Cloud Foundation 4.3.1 we are also del
 And finally I'm excited to share the release of PowerValidatedSolutions v1.1.0, which is a PowerShell module that we have developed to not only accelerate the implementation of Validated Solutions, but ensure consistency and robustness.  Here's a list of what's changed:
 
 * A number of new functions have been added to support automation of the Site Protection and Disaster Recovery solution:
-    * Install-SiteRecoveryManager
-    * Install-vSphereReplicationManager
-    * Connect-DRSolutionTovCenter
-    * Install-VAMICertificate
-    * Backup-VMOvfProperties
-    * Restore-VMOvfProperties
-    * Copy-vRealizeLoadBalancer
-* Added New-vRSLCMLockerPassword cmdlet to support adding passwords to the vRealize Lifecycle Suite Manager Locker
-* Added New-vRSLCMLockerLicense cmdlet to support adding licenses to the vRealize Lifecycle Suite Manager Locker
-* Enhanced Add-VmStartupRule to check both VM Groups exists before attempting to create the VM-to-VM Group
-* Enhanced Add-ContentLibrary to support creation of both Published and Subscription Content Libraries
-* Added Add-VmGroup cmdlet to support adding Virtual Machines to existing VM Groups (Availability Zones in particular)
-* Fixed Set-vCenterPermission where a failure can occur if the workload domain does not follow the same naming as the vCenter Server
+    * `Install-SiteRecoveryManager`
+    * `Install-vSphereReplicationManager`
+    * `Connect-DRSolutionTovCenter`
+    * `Install-VAMICertificate`
+    * `Backup-VMOvfProperties`
+    * `Restore-VMOvfProperties`
+    * `Copy-vRealizeLoadBalancer`
+* Added `New-vRSLCMLockerPassword` cmdlet to support adding passwords to the vRealize Lifecycle Suite Manager Locker
+* Added `New-vRSLCMLockerLicense` cmdlet to support adding licenses to the vRealize Lifecycle Suite Manager Locker
+* Enhanced `Add-VmStartupRule` to check both VM Groups exists before attempting to create the VM-to-VM Group
+* Enhanced `Add-ContentLibrary` to support creation of both Published and Subscription Content Libraries
+* Added `Add-VmGroup` cmdlet to support adding Virtual Machines to existing VM Groups (Availability Zones in particular)
+* Fixed `Set-vCenterPermission` where a failure can occur if the workload domain does not follow the same naming as the vCenter Server

@@ -1,8 +1,8 @@
 +++
 author = "GaryJBlake"
-title = "What's New for VMware Validated Solutions - Edition #3"
+title = "What's New for VMware Validated Solutions - Edition #3 (Nov 2021)"
 date = "2021-11-30"
-description = "What's New for VMware Validated Solutions - Edition #3"
+description = "What's New for VMware Validated Solutions - Edition #3 (Nov 2021)"
 tags = [
 
 ]
@@ -20,9 +20,11 @@ Welcome to Edition #3 of the What's New for VMware Validated Solutions, today we
 
 ### General Availability of PowerValidatedSolutions v1.2.0
 
-Release of [PowerValidatedSolutions v1.2.0](https://www.powershellgallery.com/packages/PowerValidatedSolutions/1.2.0), which is a PowerShell module that we have developed to not only accelerate the implementation of Validated Solutions, but ensure consistency and robustness.  Here's a list of what's changed (this and previous updates can be tracked by reading the CHANGELOG.md file stored in the Git Hub repository):
+Release of [PowerValidatedSolutions v1.2.0](https://www.powershellgallery.com/packages/PowerValidatedSolutions/1.2.0), which is a PowerShell module that we have developed to not only accelerate the implementation of Validated Solutions, but ensure consistency and robustness.  Here's a list of what's changed (this and previous updates can be tracked by reading the CHANGELOG.md file stored in the Git Hub repository [here](https://github.com/vmware-samples/power-validated-solutions-for-cloud-foundation)):
 
 - Fixed `Add-GlobalPermission` where an error is thrown when Internet Explorer has not been launched in the operating system.
+- Fixed `Set-DatastoreTag` where it was failing to create a single tag and catagory when multiple vCenter Servers in the Single-Sign On domain.
+- Fixed `Add-StoragePolicy` where is was failing to add the storage policy when multiple vCenter Servers in the Single-Sign On domain
 - Enhanced `Move-VMtoFolder` cmdlet to check the name of VM provided and skip if it does not exist.
 - Enhanced `Add-WorkspaceOneDirectory` cmdlet so that it can be used with Clustered Workspace ONE Access.
 - Enhanced `Set-WorkspaceOneSmtpConfig` cmdlet to skip the configuration if the SMTP Server configuration is already performed.
@@ -58,21 +60,6 @@ Release of [PowerValidatedSolutions v1.2.0](https://www.powershellgallery.com/pa
 - Added Sample Scripts in the SampleScripts\ila folder, each script uses the Planning and Preparation Workbook as the input source:
     - `ilaDeployVrealizeLogInsight.ps1` automates the install and config of vRealize Log Insight for Intelligent Logging and Analytics for VMware Cloud Foundation.
     - `ilaConfigureVrealizeLogInsight.ps1` automates the integration config of vRealize Log Insight for Intelligent Logging and Analytics for VMware Cloud Foundation.
-- Enhanced `Enable-SupervisorCluster` cmdlet:
-    - Added `SkipValidation` parameter to disable input validation
-    - Added `ValidateOnly` parameter to only perform a dry run validation
-    - Management network sizing, netmask, gateway, and IPv4 address validation
-    - Control plane DNS validation
-    - Control plane and worker DNS server validation
-    - Control plane NTP server validation
-    - Control plane search domain validation
-    - Subscribed Content Library validation
-    - Storage Policy validation
-    - vSphere Distributed Switch validation
-    - NSX Edge Cluster validation
-    - Pod, Services, External Ingress, and External Egress subnet sizing and format validation
-    - vSphere Cluster validation
-    - License validation
 - Added `New-SupervisorClusterCSR` cmdlet to create a new certificate signing request for the defined Supervisor Cluster
 - Added `Add-SupervisorClusterCertificate` cmdlet to add a signed TLS certificate for the defined Supervisor Cluster
 - Added `Add-NamespaceVmClass` cmdlet to add an existing VM Class to a Supervisor Namespace

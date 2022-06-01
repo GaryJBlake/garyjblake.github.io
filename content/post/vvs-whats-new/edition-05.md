@@ -1,8 +1,8 @@
 +++
 author = "GaryJBlake"
-title = "What's New for VMware Validated Solutions - Edition #5"
+title = "What's New for VMware Validated Solutions - Edition #5 (Feb 2022)"
 date = "2022-02-22"
-description = "What's New for VMware Validated Solutions - Edition #5"
+description = "What's New for VMware Validated Solutions - Edition #5 (Feb 2022)"
 tags = [
 
 ]
@@ -75,6 +75,7 @@ Delighted to announce support for VMware Cloud Foundation 4.4.0.
 
 * Extend support for VMware Cloud Foundation 4.3.1 and 4.4.0.
 * Enable support for Avi with Cloud Services (SaaS subscription).
+
 
 ### General Availability of PowerValidatedSolutions v1.4.0
 

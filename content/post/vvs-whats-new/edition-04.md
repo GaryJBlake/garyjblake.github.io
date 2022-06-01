@@ -1,8 +1,8 @@
 +++
 author = "GaryJBlake"
-title = "What's New for VMware Validated Solutions - Edition #4"
+title = "What's New for VMware Validated Solutions - Edition #4 (Jan 2022)"
 date = "2022-01-25"
-description = "What's New for VMware Validated Solutions - Edition #4"
+description = "What's New for VMware Validated Solutions - Edition #4 (Jan 2022)"
 tags = [
 
 ]
@@ -19,7 +19,7 @@ series = [
 Welcome to Edition #4 of the What's New for VMware Validated Solutions, today we are announcing the following changes:
 
 * Additional support for Dell VxRail
-* Additional automation across solutions based on the PowerValidatedSolutions v1.3.0 release
+* Additional automation across solutions based on the [PowerValidatedSolutions v1.3.0](https://www.powershellgallery.com/packages/PowerValidatedSolutions/1.3.0) release
 
 ### Added Support for VMware Cloud Foundation 4.3.0 / 4.3.1 on VxRail
 Delighted to announce support for the following Validated Solutions running on Dell VxRail based systems in addition to vSAN Ready Nodes.
@@ -84,7 +84,10 @@ Added PowerValidatedSolutions automation to the following procedures:
 
 Release of [PowerValidatedSolutions v1.3.0](https://www.powershellgallery.com/packages/PowerValidatedSolutions/1.3.0), which is a PowerShell module that we have developed to not only accelerate the implementation of Validated Solutions, but ensure consistency and robustness.  Here's a list of what's changed (this and previous updates can be tracked by reading the CHANGELOG.md file stored in the Git Hub repository):
 
+##### Fixed
 - Fixed `New-vRSLCMLockerLicense` cmdlet where depending on the speed of the system the license would be added but POST_VALIDATION would fail.
+
+##### Enhancements
 - Enhanced all Identity and Access Management Solution cmdlets for better error handling and message output. 
 - Enhanced all vRealize Operations Manager cmdlets for better error handling and message output.
 - Enhanced all vRealize Log Insight cmdlets for better error handling and message output.
@@ -92,6 +95,8 @@ Release of [PowerValidatedSolutions v1.3.0](https://www.powershellgallery.com/pa
 - Enhanced `Set-vCenterPermission` cmdlet to set permissions on non-nested folders.
 - Enhanced `Enable-SupervisorCluster` cmdlet with better pre-validation.
 - Renamed `Add-NsxtVidmGroupRole` cmdlet to `Add-NsxtVidmRole`, to add support for assigning both users and groups roles in NSX-T Data Center.
+
+##### Additions
 - Added `Add-ResourcePool` cmdlet to create a resource pool in the Workload Domain specified.
 - Added `Undo-ResourcePool` cmdlet to remove a resource pool based on the Workload Domain specified.
 - Added `Update-vRAOrganizationDisplayName` cmdlet to configure the Organization Display Name in vRealize Automation.
@@ -132,3 +137,5 @@ Release of [PowerValidatedSolutions v1.3.0](https://www.powershellgallery.com/pa
 - Added Sample Scripts in the SampleScripts\iom folder, each script uses the Planning and Preparation Workbook as the input source:
     - `iomDeployVrealizeOperations.ps1` automates the install and config of vRealize Operations for Intelligent Operations Management for VMware Cloud Foundation.
     - `iomConfigureVrealizeOperations.ps1` automates the integration config of vRealize Operations for Intelligent Operations Management for VMware Cloud Foundation.
+
+Check them out now at [https://vmware.com/go/vvs](https://vmware.com/go/vvs)
