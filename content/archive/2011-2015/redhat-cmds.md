@@ -17,6 +17,7 @@ series = [
 As I continue to help customers build out their private clouds using vCloud Director I'm finding that I'm personally needing to build up my Linux skills (I come from a Windows background like a lot of VMware users) so I've created this post to bring all this information into one spot. As I find additional useful commands I will update. Enjoy !!
 
 ### Disable Firewall
+
 By default the Firewall service within Red Hat is enabled, when setting up the vCloud Director cells this will stop you from being able to hit the url once installed. Use the following commands to check and configure the firewall:
 
 #### Check the firewall status
