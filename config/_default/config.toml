@@ -1,6 +1,6 @@
 # set `baseurl` to your root domain
 # if you set it to "/" share icons won't work properly on production
-baseurl = "https://garyjblake.github.io/"
+baseurl = "http://jadenetworksolutions.co.uk/"
 title = "My Cloudy World"
 copyright = "Copyright © 2019–2022, Gary Blake; all rights reserved."
 # canonifyurls = true
