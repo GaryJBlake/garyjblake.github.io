@@ -1,8 +1,8 @@
 +++
 author = "GaryJBlake"
-title = "Installing SRM with HDS Storage "
+title = "Installing SRM with HDS Storage"
 date = "2012-05-01"
-description = "Installing SRM with HDS Storage "
+description = "Installing SRM with HDS Storage"
 tags = [
     "Linux"
 ]
