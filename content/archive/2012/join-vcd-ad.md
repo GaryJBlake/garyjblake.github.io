@@ -26,8 +26,8 @@ netdom.exe join %COMPUTERNAME% /Domain:vmware.com /OU:OU=vApp-VMs,DC=vmware,DC=c
 
 1. Before submitting the vApp to the catalog.
 2. Right click the VM and select **Properties**.
-![](/archive/2011-2015/vcd-vapp-property.png)
+![](/archive/2012/vcd-vapp-property.png)
 3. Select the **Guest OS Customization** tab.
-![](/archive/2011-2015/vcd-vapp-guest.png)
+![](/archive/2012/vcd-vapp-guest.png)
 4. Scroll down to the **Customization Script** sections and enter the command.
-![](/archive/2011-2015/vcd-vapp-script.png)
+![](/archive/2012/vcd-vapp-script.png)

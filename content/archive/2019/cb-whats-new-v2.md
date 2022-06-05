@@ -4,7 +4,9 @@ title = "VMware Cloud Builder - Logging and Log Collection"
 date = "2019-04-24"
 description = "VMware Cloud Builder - Logging and Log Collection"
 tags = [
-    "Cloud Builder"
+    "Cloud Builder",
+    "VVD",
+    "VCF"
 ]
 categories = [
     "VMware Cloud Builder"

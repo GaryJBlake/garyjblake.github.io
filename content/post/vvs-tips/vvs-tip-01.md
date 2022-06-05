@@ -4,7 +4,7 @@ title = "VVS-Tip - Quickly Identify the Version of VMware Cloud Foundation Suppo
 date = "2021-10-29"
 description = "VVS-Tip - Quickly Identify the Version of VMware Cloud Foundation Supported"
 tags = [
-
+    "VVS"
 ]
 categories = [
     "VMware Validated Solutions",

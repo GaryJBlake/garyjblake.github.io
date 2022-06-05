@@ -4,7 +4,7 @@ title = "VVS-Tip - Review Detailed Update History for a Validated Solution"
 date = "2021-11-02"
 description = "VVS-Tip - Review Detailed Update History for a Validated Solution"
 tags = [
-
+    "VVS"
 ]
 categories = [
     "VMware Validated Solutions",

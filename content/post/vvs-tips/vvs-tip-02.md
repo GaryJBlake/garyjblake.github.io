@@ -4,7 +4,7 @@ title = "VVS-Tip - Quickly Identify the Last Time Content Was Updated"
 date = "2021-11-03"
 description = "VVS-Tip - Quickly Identify the Last Time Content Was Updated"
 tags = [
-
+    "VVS"
 ]
 categories = [
     "VMware Validated Solutions",

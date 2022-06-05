@@ -4,7 +4,7 @@ title = "What's New for VMware Validated Solutions - Edition #7 (Apr 2022)"
 date = "2022-04-28"
 description = "What's New for VMware Validated Solutions - Edition #7 (Apr 2022)"
 tags = [
-
+    "VVS"
 ]
 categories = [
     "VMware Validated Solutions",

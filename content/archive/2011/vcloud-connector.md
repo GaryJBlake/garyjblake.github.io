@@ -28,4 +28,4 @@ The vCloud Connection Server is a virtual appliance that is deployed to manage a
 - vCloud Connector Node
 The vCloud Connector Nodes are virtual appliances that handle the transfer of content from one cloud to another.
 
-![](/archive/2011-2015/vCloud-Connector-Architecture.png)
+![](/archive/2011/vCloud-Connector-Architecture.png)

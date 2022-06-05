@@ -4,7 +4,7 @@ title = "VVS-Tip - Identify What’s Required from a VMware Cloud Foundation Per
 date = "2021-11-26"
 description = "VVS-Tip - Identify What’s Required from a VMware Cloud Foundation Perspective"
 tags = [
-
+    "VVS"
 ]
 categories = [
     "VMware Validated Solutions",

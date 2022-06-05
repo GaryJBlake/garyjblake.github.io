@@ -10,14 +10,44 @@
 
 [[main]]
   parent = "Archive"
-  name = "2016-2020"
-  weight = -2
-  url = "/archive/2016-2020/"
+  name = "2019"
+  weight = -8
+  url = "/archive/2019/"
 [[main]]
   parent = "Archive"
-  name = "2011-2015"
+  name = "2017"
+  weight = -7
+  url = "/archive/2017/"
+[[main]]
+  parent = "Archive"
+  name = "2016"
+  weight = -6
+  url = "/archive/2016/"
+[[main]]
+  parent = "Archive"
+  name = "2015"
+  weight = -5
+  url = "/archive/2015/"
+[[main]]
+  parent = "Archive"
+  name = "2014"
+  weight = -4
+  url = "/archive/2014/"
+[[main]]
+  parent = "Archive"
+  name = "2013"
+  weight = -3
+  url = "/archive/2013/"
+[[main]]
+  parent = "Archive"
+  name = "2012"
+  weight = -2
+  url = "/archive/2012/"
+[[main]]
+  parent = "Archive"
+  name = "2011"
   weight = -1
-  url = "/archive/2011-2015/"
+  url = "/archive/2011/"
 
 [[main]]
   name = "Links"

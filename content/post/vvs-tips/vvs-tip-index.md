@@ -5,7 +5,7 @@ date = "2021-11-10"
 description = "VMware Validated Solutions - Tips Index"
 featured = true
 tags = [
-
+    "VVS"
 ]
 categories = [
     "VMware Validated Solutions",

@@ -5,11 +5,13 @@ date = "2021-11-23"
 description = "Configure VMware Cloud Builder as a Backup Target for SDDC Manager"
 tags = [
     "API",
-    "PowerVCF",
+    "VCF",
     "PowerShell",
+    "Backup"
 ]
 categories = [
-    "VMware Cloud Foundation"
+    "VMware Cloud Foundation",
+    "PowerVCF"
 ]
 series = [
 

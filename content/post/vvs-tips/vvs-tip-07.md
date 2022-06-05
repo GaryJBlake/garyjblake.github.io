@@ -4,16 +4,18 @@ title = "VVS-Tip - Contributing to PowerValidatedSolutions Source Code"
 date = "2022-01-13"
 description = "VVS-Tip - Contributing to PowerValidatedSolutions Source Code"
 tags = [
-    "PowerShell",
-    "PowerVCF",
-    "PowerCLI",
     "API",
+    "PowerShell",
 ]
 categories = [
     "VMware Validated Solutions",
+    "PowerVCF",
+    "PowerCLI"
+
 ]
 series = [
     "VVS-Tip",
+    "PowerValidatedSolutions"
 ]
 +++
 

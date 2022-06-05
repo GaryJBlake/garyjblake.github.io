@@ -4,7 +4,7 @@ title = "VVS-Tip - Quickly Identify the Architecture Supported"
 date = "2021-11-09"
 description = "VVS-Tip - Quickly Identify the Architecture Supported"
 tags = [
-
+    "VVS"
 ]
 categories = [
     "VMware Validated Solutions",
