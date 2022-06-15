@@ -1,13 +1,13 @@
 +++
 author = "GaryJBlake"
-title = "vCloud Automation Center 5.x – Resource Intensive Limits"
+title = "vCenter Upgrade to v5.x Failed - Useful Tips"
 date = "2013-11-22"
-description = "vCloud Automation Center 5.x – Resource Intensive Limits "
+description = "vCenter Upgrade to v5.x Failed - Useful Tips"
 tags = [
-    "vCAC"
+
 ]
 categories = [
-    "vCloud Automation Center"
+    "vCenter Server"
 ]
 series = [
 

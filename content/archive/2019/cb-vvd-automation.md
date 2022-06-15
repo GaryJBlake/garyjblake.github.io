@@ -15,7 +15,7 @@ series = [
 ]
 +++
 
-On January 23rd 2019 I posted the below blog article on <a href="https://blogs.vmware.com">https://blogs.vmware.com</a><strong>m</strong></p>
+On January 23rd 2019 I posted the below blog article on [blogs.vmware.com](https://blogs.vmware.com/cloud-foundation/2019/01/23/introducing-vmware-cloud-builder-automated-deployment-of-vmware-validated-designs/).
 
 ### Blog Post from blogs.vmware.com
 

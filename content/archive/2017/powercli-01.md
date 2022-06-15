@@ -16,9 +16,9 @@ series = [
 
 I recently had a requirement to get VMware PowerCLI installed and configured in order to work on developing some scripts. VMware introduced a new way of performing the installation which is well documented on the VMware official blog post however its still took me a little bit of time to work out the actual procedure. After a bit of googling and experimenting I decided to document the steps for future reference.
 
-Platform: Windows Server 2012 R2 & Windows Server 2016
+**Platform:** Windows Server 2012 R2 & Windows Server 2016
 
-1. Determine the version of PowerShell currently installed, if your not running PoweShell 5.1 then perform step 2.
+1. Determine the version of PowerShell currently installed, if your not running PowerShell 5.1 then perform step 2.
 ```
 $PSVersionTable.PSVersion
 ```

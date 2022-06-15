@@ -23,17 +23,13 @@ a) you will need a Java Runtime Environment installed on the system where you re
 b) the tool has two start-up scripts provide, one for Windows and one for Linux and these are now located in the /bin folder
 
 1. Execute the correct start-up script, for my scenario I'm using a Windows server so we need to run C:\CloudClient\bin\cloudclient.bat. Assuming you have JVM installed correctly the CloudClient command-line tool will load and you will be presented with the following screen.
-
 ![](/archive/2015/cloudclient-startup.png)
 
-2a. Next we need to run the following command-line syntax to authenticate to the default tenant of the vRealize Automation system, from there we can run many commands against the platform.
-
+2. Next we need to run the following command-line syntax to authenticate to the default tenant of the vRealize Automation system, from there we can run many commands against the platform.
 ![](/archive/2015/cloudclient-logina.png)
 
-2b. If you wanted to connect to a specific tenant and not the default tenant, then you can use the '--tenant' parameter as follows.
-
+3. If you wanted to connect to a specific tenant and not the default tenant, then you can use the '--tenant' parameter as follows.
 ![](/archive/2015/cloudclient-loginb.png)
 
 In the examples above we used the 'vra login userpass' command, but the tool also provides the ability to use a keyfile with the 'vra login keyfile' command. Now lets look at each of the parameters used in this example.
-
 ![](/archive/2015/cloudclient-01.png)

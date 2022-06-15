@@ -22,7 +22,7 @@ By default when VMware Cloud Foundation is deployed, SDDC Manager and NSX-T Data
 
 The requirements of using an SFTP in my experience seem to fall through the gaps during most initial deployments and as a result it takes organizations some time to get all the requirements put in place. Such delays simply place a risk on the implementation until addressed.
 
-One way to reduce this risk, and of course for use in a lab environment is to use VMware Cloud Builder as an alternative short term solution as it too has an SFTP service running, this can be acheived through a simple three step process:
+One way to reduce this risk, and of course for use in a lab environment is to use VMware Cloud Builder as an alternative short term solution as it too has an SFTP service running, this can be achieved through a simple three step process:
 
 1. Create a Backup Service Account on the VMware Cloud Builder Appliance
 2. Create a Backup Folder on the VMware Cloud Builder Appliance
@@ -31,7 +31,7 @@ One way to reduce this risk, and of course for use in a lab environment is to us
 
 ### Create a Backup Service Account on the VMware Cloud Builder Appliance
 
-First step is to create a local account on the VMware Cloud Builder Appliance, this will be used as the service account and is supplied when re-configuring the backup configuation in SDDC Manager.
+First step is to create a local account on the VMware Cloud Builder Appliance, this will be used as the service account and is supplied when re-configuring the backup configuration in SDDC Manager.
 
 1. Connect to the SDDC Manager Appliance using an SSH client such as Putty, and authenticate as **admin**.
 
@@ -71,7 +71,6 @@ And finally you re-configure the backup configuration to use the new SFTP target
 2. Using the navigation paine, select **Administration** > **Backup**.
 
 3. On the **Backup** paine, select **Site Settings** and click **Register External**.
-
 ![](/images/vcf-post-01.png)
 
 4. Enter the values, and click **Save**.
@@ -91,4 +90,9 @@ Setting                     | Value
 
 ![](/images/vcf-post-02.png)
 
-NOTE: The SDDC Manager UI procedure is valid for VMware Cloud Foundation 4.3.0 and later.
+---
+**NOTE**
+
+The SDDC Manager UI procedure is valid for VMware Cloud Foundation 4.3.0 and later.
+
+---

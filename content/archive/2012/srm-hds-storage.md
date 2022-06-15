@@ -47,7 +47,7 @@ If using a VM for the SRM server ensure the following are configured before atte
 
 **A:** A separate JNL Group.
 
-#### **Useful links**
+#### Useful links
 
 http://www.hds.com/assets/pdf/hitachi-storage-replication-adapter-software-vmware-vcenter-site-recovery-manager-deployment-guide.pdf
 http://www.hds.com/solutions/applications/vmware/download.html
