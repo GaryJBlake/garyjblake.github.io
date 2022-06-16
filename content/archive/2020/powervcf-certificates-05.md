@@ -17,7 +17,9 @@ series = [
 ]
 +++
 
-This is the fifth and final blog in this series that discusses the process of Certificate Management with VMware Cloud Foundation.
+<img align="left" width="200" height="200" src="/images/powervcf-color-transparent.webp" style="float:left; padding-right:20px" >
+
+This is the fifth and final blog in this series that discusses the process of Certificate Management with VMware Cloud Foundation. The series looks at the end to end process that you follow to take a freshly installed VMware Cloud Foundation platform (Management Domain) and replace the components with signed certificates using a Microsoft Certificate Authority.
 
 In this post we will look at the process of installing the signed certificates using SDDC Manager.
 

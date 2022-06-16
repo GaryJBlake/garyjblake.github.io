@@ -4,13 +4,10 @@ title = "Creating a Service Account for Certificate Management with VMware Cloud
 date = "2020-02-10"
 description = "Creating a Service Account for Certificate Management with VMware Cloud Foundation"
 tags = [
-    "API",
-    "PowerShell",
     "VCF"
 ]
 categories = [
-    "VMware Cloud Foundation",
-    "PowerVCF"
+    "VMware Cloud Foundation"
 ]
 series = [
     "VCF Certificate Management"

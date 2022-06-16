@@ -17,6 +17,8 @@ series = [
 ]
 +++
 
+<img align="left" width="200" height="200" src="/images/powervcf-color-transparent.webp" style="float:left; padding-right:20px" >
+
 In this blog series I’m going to explore the capabilities provided in VMware Cloud Foundation that allow you to perform certificate management across components managed by SDDC Manager.
 
 The capability to manage certificates was introduced a number of releases ago but with the release of version 3.9 the ability to perform these same operations were exposed via a number Public APs and now with the introduction of PowerVCF (see [Introducing PowerVCF - Power to VI Admins](/archive/2020/powervcf-intro)) these operations can now be scripted using PowerShell.

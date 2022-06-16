@@ -17,10 +17,11 @@ series = [
 ]
 +++
 
-This is the third of five blogs in the series that discusses the process of Certificate Management with VMware Cloud Foundation.
+<img align="left" width="200" height="200" src="/images/powervcf-color-transparent.webp" style="float:left; padding-right:20px" >
+
+This is the third of five blogs in the series that discusses the process of Certificate Management with VMware Cloud Foundation. The series looks at the end to end process that you follow to take a freshly installed VMware Cloud Foundation platform (Management Domain) and replace the components with signed certificates using a Microsoft Certificate Authority.
 
 In this post we will look at the process of generating the Certificate Signing Request (CSR) files using SDDC Manager.
-
 ### Generate Certificate Signing Request (CSR) Files using the User Interface
 
 The following procedure demonstrates the process through the SDDC Manager User Interface.

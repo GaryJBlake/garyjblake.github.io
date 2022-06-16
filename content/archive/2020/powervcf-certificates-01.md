@@ -17,7 +17,9 @@ series = [
 ]
 +++
 
-This is the first of five blogs in a series that discusses Certificate Management with VMware Cloud Foundation.
+<img align="left" width="200" height="200" src="/images/powervcf-color-transparent.webp" style="float:left; padding-right:20px" >
+
+This is the first of five blogs in a series that discusses Certificate Management with VMware Cloud Foundation. The series looks at the end to end process that you follow to take a freshly installed VMware Cloud Foundation platform (Management Domain) and replace the components with signed certificates using a Microsoft Certificate Authority.
 
 In this post we will look at the configuration requirements on the Microsoft Certificate Authority server itself, failure to perform these additional configuration steps prior to attempting any procedures within the SDDC Manager User Interface or PowerVCF cmdlets will result in failures.
 

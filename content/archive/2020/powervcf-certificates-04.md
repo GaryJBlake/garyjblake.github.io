@@ -16,14 +16,14 @@ series = [
     "VCF Certificate Management"
 ]
 +++
+<img align="left" width="200" height="200" src="/images/powervcf-color-transparent.webp" style="float:left; padding-right:20px" >
 
-This is the fourth of five blogs in the series that discusses the process of Certificate Management with VMware Cloud Foundation.
+This is the fourth of five blogs in the series that discusses the process of Certificate Management with VMware Cloud Foundation. The series looks at the end to end process that you follow to take a freshly installed VMware Cloud Foundation platform (Management Domain) and replace the components with signed certificates using a Microsoft Certificate Authority.
 
-In this post we will look at the process of requesting the signed certificates from the Microsoft Certificate Authority using SDDC Manager. The high-level process looks like this:
+In this post we will look at the process of requesting the signed certificates from the Microsoft Certificate Authority using SDDC Manager either using the SDDC Manager User Interface or via the Public APIs using PowerVCF.
 
 - [Generate Signed Certificates using the User Interface](#generate-signed-certificates-using-the-user-interface)
 - [Generate Signed Certificates using using PowerVCF](#generate-signed-certificates-using-using-powervcf)
-- [Useful Links](#useful-links)
 
 ### Generate Signed Certificates using the User Interface
 

@@ -23,13 +23,9 @@ I'm pleased to announce the general availability of PowerVCF v2.0.0 for download
 
 ***Download It Here***: [PowerVCF PowerShell Library Download](https://www.powershellgallery.com/packages/PowerVCF)
 
-<!-- wp:heading {"level":3} -->
-<h3>What's New in PowerVCF v2.0</h3>
-<!-- /wp:heading -->
+### What's New in PowerVCF v2.0<
 
-<!-- wp:paragraph -->
-<p>Along with a number of new or modified cmdlets the following enhancements have been made:</p>
-<!-- /wp:paragraph -->
+Along with a number of new or modified cmdlets the following enhancements have been made:
 
 <!-- wp:list -->
 <ul><li>Grouped cmdlets based on order of API documentation</li><li>Enhancements to reuse duplicate code</li><li>Updated for consistency in the use of code</li><li>Support for the new token-based authentication model</li></ul>
