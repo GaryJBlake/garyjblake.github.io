@@ -1,8 +1,8 @@
 +++
 author = "GaryJBlake"
-title = "Cloud Builder Validation: SSL Certificate common name doesn’t match ESXi FQDN"
+title = "VMware Cloud Builder Validation: SSL Certificate common name doesn’t match ESXi FQDN"
 date = "2021-02-10"
-description = "Cloud Builder Validation: SSL Certificate common name doesn’t match ESXi FQDN"
+description = "VMware Cloud Builder Validation: SSL Certificate common name doesn’t match ESXi FQDN"
 tags = [
     "VCF"
 ]
