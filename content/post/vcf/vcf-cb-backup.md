@@ -11,6 +11,7 @@ tags = [
 ]
 categories = [
     "VMware Cloud Foundation",
+    "VMware Cloud Builder",
     "PowerVCF"
 ]
 series = [
