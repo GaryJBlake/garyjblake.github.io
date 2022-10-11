@@ -6,7 +6,8 @@ description = "End-to-End Automation of Identity and Access Management Validated
 tags = [
     "API",
     "PowerShell",
-	"VVS"
+	"VVS",
+	"IAM"
 ]
 categories = [
     "VMware Validated Solutions",
@@ -17,9 +18,9 @@ series = [
 ]
 +++
 
-If your not already familiar with the [Identity and Access Management for VMware Cloud Foundation](https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation) Validated Solution it’s primary purpose is to provide customers a consistent way of integrating the foundational components of VMware Cloud Foundation (vCenter Server, NSX-T Data Center and SDDC Manager) with an organizations identify provider delivering operational consistency and flexibility. 
+If your not already familiar with the [Identity and Access Management for VMware Cloud Foundation](https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation) Validated Solution it’s primary purpose is to provide customers a consistent way of integrating the foundational components of VMware Cloud Foundation (vCenter Server, NSX-T Data Center and SDDC Manager) with an organizations identify provider delivering operational consistency and flexibility.
 
-The Identity and Access Management solution achieves this by connecting components using Active Directory over LDAP/LDAPS and utilizing  Active Directory Global Groups to assign individual component  level role access and then nested Global Groups to assign a collection of roles based on personas.
+The Identity and Access Management solution achieves this by connecting components using Active Directory over LDAP/LDAPS and utilizing  Active Directory Global Groups to assign individual component level role access and then nested Global Groups to assign a collection of roles based on personas.
 
 The roles and personas documented ([here](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-identity-and-access-management-v1/GUID-52BDCCC7-6B90-4C8B-AE81-9663945FB925.html)) should be considered as a minimum requirement when implementing the Identity and Access Management solution but there is nothing stopping customers adding more granular roles where possible or even personas that better align with their own organizations roles and responsibilities.
 

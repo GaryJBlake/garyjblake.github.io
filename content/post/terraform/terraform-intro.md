@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "Terraform - Learning Some Basics"
-date = "2022-08-30"
+date = "2022-08-18"
 description = "Terraform - Learning Some Basics"
 tags = [
     "Terraform"
