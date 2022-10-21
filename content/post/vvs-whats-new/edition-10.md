@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "What's New for VMware Validated Solutions - Edition #10 (Oct 2022)"
-date = "2022-10-06"
+date = "2022-10-25"
 description = "What's New for VMware Validated Solutions - Edition #10 (Oct 2022)"
 tags = [
     "VVS"
@@ -34,52 +34,105 @@ Delighted to announce support for VMware Cloud Foundation 4.5.0.
 * Site Protection and Disaster Recovery for VMware Cloud Foundation
 * Cloud-Based Automation for VMware Cloud Foundation
 
-### Cloud-Based Automation for VMware Cloud Foundation
+### Intelligent Logging and Analytics for VMware Cloud Foundation Updates
 
-Delighted to announce the release of a this brand new VMware Validated Solution.
+Additional automation provided by PowerValidatedSolutions:
 
-The [Cloud-Based Automation for VMware Cloud Foundation](https://core.vmware.com/cloud-based-automation-vmware-cloud-foundation) validated solution enables customers to consume a cloud-based infrastructure automation platform that delivers an agnostic self-service catalog for VMware Cloud Foundation and multi-cloud environments.
+[Implementation](https://core.vmware.com/implementation-intelligent-logging-and-analytics)
 
-Following the solution guide customers can easily and quickly connect vRealize Automation Cloud to their on-prem VMware Cloud Foundation infrastructure for the provisioning of services. As with all VMware Validated Solutions implementation automation is provided, for this solution through the use of Terraform plans that can be pulled from the [GitHub repository](https://github.com/vmware-samples/validated-solutions-for-cloud-foundation/tree/main/cba)
+* Configure Event Forwarding Between VMware Cloud Foundation Instances (***Add-vRLILogForwarder***)
 
+[Solution Interoperability](https://core.vmware.com/solution-interoperability-intelligent-logging-and-analytics)
+
+* Verify the Integration of vRealize Operations Manager with vRealize Log Insight (***Test-vROPsAdapterStatusByType***)
 
 ### Intelligent Operations Management for VMware Cloud Foundation Updates
 
-##### [Implementation](https://core.vmware.com/implementation-intelligent-operations-management)
+Additional automation provided by PowerValidatedSolutions:
 
-**Additional PowerValidatedSolutions Automation**
-* Create a vCenter Server Single Sign-On User for Integration with vRealize Suite Lifecycle Manager (***Add-SsoUser***)
-* Configure Service Account Permissions in vSphere for Integration with vRealize Suite Lifecycle Manager (***Add-vCenterGlobalPermission***)
-* Add the vCenter Server Password for the Additional VMware Cloud Foundation Instance to vRealize Suite Lifecycle Manager (***New-vRSLCMLockerPassword***)
-* Import the New Certificate for vRealize Operations Manager to vRealize Suite Lifecycle Manager (***Import-vRSLCMLockerCertificate***)
+[Implementation](https://core.vmware.com/implementation-intelligent-operations-management)
 
+* Add the Management Domain vCenter Server in the Additional VMware Cloud Foundation Instance to vRealize Suite Lifecycle Manager (***New-vRSLCMDatacenterVcenter***)
+
+[Solution Interoperability](https://core.vmware.com/solution-interoperability-intelligent-operations-management)
+
+* Verify the Log Forwarding Status of vRealize Operations Manager (***Get-vROpsLogForwardingConfig***)
 
 ### Private Cloud Automation for VMware Cloud Foundation Updates
 
-##### [Solution Interoperability](https://core.vmware.com/solution-interoperability-private-cloud-automation)
+Additional automation provided with PowerValidatedSolutions:
 
-**Additional PowerValidatedSolutions Automation**
-* Integrate vRealize Automation with vRealize Operations Manager (***New-vRAvROPSIntegrationItem***)
-* Update Placement Policy for Cloud Zones in vRealize Automation (***Update-vRACloudAccountZone***)
-* Update the vRealize Automation Integration in vRealize Operations Manager (***Update-vROPSvRAAdapterCredential***)
-* Verify the Integration of vRealize Operations Manager with vRealize Automation (***Test-vROPsAdapterStatusByType***)
+[Solution Interoperability](https://core.vmware.com/solution-interoperability-private-cloud-automation)
 
+* Install the vRealize Orchestrator Content Pack for vRealize Log Insight (***Enable-vRLIContentPack***)
 
 ### Site Protection and Disaster Recovery for VMware Cloud Foundation Updates
 
-##### [Detailed Design](https://core.vmware.com/detailed-design-site-protection-and-disaster-recovery)
+Additional automation provided with PowerValidatedSolutions:
 
-* Added design decisions on network segments, IP addressing scheme, name resolution, and time synchronization.
+[Solution Interoperability](https://core.vmware.com/solution-interoperability-site-protection-and-disaster-recovery)
 
-##### [Solution Interoperability](https://core.vmware.com/solution-interoperability-site-protection-and-disaster-recovery)
-
-**Additional PowerValidatedSolutions Automation**
-* Create vSphere Single Sign-On Users for Integration of vRealize Operations Manager with Site Protection and Disaster Recovery Solution Components (***Add-SsoUser***)
-* Configure Service Account Permissions in vSphere for the Integration of vRealize Operations Manager with Site Protection and Disaster Recovery Solution Components (***Add-vCenterGlobalPermission***)
-* Install the vRealize Operations Manager Management Packs for vSphere Replication and Site Recovery Manager (***Enable-vROPSManagementPack***)
-
+* Add Site Recovery Manager Adapter Instances to vRealize Operations Manager (***Add-vROPSAdapterSrm***)
+* Add vSphere Replication Adapter Instances to vRealize Operations Manager (***Add-vROPSAdapterVr***)
+* Create Notifications in vRealize Operations Manager for Site Protection and Disaster Recovery Issues (***Import-vROPSNotification***)
 
 ### General Availability of PowerValidatedSolutions v1.9.0
 
-Release of [PowerValidatedSolutions v1.8.0](https://www.powershellgallery.com/packages/PowerValidatedSolutions/1.9.0), which is a PowerShell module that we have developed to not only accelerate the implementation of Validated Solutions, but ensure consistency and robustness.  Here's a list of what's changed (this and previous updates can be tracked by reading the CHANGELOG.md file stored in the Git Hub repository):
+Release of [PowerValidatedSolutions v1.9.0](https://www.powershellgallery.com/packages/PowerValidatedSolutions/1.9.0), which is a PowerShell module that we have developed to not only accelerate the implementation of Validated Solutions, but ensure consistency and robustness.  Here's a list of what's changed (this and previous updates can be tracked by reading the CHANGELOG.md file stored in the Git Hub repository):
 
+* Fixed `ilaDeployVrealizeLogInsight.ps1` where the call for cmdlet named Add-vRLISmtpConfiguration had a typo.
+* Enhanced `Export-WsaJsonSpec` cmdlet to support deploying a Standard (single node) Workspace ONE Access via vRealize Suite Lifecycle Manager.
+* Enhanced `New-WSADeployment` cmdlet to support deploying a Standard (single node) Workspace ONE Access via vRealize Suite Lifecycle Manager.
+* Enhanced `Export-vROPSJsonSpec` cmdlet to support deploying a smaller footprint of vRealize Operations for nested environments.
+* Enhanced `New-vROPSDeployment` cmdlet to support smaller footprint of vRealize Operations for nested environments.
+* Enhanced `ilaConfigureVrealizeLogInsight.ps1` Sample Script to detect Standard versus Clustered Workspace ONE.
+* Enhanced `iomDeployVrealizeOperations.ps1` Sample Script to support smaller footprint of vRealize Operations for nested environments.
+* Enhanced `ilaDeployVrealizeLogInsight.ps1` Sample Script to skip trying to configure Archive and Retention settings when no NFS details are provided.
+* Enhanced `Enable-SupervisorCluster` cmdlet to check for the existence of the Supervisor Cluster.
+* Added `Enable-vRLIContentPack` cmdlet to support install of content packs from the vRealize Log Insight in-product marketplace.
+* Added `Update-vRLIContentPack` cmdlet to support update of content packs from the vRealize Log Insight in-product marketplace.
+* Added `Get-vRLIMarketplaceMetadata` cmdlet to support install and upgrade of content packs from the vRealize Log Insight in-product marketplace.
+* Added `Install-vRLIContentPack` cmdlet to support installation of content packs from the vRealize Log Insight in-product marketplace.
+* Added `Get-vRLIContentPack` cmdlet to support install and upgrade of content packs from the vRealize Log Insight in-product marketplace.
+* Added `Get-vROpsLogForwardingConfig` cmdlet to support verification of vRealize Operations log forwarding.
+* Added `Get-vROpsLogForwarding` cmdlet to support verification of vRealize Operations log forwarding.
+* Added `Add-vROPSAdapterVr` cmdlet to support adding a vSphere Replication adapter to vRealize Operations.
+* Added `Add-vROPSAdapterSrm` cmdlet to support adding a Site Recovery Manager adapter to vRealize Operations.
+* Added `Get-vROPSAlertDefinition` cmdlet a sub-function to obtain alert definition details from vRealize Operations.
+* Added `vrops-srm-notifications.csv` Sample Notification file for configuring Site Recovery Manager alert notifications in vRealize Operations.
+* Added `Remove-vRLIAgentGroup` cmdlet a sub-function to support removing agent groups from vRealize Log Insight.
+* Added `Undo-vRLIAgentGroup` cmdlet to support removing an agent group from vRealize Log Insight.
+* Added `Add-StorageFolder` cmdlet to support adding a storage folder in vCenter Server.
+* Updated `Export-vRLIJsonSpec` cmdlet to define vRealize Log Insight v8.8.2 as the default install for VCF 4.5.
+* Updated `Export-vRAJsonSpec` cmdlet to define vRealize Automation v8.8.2 as the default install for VCF 4.5.
+* Updated `Undo-vROPSAdapter` cmdlet to support removing VrAdpater and SrmAdapter adapter types from vRealize Operations.
+* Updated `Undo-vROPSCredential` cmdlet to support removing VrAdpater and SrmAdapter credentials from vRealize Operations.
+* Updated Sample Scripts in the SampleScripts\ila folder, to support the VCF 4.5.x Planning and Prep Workbook:
+  * `ilaDeployVrealizeLogInsight.ps1`
+  * `ilaConfigureVrealizeLogInsight.ps1`
+  * `ilaUndoVrealizeLogInsight.ps1`
+* Updated Sample Scripts in the SampleScripts\iam folder, to support the VCF 4.5.x Planning and Prep Workbook:
+  * `iamConfigureVsphere.ps1`
+  * `iamConfigureNsx.ps1`
+  * `iamConfigureWorkspaceOne.ps1`
+  * `iamUndoDeployment.ps1`
+* Updated Sample Scripts in the SampleScripts\dri folder, to support the VCF 4.5.x Planning and Prep Workbook:
+  * `driConfigureSupervisorCluster.ps1`
+  * `driDeployTanzuCluster.ps1`
+  * `driUndoDeployment.ps1`
+* Updated Sample Scripts in the SampleScripts\ila folder, to support the VCF 4.5.x Planning and Prep Workbook:
+  * `ilaDeployVrealizeLogInsight.ps1`
+  * `ilaConfigureVrealizeLogInsight.ps1`
+  * `ilaUndoVrealizeLogInsight.ps1`
+* Updated Sample Scripts in the SampleScripts\iom folder, to support the VCF 4.5.x Planning and Prep Workbook:
+  * `iomConfigureVrealizeOperations.ps1`
+  * `iomDeployVrealizeOperations.ps1`
+* Added Sample Scripts in the SampleScripts\pca folder, uses the Planning and Preparation Workbook as the input source:
+  * `pcaDeployVrealizeAutomation.ps1`
+* Added Sample Scripts in the SampleScripts\iom folder, to configure Solution Interoperability for Intelligent Operations Management:
+  * `iomSolutionInteroperability.ps1`
+* Added Sample Scripts in the SampleScripts\ila folder, to configure Solution Interoperability for for Intelligent Logging and Analytics:
+  * `ilaSolutionInteroperability.ps1`
+  * `ilaUndoSolutionInteroperability.ps1`
+* Added Sample Scripts in the SampleScripts\iam folder, to configure Solution Interoperability for Identity and Access Management:
+  * `iamSolutionInteroperability.ps1`
