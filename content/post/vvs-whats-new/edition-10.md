@@ -26,13 +26,13 @@ Welcome to Edition #10 of the What's New for VMware Validated Solutions, today w
 
 Delighted to announce support for VMware Cloud Foundation 4.5.0.
 
-* Identity and Access Management for VMware Cloud Foundation
-* Developer Ready Infrastructure for VMware Cloud Foundation
-* Intelligent Logging and Analytics for VMware Cloud Foundation
-* Intelligent Operations Management for VMware Cloud Foundation
-* Private Cloud Automation for VMware Cloud Foundation
-* Site Protection and Disaster Recovery for VMware Cloud Foundation
-* Cloud-Based Automation for VMware Cloud Foundation
+* [Identity and Access Management for VMware Cloud Foundation](https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation)
+* [Developer Ready Infrastructure for VMware Cloud Foundation](https://core.vmware.com/developer-ready-infrastructure-vmware-cloud-foundation)
+* [Intelligent Logging and Analytics for VMware Cloud Foundation](https://core.vmware.com/intelligent-logging-and-analytics-vmware-cloud-foundation)
+* [Intelligent Operations Management for VMware Cloud Foundation](https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation)
+* [Private Cloud Automation for VMware Cloud Foundation](https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation)
+* [Site Protection and Disaster Recovery for VMware Cloud Foundation](https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation)
+* [Cloud-Based Automation for VMware Cloud Foundation](https://core.vmware.com/cloud-based-automation-vmware-cloud-foundation)
 
 ### Intelligent Logging and Analytics for VMware Cloud Foundation Updates
 
