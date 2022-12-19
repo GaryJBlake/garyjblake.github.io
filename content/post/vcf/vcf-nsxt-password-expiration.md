@@ -48,7 +48,7 @@ Armed with the above details I quickly realized that making this adjustment acro
 
 The solution is a combination of VMware Cloud Foundation and NSX public REST APIs, combining them into a few functions we can deliver a single script that can automate applying a new Password Expiration Policy across a single VMware Cloud Foundation instance, Workload Domain and the your choice of accounts.
 
-Download from Github the [`updateNsxtPasswordExpirationPolicy.ps1`]() script.
+Download from Github the [`updateNsxtPasswordExpirationPolicy.ps1`](https://github.com/GaryJBlake/my-cloudy-world-scripts/blob/main/PowerShell/vcf/scripts/updateNsxtPasswordExpirationPolicy.ps1) script.
 
 ## Configuring the Password Expiration Policy for NSX Manager and Edge Nodes
 

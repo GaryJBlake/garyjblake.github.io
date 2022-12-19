@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "What's New for VMware Validated Solutions - Edition #9 (Sep 2022)"
-date = "2022-09-21"
+date = "2022-09-27"
 description = "What's New for VMware Validated Solutions - Edition #9 (Sep 2022)"
 tags = [
     "VVS"
