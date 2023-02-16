@@ -2,7 +2,7 @@
 author = "GaryJBlake"
 title = "What's New for VMware Validated Solutions - Edition #12 (Jan 2023)"
 date = "2023-01-31"
-description = "What's New for VMware Validated Solutions - Edition #12 (Nov 2023)"
+description = "What's New for VMware Validated Solutions - Edition #12 (Jan 2023)"
 tags = [
     "VVS"
 ]
