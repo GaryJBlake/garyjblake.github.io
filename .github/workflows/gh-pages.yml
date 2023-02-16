@@ -1,10 +1,12 @@
 name: Hugo GitHub Pages Build
 
 on:
+# Runs on pushes targeting the default branch
   push:
-    branches:
-      - main  # Set a branch to deploy
-  pull_request:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -19,7 +21,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-          # extended: true
+          extended: true
 
       - name: Build
         run: hugo --minify
