@@ -17,6 +17,8 @@ series = [
 ]
 +++
 
+**Last Updated:** 25-Apr-2023
+
 Password Policy Configuration may not be that important to some but for security teams it’s critical for ensuring their organization is protected. If you have ever looked deep into this area when it comes to VMware Cloud Foundation and the components involved you will quickly realize that unfortunately VMware today does not make things easy for our customers. We have:
 
 - lack of consistency with default values
@@ -36,7 +38,7 @@ Once we had this defined we found it much easier to understand and capture the s
 
 The second hurdle involved establishing what methods were required in order to review or alter the various policy parameters by product.
 
-The outcome of this work has resulted firstly in a completely new section, [Password Policy Configuration for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-18A95158-30F5-460F-AF80-33F25B6533D0.html) being added into the [VMware Cloud Foundation Operations Guide](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-BE7C1509-709A-4A56-875B-EAC5EA61BB56.html). The new content includes procedures for configuring password expiration, password complexity and account lockout through the user interface and PowerShell using the [PowerShell Module for VMware Validated Solutions](https://github.com/vmware-samples/power-validated-solutions-for-cloud-foundation) providing coverage for:
+The outcome of this work has resulted firstly in a completely new section, [Password Policy Configuration for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-18A95158-30F5-460F-AF80-33F25B6533D0.html) being added into the [VMware Cloud Foundation Operations Guide](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-BE7C1509-709A-4A56-875B-EAC5EA61BB56.html). The new content includes procedures for configuring password expiration, password complexity and account lockout through the user interface and PowerShell using the [PowerShell Module for VMware Cloud Foundation Password Management](https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management) providing coverage for:
 
 - ESXi
 - vCenter Server

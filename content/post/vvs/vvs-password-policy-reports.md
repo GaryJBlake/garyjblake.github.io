@@ -17,9 +17,11 @@ series = [
 ]
 +++
 
+**Last Updated:** 25-Apr-2023
+
 In a recent blog ([see here](/post/vvs/vvs-password-policy)) I provided an overview of Password Policy Configuration for VMware Cloud Foundation, in this blog we will take a deep dive on using `Invoke-PasswordPolicyManager` to generate the password policy reports.
 
-The `Invoke-PasswordPolicyManager` cmdlet is part of the [PowerShell Module for VMware Validated Solutions](https://www.powershellgallery.com/packages/PowerValidatedSolutions) and provides the ability to generate two types of HTML reports:
+The `Invoke-PasswordPolicyManager` cmdlet is part of the [PowerShell Module for VMware Cloud Foundation Password Management](https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management) and provides the ability to generate two types of HTML reports:
 
 * An HTML report showing the current configuration for password expiration, password complexity and account lockout for each component.
 * An HTML report showing the configuration differences for password expiration, password complexity and account lockout for each component.
@@ -119,6 +121,6 @@ This time when the report is generated we are presented with the same format and
 
 ### Conclusion
 
-Using the `Invoke-PasswordPolicyManager` cmdlet contained within the [PowerShell Module for VMware Validated Solutions](https://www.powershellgallery.com/packages/PowerValidatedSolutions) you can now easily generate a report to capture the current state configuration of all components across a VMware Cloud Foundation instance, and you can also compare the configuration against the desired state configuration to identify remediation work.
+Using the `Invoke-PasswordPolicyManager` cmdlet contained within the [PowerShell Module for VMware Cloud Foundation Password Management](https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management) you can now easily generate a report to capture the current state configuration of all components across a VMware Cloud Foundation instance, and you can also compare the configuration against the desired state configuration to identify remediation work.
 
-If you have feedback, suggestions or want to report an issues with using the [PowerShell Module for VMware Validated Solutions](https://www.powershellgallery.com/packages/PowerValidatedSolutions) visit GitHub and open an [issue](https://github.com/vmware-samples/power-validated-solutions-for-cloud-foundation/issues/new/choose)
+If you have feedback, suggestions or want to report an issues with using the [PowerShell Module for VMware Cloud Foundation Password Management](https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management) visit GitHub and open an [issue](https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management/issues/new/choose)
