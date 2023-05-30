@@ -178,7 +178,7 @@ Release of [PowerValidatedSolutions v2.3.0](https://www.powershellgallery.com/pa
 
 Release of Python Module for VMware Cloud Foundation Health Monitoring in vRealize Operations v1.1.0. This Python module supports the Health Reporting and Monitoring for VMware Cloud Foundation validated solution which enables the user to monitor the operational state of your VMware Cloud Foundation environment through custom dashboards, alerts, and notifications. These custom dashboards are intended to serve as an extension to native vRealize Operations (on-premises) dashboards and dashboards that are enabled via the respective management packs.
 
-* Updated the module to require a minimum of VMware.CloudFoundation.Reporting v2.0.1.
+* Updated the module to require a minimum of VMware.CloudFoundation.Reporting v2.1.0.
 * Removed SDDC Manager root password from module.
 * Updated the project structure to host the module on PyPI. 
 * Updated the date on the Backups and Snapshot dashboard.
