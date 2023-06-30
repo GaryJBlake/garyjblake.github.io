@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "What's New for VMware Validated Solutions - Blog Index"
-date = "2022-05-31"
+date = "2023-06-27"
 description = "What's New for VMware Validated Solutions - Blog Index"
 featured = true
 tags = [
@@ -15,7 +15,7 @@ series = [
 ]
 +++
 
-## Last Updated 28-Feb-2023
+## Last Updated 27-Jun-2023
 
 VMware Validated Solutions are byte sized solutions developed to extend the foundational capabilities of VMware Cloud Foundation, for background reading see my previous post here. Over time the team intends to add incremental value where opportunities arise and I plan to share as much detail as I can with each new update using my What's New for VMware Validated Solutions series of blog posts. I've decided to create this single landing page where I will provide a consolidated list of links to the relevant Editions of this series so you can bookmark this single page for ease of use.
 
@@ -34,3 +34,7 @@ Remember to check back from time to time!
 - [What's New for VMware Validated Solutions - Edition #11 (Nov 2022)](/post/vvs-whats-new/edition-11)
 - [What's New for VMware Validated Solutions - Edition #12 (Jan 2023)](/post/vvs-whats-new/edition-12)
 - [What's New for VMware Validated Solutions - Edition #13 (Feb 2023)](/post/vvs-whats-new/edition-13)
+- [What's New for VMware Validated Solutions - Edition #14 (Mar 2023)](/post/vvs-whats-new/edition-14)
+- [What's New for VMware Validated Solutions - Edition #15 (Apr 2023)](/post/vvs-whats-new/edition-15)
+- [What's New for VMware Validated Solutions - Edition #16 (May 2023)](/post/vvs-whats-new/edition-16)
+- [What's New for VMware Validated Solutions - Edition #17 (Jun 2023)](/post/vvs-whats-new/edition-17)
