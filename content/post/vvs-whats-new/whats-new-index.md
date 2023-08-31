@@ -39,3 +39,4 @@ Remember to check back from time to time!
 - [What's New for VMware Validated Solutions - Edition #16 (May 2023)](/post/vvs-whats-new/edition-16)
 - [What's New for VMware Validated Solutions - Edition #17 (Jun 2023)](/post/vvs-whats-new/edition-17)
 - [What's New for VMware Validated Solutions - Edition #18 (Jul 2023)](/post/vvs-whats-new/edition-18)
+- [What's New for VMware Validated Solutions - Edition #19 (Aug 2023)](/post/vvs-whats-new/edition-19)

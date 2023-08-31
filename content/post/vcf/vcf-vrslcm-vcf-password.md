@@ -51,11 +51,19 @@ Import-Module -Name PowerValidatedSolutions
 
 ### PowerShell Procedure
 
+1. Start Windows PowerShell.
+
+2. Replace the values in the sample code with values for the instance of vRealize Suite Lifecycle Manager and run the commands in the PowerShell console.
+
 ``` PowerShell
 $vrslcmFqdn = "xint-vrslcm01.rainpole.io"
 $vrslcmUser = "vcfadmin@local"
 $vrslcmPass = "VMw@re1!"
+```
 
+3. Perform the configuration by running the command in the PowerShell console.
+
+``` PowerShell
 Request-vRSLCMToken -fqdn $vrslcmFqdn -username $vrslcmUser -password $vrslcmPass
 $unsedVcfAccounts = Get-vRSLCMLockerPassword | Where-Object {$_.alias -like "VCF-password*" -and $_.referenced -eq $false}
 if ($unsedVcfAccounts) {
