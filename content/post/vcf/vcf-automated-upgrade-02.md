@@ -18,7 +18,7 @@ series = [
 
 <img align="left" width="200" height="200" src="/images/powervcf-color-transparent.webp" style="float:left; padding-right:20px" >
 
-This is part two of a five part blog series in which I talk about automating the VMware Cloud Foundation upgrade process. In part one we discussed downloading the bundles to SDDC Manager to prepare the system for the upgrade process, in this post we discuss performing the upgrade pre-checks.
+This is part two of a four part blog series in which I talk about automating the VMware Cloud Foundation upgrade process. In part one we discussed downloading the bundles to SDDC Manager to prepare the system for the upgrade process, in this post we discuss performing the upgrade pre-checks.
 
 Ensuring your VMware Cloud Foundation instance is healthy prior to starting an upgrade is critical to a successful upgrade, SDDC Manager itself has a pre-check process which is executed on a per workload domain basis. Depending on the version of VMware Cloud Foundation your upgrading from this pre-check has seen some significant improvements over time. In addition to executing the specific workload domain pre-check at the SDDC Manager level our team released a PowerShell Module last year called `VMware.CloudFoundation.Reporting` which can be utilized in conjunction with the internal pre-check to perform additional health checks prior to starting an upgrade step.
 
@@ -146,7 +146,6 @@ $workloadDomain = "lax-m01"
 
 * [Automating the Upgrade of VMware Cloud Foundation with APIs/PowerVCF/PowerShell](/post/vcf/vcf-automated-upgrade)
 * [Automating VCF Upgrade - Download Release Bundles](/post/vcf/vcf-automated-upgrade-01)
-* [Automating VCF Upgrade - Perform Health Checks](/post/vcf/vcf-automated-upgrade-01)
-* Automating VCF Upgrade - SDDC Manager (***Coming Soon!***)
-* Automating VCF Upgrade - Management Domain (***Coming Soon!***)
-* Automating VCF Upgrade - VI Workload Domain (***Coming Soon!***)
+* [Automating VCF Upgrade - Perform Upgrade Pre-check](/post/vcf/vcf-automated-upgrade-02)
+* [Automating VCF Upgrade - SDDC Manager](/post/vcf/vcf-automated-upgrade-03)
+* [Automating VCF Upgrade - Workload Domains](/post/vcf/vcf-automated-upgrade-04)

@@ -18,7 +18,7 @@ series = [
 
 <img align="left" width="200" height="200" src="/images/powervcf-color-transparent.webp" style="float:left; padding-right:20px" >
 
-This is part three of a five part blog series in which I talk about automating the VMware Cloud Foundation upgrade process. If you have been following the series so far then you will have your bundles downloaded, and performed various health checks to confirm that all is well and will now be ready to start the upgrade process.
+This is part three of a four part blog series in which I talk about automating the VMware Cloud Foundation upgrade process. If you have been following the series so far then you will have your bundles downloaded, and performed various health checks to confirm that all is well and will now be ready to start the upgrade process.
 
 Upgrading VMware Cloud Foundation is a multi-stage process, this post will focus on upgrading SDDC Manager which in itself involves two step:
 
@@ -124,7 +124,6 @@ Once complete that's it we have successfully upgraded SDDC Manager programmatica
 
 * [Automating the Upgrade of VMware Cloud Foundation with APIs/PowerVCF/PowerShell](/post/vcf/vcf-automated-upgrade)
 * [Automating VCF Upgrade - Download Release Bundles](/post/vcf/vcf-automated-upgrade-01)
-* [Automating VCF Upgrade - Perform Health Checks](/post/vcf/vcf-automated-upgrade-02)
+* [Automating VCF Upgrade - Perform Upgrade Pre-check](/post/vcf/vcf-automated-upgrade-02)
 * [Automating VCF Upgrade - SDDC Manager](/post/vcf/vcf-automated-upgrade-03)
-* Automating VCF Upgrade - Management Domain (***Coming Soon!***)
-* Automating VCF Upgrade - VI Workload Domain (***Coming Soon!***)
+* [Automating VCF Upgrade - Workload Domains](/post/vcf/vcf-automated-upgrade-04)

@@ -133,7 +133,6 @@ requestBundleDownload.ps1 -server $sddcManagerFqdn -user $sddcManagerUser -pass 
 
 * [Automating the Upgrade of VMware Cloud Foundation with APIs/PowerVCF/PowerShell](/post/vcf/vcf-automated-upgrade)
 * [Automating VCF Upgrade - Download Release Bundles](/post/vcf/vcf-automated-upgrade-01)
-* Automating VCF Upgrade - Perform Upgrade Pre-check (***Coming Soon!***)
-* Automating VCF Upgrade - SDDC Manager (***Coming Soon!***)
-* Automating VCF Upgrade - Management Domain (***Coming Soon!***)
-* Automating VCF Upgrade - VI Workload Domain (***Coming Soon!***)
+* [Automating VCF Upgrade - Perform Upgrade Pre-check](/post/vcf/vcf-automated-upgrade-02)
+* [Automating VCF Upgrade - SDDC Manager](/post/vcf/vcf-automated-upgrade-03)
+* [Automating VCF Upgrade - Workload Domains](/post/vcf/vcf-automated-upgrade-04)
