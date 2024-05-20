@@ -11,7 +11,8 @@ tags = [
 categories = [
     "VMware Cloud Builder",
     "VMware Cloud Foundation",
-    "VMware Validated Design"
+    "VMware Validated Design",
+    "VxRail"
 ]
 series = [
 

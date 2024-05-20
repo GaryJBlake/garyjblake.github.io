@@ -7,6 +7,7 @@ tags = [
     "Cloud Builder"
 ]
 categories = [
+    "VMware Cloud Foundation",
     "VMware Cloud Builder"
 ]
 series = [

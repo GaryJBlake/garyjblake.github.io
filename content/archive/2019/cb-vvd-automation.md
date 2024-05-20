@@ -8,7 +8,8 @@ tags = [
     "VVD"
 ]
 categories = [
-    "VMware Validated Designs"
+    "VMware Validated Design",
+    "VMware Cloud Builder"
 ]
 series = [
 

@@ -24,7 +24,6 @@ The VMware Cloud Foundation documentation includes details regarding this requir
 * [VMware Cloud Foundation Deployment Guide](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.2/com.vmware.vcf.ovdeploy.doc_42/GUID-20A4FD73-EB40-403A-99FF-DAD9E8F9E456.html)
 * [VMware Cloud Foundation Operations and Administration Guide](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.2/com.vmware.vcf.admin.doc_42/GUID-20A4FD73-EB40-403A-99FF-DAD9E8F9E456.html)
 
-
 Assuming you have stumbled across this post after seeing the error mentioned, I've included a document extract and the procedure you need to follow.
 
 **Documentation Extract**
@@ -38,11 +37,13 @@ Assuming you have stumbled across this post after seeing the error mentioned, I'
 1. Log in to the ESXi host using an SSH client such as Putty.
 
 2. Regenerate the self-signed certificate by executing the following command:
+
 ``` bash
 /sbin/generate-certificates
 ```
 
 3. Restart the hostd and vpxa services by executing the following command:
+
 ``` bash
 /etc/init.d/hostd restart && /etc/init.d/vpxa restart
 ```

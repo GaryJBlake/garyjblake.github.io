@@ -7,6 +7,7 @@ tags = [
     "Cloud Builder"
 ]
 categories = [
+    "VMware Validated Design",
     "VMware Cloud Builder"
 ]
 series = [

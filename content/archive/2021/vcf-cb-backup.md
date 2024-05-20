@@ -29,7 +29,6 @@ One way to reduce this risk, and of course for use in a lab environment is to us
 2. Create a Backup Folder on the VMware Cloud Builder Appliance
 3. Re-Configure the Backup in SDDC Manager
 
-
 ### Create a Backup Service Account on the VMware Cloud Builder Appliance
 
 First step is to create a local account on the VMware Cloud Builder Appliance, this will be used as the service account and is supplied when re-configuring the backup configuration in SDDC Manager.
@@ -38,12 +37,13 @@ First step is to create a local account on the VMware Cloud Builder Appliance, t
 
 2. Switch to root by entering the following command:
 
-```
+``` Bash
 su
 ```
+
 3. Create the service account by entering the following command:
 
-```
+``` Bash
 useradd -m -p $(openssl passwd -1 VMw@re1!) svc-vcf-bck
 ```
 
@@ -53,13 +53,13 @@ The next step is to create a target backup folder on the VMware Cloud Builder Ap
 
 1. Create a new folder by entering the following command:
 
-```
+``` Bash
 mkdir /tmp/vcf-backups
 ```
 
 2. Configure access to the folder for the service account by entering the following command:
 
-```
+``` Bash
 chown svc-vcf-bck:users /tmp/vcf-backups
 ```
 
