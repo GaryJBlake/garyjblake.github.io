@@ -36,26 +36,26 @@ All is not lost, here I provide the fastest way to get the environment working a
 
 5. Temporarily alter the password policy to allow the reuse of a previously used password by editing the `/etc/pam.d/system-password` file. You could use `vi` to edit the file but here I'm using `sed` to semi-automate the process.
 
-    ``` bash
-    sed -i ‘s/remember=5/remember=0/g’ /etc/pam.d/system-password
-    ```
+``` bash
+sed -i ‘s/remember=5/remember=0/g’ /etc/pam.d/system-password
+```
 
 6. Reset the `root` password back to the previously expired password by entering the command and following the on-screen prompts.
 
-    ``` bash
-    passwd root
-    ```
+``` bash
+passwd root
+```
 
 7. Reset the `sshuser` password back to the previously expired password by entering the command and following the on-screen prompts.
 
-    ``` bash
-    passwd sshuser
-    ```
+``` bash
+passwd sshuser
+```
 
 8. Revert the password policy by editing the `/etc/pam.d/system-password` file.
 
-    ``` bash
-    sed -i ‘s/remember=0/remember=5/g’ /etc/pam.d/system-password
-    ```
+``` bash
+sed -i ‘s/remember=0/remember=5/g’ /etc/pam.d/system-password
+```
 
 9. Repeat the process for each node of the Workspace ONE Access cluster.

@@ -72,7 +72,7 @@ And finally you re-configure the backup configuration to use the new SFTP target
 2. Using the navigation paine, select **Administration** > **Backup**.
 
 3. On the **Backup** paine, select **Site Settings** and click **Register External**.
-![](/images/vcf-post-01.png)
+![](/archive/2021/vcf-cb-backup-01.png)
 
 4. Enter the values, and click **Save**.
 
@@ -89,7 +89,7 @@ Setting                     | Value
 
 5. On the **Confirm your changes to backup settings** dialog, click **Confirm**. Your details will be saved and the ***Configure Backup of VCF Components (SDDC Manager and NSX Managers)*** task will start.
 
-![](/images/vcf-post-02.png)
+![](/archive/2021/vcf-cb-backup-02.png)
 
 ---
 **NOTE**

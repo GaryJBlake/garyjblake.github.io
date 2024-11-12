@@ -79,7 +79,7 @@ $nsxtManagerFqdn = "sfo-m01-nsx01.sfo.rainpole.io"
 $nsxtManagerUser = "admin"
 $nsxtManagerPass = "VMw@re1!VMw@re1!"
 ```
-	 
+
 3. Perform the configuration by running the command in the PowerShell console.
 
 ``` powershell
@@ -91,6 +91,6 @@ foreach ($id in $transportNodeIds ) {
         Set-NsxtApplianceUserExpirationPolicy -userId $userId -days 0 -transportNodeId $id
     }
 }
-``` 
+```
 
 4. All your NSX Edge Node accounts should also now be unblocked and set to never expire.

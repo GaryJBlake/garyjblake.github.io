@@ -73,7 +73,7 @@ The **iomDeployVrealizeOperations.ps1** script automates all the procedures asso
 
 Execution of the **iomDeployVrealizeOperations.ps1** script is performed by using the following command:
 
-``` Powershell
+``` powershell
 .\SampleScripts\iom\iomDeployVrealizeOperations.ps1 -sddcManagerFqdn sfo-vcf01.sfo.rainpole.io -sddcManagerUser administrator@vsphere.local -sddcManagerPass VMw@re1! -workbook F:\vvs\PnP.xlsx -filePath F:\vvs
 ```
 
@@ -94,7 +94,7 @@ The **iomConfigureVrealizeOperations.ps1** script automates the deployment and c
 
 Execution of the **iomConfigureVrealizeOperations.ps1** script is performed by using the following command:
 
-``` PowerShell
+``` powerShell
 .\SampleScripts\iom\iomConfigureVrealizeOperations.ps1 -sddcManagerFqdn sfo-vcf01.sfo.rainpole.io -sddcManagerUser administrator@vsphere.local -sddcManagerPass VMw@re1! -workbook F:\vvs\PnP.xlsx -filePath F:\vvs
 ```
 

@@ -18,11 +18,10 @@ With the release of VMware Cloud Foundation 4.4.0, VMware removed a number of th
 
 Whilst this is great news for our customers, it has led to a bit of confusion. The release notes simply state:
 
---- 
+---
 **Quote**
 
 *You can use vRealize Suite Lifecycle Manager to deploy vRealize Automation, vRealize Operations Manager, vRealize Log Insight, and Workspace ONE Access. vRealize Suite Lifecycle Manager determines which versions of these products are compatible and only allows you to install/upgrade to supported versions.*
-
 ---
 
 The underlying issue here is that customers can no longer use the [Product Interoperability Matrix](https://interopmatrix.vmware.com/Interoperability) to easily identify the correct version mix between VMware Cloud Foundation itself and anything greater than vRealize Suite Lifecycle Manager 8.6.2, this is due to that fact that patches for vRealize Suite Lifecycle Manager are required and these are not part of the search criteria.

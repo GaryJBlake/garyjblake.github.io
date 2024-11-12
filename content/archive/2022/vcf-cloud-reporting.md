@@ -32,33 +32,33 @@ The module was initially developed to produce a Health Report, but after we had 
 #### 1. Overview Report
 
 This report contains high-level information about the VMware Cloud Foundation instance and can provide a quick overview of the system to your VMware representative.
-![](/post/vcf/vcf-reporting-overview.png)
+![](/archive/2022/vcf-reporting-overview.png)
 
 #### 2. Health Report
 
 This report combines the SoS Utility health checks with additional health checks not presently available in the SoS Utility for previous VMware Cloud Foundation releases. The report contains detailed information about the health of the VMware Cloud Foundation instance and its components.
-![](/post/vcf/vcf-reporting-health.png)
+![](/archive/2022/vcf-reporting-health.png)
 
 #### 3. Alert Report
 
 This report collects information about the system alerts that are currently active in the VMware Cloud Foundation instance for the platform components. This report reduces the need to login to multiple product interfaces to collect information about the system alerts.
-![](/post/vcf/vcf-reporting-alert.png)
+![](/archive/2022/vcf-reporting-alert.png)
 
 #### 4. Password Policy Report
 
 This report collects information about the password policy settings in a VMware Cloud Foundation instance for the platform components.
-![](/post/vcf/vcf-reporting-password.png)
+![](/archive/2022/vcf-reporting-password.png)
 
 #### 5. Configuration Report
 
 This report collects information about the configuration settings in a VMware Cloud Foundation instance for the platform components.
-![](/post/vcf/vcf-reporting-configuration.png)
+![](/archive/2022/vcf-reporting-configuration.png)
 
 #### 6. Upgrade Pre-Check Report
 
 This report initiates an upgrade precheck of a workload domain using the REST API and presents the results in an HTML report. This allows you to start the precheck from the PowerShell console.
-![](/post/vcf/vcf-reporting-precheck.png)
+![](/archive/2022/vcf-reporting-precheck.png)
 
-For further details on how to use [`VMware.CloudFoundation.Reporting`](https://www.powershellgallery.com/packages/VMware.CloudFoundation.Reporting) refer to the `README.md` within the installation folder on your system after you have installed using `Install-Module -Name VMware.CloudFoundation.Reporting` or review it directly on the [GitHub](https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-reporting/blob/main/README.md) repository.
+For further details on how to use [**VMware.CloudFoundation.Reporting**](https://www.powershellgallery.com/packages/VMware.CloudFoundation.Reporting) refer to the `README.md` within the installation folder on your system after you have installed using `Install-Module -Name VMware.CloudFoundation.Reporting` or review it directly on the [GitHub](https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-reporting/blob/main/README.md) repository.
 
 If you have suggestions or find any issues then please report them on the GitHub repository.

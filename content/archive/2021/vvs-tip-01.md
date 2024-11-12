@@ -22,17 +22,17 @@ There are two methods that you can use to identify if a particular solution is s
 
 VMware utilizes a single landing page within the **Cloud Platform Tech Zone** website known as ***core.vmware.com*** once you select [VMware Validated Solutions](https://core.vmware.com/vmware-validated-solutions),  you are presented with tiles where each tile represents a single Validated Solution.
 
-![](/images/vvs-tip-01-image01.png)
+![](/archive/2021/vvs-tip-01-image01.png)
 
 Inside each tile there is a **Tags** label, if you simply click **Tags** a dialog window will open and from here under **Products** you can quickly identify which releases of VMware Cloud Foundation are supported.
 
-![](/images/vvs-tip-01-image02.png)
+![](/archive/2021/vvs-tip-01-image02.png)
 
 ### Method Two - View the Solution Guide Support Matrix
 
 Contained within each Validated Solution guide there is a **Support Matrix** table, this is contained within the **About** page. In the example below taken from the ***Identity and Access Management for VMware Cloud Foundation Validated Solution*** you can see the table contains a link to the VMware Cloud Foundation Release Notes and clearly calls out the version of the products added by the solution.
 
-![](/images/vvs-tip-01-image03.png)
+![](/archive/2021/vvs-tip-01-image03.png)
 
 To locate this Support Matrix use the following process:
 
@@ -44,11 +44,11 @@ To locate this Support Matrix use the following process:
 
 4. Click on the top page of the ***docs.vmware.com page***.
 
-![](/images/vvs-tip-01-image04.png)
+![](/archive/2021/vvs-tip-01-image04.png)
 
 5. Using the right-hand menu under **In this article** select **Support Matrix**.
 
-![](/images/vvs-tip-01-image05.png)
+![](/archive/2021/vvs-tip-01-image05.png)
 
 ### Quick Links
 

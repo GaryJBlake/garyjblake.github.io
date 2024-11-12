@@ -78,7 +78,7 @@ The **driConfigureSupervisorCluster.ps1** script automates all the procedures as
 
 Execution of the **driConfigureSupervisorCluster.ps1** script is performed by using the following command:
 
-``` Powershell
+``` powershell
 .\SampleScripts\dri\driConfigureSupervisorCluster.ps1 -sddcManagerFqdn sfo-vcf01.sfo.rainpole.io -sddcManagerUser administrator@vsphere.local -sddcManagerPass VMw@re1! -workbook F:\vvs\PnP.xlsx -filePath F:\vvs
 ```
 
@@ -93,7 +93,7 @@ The **driDeployTanzuCluster.ps1** script automates the deployment and configurat
 
 Execution of the **driDeployTanzuCluster.ps1** script is performed by using the following command:
 
-``` PowerShell
+``` powershell
 .\SampleScripts\dri\driDeployTanzuCluster.ps1 -sddcManagerFqdn sfo-vcf01.sfo.rainpole.io -sddcManagerUser administrator@vsphere.local -sddcManagerPass VMw@re1! -workbook F:\vvs\PnP.xlsx -filePath F:\vvs
 ```
 

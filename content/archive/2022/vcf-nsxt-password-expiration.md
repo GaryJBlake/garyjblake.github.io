@@ -17,7 +17,7 @@ series = [
 +++
 
 With the release of VMware Cloud Foundation 4.5.0 a welcome enhancement to *Password Management* comes the notification capability, with this new feature we have introduced firstly a new banner that appears in the SDDC Manager UI when an account is identified as disconnected either as a result of the password expiring or the component going offline and secondly a new widget that notifies you when passwords are due to expire.
-![](/post/vcf/vcf-password-notifications.png)
+![](/archive/2022/vcf-password-notifications.png)
 
 Getting early visibility that passwords are due to expire has a significant impact on the workload of a Site Resiliency Engineer (SRE) in that it allows them to plan for password rotation operations ahead of time rather than dealing with a reactive situation where a password has actually expired.
 
@@ -26,15 +26,15 @@ Now whilst SDDC Manager enables you to perform manual or automated password rota
 It's not my place to advise customers on the password expiration policy they should be applying to the SDDC components, this should be defined by their compliance team. What I can do however is provide some guidance on how to be successful which is the purpose of this blog post.
 
 Let's take a closer look at some of the details contained within the `Expiring within 14 days` widget in the SDDC Manager UI, in the image below you can see that we have 9 x NSX Edge and 4 x NSX Manager passwords that are flagged as expiring within the next 14 days.
-![](/post/vcf/vcf-expiring-widget.png)
+![](/archive/2022/vcf-expiring-widget.png)
 
 If we now take a closer look at the `NSXT Manager` and `NSXT Edge` component view under the Password Management section of the SDDC Manager UI we can see exactly which accounts and on which components are affected.
 
 ***NSXT Manager***
-![](/post/vcf/vcf-expiring-nsx-manager.png)
+![](/archive/2022/vcf-expiring-nsx-manager.png)
 
 ***NSXT Edge***
-![](/post/vcf/vcf-expiring-nsx-edge.png)
+![](/archive/2022/vcf-expiring-nsx-edge.png)
 
 Great, so what next! Well you have two options really, you can either [Rotate Passwords](https://docs-staging.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-28D29FFA-2D81-4781-AD79-85697497D45B.html) using the SDDC Manager UI or you could amend the password expiration policy. As this is our internal lab and we have full control to configure or define things how we like and rotating passwords often becomes more difficult to manage I wanted to investigate adjusting the password expiration policy so that I could apply a single consistent policy across all components.
 
@@ -72,7 +72,7 @@ $passwordChangeFrequency = 999
 .\updateNsxtPasswordExpirationPolicy -server $sddcManagerFqdn -username $sddcManagerUser -password $sddcManagerPass -nsxtAccounts $nsxtAccounts -passwordChangeFrequency $passwordChangeFrequency
 ```
 
-4. Refresh the Password Management section of the SDDC Manager UI, the NSXT Manager and NSXT Edge counters should no longer appear in the `Expiring within 14 days` widget.
-![](/post/vcf/vcf-active-widgit.png)
+1. Refresh the Password Management section of the SDDC Manager UI, the NSXT Manager and NSXT Edge counters should no longer appear in the `Expiring within 14 days` widget.
+![](/archive/2022/vcf-active-widgit.png)
 
 And there you have it, I now have a single password expiration policy defined and applied to all NSX components managed by my SDDC Manager and the current password expiration warning are addressed. Next time I see the expiration warnings it really will be time for me to rotate my passwords to remain compliant.

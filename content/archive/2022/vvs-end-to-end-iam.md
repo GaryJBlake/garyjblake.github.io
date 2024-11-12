@@ -86,7 +86,8 @@ The **iamConfigureWorkspaceOne.ps1** script automates the deployment and configu
 - Create VM Group. This creates a VM Group in vCenter Server and assigns the Workspace ONE Access virtual machine to it. 
 
 Execution of the **iamConfigureWorkspaceOne.ps1** script is performed by using the following command:
-```
+
+``` powershell
 .\SampleScripts\iam\iamConfigureWorkspaceOne.ps1 -sddcManagerFqdn sfo-vcf01.sfo.rainpole.io -sddcManagerUser administrator@vsphere.local -sddcManagerPass VMw@re1! -workbook F:\vvs\PnP.xlsx -filePath F:\vvs
 ```
 
@@ -102,7 +103,8 @@ The **iamConfigureNsx.ps1** script automates the integration between the NSX Man
 - Reduce vCenter Server Permissions. This reduces the permissions a specific vCenter Server service account has for other vCenter Servers within the Single Sign-On domain.
 
 Execution of the **iamConfigureNsx.ps1** script is performed by using the following command:
-```
+
+``` powershell
 .\SampleScripts\iam\iamConfigureNsx.ps1 -sddcManagerFqdn sfo-vcf01.sfo.rainpole.io -sddcManagerUser administrator@vsphere.local -sddcManagerPass VMw@re1! -workbook F:\vvs\PnP.xlsx -filePath F:\vvs
 ```
 

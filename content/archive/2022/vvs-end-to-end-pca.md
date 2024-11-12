@@ -80,7 +80,7 @@ The **pcaDeployVrealizeAutomation.ps1** script automates all the procedures asso
 
 Execution of the **pcaDeployVrealizeAutomation.ps1** script is performed by using the following command:
 
-``` Powershell
+``` powershell
 .\SampleScripts\pca\pcaDeployVrealizeAutomation.ps1 -sddcManagerFqdn sfo-vcf01.sfo.rainpole.io -sddcManagerUser administrator@vsphere.local -sddcManagerPass VMw@re1! -workbook F:\vvs\PnP.xlsx -filePath F:\vvs
 ```
 

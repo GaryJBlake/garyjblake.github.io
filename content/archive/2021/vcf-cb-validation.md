@@ -15,7 +15,7 @@ series = [
 ]
 +++
 
-### Background 
+### Background
 
 For those of you who are not familiar with VMware Cloud Builder its a virtual appliance that is shipped as part of VMware Cloud Foundation. It's primary goal is to bootstrap the deployment and configuration of the Management Domain which includes ESXi, vCenter Server, NSX-T Data Center and SDDC Manager.
 

@@ -14,7 +14,7 @@ series = [
 ]
 +++
 
-**Last Updated:** 26-March-2024
+**Last Updated:** 26-Mar-2024
 
 Welcome to Edition #23 of the **What's New for VMware Validated Solutions**, this is the update for March 2024, the highlights of which are:
 

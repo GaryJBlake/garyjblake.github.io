@@ -25,7 +25,7 @@ To locate the Update History use the following process:
 3. Click **Read More** under the Design Objectives tile.
 
 4. Click on the top page of the docs.vmware.com page.
-![](/images/vvs-tip-03-image01.png)
+![](/archive/2021/vvs-tip-03-image01.png)
 
 5. Using the right-hand menu under **In this article** select *Update History*.
-![](/images/vvs-tip-03-image02.png)
+![](/archive/2021/vvs-tip-03-image02.png)

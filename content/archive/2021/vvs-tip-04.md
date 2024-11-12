@@ -23,4 +23,4 @@ Each VMware Validated Solution is validated against a specific architecture conf
 3. Click **Read More** under the Design Objectives tile.
 
 4. Review the **VMware Cloud Foundation architecture support** and **Workload domain type support** rows to confirm support.
-![](/images/vvs-tip-04-image01.png)
+![](/archive/2021/vvs-tip-04-image01.png)

@@ -40,7 +40,7 @@ So lets take a look at the detailed steps, from a high-level the process is as f
 1. Login to SDDC Manager UI.
 2. From the navigation, expand **Administration** and select **Licensing**.
 3. Identity the license that is expiring and make a note of the license key, and the current used allocation.
-![](/post/vcf/vcf-licensing-current.png)
+![](/archive/2022/vcf-licensing-current.png)
 
 ### Adding a New vSAN License to SDDC Manager
 
@@ -85,7 +85,7 @@ So lets take a look at the detailed steps, from a high-level the process is as f
 2. From the navigation, expand **Administration** and select **Licensing**.
 3. Verify that the old license now has a used count of zero and the new licenses used count has gone up.
 
-![](/post/vcf/vcf-licensing-current.png)
+![](/archive/2022/vcf-licensing-new.png)
 
 4. Click the ellipses next to the expired license and select **Remove**.
 5. On the **Remove license key** dialog, click **Remove**.
