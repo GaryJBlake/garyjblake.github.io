@@ -37,7 +37,7 @@ sddcRootPass    | required  | Password of the root account
 reportPath      | required  | Folder location where reports are created and configuration JSON file resides
 allDomains      | required  | Generate a report for the complete SDDC Manager instance
 workloadDomain  | required  | Generate a report for a specific Workload Domain
-drift           | optional  | Generate a report and compare against the configuation JSON file
+drift           | optional  | Generate a report and compare against the configuration JSON file
 policyFile      | optional  | Name of the configuration JSON file used to compare the configuration
 darkMode        | optional  | Generate the HTML report in dark mode
 wsaFqdn         | optional  | FQDN for Workspace ONE Access to be included in the report
