@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VRealize Suite Lifecycle Manager on My Cloudy World</title>
+    <link>http://localhost:1313/tags/vrealize-suite-lifecycle-manager/</link>
+    <description>Recent content in VRealize Suite Lifecycle Manager on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2024, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 27 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vrealize-suite-lifecycle-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation</title>
+      <link>http://localhost:1313/post/vvs/vvs-vrslcm-upgrade/</link>
+      <pubDate>Thu, 27 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs/vvs-vrslcm-upgrade/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VMware Cloud Foundation has come a long way in recent years, one of the biggest developments introduced a few releases back centred around the relaxation of a strict Bill of Materials (BoM) as it pertained to the vRealize Suite (&lt;a
+	
+		href = &#34;/post/vcf/vcf-vrealize-flexibility&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		see here
+	&lt;/span&gt;
+&lt;/a&gt;), the intent being to enable our customers to update the underlying vRealize Suite components faster to adopt new features.&lt;/p&gt;
+&lt;p&gt;One of the largest and most complex challenges of any integrated software stack is ensuring that the latest and greatest products and features are available to our customers, this is especially so at VMware as we have a number of business groups who own the underlying products consumed by VMware Cloud Foundation. Not every VMware customer is a consumer of VMware Cloud Foundation and these products such as NSX and vRealize Suite can be consumed without VMware Cloud Foundation in the mix and so each of these business groups have their own drivers and commitments to keep on top of supporting and working with the VMware Cloud Foundation engineering teams. As a consequence of this and not forgetting a multitude of different release dates, all of these factors have an impact on the BoM that lands for VMware Cloud Foundation at its release date where a significant amount of workflow testing has to be carried out with the slightest of BoM changes.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VCF 9.0 on My Cloudy World</title>
+    <link>http://localhost:1313/tags/vcf-9.0/</link>
+    <description>Recent content in VCF 9.0 on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2024, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 29 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-9.0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/</link>
+      <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Srm&lt;/code&gt;, this modules contains auto-generated cmdlets to support VMware Live Site Recovery Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id=&#34;display-all-vmware-live-recovery-get-command-details&#34;&gt;Display All VMware Live Recovery GET Command Details&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Display all GET cmdlets supported in &lt;code&gt;VMware.Sdk.Srm&lt;/code&gt; by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Get-SrmOperation&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Method&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Get&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Select-Object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;CommandInfo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Method&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Output for all GET cmdlets in &lt;code&gt;VMware.Sdk.Srm&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Command Info&lt;/th&gt;
+          &lt;th&gt;Path&lt;/th&gt;
+          &lt;th&gt;Method&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetFolderMapping&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/folders/{mapping_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetFolderMappings&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/folders&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetNetworkIpSubnetMapping&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/networks/{mapping_id}/ip-subnet-mapping&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetNetworkMapping&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/networks/{mapping_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetNetworkMappings&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/networks&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlaceholderDatastore&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/placeholder-datastores/{datastore_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlaceholderDatastores&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/placeholder-datastores&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetResourceMapping&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/resources/{mapping_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetResourceMappings&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/resources&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetStoragePolicyMapping&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/storage-policies/{mapping_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetStoragePolicyMappings&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/storage-policies&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetTestNetworkMapping&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/test-networks/{mapping_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetTestNetworkMappings&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/test-networks&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetLicensing&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/licensing&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPairing&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPairingIssues&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/issues&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPairings&lt;/td&gt;
+          &lt;td&gt;/pairings&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetSrm&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetSrmIssues&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/issues&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetSrmPermissions&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/permissions&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetSrms&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetAllGroups&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/groups&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetDatastoreGroup&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/datastore-groups/{datastore_group_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetDatastoreGroups&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/datastore-groups&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetGroup&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetGroupIssues&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/issues&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetGroupRelatedRecoveryPlans&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/recovery-plans&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetGroupVm&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/vms/{vm_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetGroupVms&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/vms&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetProtectionGroupFolder&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/inventory/{folder_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetProtectionGroupFolderChildren&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/inventory/{folder_id}/children&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetProtectionGroupFolders&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/inventory&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVmProtectionSettings&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/vms/{vm_id}/protection-settings&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVvolReplicationGroup&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/replication-groups/{replication_group_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVvolReplicationGroups&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/replication-groups&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetAllPlanHistoryRecords&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/history-reports&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetAllRecoveryPlans&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlanHistoryRecord&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/history-reports/{report_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlanHistoryRecords&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/history-reports&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlanRelatedProtectionGroups&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/protection-groups&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlanRelatedTestNetworks&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/test-networks&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlanVirtualMachine&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlanVirtualMachineDependentVms&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}/recovery-settings/dependent-vms&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlanVirtualMachineIpCustomization&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}/recovery-settings/ip-customization&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlanVirtualMachineRecoveryPriority&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}/recovery-settings/priority&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlanVirtualMachineRecoverySettings&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}/recovery-settings&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlanVirtualMachineSummarizedRecoverySettings&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}/recovery-settings/summary&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetPlanVirtualMachines&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetRecoveryPlan&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetRecoveryPlanFolder&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/inventory/{folder_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetRecoveryPlanFolderChildren&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/inventory/{folder_id}/children&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetRecoveryPlanFolders&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/inventory&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetRecoveryPlanIssues&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/issues&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetRecoveryStep&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/recovery-steps/{view_mode}/{recovery_step_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetRecoverySteps&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/recovery-steps/{view_mode}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetRecoveryStepsCalloutDetails&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/recovery-steps/{view_mode}/{recovery_step_id}/callout-data&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetRecoveryStepsUserPrompt&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/recovery-steps/user-prompts/{prompt_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetRecoveryStepsUserPrompts&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/recovery-steps/user-prompts&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetAllVvolFaultDomainReplicationGroups&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vvol/fault-domains/{domain_id}/replication-groups&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetAllVvolFaultDomains&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vvol/fault-domains&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetArrayManager&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-managers/{array_manager_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetArrayManagers&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-managers&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetReplicatedArrayPair&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-pairs/{array_pair_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetReplicatedArrayPairs&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-pairs&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetStorageAdapter&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/storage-adapters/{storage_adapter_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetStorageAdapterConnectionParams&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/storage-adapters/{storage_adapter_id}/connection-params&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetStorageAdapters&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/storage-adapters&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetStorageDevices&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-pairs/{array_pair_id}/storage-devices&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVsanProtectionGroup&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vsan/protection-groups/{protection_group_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVsanProtectionGroups&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vsan/protection-groups&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVvolFaultDomain&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vvol/fault-domains/{domain_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVvolFaultDomainReplicationGroup&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vvol/fault-domains/{domain_id}/replication-groups/{replication_group}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetExportFilesInfo&lt;/td&gt;
+          &lt;td&gt;/server/configuration/backup/files&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetExportSettings&lt;/td&gt;
+          &lt;td&gt;/server/configuration/backup/settings&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetInfo&lt;/td&gt;
+          &lt;td&gt;/server/info&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmRetrieveExportFile&lt;/td&gt;
+          &lt;td&gt;/server/configuration/backup/files/{file_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetRecentTasksInfo&lt;/td&gt;
+          &lt;td&gt;/tasks&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetTaskInfo&lt;/td&gt;
+          &lt;td&gt;/tasks/{taskId}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmBrowseVcenterComputeItem&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/compute/{compute_id}/browser&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetReplicatedVms&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/replicated-vms&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcStoragePolicies&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/storage-policies&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcStoragePolicy&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/storage-policies/{storage_policy_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcenter&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcenterComputeInventory&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/compute&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcenterComputeItem&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/compute/{compute_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcenterDatastoreItem&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/datastores/{datastore_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcenterDatastores&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/datastores&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcenterNetworkInventory&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/network&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcenterNetworkItem&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/network/{network_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcenterVmFolder&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/vm-folder/{vm_folder_id}&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcenterVmFolderInventory&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/vm-folder&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Invoke-SrmGetVcenters&lt;/td&gt;
+          &lt;td&gt;/pairings/{pairing_id}/vcenters&lt;/td&gt;
+          &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;display-all-vmware-live-recovery-post-command-details&#34;&gt;Display All VMware Live Recovery POST Command Details&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using VMware.Sdk.Vsphere: Commands for vSphere</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</link>
+      <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Vsphere&lt;/code&gt;, this modules contains auto-generated cmdlets to support vSphere Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id=&#34;connecting-to-a-vcenter-instance-with-local-credentials&#34;&gt;Connecting to a vCenter Instance with Local Credentials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to a vCenter instance using local credentials by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Connect-VIServer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;sfo-m01&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-vc01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;sfo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;rainpole&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;io&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Username&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;administrator&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@vsphere&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Password&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;VMw&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@re1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VMw&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@re1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;Once connected the following information is stored in &lt;code&gt;$global:DefaultVIServer&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Name    : sfo-m01-vc01.sfo.rainpole.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Port    : &lt;span class=&#34;m&#34;&gt;443&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;User    VSPHERE.LOCAL&lt;span class=&#34;se&#34;&gt;\A&lt;/span&gt;dministrator
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Disconnect from a vCenter instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Disconnect-VIServer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;sfo-m01&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-vc01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;sfo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;rainpole&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using VMware.Sdk.Vcf.SddcManager: Commands for SDDC Manager in PowerCLI</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Vcf.SddcManager&lt;/code&gt;, this modules contains auto-generated cmdlets to support SDDC Manager Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id=&#34;connecting-to-a-sddc-manager-instance-with-local-credentials&#34;&gt;Connecting to a SDDC Manager Instance with Local Credentials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to a SDDC Manager instance using local credentials by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Connect-VcfSddcManagerServer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;sfo-vcf01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;sfo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;rainpole&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;io&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-User&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;administrator&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@vsphere&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Password&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;VMw&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@re1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VMw&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@re1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Once connected the following information is stored in &lt;code&gt;$defaultSddcManagerConnections&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ServiceUri     : https://sfo-vcf01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;SessionSecret  : &amp;lt;sessionSecret&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;User           : administrator@vsphere.local
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;IsConnected    : True
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Id             : /VcfSddcManagerServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;administrator@vsphere.local@sfo-vcf01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Name           : sfo-vcf01.sfo.rainpole.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Uid            : /VcfSddcManagerServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;administrator@vsphere.local@sfo-vcf01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ProductVersion : 9.0.0.0.24703748
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ServerUri      : https://sfo-vcf01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;UUID           : /VcfSddcManagerServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;administrator@vsphere.local@sfo-vcf01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Port           : &lt;span class=&#34;m&#34;&gt;443&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Disconnect from a SDDC Manager instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Disconnect-VcfSddcManagerServer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;sfo-vcf01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;sfo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;rainpole&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;display-all-sddc-manager-get-command-details&#34;&gt;Display All SDDC Manager GET Command Details&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using VMware.Sdk.Nsx.Policy: Commands for NSX</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-nsx-policy-cmdlets/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-nsx-policy-cmdlets/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Nsx.Policy&lt;/code&gt;, this modules contains auto-generated cmdlets to support NSX Policy Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id=&#34;connecting-to-a-nsx-instance-with-local-credentials&#34;&gt;Connecting to a NSX Instance with Local Credentials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to a NSX instance using local credentials by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Connect-NsxServer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;sfo-m01&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-nsx01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;sfo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;rainpole&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;io&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-User&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Password&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;VMw&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@re1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VMw&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@re1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;Once connected the following information is stored in &lt;code&gt;$defaultNsxConnections&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ServiceUri     : https://sfo-m01-nsx01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;SessionSecret  :
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;User           : admin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;IsConnected    : True
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Id             : /NsxServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;admin@sfo-m01-nsx01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Name           : sfo-m01-nsx01.sfo.rainpole.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Uid            : /NsxServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;admin@sfo-m01-nsx01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ProductVersion : 9.0.0.0.24705144
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ServerUri      : https://sfo-m01-nsx01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;UUID           : /NsxServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;admin@sfo-m01-nsx01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Port           : &lt;span class=&#34;m&#34;&gt;443&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Disconnect from a NSX instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Disconnect-NsxServer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;sfo-m01&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-nsx01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;sfo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;rainpole&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using VMware.Sdk.Vcf.Installer: Commands for VCF Installer in PowerCLI</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-vcfinstaller-cmdlets/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-vcfinstaller-cmdlets/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Vcf.Installer&lt;/code&gt;, this modules contains auto-generated cmdlets to support VCF Installer Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id=&#34;connecting-to-a-vcf-installer-instance-with-local-credentials&#34;&gt;Connecting to a VCF Installer Instance with Local Credentials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to a VCF Installer instance using local credentials by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Connect-VcfInstallerServer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;sfo-ins01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;sfo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;rainpole&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;io&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-User&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@local&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Password&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;VMw&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@re1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VMw&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@re1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Once connected the following information is stored in &lt;code&gt;$defaultInstallerConnections&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ServiceUri     : https://sfo-ins01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;SessionSecret  : &amp;lt;SessionSecret&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;User           : admin@local
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;IsConnected    : True
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Id             : /VcfInstallerServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;admin@local@sfo-ins01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Name           : sfo-ins01.sfo.rainpole.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Uid            : /VcfInstallerServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;admin@local@sfo-ins01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ProductVersion : 9.0.0.0.24703748
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ServerUri      : https://sfo-ins01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;UUID           : /VcfInstallerServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;admin@local@sfo-ins01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Port           : &lt;span class=&#34;m&#34;&gt;443&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Disconnect from a VCF Installer instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Disconnect-VcfInstallerServer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;sfo-ins01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;sfo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;rainpole&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;display-all-vcf-installer-get-command-details&#34;&gt;Display All VCF Installer GET Command Details&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-operations-cmdlets/</link>
+      <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-operations-cmdlets/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Vcf.Ops&lt;/code&gt;, this modules contains auto-generated cmdlets to support VCF Operations Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id=&#34;connecting-to-a-vcf-operations-instance-with-local-credentials&#34;&gt;Connecting to a VCF Operations Instance with Local Credentials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to a VCF Operations instance using local credentials by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Connect-VcfOpsServer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;flt-ops01a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;rainpole&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;io&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-User&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;admin&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Password&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;VMw&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@re1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VMw&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;@re1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Once connected the following information is stored in &lt;code&gt;$defaultOpsConnections&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ServiceUri     : https://flt-ops01a.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;SessionSecret  : 54aa4efb-3acd-4a14-ad75-10e66742a96d::c38a1c14-0ea4-4f3f-abe8-40afc55bae6d
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;User           : admin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;IsConnected    : True
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Id             : /VcfOpsServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;admin@flt-ops01a.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Name           : flt-ops01a.rainpole.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Uid            : /VcfOpsServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;admin@flt-ops01a.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ProductVersion : VCF Operations 9.0.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ServerUri      : https://flt-ops01a.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;UUID           : /VcfOpsServer&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;admin@flt-ops01a.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Port           : &lt;span class=&#34;m&#34;&gt;443&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Disconnect from a VCF Operations instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Disconnect-VcfOpsServer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Server&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;flt-ops01a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;rainpole&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;display-all-vcf-operations-get-command-details&#34;&gt;Display All VCF Operations GET Command Details&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-sdk-modules/</link>
+      <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-sdk-modules/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Along with the release of VMware Cloud Foundation 9.0 a new version of PowerCLI has also been shipped, for a full rundown of what&#39;s new I would suggest reading the official blog &lt;a
+	
+		href = &#34;https://blogs.vmware.com/cloud-foundation/2025/06/24/introducing-vcf-powercli-9-0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Introducing VCF PowerCLI 9.0
+	&lt;/span&gt;
+&lt;/a&gt;, but here are the quick highlights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Name Change to VCF PowerCLI&lt;/li&gt;
+&lt;li&gt;Performance  Improvements&lt;/li&gt;
+&lt;li&gt;New Module for NSX Virtual Private Cloud&lt;/li&gt;
+&lt;li&gt;New Module for SDDC Manager&lt;/li&gt;
+&lt;li&gt;Usability improvements with PowerCLI SDK&lt;/li&gt;
+&lt;li&gt;Global Authorization APIs and PowerCLI bindings&lt;/li&gt;
+&lt;li&gt;Bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the purposes of this blog I want to focus on the PowerCLI SDK improvements.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>How to Install VCF PowerCLI 9.0: Step-by-Step Guide</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-updating/</link>
+      <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-updating/</guid>
+      <description>
+        
+          
+            &lt;p&gt;The fastest and easiest way to start utilising &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VCF.PowerCLI/9.0.0.24798382&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VCF PowerCLI 9.0
+	&lt;/span&gt;
+&lt;/a&gt; is to first remove any old versions and then perform a fresh install.&lt;/p&gt;
+&lt;h3 id=&#34;remove-existing-vmware-powercli-modules&#34;&gt;Remove Existing VMware PowerCLI Modules&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Uninstall all VMware modules by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Get-Module&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;VMware&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ListAvailable&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Uninstall-Module&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Force&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-AllVersions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Verify that all VMware modules have been uninstalled by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Get-Module&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;VMware&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ListAvailable&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;installing-vcf-powercli-90&#34;&gt;Installing VCF PowerCLI 9.0&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

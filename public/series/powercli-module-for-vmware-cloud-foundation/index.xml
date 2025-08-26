@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerCLI Module for VMware Cloud Foundation on My Cloudy World</title>
+    <link>http://localhost:1313/series/powercli-module-for-vmware-cloud-foundation/</link>
+    <description>Recent content in PowerCLI Module for VMware Cloud Foundation on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2024, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 21 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/powercli-module-for-vmware-cloud-foundation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Native PowerCLI Modules for VMware Cloud Foundation</title>
+      <link>http://localhost:1313/post/vcf/vcf-powercli-main/</link>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf/vcf-powercli-main/</guid>
+      <description>
+        
+          
+            &lt;h3 id=&#34;the-birth-of-powervcf&#34;&gt;The Birth of PowerVCF&lt;/h3&gt;
+&lt;p&gt;Back in January 2020 my friend and colleague &lt;a
+	
+		href = &#34;https://lifeofbrianoc.com&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Brian OConnell
+	&lt;/span&gt;
+&lt;/a&gt; embarked on a community project to write a PowerShell module to make consumption of the VMware Cloud Foundation APIs simple and easy to consume by VI Admins, each cmdlet was hand-built using standard PowerShell verbs that the community is well versed in consuming. He saw that the need for automation within our customer based was growing and at the time there was no alternative solution available.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

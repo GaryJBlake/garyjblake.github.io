@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>API on My Cloudy World</title>
+    <link>http://localhost:1313/tags/api/</link>
+    <description>Recent content in API on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2024, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 25 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing a PowerShell Module for VMware Cloud Foundation Password Management</title>
+      <link>http://localhost:1313/post/vcf/vcf-password-management/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf/vcf-password-management/</guid>
+      <description>
+        
+          
+            &lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+&lt;p&gt;In January 2023 through the VMware Validated Solution programme we released both documentation and PowerShell cmdlets to help with the configuration of password policies across the VMware Cloud Foundation platform, enabling our customers to report and configure the password expiration, password complexity, and account lockout policies at scale.&lt;/p&gt;
+&lt;p&gt;The positive feedback received to date has blown us away and so last month during one of our planning sessions we discussed the merits
+for spinning out the cmdlets into their own dedicated open-source PowerShell module, during that discussion it was agreed that this would provide us and our customers the following benefits:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PowerVCF v2.3.0 - General Availability</title>
+      <link>http://localhost:1313/post/powervcf/powervcf-ga-230/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/powervcf/powervcf-ga-230/</guid>
+      <description>
+        
+          
+            &lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
+&lt;p&gt;It&#39;s been a while since the last update but I&#39;m pleased to announce the general availability of PowerVCF v2.3.0 for download from the Microsoft PowerShell Library. PowerVCF is a open source project and the team works on adding support when time permits.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Download It Here&lt;/strong&gt;&lt;/em&gt;: &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerVCF/2.3.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerVCF v2.3.0 PowerShell Library Download
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;additions&#34;&gt;Additions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Added region block identifiers for better developer and contributor experience when navigating the PowerShell module code.&lt;/li&gt;
+&lt;li&gt;Added &lt;a
+	
+		href = &#34;https://vmware.github.io/powershell-module-for-vmware-cloud-foundation/docs/&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		GitHub Pages Documentation
+	&lt;/span&gt;
+&lt;/a&gt; for PowerVCF.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Get-VCFFipsMode&lt;/code&gt; cmdlet to return the status for FIPS mode.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Get-VCFRelease&lt;/code&gt; cmdlet to retrieve details for releases.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Get-VCFCredentialExpiry&lt;/code&gt; cmdlet to retrieve the password expiry details for credentials.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;Get-VCFLicenseMode&lt;/code&gt; cmdlet to retrieve the current license mode of the system &amp;amp; each domain&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;New-VCFPersonality&lt;/code&gt; cmdlet to add a new vSphere Lifecycle Manager personality/image in the SDDC Manager inventory from an existing vLCM image based cluster&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements&#34;&gt;Enhancements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; cmdlet for consistency across functions.&lt;/li&gt;
+&lt;li&gt;Enhanced &lt;code&gt;Get-VCFDepotCredential&lt;/code&gt; cmdlet to support retrieving the VxRail depot details.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;New-VCFCluster&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Add-VCFApplicationVirtualNetwork&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Set-VCFBackupConfiguration&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Start-VCFBundleUpload&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Set-VCFCluster&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Set-VCFCredential&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;New-VCFCluster&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Restart-VCFCredentialTask&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;New-VCFWorkloadDomain&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Set-VCFFederation&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;New-VCFCommissionedHost&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Remove-VCFCommissionedHost&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;New-VCFNetworkPool&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;New-VCFEdgeCluster&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Restart-CloudBuilderSDDC&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Start-VCFHealthSummary&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Start-VCFSupportBundle&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Start-VCFSystemPrecheck&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Start-VCFUpgrade&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Set-VCFConfigurationDNS&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Set-VCFConfigurationNTP&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;New-VCFvRSLCM&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Get-VCFManager&lt;/code&gt; cmdlet synopsis, description and examples.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Set-VCFFederation&lt;/code&gt; cmdlet synopsis, description and examples.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Get-VCFConfigurationDNSValidation&lt;/code&gt; cmdlets synopsis, description and examples.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Get-VCFCertificateCSR&lt;/code&gt; cmdlets synopsis, description and examples.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;Get-VCFvRLI&lt;/code&gt; cmdlets synopsis, description and examples.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;README.md&lt;/code&gt;, and added module metadata.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;release-contributors&#34;&gt;Release Contributors&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;THANK YOU&lt;/strong&gt; to the following contributors who helped with this release:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Configure Password Policies for VMware Cloud Foundation</title>
+      <link>http://localhost:1313/post/vvs/vvs-password-policy-config/</link>
+      <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs/vvs-password-policy-config/</guid>
+      <description>
+        
+          
+            &lt;p&gt;In a recent blog (&lt;a
+	
+		href = &#34;/post/vvs/vvs-password-policy&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		see here
+	&lt;/span&gt;
+&lt;/a&gt;) I provided an overview of Password Policy Configuration for VMware Cloud Foundation, in this blog we will take a deep dive on using &lt;code&gt;Start-PasswordPolicyConfig&lt;/code&gt; which actually performs the configuration of all password policies across the VMware Cloud Foundation instance.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;Start-PasswordPolicyConfig&lt;/code&gt; cmdlet is part of the &lt;a
+	
+		href = &#34;https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerShell Module for VMware Cloud Foundation Password Management
+	&lt;/span&gt;
+&lt;/a&gt; and provides the ability to automate the configuration of password policies using the provided configuration JSON for the following components:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generating Password Policy Reports for VMware Cloud Foundation</title>
+      <link>http://localhost:1313/post/vvs/vvs-password-policy-reports/</link>
+      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs/vvs-password-policy-reports/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 25-Apr-2023&lt;/p&gt;
+&lt;p&gt;In a recent blog (&lt;a
+	
+		href = &#34;/post/vvs/vvs-password-policy&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		see here
+	&lt;/span&gt;
+&lt;/a&gt;) I provided an overview of Password Policy Configuration for VMware Cloud Foundation, in this blog we will take a deep dive on using &lt;code&gt;Invoke-PasswordPolicyManager&lt;/code&gt; to generate the password policy reports.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;Invoke-PasswordPolicyManager&lt;/code&gt; cmdlet is part of the &lt;a
+	
+		href = &#34;https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerShell Module for VMware Cloud Foundation Password Management
+	&lt;/span&gt;
+&lt;/a&gt; and provides the ability to generate two types of HTML reports:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Password Policy Configuration for VMware Cloud Foundation Overview</title>
+      <link>http://localhost:1313/post/vvs/vvs-password-policy/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs/vvs-password-policy/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 25-Apr-2023&lt;/p&gt;
+&lt;p&gt;Password Policy Configuration may not be that important to some but for security teams it’s critical for ensuring their organization is protected. If you have ever looked deep into this area when it comes to VMware Cloud Foundation and the components involved you will quickly realize that unfortunately VMware today does not make things easy for our customers. We have:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lack of consistency with default values&lt;/li&gt;
+&lt;li&gt;lack of consistency with common parameters&lt;/li&gt;
+&lt;li&gt;lack of consistency with API methods&lt;/li&gt;
+&lt;li&gt;lack of consistency with terminology and language&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is why with the January Update to VMware Validated Solutions (&lt;a
+	
+		href = &#34;https://blogs.vmware.com/cloud-foundation/2023/01/31/vmware-validated-solutions-jan-2023-update/&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		see here
+	&lt;/span&gt;
+&lt;/a&gt;) we have spent a significant amount of time reviewing and rewriting all aspects of our content as it relates to Password Policy Configuration.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

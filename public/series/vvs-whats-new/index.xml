@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VVS Whats New on My Cloudy World</title>
+    <link>http://localhost:1313/series/vvs-whats-new/</link>
+    <description>Recent content in VVS Whats New on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2024, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 08 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/vvs-whats-new/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Blog Index</title>
+      <link>http://localhost:1313/post/vvs-whats-new/whats-new-index/</link>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/whats-new-index/</guid>
+      <description>
+        
+          
+            &lt;h2 id=&#34;last-updated-08-oct-2024&#34;&gt;Last Updated 08-Oct-2024&lt;/h2&gt;
+&lt;p&gt;VMware Validated Solutions are byte sized solutions developed to extend the foundational capabilities of VMware Cloud Foundation, for background reading see my previous post here. Over time the team intends to add incremental value where opportunities arise and I plan to share as much detail as I can with each new update using my What&#39;s New for VMware Validated Solutions series of blog posts. I&#39;ve decided to create this single landing page where I will provide a consolidated list of links to the relevant Editions of this series so you can bookmark this single page for ease of use.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #26 (October 2024)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-26/</link>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-26/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 08-Oct-2024&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #26 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, this is the update for October 2024, the highlights of which are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for &lt;strong&gt;VMware Cloud Foundation 5.2.1&lt;/strong&gt; to VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.12.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.12.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;added-support-for-vmware-cloud-foundation-521&#34;&gt;Added Support for VMware Cloud Foundation 5.2.1&lt;/h3&gt;
+&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.2.1 for the following VMware Validated Solutions:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #25 (July 2024)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-25/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-25/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 23-Jul-2024&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #25 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, this is the update for July 2024, the highlights of which are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for VMware Cloud Foundation 5.2.0 to VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/developer-ready-infrastructure-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Developer Ready Infrastructure for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/intelligent-network-visibility-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Intelligent Network Visibility for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New end-to-end automated implementation using PowerShell for all VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Support for automated deployment of Solution Interoperability from the validated solution menu&lt;/li&gt;
+&lt;li&gt;Guidance on importing the VMware Aria Suite OVA files into a vSphere Content Library&lt;/li&gt;
+&lt;li&gt;Signed Certificate Generation using the PowerShell Module for VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Deprecation of &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Workload Protection for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.11.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.11.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;added-support-for-vmware-cloud-foundation-520&#34;&gt;Added Support for VMware Cloud Foundation 5.2.0&lt;/h3&gt;
+&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.2.0 for the following VMware Validated Solutions:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #24 (May 2024)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-24/</link>
+      <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-24/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 28-May-2024&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #24 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, this is the update for May 2024, the highlights of which are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; – &lt;a
+	
+		href = &#34;https://core.vmware.com/private-ai-ready-infrastructure-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Private AI Ready Infrastructure for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added Support for VxRail to &lt;a
+	
+		href = &#34;https://core.vmware.com/health-reporting-and-monitoring-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Health Reporting and Monitoring for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added Support for VMware Aria Automation 8.16.2 to &lt;a
+	
+		href = &#34;https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Private Cloud Automation for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added Support for VMware Site Recovery Manager 9.0 and vSphere Replication 9.0 to &lt;a
+	
+		href = &#34;https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Site Protection and Disaster Recovery for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updated automation steps for &lt;a
+	
+		href = &#34;https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Identity and Access Management for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.10.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.10.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;private-ai-ready-infrastructure-for-vmware-cloud-foundation&#34;&gt;Private AI Ready Infrastructure for VMware Cloud Foundation&lt;/h3&gt;
+&lt;p&gt;Delighted to announce the release of this brand-new VMware Validated Solution.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #23 (March 2024)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-23/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-23/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 26-Mar-2024&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #23 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, this is the update for March 2024, the highlights of which are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for VMware Cloud Foundation 5.1.1 for all VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Update to password management for the latest Photon OS&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Intelligent Operations Management for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/intelligent-network-visibility-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Intelligent Network Visibility for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Private Cloud Automation for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Site Protection and Disaster Recovery for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Workload Protection for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-ransomware-recovery-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Ransomware Recovery for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/cross-cloud-mobility-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cross Cloud Mobility for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.9.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.9.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;added-support-for-vmware-cloud-foundation-511&#34;&gt;Added Support for VMware Cloud Foundation 5.1.1&lt;/h3&gt;
+&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.1.1 for the following VMware Validated Solutions:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #22 (January 2024)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-22/</link>
+      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-22/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 30-January-2024&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #22 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, this is a our first update for 2024 and the team has been busy over the festive period. Highlights include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; – &lt;a
+	
+		href = &#34;https://core.vmware.com/instelligent-network-visibility-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Intelligent Network Visibility for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Architectural change to &lt;a
+	
+		href = &#34;https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Identity and Access Management for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Multi-instance support for &lt;a
+	
+		href = &#34;https://core.vmware.com/health-reporting-and-monitoring-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Health Reporting and Monitoring for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/intelligent-logging-and-analytics-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Intelligent Logging and Analytics for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Intelligent Operations Management for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Private Cloud Automation for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Site Protection and Disaster Recovery for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Deprecation of VMware Aria SaaS based validated solutions.&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.8.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.8.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;intelligent-network-visibility-for-vmware-cloud-foundation&#34;&gt;Intelligent Network Visibility for VMware Cloud Foundation&lt;/h3&gt;
+&lt;p&gt;Delighted to announce the release of this brand-new VMware Validated Solution.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #21 (October 2023)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-21/</link>
+      <pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-21/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 07-November-2023&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #21 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, slightly delayed due to the availability of VMware Cloud Foundation 5.1 but today we announced the following updates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; – &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-ransomware-recovery-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Ransomware Recovery for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updated branding from VMware vRealize Suite to VMware Aria Suite.&lt;/li&gt;
+&lt;li&gt;Added support for &lt;strong&gt;VMware Cloud Foundation 5.1.0&lt;/strong&gt; to all VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Added support to upgrade VMware Aria Suite Lifecycle to version 18.4.0 for VMware Aria Suite based VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Added enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-network-visibility-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Network Visibility for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-intelligent-operations-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Intelligent Operations for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Workload Protection for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Intelligent Operations Management for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Identity and Access Management for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.7.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.7.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cloud-based-ransomware-recovery-for-vmware-cloud-foundation&#34;&gt;Cloud-Based Ransomware Recovery for VMware Cloud Foundation&lt;/h3&gt;
+&lt;p&gt;Delighted to announce the release of this brand-new VMware Validated Solution.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #20 (September 2023)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-20/</link>
+      <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-20/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 26-September-2023&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #20 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, today we announced the following updates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; – &lt;a
+	
+		href = &#34;https://core.vmware.com/cross-cloud-mobility-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cross Cloud Mobility for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cross-cloud-mobility-for-vmware-cloud-foundation&#34;&gt;Cross Cloud Mobility for VMware Cloud Foundation&lt;/h3&gt;
+&lt;p&gt;We are delighted to announce the release of this brand-new VMware Validated Solution.&lt;/p&gt;
+&lt;p&gt;The &lt;a
+	
+		href = &#34;https://core.vmware.com/cross-cloud-mobility-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cross Cloud Mobility for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt; is a well-architected validated solutions that provides detailed design, implementation, configuration, and operation guidance on establishing business workload mobility and migrating the workloads between a VMware Cloud Foundation instance and a VMware Cloud on AWS SDDC through the use of the VMware HCX service.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #19 (August 2023)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-19/</link>
+      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-19/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 29-August-2023&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #19 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, today we announced the following updates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; – &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Workload Protection for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added support for VMware Cloud Foundation 4.5.2 for all VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Intelligent Operations Management for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Added password policy management design and operational guidance&lt;/li&gt;
+&lt;li&gt;Added use of VMware Cloud Foundation management pack design and implementation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/health-reporting-and-monitoring-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Health Reporting and Monitoring for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Utilization of VMware Cloud Foundation management pack metrics and dashboards&lt;/li&gt;
+&lt;li&gt;Release of Python Module for VMware Cloud Foundation Health Monitoring in vRealize Operations v2.0.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Open-source Projects
+&lt;ul&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.6.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.6.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.Reporting/2.4.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.Reporting v2.4.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.CertificateManagement/1.3.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.CertificateManagement v1.3.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.PasswordManagement/1.4.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.PasswordManagement v1.4.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cloud-based-workload-protection-for-vmware-cloud-foundation&#34;&gt;Cloud-Based Workload Protection for VMware Cloud Foundation&lt;/h3&gt;
+&lt;p&gt;We are delighted to announce the release of this brand-new VMware Validated Solution.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #18 (July 2023)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-18/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-18/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 25-July-2023&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #18 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, today we announced the following updates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for VMware Cloud Foundation 5.0.0 for the remaining VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Added guidance for vRealize Suite Lifecycle Manager Upgrade to vRealize Suite based VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Added enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Intelligent Operations Management for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open-source Projects
+&lt;ul&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.5.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.5.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.Reporting/2.3.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.Reporting v2.3.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.CertificateManagement/1.2.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.CertificateManagement v1.2.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.PowerManagement/1.2.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.PowerManagement v1.2.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;added-support-for-vmware-cloud-foundation-500&#34;&gt;Added Support for VMware Cloud Foundation 5.0.0&lt;/h3&gt;
+&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.0.0 for the remaining VMware Validated Solutions:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #17 (June 2023)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-17/</link>
+      <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-17/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 27-June-2023&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #17 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, today we announced the following updates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for VMware Cloud Foundation 5.0.0&lt;/li&gt;
+&lt;li&gt;Open-source Projects
+&lt;ul&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.4.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.4.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.Reporting/2.2.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.Reporting v2.2.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.CertificateManagement/1.1.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.CertificateManagement v1.1.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.PasswordManagement/1.2.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.PasswordManagement v1.2.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;added-support-for-vmware-cloud-foundation-500&#34;&gt;Added Support for VMware Cloud Foundation 5.0.0&lt;/h3&gt;
+&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.0.0 of the following VMware Validated Solutions.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #16 (May 2023)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-16/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-16/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 30-May-2023&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #16 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, today we announced the following updates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; - &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-network-visibility-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Network Visibility for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added support for VMware Cloud Foundation 4.5.1&lt;/li&gt;
+&lt;li&gt;Added enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/intelligent-logging-and-analytics-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Intelligent Logging and Analytics for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/health-reporting-monitoring-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Health Reporting and Monitoring for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-intelligent-operations-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Intelligent Operations for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updates for re-branding from VMware vRealize to VMware Aria for SaaS-enabled Solutions&lt;/li&gt;
+&lt;li&gt;Open-source Projects
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Module&lt;/strong&gt; &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.CertificateManagement/1.0.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.CertificateManagement v1.0.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.Reporting/2.1.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.Reporting v2.1.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VMware.CloudFoundation.PasswordManagement/1.1.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware.CloudFoundation.PasswordManagement v1.1.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.3.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.3.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;o	Release of Python Module for &lt;a
+	
+		href = &#34;https://pypi.org/project/vmware-cloud-foundation-health-monitoring/1.1.0/&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware Cloud Foundation Health Monitoring in vRealize Operations v1.1.0
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cloud-based-network-visibility-for-vmware-cloud-foundation&#34;&gt;Cloud-Based Network Visibility for VMware Cloud Foundation&lt;/h3&gt;
+&lt;p&gt;The &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-network-visibility-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Network Visibility for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt; validated solution provides cloud-based intelligent network analytics and reporting for VMware Cloud Foundation infrastructure components using VMware Aria Operations for Networks (SaaS).&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #15 (Apr 2023)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-15/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-15/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 25-Apr-2023&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #15 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, today we announced the following updates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Update to &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-intelligent-logging-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Intelligent Logging for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of the &lt;a
+	
+		href = &#34;https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerShell Module for VMware Cloud Foundation Password Management
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updated release of &lt;a
+	
+		href = &#34;https://github.com/vmware/powershell-module-for-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerShell Module for VMware Cloud Foundation APIs
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updated release of &lt;a
+	
+		href = &#34;https://github.com/vmware-samples/power-validated-solutions-for-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerShell Module for VMware Validated Solutions
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cloud-based-intelligent-logging-for-vmware-cloud-foundation&#34;&gt;Cloud-Based Intelligent Logging for VMware Cloud Foundation&lt;/h3&gt;
+&lt;p&gt;A minor design decision updated in the &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-intelligent-logging-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Intelligent Logging for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt; validated solution:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #14 (Mar 2023)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-14/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-14/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 28-Mar-2023&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #14 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, today we announced the following updates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; - &lt;a
+	
+		href = &#34;https://core.vmware.com/health-reporting-monitoring-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Health Reporting and Monitoring for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; - &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-intelligent-logging-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Intelligent Logging for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.1.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.1.0
+	&lt;/span&gt;
+&lt;/a&gt;, our PowerShell module developed to ensure robustness, consistency, and accelerate implementation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Delighted to announce the release of two brand new VMware Validated Solutions this month.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #13 (Feb 2023)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-13/</link>
+      <pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-13/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 28-Feb-2023&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #13 of the What&#39;s New for VMware Validated Solutions, today we announced the following updates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-intelligent-operations-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Intelligent Operations for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added enhancements to &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-automation-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Automation for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cloud-based-intelligent-operations-for-vmware-cloud-foundation&#34;&gt;Cloud-Based Intelligent Operations for VMware Cloud Foundation&lt;/h3&gt;
+&lt;p&gt;&lt;a
+	
+		href = &#34;https://core.vmware.com/detailed-design-cloud-based-intelligent-operations&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Detailed Design
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s New for VMware Validated Solutions - Edition #12 (Jan 2023)</title>
+      <link>http://localhost:1313/post/vvs-whats-new/edition-12/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vvs-whats-new/edition-12/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 31-Jan-2023&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #12 of the What&#39;s New for VMware Validated Solutions, today we announced the following updates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; - &lt;a
+	
+		href = &#34;https://core.vmware.com/cloud-based-intelligent-operations-vmware-cloud-foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Cloud-Based Intelligent Operations for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Enhancements to Password Policy Configuration within Identity and Access Management for VMware Cloud Foundation&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.0.0&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		PowerValidatedSolutions v2.0.0
+	&lt;/span&gt;
+&lt;/a&gt;, our PowerShell module developed to ensure robustness, consistency, and accelerate implementation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cloud-based-intelligent-operations-for-vmware-cloud-foundation&#34;&gt;Cloud-Based Intelligent Operations for VMware Cloud Foundation&lt;/h3&gt;
+&lt;p&gt;Delighted to announce the release of this brand new VMware Validated Solution.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

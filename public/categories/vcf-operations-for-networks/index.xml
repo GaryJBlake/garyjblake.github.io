@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VCF Operations for Networks on My Cloudy World</title>
+    <link>http://localhost:1313/categories/vcf-operations-for-networks/</link>
+    <description>Recent content in VCF Operations for Networks on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2024, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vcf-operations-for-networks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obtaining a Token Using Curl for VCF Operations for Networks</title>
+      <link>http://localhost:1313/post/ops-for-networks/ofn-curl-authentication/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/ops-for-networks/ofn-curl-authentication/</guid>
+      <description>
+        
+          
+            &lt;p&gt;In this post we will look at the process of obtaining an authentication token from VCF Operations for networks which we can then use in subsequent API requests.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VCF Operations for Networks APIs Used&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;POST /api/ni/auth/token&lt;/li&gt;
+&lt;li&gt;DELETE /api/ni/auth/token&lt;/li&gt;
+&lt;li&gt;GET /api/ni/info/version&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;obtaining-an-authentication-token-from-vcf-operations-for-networks&#34;&gt;Obtaining an Authentication Token From VCF Operations for Networks&lt;/h3&gt;
+&lt;p&gt;In this procedure, we will use the &lt;strong&gt;/api/ni/auth/token&lt;/strong&gt; API passing valid credentials to perform the authentication process and obtain an authentication token for the session. Then reading the response from the curl request we will extract the &lt;em&gt;token&lt;/em&gt; portion placing it into a variable named &lt;em&gt;TOKEN&lt;/em&gt;. Once we have done this we will have a valid authentication token which can be used within future curl requests.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

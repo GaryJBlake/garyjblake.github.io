@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerShell on My Cloudy World</title>
+    <link>http://localhost:1313/categories/powershell/</link>
+    <description>Recent content in PowerShell on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2024, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 21 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Native PowerCLI Modules for VMware Cloud Foundation</title>
+      <link>http://localhost:1313/post/vcf/vcf-powercli-main/</link>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf/vcf-powercli-main/</guid>
+      <description>
+        
+          
+            &lt;h3 id=&#34;the-birth-of-powervcf&#34;&gt;The Birth of PowerVCF&lt;/h3&gt;
+&lt;p&gt;Back in January 2020 my friend and colleague &lt;a
+	
+		href = &#34;https://lifeofbrianoc.com&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Brian OConnell
+	&lt;/span&gt;
+&lt;/a&gt; embarked on a community project to write a PowerShell module to make consumption of the VMware Cloud Foundation APIs simple and easy to consume by VI Admins, each cmdlet was hand-built using standard PowerShell verbs that the community is well versed in consuming. He saw that the need for automation within our customer based was growing and at the time there was no alternative solution available.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Automating VCF Upgrade - Workload Domains</title>
+      <link>http://localhost:1313/post/vcf/vcf-automated-upgrade-04/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf/vcf-automated-upgrade-04/</guid>
+      <description>
+        
+          
+            &lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
+&lt;p&gt;This is the final part of my blog series in which I talk about automating the VMware Cloud Foundation upgrade process. At this point you should have completed the following tasks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Downloaded All Bundles&lt;/li&gt;
+&lt;li&gt;Initial Health Check&lt;/li&gt;
+&lt;li&gt;SDDC Manager Upgrade&lt;/li&gt;
+&lt;li&gt;SDDC Manager Configuration Drift Update&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are now ready to begin the process of upgrading the individual components within a Workload Domain, for this we must first start with the Management Domain before we can carry out any component upgrades of a VI Workload Domain. The actual process is performed in the following way:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Automating VCF Upgrade - SDDC Manager</title>
+      <link>http://localhost:1313/post/vcf/vcf-automated-upgrade-03/</link>
+      <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf/vcf-automated-upgrade-03/</guid>
+      <description>
+        
+          
+            &lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
+&lt;p&gt;This is part three of a four part blog series in which I talk about automating the VMware Cloud Foundation upgrade process. If you have been following the series so far then you will have your bundles downloaded, and performed various health checks to confirm that all is well and will now be ready to start the upgrade process.&lt;/p&gt;
+&lt;p&gt;Upgrading VMware Cloud Foundation is a multi-stage process, this post will focus on upgrading SDDC Manager which in itself involves two step:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Automating VCF Upgrade - Perform Health Checks</title>
+      <link>http://localhost:1313/post/vcf/vcf-automated-upgrade-02/</link>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf/vcf-automated-upgrade-02/</guid>
+      <description>
+        
+          
+            &lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
+&lt;p&gt;This is part two of a four part blog series in which I talk about automating the VMware Cloud Foundation upgrade process. In part one we discussed downloading the bundles to SDDC Manager to prepare the system for the upgrade process, in this post we discuss performing the upgrade pre-checks.&lt;/p&gt;
+&lt;p&gt;Ensuring your VMware Cloud Foundation instance is healthy prior to starting an upgrade is critical to a successful upgrade, SDDC Manager itself has a pre-check process which is executed on a per workload domain basis. Depending on the version of VMware Cloud Foundation your upgrading from this pre-check has seen some significant improvements over time. In addition to executing the specific workload domain pre-check at the SDDC Manager level our team released a PowerShell Module last year called &lt;code&gt;VMware.CloudFoundation.Reporting&lt;/code&gt; which can be utilized in conjunction with the internal pre-check to perform additional health checks prior to starting an upgrade step.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Automating the Upgrade of VMware Cloud Foundation with APIs/PowerVCF/PowerShell</title>
+      <link>http://localhost:1313/post/vcf/vcf-automated-upgrade/</link>
+      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf/vcf-automated-upgrade/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 21-Sep-2023&lt;/p&gt;
+&lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
+&lt;p&gt;A couple of years ago I wrote a series of blogs (&lt;a
+	
+		href = &#34;/archive/2020/powervcf-automation&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		see here
+	&lt;/span&gt;
+&lt;/a&gt;) which discussed the process of automating the deployment procedures of VMware Cloud Foundation using the Public APIs, in this new series we will take a look at how we can automate the steps involved in upgrading VMware Cloud Foundation from one release to another.&lt;/p&gt;
+&lt;p&gt;But before we can begin performing any actual upgrade steps we must carry out some prerequisites which include:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Automating VCF Upgrade - Download Release Bundles</title>
+      <link>http://localhost:1313/post/vcf/vcf-automated-upgrade-01/</link>
+      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf/vcf-automated-upgrade-01/</guid>
+      <description>
+        
+          
+            &lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
+&lt;p&gt;In order to upgrade VMware Cloud Foundation you must first download the upgrade bundles, I recently wrote a blog &lt;a
+	
+		href = &#34;/post/vcf/vcf-bundle-download&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Automating the Download of VCF Bundles for a Release
+	&lt;/span&gt;
+&lt;/a&gt; on this topic which I shared a script &lt;em&gt;&lt;strong&gt;vcfBundleDownload.ps1&lt;/strong&gt;&lt;/em&gt; which can be downloaded from &lt;a
+	
+		href = &#34;https://github.com/GaryJBlake/my-cloudy-world-scripts/blob/main/PowerShell/vcf/scripts/requestBundleDownloadList-4410.json&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		GitHub
+	&lt;/span&gt;
+&lt;/a&gt; which we will utilize as part of the procedure here. The script takes a JSON as input where we define the bundle IDs for download but as part of this post I will share a way to automate that part too.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
