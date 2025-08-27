@@ -9,7 +9,7 @@
   
   >
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-<title>Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation | My Cloudy World</title>
+<title>Password Policy Configuration for VMware Cloud Foundation Overview | My Cloudy World</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,13 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation" />
+<meta name="description" content="Password Policy Configuration for VMware Cloud Foundation Overview" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@garyjblake">
-<meta name="twitter:title" content="Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation" />
-<meta property="og:url" content="http://localhost:1313/post/vvs/vvs-vrslcm-upgrade/" />
-<meta property="og:title" content="Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation" />
-<meta property="og:description" content="Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation" />
+<meta name="twitter:title" content="Password Policy Configuration for VMware Cloud Foundation Overview" />
+<meta property="og:url" content="http://localhost:1313/archive/2023/vvs-password-policy/" />
+<meta property="og:title" content="Password Policy Configuration for VMware Cloud Foundation Overview" />
+<meta property="og:description" content="Password Policy Configuration for VMware Cloud Foundation Overview" />
 <meta property="og:image" content="http://localhost:1313/images/thumbnail.png" />
   <meta name="keywords" content="VMware,cloud,virtualization,vcf,cloud foundation" />
 
@@ -31,7 +31,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/favicon-32x32.png">
 <link rel="manifest" href="http://localhost:1313/icons/site.webmanifest">
 
-<link rel="canonical" href="http://localhost:1313/post/vvs/vvs-vrslcm-upgrade/">
+<link rel="canonical" href="http://localhost:1313/archive/2023/vvs-password-policy/">
 
 
 
@@ -143,7 +143,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation</h1>
+    <h1 class="post_title">Password Policy Configuration for VMware Cloud Foundation Overview</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -151,23 +151,23 @@
 </svg>
 </span>
     <span class="post_date">
-      Jul 27, 2023</span>
-    <span class="post_time"> · 4 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/aria-suite-lifecycle' title="Aria Suite Lifecycle" class="post_tag button button_translucent">Aria Suite Lifecycle
-        </a><a href='http://localhost:1313/tags/vrealize-suite-lifecycle-manager' title="vRealize Suite Lifecycle Manager" class="post_tag button button_translucent">vRealize Suite Lifecycle Manager
+      Feb 16, 2023</span>
+    <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/api' title="API" class="post_tag button button_translucent">API
+        </a><a href='http://localhost:1313/tags/powershell' title="PowerShell" class="post_tag button button_translucent">PowerShell
         </a><a href='http://localhost:1313/tags/vvs' title="VVS" class="post_tag button button_translucent">VVS
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Upgrading%20vRealize%20Suite%20Lifecycle%20Manager%20with%20VMware%20Cloud%20Foundation&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fvvs%2fvvs-vrslcm-upgrade%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Password%20Policy%20Configuration%20for%20VMware%20Cloud%20Foundation%20Overview&url=http%3a%2f%2flocalhost%3a1313%2farchive%2f2023%2fvvs-password-policy%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fvvs%2fvvs-vrslcm-upgrade%2f&t=Upgrading%20vRealize%20Suite%20Lifecycle%20Manager%20with%20VMware%20Cloud%20Foundation" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2farchive%2f2023%2fvvs-password-policy%2f&t=Password%20Policy%20Configuration%20for%20VMware%20Cloud%20Foundation%20Overview" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -181,7 +181,7 @@
 </svg>
 
     </a>
-    <a href="http://localhost:1313/post/vvs/vvs-vrslcm-upgrade/" title="Copy Link" class="link link_yank">
+    <a href="http://localhost:1313/archive/2023/vvs-password-policy/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -192,77 +192,41 @@
   </span>
   </div>
 
-    <div class="post_body"><p>VMware Cloud Foundation has come a long way in recent years, one of the biggest developments introduced a few releases back centred around the relaxation of a strict Bill of Materials (BoM) as it pertained to the vRealize Suite (<a
+    <div class="post_body"><p><strong>Last Updated:</strong> 25-Apr-2023</p>
+<p>Password Policy Configuration may not be that important to some but for security teams it’s critical for ensuring their organization is protected. If you have ever looked deep into this area when it comes to VMware Cloud Foundation and the components involved you will quickly realize that unfortunately VMware today does not make things easy for our customers. We have:</p>
+<ul>
+<li>lack of consistency with default values</li>
+<li>lack of consistency with common parameters</li>
+<li>lack of consistency with API methods</li>
+<li>lack of consistency with terminology and language</li>
+</ul>
+<p>This is why with the January Update to VMware Validated Solutions (<a
 	
-		href = "/archive/2022/vcf-vrealize-flexibility"
+		href = "https://blogs.vmware.com/cloud-foundation/2023/01/31/vmware-validated-solutions-jan-2023-update/"
 	
 
 	
 
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
 	>
 
 	<span>
 		see here
 	</span>
-</a>), the intent being to enable our customers to update the underlying vRealize Suite components faster to adopt new features.</p>
-<p>One of the largest and most complex challenges of any integrated software stack is ensuring that the latest and greatest products and features are available to our customers, this is especially so at VMware as we have a number of business groups who own the underlying products consumed by VMware Cloud Foundation. Not every VMware customer is a consumer of VMware Cloud Foundation and these products such as NSX and vRealize Suite can be consumed without VMware Cloud Foundation in the mix and so each of these business groups have their own drivers and commitments to keep on top of supporting and working with the VMware Cloud Foundation engineering teams. As a consequence of this and not forgetting a multitude of different release dates, all of these factors have an impact on the BoM that lands for VMware Cloud Foundation at its release date where a significant amount of workflow testing has to be carried out with the slightest of BoM changes.</p>
-<p><strong>Why am I telling you all this?</strong> Well, I think it’s important that you as a customer have an appreciation of the complex nature  in which the VMware Cloud Foundation engineering teams operate on a daily basis. With all of the aforementioned challenges around BoM interoperability and working on VMware Cloud Foundation features and enhancements sometimes tough decisions have to be made by the Product Management team, and such an example concerns VMware Cloud Foundation 4.5.1 and the version of vRealize Suite Lifecycle Manager it deploys.</p>
-<p>I’m not privy to the background behind this particular decision, I myself just came to know recently based on some VMware Validated Solution related work, but if you're deploying VMware Cloud Foundation 4.5.1 you will be deploying vRealize Suite Lifecycle Manager 8.8.2 which as it turns out went what VMware calls End of General Support (EOGS) on 2023-04-28 (<a
-	
-		href = "https://lifecycle.vmware.com/"
-	
-
-	
-
-	
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-	>
-
-	<span>
-		see VMware Product Lifecycle Matrix
-	</span>
-</a>).</p>
-<p><strong>What does this all mean?</strong> This basically means you as the customer must upgrade vRealize Suite Lifecycle Manager immediately to remain within the scope of general support before proceeding with deploying any additional vRealize Suite products.</p>
-<p>This VMware KB article <a
-	
-		href = "https://kb.vmware.com/s/article/88829"
-	
-
-	
-
-	
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-	>
-
-	<span>
-		KB88829
-	</span>
-</a> was created when the flexible BoM was introduced but if you have looked at it recently you will have noticed that its starting to look a little bit complex. As a result for the July 2023 update to the vRealize Suite based VMware Validated Solutions along with introducing support for VMware Cloud Foundation 5.0 we decided to include a new section to help navigate these complexities.</p>
-<p>The basic essence is to direct the user on what needs to be done for either VMware Cloud Foundation 4.5.1 or VMware Cloud Foundation 5.0.0 to vRealize Suite Lifecycle Manager to upgrade or patch to a consistent version this being vRealize Suite Lifecycle Manager 8.10 PATCH1 with Product Support Pack 14.</p>
-<p>Details for each <a
-	
-		href = "https://core.vmware.com/vmware-validated-solutions"
-	
-
-	
-
-	
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-	>
-
-	<span>
-		VMware Validated Solution
-	</span>
-</a> can be found using the following links:</p>
+</a>) we have spent a significant amount of time reviewing and rewriting all aspects of our content as it relates to Password Policy Configuration.</p>
+<p>The first hurdle we needed to address related to terminology, after digging through product documentation, user interfaces and general pocking around it became clear that Password Policies can be consistently thrown into three main buckets as follows:</p>
 <ul>
-<li>Intelligent Logging and Analytics for VMware Cloud Foundation
-<ul>
-<li><a
+<li>Password Expiration</li>
+<li>Password Complexity</li>
+<li>Account Lockout</li>
+</ul>
+<p>Once we had this defined we found it much easier to understand and capture the specifics on a product by product basis.</p>
+<p>The second hurdle involved establishing what methods were required in order to review or alter the various policy parameters by product.</p>
+<p>The outcome of this work has resulted firstly in a completely new section, <a
 	
-		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-logging-and-analytics-v1/GUID-1B4ED70F-B95D-4988-8531-3F942A26BC06.html"
+		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-18A95158-30F5-460F-AF80-33F25B6533D0.html"
 	
 
 	
@@ -273,76 +237,86 @@
 	>
 
 	<span>
-		Deployment of vRealize Suite Lifecycle Manager for Intelligent Logging and Analytics for VMware Cloud Foundation
+		Password Policy Configuration for VMware Cloud Foundation
 	</span>
-</a></li>
+</a> being added into the <a
+	
+		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-BE7C1509-709A-4A56-875B-EAC5EA61BB56.html"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VMware Cloud Foundation Operations Guide
+	</span>
+</a>. The new content includes procedures for configuring password expiration, password complexity and account lockout through the user interface and PowerShell using the <a
+	
+		href = "https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		PowerShell Module for VMware Cloud Foundation Password Management
+	</span>
+</a> providing coverage for:</p>
+<ul>
+<li>ESXi</li>
+<li>vCenter Server</li>
+<li>NSX</li>
+<li>SDDC Manager</li>
+</ul>
+<p>And secondly from a VMware Validated Solution perspective enhancements have been included to the <a
+	
+		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-identity-and-access-management-v1/GUID-FF35966D-2225-4825-9E38-C7287B069D4D.html"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Identity and Access Management for VMware Cloud Foundation
+	</span>
+</a>, these enhancements include:</p>
+<ul>
+<li>Design decisions for password expiration, password complexity and account lockout password policies for:
+<ul>
+<li>ESXi</li>
+<li>vCenter Server</li>
+<li>NSX</li>
+<li>SDDC Manager</li>
+<li>Workspace ONE Access</li>
 </ul>
 </li>
-<li>Intelligent Operations Management for VMware Cloud Foundation
+<li>Operational guidance for the configuration of password expiration, password complexity and account lockout password policies.</li>
+<li>Operational guidance for performing Password Policy Configuration with the Password Policy Manager in PowerShell.</li>
+</ul>
+<h4 id="what-is-password-policy-manager">What is Password Policy Manager?</h4>
+<p>Password Policy Manager essentially refers to the collection of PowerShell functions which when combined enable you to automate one of the following use cases:</p>
 <ul>
-<li><a
-	
-		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-operations-management-v1/GUID-E177B09A-74F6-45E5-9C7A-854888551207.html"
-	
-
-	
-
-	
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-	>
-
-	<span>
-		Deployment of vRealize Suite Lifecycle Manager and Workspace ONE Access for Intelligent Operations Management for VMware Cloud Foundation
-	</span>
-</a></li>
+<li>Generate a clarity based HTML report to capture the current state of the password expiration, password complexity and account lockout policies across a VMware Cloud Foundation instance.</li>
+<li>Generate a clarity based HTML report to compare the current state of the password expiration, password complexity and account lockout policies across a VMware Cloud Foundation instance with desired state config defined in a JSON file.</li>
+<li>Configure password expiration, password complexity and account lockout policies across a VMware Cloud Foundation instance using the desired state config defined in a JSON file.</li>
 </ul>
-</li>
-<li>Private Cloud Automation for VMware Cloud Foundation
+<p>In a future post I will provide more information on how to use Password Policy Manager specifically but for now the key functions to be aware of are:</p>
 <ul>
-<li><a
-	
-		href = "https://docs-staging.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-FD5C8968-55A8-463A-BE30-CC369A11EDCC.html"
-	
-
-	
-
-	
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-	>
-
-	<span>
-		Deployment of vRealize Suite Lifecycle Manager and Workspace ONE Access for Private Cloud Automation for VMware Cloud Foundation
-	</span>
-</a></li>
+<li><code>Invoke-PasswordPolicyManager</code> – a dedicated cmdlet to generate the HTML reports with or without configuration drift.</li>
+<li><code>Start-PasswordPolicyConfig</code> – a dedicated cmdlet to configure your organization’s password policy requirements across the platform.</li>
 </ul>
-</li>
-</ul>
-<p>Within these sections you will find a table for each VMware Cloud Foundation release which directs you through the steps that you follow to deploy and upgrade the relevant components consuming either content from the official VMware Cloud Foundation Administration Guide or a new library of procedures developed by the VMware Validated Solutions team directly in the solution guide.</p>
-<p>After following these procedures the highest versions of the vRealize Suite components will be as follows:</p>
-<table>
-  <thead>
-      <tr>
-          <th>Component</th>
-          <th>Version</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>vRealize Log Insight</td>
-          <td><p style="text-align: center;">v8.10.2</p></td>
-      </tr>
-      <tr>
-          <td>vRealize Operations</td>
-          <td><p style="text-align: center;">v8.10.2</p></td>
-      </tr>
-      <tr>
-          <td>vRealize Automation</td>
-          <td><p style="text-align: center;">v8.11.2</p></td>
-      </tr>
-  </tbody>
-</table>
 
     </div>
 
@@ -367,7 +341,7 @@
     
   
   <div class="search">
-    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='post'>
+    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='archive'>
     <label for="find" class="search_label"><svg class="icon">
   <title>search</title>
   <use xlink:href="#search"></use>

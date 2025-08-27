@@ -9,7 +9,7 @@
   
   >
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-<title>Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation | My Cloudy World</title>
+<title>Generating Password Policy Reports for VMware Cloud Foundation | My Cloudy World</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,13 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation" />
+<meta name="description" content="Generating Password Policy Reports for VMware Cloud Foundation" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@garyjblake">
-<meta name="twitter:title" content="Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation" />
-<meta property="og:url" content="http://localhost:1313/post/vvs/vvs-vrslcm-upgrade/" />
-<meta property="og:title" content="Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation" />
-<meta property="og:description" content="Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation" />
+<meta name="twitter:title" content="Generating Password Policy Reports for VMware Cloud Foundation" />
+<meta property="og:url" content="http://localhost:1313/archive/2023/vvs-password-policy-reports/" />
+<meta property="og:title" content="Generating Password Policy Reports for VMware Cloud Foundation" />
+<meta property="og:description" content="Generating Password Policy Reports for VMware Cloud Foundation" />
 <meta property="og:image" content="http://localhost:1313/images/thumbnail.png" />
   <meta name="keywords" content="VMware,cloud,virtualization,vcf,cloud foundation" />
 
@@ -31,7 +31,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/favicon-32x32.png">
 <link rel="manifest" href="http://localhost:1313/icons/site.webmanifest">
 
-<link rel="canonical" href="http://localhost:1313/post/vvs/vvs-vrslcm-upgrade/">
+<link rel="canonical" href="http://localhost:1313/archive/2023/vvs-password-policy-reports/">
 
 
 
@@ -143,7 +143,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation</h1>
+    <h1 class="post_title">Generating Password Policy Reports for VMware Cloud Foundation</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -151,23 +151,23 @@
 </svg>
 </span>
     <span class="post_date">
-      Jul 27, 2023</span>
-    <span class="post_time"> · 4 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/aria-suite-lifecycle' title="Aria Suite Lifecycle" class="post_tag button button_translucent">Aria Suite Lifecycle
-        </a><a href='http://localhost:1313/tags/vrealize-suite-lifecycle-manager' title="vRealize Suite Lifecycle Manager" class="post_tag button button_translucent">vRealize Suite Lifecycle Manager
+      Feb 23, 2023</span>
+    <span class="post_time"> · 4 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/api' title="API" class="post_tag button button_translucent">API
+        </a><a href='http://localhost:1313/tags/powershell' title="PowerShell" class="post_tag button button_translucent">PowerShell
         </a><a href='http://localhost:1313/tags/vvs' title="VVS" class="post_tag button button_translucent">VVS
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Upgrading%20vRealize%20Suite%20Lifecycle%20Manager%20with%20VMware%20Cloud%20Foundation&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fvvs%2fvvs-vrslcm-upgrade%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Generating%20Password%20Policy%20Reports%20for%20VMware%20Cloud%20Foundation&url=http%3a%2f%2flocalhost%3a1313%2farchive%2f2023%2fvvs-password-policy-reports%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fvvs%2fvvs-vrslcm-upgrade%2f&t=Upgrading%20vRealize%20Suite%20Lifecycle%20Manager%20with%20VMware%20Cloud%20Foundation" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2farchive%2f2023%2fvvs-password-policy-reports%2f&t=Generating%20Password%20Policy%20Reports%20for%20VMware%20Cloud%20Foundation" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -181,7 +181,7 @@
 </svg>
 
     </a>
-    <a href="http://localhost:1313/post/vvs/vvs-vrslcm-upgrade/" title="Copy Link" class="link link_yank">
+    <a href="http://localhost:1313/archive/2023/vvs-password-policy-reports/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -192,9 +192,10 @@
   </span>
   </div>
 
-    <div class="post_body"><p>VMware Cloud Foundation has come a long way in recent years, one of the biggest developments introduced a few releases back centred around the relaxation of a strict Bill of Materials (BoM) as it pertained to the vRealize Suite (<a
+    <div class="post_body"><p><strong>Last Updated:</strong> 25-Apr-2023</p>
+<p>In a recent blog (<a
 	
-		href = "/archive/2022/vcf-vrealize-flexibility"
+		href = "/archive/2023/vvs-password-policy"
 	
 
 	
@@ -204,12 +205,10 @@
 	<span>
 		see here
 	</span>
-</a>), the intent being to enable our customers to update the underlying vRealize Suite components faster to adopt new features.</p>
-<p>One of the largest and most complex challenges of any integrated software stack is ensuring that the latest and greatest products and features are available to our customers, this is especially so at VMware as we have a number of business groups who own the underlying products consumed by VMware Cloud Foundation. Not every VMware customer is a consumer of VMware Cloud Foundation and these products such as NSX and vRealize Suite can be consumed without VMware Cloud Foundation in the mix and so each of these business groups have their own drivers and commitments to keep on top of supporting and working with the VMware Cloud Foundation engineering teams. As a consequence of this and not forgetting a multitude of different release dates, all of these factors have an impact on the BoM that lands for VMware Cloud Foundation at its release date where a significant amount of workflow testing has to be carried out with the slightest of BoM changes.</p>
-<p><strong>Why am I telling you all this?</strong> Well, I think it’s important that you as a customer have an appreciation of the complex nature  in which the VMware Cloud Foundation engineering teams operate on a daily basis. With all of the aforementioned challenges around BoM interoperability and working on VMware Cloud Foundation features and enhancements sometimes tough decisions have to be made by the Product Management team, and such an example concerns VMware Cloud Foundation 4.5.1 and the version of vRealize Suite Lifecycle Manager it deploys.</p>
-<p>I’m not privy to the background behind this particular decision, I myself just came to know recently based on some VMware Validated Solution related work, but if you're deploying VMware Cloud Foundation 4.5.1 you will be deploying vRealize Suite Lifecycle Manager 8.8.2 which as it turns out went what VMware calls End of General Support (EOGS) on 2023-04-28 (<a
+</a>) I provided an overview of Password Policy Configuration for VMware Cloud Foundation, in this blog we will take a deep dive on using <code>Invoke-PasswordPolicyManager</code> to generate the password policy reports.</p>
+<p>The <code>Invoke-PasswordPolicyManager</code> cmdlet is part of the <a
 	
-		href = "https://lifecycle.vmware.com/"
+		href = "https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management"
 	
 
 	
@@ -220,129 +219,291 @@
 	>
 
 	<span>
-		see VMware Product Lifecycle Matrix
+		PowerShell Module for VMware Cloud Foundation Password Management
 	</span>
-</a>).</p>
-<p><strong>What does this all mean?</strong> This basically means you as the customer must upgrade vRealize Suite Lifecycle Manager immediately to remain within the scope of general support before proceeding with deploying any additional vRealize Suite products.</p>
-<p>This VMware KB article <a
-	
-		href = "https://kb.vmware.com/s/article/88829"
-	
-
-	
-
-	
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-	>
-
-	<span>
-		KB88829
-	</span>
-</a> was created when the flexible BoM was introduced but if you have looked at it recently you will have noticed that its starting to look a little bit complex. As a result for the July 2023 update to the vRealize Suite based VMware Validated Solutions along with introducing support for VMware Cloud Foundation 5.0 we decided to include a new section to help navigate these complexities.</p>
-<p>The basic essence is to direct the user on what needs to be done for either VMware Cloud Foundation 4.5.1 or VMware Cloud Foundation 5.0.0 to vRealize Suite Lifecycle Manager to upgrade or patch to a consistent version this being vRealize Suite Lifecycle Manager 8.10 PATCH1 with Product Support Pack 14.</p>
-<p>Details for each <a
-	
-		href = "https://core.vmware.com/vmware-validated-solutions"
-	
-
-	
-
-	
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-	>
-
-	<span>
-		VMware Validated Solution
-	</span>
-</a> can be found using the following links:</p>
+</a> and provides the ability to generate two types of HTML reports:</p>
 <ul>
-<li>Intelligent Logging and Analytics for VMware Cloud Foundation
-<ul>
-<li><a
-	
-		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-logging-and-analytics-v1/GUID-1B4ED70F-B95D-4988-8531-3F942A26BC06.html"
-	
-
-	
-
-	
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-	>
-
-	<span>
-		Deployment of vRealize Suite Lifecycle Manager for Intelligent Logging and Analytics for VMware Cloud Foundation
-	</span>
-</a></li>
+<li>An HTML report showing the current configuration for password expiration, password complexity and account lockout for each component.</li>
+<li>An HTML report showing the configuration differences for password expiration, password complexity and account lockout for each component.</li>
 </ul>
-</li>
-<li>Intelligent Operations Management for VMware Cloud Foundation
-<ul>
-<li><a
-	
-		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-operations-management-v1/GUID-E177B09A-74F6-45E5-9C7A-854888551207.html"
-	
-
-	
-
-	
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-	>
-
-	<span>
-		Deployment of vRealize Suite Lifecycle Manager and Workspace ONE Access for Intelligent Operations Management for VMware Cloud Foundation
-	</span>
-</a></li>
-</ul>
-</li>
-<li>Private Cloud Automation for VMware Cloud Foundation
-<ul>
-<li><a
-	
-		href = "https://docs-staging.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-FD5C8968-55A8-463A-BE30-CC369A11EDCC.html"
-	
-
-	
-
-	
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-	>
-
-	<span>
-		Deployment of vRealize Suite Lifecycle Manager and Workspace ONE Access for Private Cloud Automation for VMware Cloud Foundation
-	</span>
-</a></li>
-</ul>
-</li>
-</ul>
-<p>Within these sections you will find a table for each VMware Cloud Foundation release which directs you through the steps that you follow to deploy and upgrade the relevant components consuming either content from the official VMware Cloud Foundation Administration Guide or a new library of procedures developed by the VMware Validated Solutions team directly in the solution guide.</p>
-<p>After following these procedures the highest versions of the vRealize Suite components will be as follows:</p>
+<p>As well as the two types of report the cmdlet has a number of command line parameters:</p>
 <table>
   <thead>
       <tr>
-          <th>Component</th>
-          <th>Version</th>
+          <th>CLI Parameters</th>
+          <th>Required</th>
+          <th>Description</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>vRealize Log Insight</td>
-          <td><p style="text-align: center;">v8.10.2</p></td>
+          <td>sddcManagerFqdn</td>
+          <td>required</td>
+          <td>FQDN for SDDC Manager appliance</td>
       </tr>
       <tr>
-          <td>vRealize Operations</td>
-          <td><p style="text-align: center;">v8.10.2</p></td>
+          <td>sddcManagerUser</td>
+          <td>required</td>
+          <td>User account for SDDC Manager with ADMIN role</td>
       </tr>
       <tr>
-          <td>vRealize Automation</td>
-          <td><p style="text-align: center;">v8.11.2</p></td>
+          <td>sddcManagerPass</td>
+          <td>required</td>
+          <td>Password for the SDDC Manager user</td>
+      </tr>
+      <tr>
+          <td>sddcRootPass</td>
+          <td>required</td>
+          <td>Password of the root account</td>
+      </tr>
+      <tr>
+          <td>reportPath</td>
+          <td>required</td>
+          <td>Folder location where reports are created and configuration JSON file resides</td>
+      </tr>
+      <tr>
+          <td>allDomains</td>
+          <td>required</td>
+          <td>Generate a report for the complete SDDC Manager instance</td>
+      </tr>
+      <tr>
+          <td>workloadDomain</td>
+          <td>required</td>
+          <td>Generate a report for a specific Workload Domain</td>
+      </tr>
+      <tr>
+          <td>drift</td>
+          <td>optional</td>
+          <td>Generate a report and compare against the configuration JSON file</td>
+      </tr>
+      <tr>
+          <td>policyFile</td>
+          <td>optional</td>
+          <td>Name of the configuration JSON file used to compare the configuration</td>
+      </tr>
+      <tr>
+          <td>darkMode</td>
+          <td>optional</td>
+          <td>Generate the HTML report in dark mode</td>
+      </tr>
+      <tr>
+          <td>wsaFqdn</td>
+          <td>optional</td>
+          <td>FQDN for Workspace ONE Access to be included in the report</td>
+      </tr>
+      <tr>
+          <td>wsaRootPass</td>
+          <td>optional</td>
+          <td>User account for Workspace ONE Access with administrator role</td>
+      </tr>
+      <tr>
+          <td>wsaAdminPass</td>
+          <td>optional</td>
+          <td>Password for the Workspace ONE Access  user</td>
       </tr>
   </tbody>
 </table>
+<p>Each report is self-contained in that the CSS styling is included as part of the HTML file, this means once generated you can share the report with others without loosing any formatting or content.</p>
+<p>Now lets take a look at a few examples.</p>
+<h3 id="example-report-1---password-policy-report-for-all-workload-domains">Example Report 1 - Password Policy Report for All Workload Domains</h3>
+<p>For example report 1, we are going to generate the Password Policy Report for all Workload Domains. For this report we use the following command line parameters:</p>
+<ul>
+<li>sddcManagerFqdn</li>
+<li>sddcManagerUser</li>
+<li>sddcManagerPass</li>
+<li>sddcRootPass</li>
+<li>reportPath</li>
+<li>allDomains</li>
+<li>darkMode</li>
+</ul>
+<p><strong>Generate Password Policy Manager Report</strong></p>
+<ol>
+<li>Start Windows PowerShell.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Invoke-PasswordPolicyManager</span> <span class="n">-sddcManagerFqdn</span> <span class="s1">&#39;sfo-vcf01.sfo.rainpole.io&#39;</span> <span class="n">-sddcManagerUser</span> <span class="s1">&#39;admin@local&#39;</span> <span class="n">-sddcManagerPass</span> <span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span> <span class="n">-sddcRootPass</span> <span class="s1">&#39;VMw@re1!&#39;</span> <span class="n">-reportPath</span> <span class="s1">&#39;F:\Reporting&#39;</span> <span class="n">-darkMode</span> <span class="n">-allDomains</span>
+</span></span></code></pre></div><p><strong>Console Output - Example Report 1</strong></p>
+<p>This screenshot displays the output of the <code>Invoke-PasswordPolicyManager</code> cmdlet on the console.
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=""
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/archive/2023/ppm-report-command.png"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+<p><strong>HTML Report - Example Report 1</strong></p>
+<p>Once the report is ready, if executed on a Windows system the report is automatically opened in the default browser but if run on Linux you have to manually open the HTML file from the reporting folder to view.
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=""
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/archive/2023/ppm-report-html.png"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+<h3 id="example-report-2---password-policy-report-with-configuration-drift-for-all-workload-domains">Example Report 2 - Password Policy Report with Configuration Drift for All Workload Domains</h3>
+<p>For example report 2, we are going to generate the Password Policy Report for all Workload Domains with configuration drift. For this report we use the following command line parameters:</p>
+<ul>
+<li>sddcManagerFqdn</li>
+<li>sddcManagerUser</li>
+<li>sddcManagerPass</li>
+<li>sddcRootPass</li>
+<li>reportPath</li>
+<li>allDomains</li>
+<li>darkMode</li>
+<li>drift</li>
+<li>policyFile</li>
+</ul>
+<p>Because we are comparing the current configuration of each component against a desired state configuration we must first create a configuration JSON file and then update the values to align to the desired state settings. For this the PowerShell Module for VMware Validated Solutions provides another handy cmdlet called <code>Get-PasswordPolicyDefault</code>, this can be used to create the initial JSON file using the VMware product defaults which you then update accordingly.</p>
+<p><strong>Create Configuration JSON File and Generate Password Policy Manager Report with Configuration Drift</strong></p>
+<ol>
+<li>Start Windows PowerShell.</li>
+<li>Change to the report folder.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">cd </span><span class="n">F:</span><span class="p">\</span><span class="n">Reporting</span>
+</span></span></code></pre></div></li>
+<li>Run the commands in the PowerShell console
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Get-PasswordPolicyDefault</span> <span class="n">-generateJson</span> <span class="n">-jsonFile</span> <span class="s1">&#39;passwordPolicyConfig.json&#39;</span>
+</span></span></code></pre></div></li>
+<li>Open the generated configuration JSON file and updated with desired values and save.</li>
+<li>Run the commands in the PowerShell console</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln">1</span><span class="cl"> <span class="nb">Invoke-PasswordPolicyManager</span> <span class="n">-sddcManagerFqdn</span> <span class="s1">&#39;sfo-vcf01.sfo.rainpole.io&#39;</span> <span class="n">-sddcManagerUser</span> <span class="s1">&#39;admin@local&#39;</span> <span class="n">-sddcManagerPass</span> <span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span> <span class="n">-sddcRootPass</span> <span class="s1">&#39;VMw@re1!&#39;</span> <span class="n">-reportPath</span> <span class="s1">&#39;F:\Reporting&#39;</span> <span class="n">-darkMode</span> <span class="n">-allDomains</span> <span class="n">-drift</span> <span class="n">-policyFile</span> <span class="s1">&#39;PasswordPolicyConfig.json&#39;</span>
+</span></span></code></pre></div><p><strong>Console Output - Example Report 2</strong></p>
+<p>This screenshot displays the output of the <code>Invoke-PasswordPolicyManager</code> cmdlet on the console, you will see its the same as the first report the difference this time is the output generated in the HTML report.
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=""
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/archive/2023/ppm-drift-command.png"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+<p><strong>HTML Report - Example Report 2</strong></p>
+<p>This time when the report is generated we are presented with the same format and layout as that of the standard report, the difference now is that for each parameter displayed its compared against the configuration JSON file and if a difference is found an additional value is shown within [] brackets. The value contained within the [] is the desired state configuration value, if you see these values it means that the system is not compliant with the desired state configuration  and that some reconfiguration work is required.
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=""
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/archive/2023/ppm-drift-html.png"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Using the <code>Invoke-PasswordPolicyManager</code> cmdlet contained within the <a
+	
+		href = "https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		PowerShell Module for VMware Cloud Foundation Password Management
+	</span>
+</a> you can now easily generate a report to capture the current state configuration of all components across a VMware Cloud Foundation instance, and you can also compare the configuration against the desired state configuration to identify remediation work.</p>
+<p>If you have feedback, suggestions or want to report an issues with using the <a
+	
+		href = "https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		PowerShell Module for VMware Cloud Foundation Password Management
+	</span>
+</a> visit GitHub and open an <a
+	
+		href = "https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management/issues/new/choose"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		issue
+	</span>
+</a></p>
 
     </div>
 
@@ -367,7 +528,7 @@
     
   
   <div class="search">
-    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='post'>
+    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='archive'>
     <label for="find" class="search_label"><svg class="icon">
   <title>search</title>
   <use xlink:href="#search"></use>

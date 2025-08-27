@@ -194,7 +194,7 @@
 
     <div class="post_body"><p>In a recent blog (<a
 	
-		href = "/post/vvs/vvs-password-policy"
+		href = "/archive/2023/vvs-password-policy"
 	
 
 	
@@ -274,17 +274,27 @@
 <p>Now lets take a look at an example of how to run the configuration.</p>
 <h3 id="configure-password-policies-for-all-workload-domains">Configure Password Policies for All Workload Domains</h3>
 <ol>
-<li>Start Windows PowerShell.</li>
-<li>Change to the report folder.
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">cd </span><span class="n">F:</span><span class="p">\</span><span class="n">Reporting</span>
-</span></span></code></pre></div></li>
-<li>Generate the configuration JSON with product defaults by running the command in the PowerShell console:
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Get-PasswordPolicyDefault</span> <span class="n">-generateJson</span> <span class="n">-jsonFile</span> <span class="s1">&#39;passwordPolicyConfig.json&#39;</span>
-</span></span></code></pre></div></li>
-<li>Open the generated configuration JSON file and updated with desired values and save.</li>
-<li>Configure the password policies by running the following command in the PowerShell console:</li>
+<li>
+<p>Start Windows PowerShell.</p>
+</li>
+<li>
+<p>Change to the report folder.</p>
+</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Start-PasswordPolicyConfig</span> <span class="n">-sddcManagerFqdn</span> <span class="s1">&#39;sfo-vcf01.sfo.rainpole.io&#39;</span> <span class="n">-sddcManagerUser</span> <span class="s1">&#39;admin@local&#39;</span> <span class="n">-sddcManagerPass</span> <span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span> <span class="n">-sddcRootPass</span> <span class="s1">&#39;VMw@re1!&#39;</span> <span class="n">-reportPath</span> <span class="s1">&#39;F:\Reporting&#39;</span> <span class="n">-policyFile</span> <span class="s1">&#39;PasswordPolicyConfig.json&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">cd </span><span class="n">F:</span><span class="p">\</span><span class="n">Reporting</span>
+</span></span></code></pre></div><ol start="3">
+<li>Generate the configuration JSON with product defaults by running the command in the PowerShell console:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Get-PasswordPolicyDefault</span> <span class="n">-generateJson</span> <span class="n">-jsonFile</span> <span class="s1">&#39;passwordPolicyConfig.json&#39;</span>
+</span></span></code></pre></div><ol start="4">
+<li>
+<p>Open the generated configuration JSON file and updated with desired values and save.</p>
+</li>
+<li>
+<p>Configure the password policies by running the following command in the PowerShell console:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Start-PasswordPolicyConfig</span> <span class="n">-sddcManagerFqdn</span> <span class="s1">&#39;sfo-vcf01.sfo.rainpole.io&#39;</span> <span class="n">-sddcManagerUser</span> <span class="s1">&#39;admin@local&#39;</span> <span class="n">-sddcManagerPass</span> <span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span> <span class="n">-sddcRootPass</span> <span class="s1">&#39;VMw@re1!&#39;</span> <span class="n">-reportPath</span> <span class="s1">&#39;F:\Reporting&#39;</span> <span class="n">-policyFile</span> <span class="s1">&#39;PasswordPolicyConfig.json&#39;</span>
 </span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
 <p>Using the <code>Start-PasswordPolicyConfig</code> cmdlet contained within the <a
 	

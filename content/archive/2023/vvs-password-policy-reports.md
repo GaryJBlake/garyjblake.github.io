@@ -19,7 +19,7 @@ series = [
 
 **Last Updated:** 25-Apr-2023
 
-In a recent blog ([see here](/post/vvs/vvs-password-policy)) I provided an overview of Password Policy Configuration for VMware Cloud Foundation, in this blog we will take a deep dive on using `Invoke-PasswordPolicyManager` to generate the password policy reports.
+In a recent blog ([see here](/archive/2023/vvs-password-policy)) I provided an overview of Password Policy Configuration for VMware Cloud Foundation, in this blog we will take a deep dive on using `Invoke-PasswordPolicyManager` to generate the password policy reports.
 
 The `Invoke-PasswordPolicyManager` cmdlet is part of the [PowerShell Module for VMware Cloud Foundation Password Management](https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management) and provides the ability to generate two types of HTML reports:
 
@@ -61,20 +61,22 @@ For example report 1, we are going to generate the Password Policy Report for al
 * darkMode
 
 **Generate Password Policy Manager Report**
+
 1. Start Windows PowerShell.
-``` PowerShell
+
+``` powershell
 Invoke-PasswordPolicyManager -sddcManagerFqdn 'sfo-vcf01.sfo.rainpole.io' -sddcManagerUser 'admin@local' -sddcManagerPass 'VMw@re1!VMw@re1!' -sddcRootPass 'VMw@re1!' -reportPath 'F:\Reporting' -darkMode -allDomains
 ```
 
 **Console Output - Example Report 1**
 
 This screenshot displays the output of the `Invoke-PasswordPolicyManager` cmdlet on the console.
-![](/post/vvs/ppm-report-command.png)
+![](/archive/2023/ppm-report-command.png)
 
 **HTML Report - Example Report 1**
 
 Once the report is ready, if executed on a Windows system the report is automatically opened in the default browser but if run on Linux you have to manually open the HTML file from the reporting folder to view.
-![](/post/vvs/ppm-report-html.png)
+![](/archive/2023/ppm-report-html.png)
 
 ### Example Report 2 - Password Policy Report with Configuration Drift for All Workload Domains
 
@@ -112,12 +114,12 @@ Because we are comparing the current configuration of each component against a d
 **Console Output - Example Report 2**
 
 This screenshot displays the output of the `Invoke-PasswordPolicyManager` cmdlet on the console, you will see its the same as the first report the difference this time is the output generated in the HTML report.
-![](/post/vvs/ppm-drift-command.png)
+![](/archive/2023/ppm-drift-command.png)
 
 **HTML Report - Example Report 2**
 
 This time when the report is generated we are presented with the same format and layout as that of the standard report, the difference now is that for each parameter displayed its compared against the configuration JSON file and if a difference is found an additional value is shown within [] brackets. The value contained within the [] is the desired state configuration value, if you see these values it means that the system is not compliant with the desired state configuration  and that some reconfiguration work is required.
-![](/post/vvs/ppm-drift-html.png)
+![](/archive/2023/ppm-drift-html.png)
 
 ### Conclusion
 
