@@ -9,7 +9,7 @@
   
   >
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-<title>Adjusting ESX Certificate Key Size in VMware Cloud Foundation | My Cloudy World</title>
+<title>What&#39;s New for VMware Validated Solutions - Edition #17 (June 2023) | My Cloudy World</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,13 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
+<meta name="description" content="What&#39;s New for VMware Validated Solutions - Edition #17 (June 2023)" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@garyjblake">
-<meta name="twitter:title" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
-<meta property="og:url" content="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/" />
-<meta property="og:title" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
-<meta property="og:description" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
+<meta name="twitter:title" content="What&#39;s New for VMware Validated Solutions - Edition #17 (June 2023)" />
+<meta property="og:url" content="http://localhost:1313/archive/2023/edition-17/" />
+<meta property="og:title" content="What&#39;s New for VMware Validated Solutions - Edition #17 (June 2023)" />
+<meta property="og:description" content="What&#39;s New for VMware Validated Solutions - Edition #17 (June 2023)" />
 <meta property="og:image" content="http://localhost:1313/images/thumbnail.png" />
   <meta name="keywords" content="VMware,cloud,virtualization,vcf,cloud foundation" />
 
@@ -31,7 +31,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/favicon-32x32.png">
 <link rel="manifest" href="http://localhost:1313/icons/site.webmanifest">
 
-<link rel="canonical" href="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/">
+<link rel="canonical" href="http://localhost:1313/archive/2023/edition-17/">
 
 
 
@@ -143,7 +143,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Adjusting ESX Certificate Key Size in VMware Cloud Foundation</h1>
+    <h1 class="post_title">What's New for VMware Validated Solutions - Edition #17 (June 2023)</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -151,22 +151,21 @@
 </svg>
 </span>
     <span class="post_date">
-      Aug 26, 2025</span>
-    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/vcf' title="VCF" class="post_tag button button_translucent">VCF
-        </a><a href='http://localhost:1313/tags/certificates' title="Certificates" class="post_tag button button_translucent">Certificates
+      Jun 27, 2023</span>
+    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/vvs' title="VVS" class="post_tag button button_translucent">VVS
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Adjusting%20ESX%20Certificate%20Key%20Size%20in%20VMware%20Cloud%20Foundation&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fvcf-90%2fvcf-90-esx-certificate-keysize%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=What%27s%20New%20for%20VMware%20Validated%20Solutions%20-%20Edition%20%2317%20%28June%202023%29&url=http%3a%2f%2flocalhost%3a1313%2farchive%2f2023%2fedition-17%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fvcf-90%2fvcf-90-esx-certificate-keysize%2f&t=Adjusting%20ESX%20Certificate%20Key%20Size%20in%20VMware%20Cloud%20Foundation" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2farchive%2f2023%2fedition-17%2f&t=What%27s%20New%20for%20VMware%20Validated%20Solutions%20-%20Edition%20%2317%20%28June%202023%29" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -180,7 +179,7 @@
 </svg>
 
     </a>
-    <a href="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/" title="Copy Link" class="link link_yank">
+    <a href="http://localhost:1313/archive/2023/edition-17/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -191,71 +190,419 @@
   </span>
   </div>
 
-    <div class="post_body"><p>If you have VMware Cloud Foundation 9.0 deployed and you have been using the Certificate Management capability of Fleet Management you may have noticed that with the exception of ESX you're able to use a certificate key size greater than 2048 for components such as VCF Operations, VCF Automation, SDDC Manager, vCenter and NSX Manager whereas ESX is limited to 2048.</p>
-<p>This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3072. Whilst this is a current limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3072 or 4096 and use this new value as part of the CSR creation process.</p>
-<h3 id="configuring-a-larger-key-size-for-esx-certificate-replacement">Configuring a Larger Key Size for ESX Certificate Replacement</h3>
-<ol>
-<li>
-<p>Log in to the vCenter at <em>https://&lt;_vcenter_server_fqdn&gt;/ui</em> with a user assigned the Administrator role.</p>
+    <div class="post_body"><p><strong>Last Updated:</strong> 27-June-2023</p>
+<p>Welcome to Edition #17 of the <strong>What's New for VMware Validated Solutions</strong>, today we announced the following updates:</p>
+<ul>
+<li>Added support for VMware Cloud Foundation 5.0.0</li>
+<li>Open-source Projects
+<ul>
+<li>Release of <a
+	
+		href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.4.0"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		PowerValidatedSolutions v2.4.0
+	</span>
+</a></li>
+<li>Release of <a
+	
+		href = "https://www.powershellgallery.com/packages/VMware.CloudFoundation.Reporting/2.2.0"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VMware.CloudFoundation.Reporting v2.2.0
+	</span>
+</a></li>
+<li>Release of <a
+	
+		href = "https://www.powershellgallery.com/packages/VMware.CloudFoundation.CertificateManagement/1.1.0"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VMware.CloudFoundation.CertificateManagement v1.1.0
+	</span>
+</a></li>
+<li>Release of <a
+	
+		href = "https://www.powershellgallery.com/packages/VMware.CloudFoundation.PasswordManagement/1.2.0"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VMware.CloudFoundation.PasswordManagement v1.2.0
+	</span>
+</a></li>
+</ul>
 </li>
-<li>
-<p>In the <strong>Hosts and clusters</strong> inventory, expand the vCenter tree and expand the data center.</p>
-</li>
-<li>
-<p>Select the ESX host, and click the <strong>Configure</strong> tab.</p>
-</li>
-<li>
-<p>In the left pane, select <strong>System &gt; Advanced System Settings</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Advanced System Settings</strong> page, click <strong>Edit</strong>.</p>
-</li>
-<li>
-<p>In the <strong>Edit Advanced System Settings</strong> dialog, click the filter icon in the <strong>Key</strong> column.</p>
-</li>
-<li>
-<p>Enter <strong>Config.HostAgent.ssl.minPrivateKeyLength</strong>, modify the Value from RSA-2048 to either RSA-3072 or RSA 4096 and click <strong>OK</strong>.</p>
-</li>
-</ol>
-<h3 id="replacing-a-certificate-of-an-esx-hosts">Replacing a Certificate of an ESX Hosts</h3>
-<ol>
-<li>
-<p>Log in to the VCF Operations interface at <em>https://&lt;aria_operations_fqdn&gt;</em> with a user assigned the Administrator role.</p>
-</li>
-<li>
-<p>In the navigation pane, select <strong>Fleet Management &gt; Certificates</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Certificate</strong> navigation pane, expand <strong>VCF Instances</strong> and select your VCF Instance.</p>
-</li>
-<li>
-<p>On the VCF Instance page, in the above the main widget click the <strong>Show ESX Hosts</strong> toggle.</p>
-</li>
-<li>
-<p>Select the radio button next to the ESX host.</p>
-</li>
-<li>
-<p>Click the ellipses (three dots) and select <strong>Generate CSR</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Generate CSR</strong> dialog, complete the inputs. You will only see a single Key Size of 2048, ignore this value as it will use the value defined in the earlier step. Click <strong>Save</strong>.</p>
-</li>
-<li>
-<p>Wait for the CSR generation process to complete.</p>
-</li>
-<li>
-<p>Click the ellipses (three dots) and select <strong>Replace With Configured CA Certificate</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Replace With Configured CA Certificate</strong> dialog, click <strong>Replace</strong>.</p>
-</li>
-<li>
-<p>Wait for the certificate replacement process to complete.</p>
-</li>
-<li>
-<p>Verify the ESX hosts new certificate by looking at the <strong>Subject's Public Key</strong> value which should show the value defined in the first step.</p>
-</li>
-</ol>
+</ul>
+<h3 id="added-support-for-vmware-cloud-foundation-500">Added Support for VMware Cloud Foundation 5.0.0</h3>
+<p>Delighted to announce support for VMware Cloud Foundation 5.0.0 of the following VMware Validated Solutions.</p>
+<ul>
+<li><a
+	
+		href = "https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Identity and Access Management for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/developer-ready-infrastructure-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Developer Ready Infrastructure for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-intelligent-logging-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Intelligent Logging for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-intelligent-operations-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Intelligent Operations for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-automation-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Automation for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-network-visibility-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Network Visibility for VMware Cloud Foundation
+	</span>
+</a></li>
+</ul>
+<p>The remaining VMware Validated Solutions are currently being validated and we hope to declare full support in our July Update.</p>
+<h3 id="general-availability-of-powervalidatedsolutions-v240">General Availability of PowerValidatedSolutions v2.4.0</h3>
+<ul>
+<li><a
+	
+		href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.4.0"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		PowerShell Gallery
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://github.com/vmware-samples/power-validated-solutions-for-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		GitHub Project
+	</span>
+</a></li>
+</ul>
+<p>A PowerShell module that has been written to support the automation of many procedures associated with the implementation of the <a
+	
+		href = "https://vmware.com/go/vvs"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VMware Validated Solutions
+	</span>
+</a> for <a
+	
+		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VMware Cloud Foundation
+	</span>
+</a>.</p>
+<p>The module helps reduce human error, delivers consistency and robustness, and accelerates the time-to-deploy these solutions. The module's cmdlets reduce complexity by automating the deployment and configuration steps using the product APIs or command-line tools.</p>
+<p>For a full list of changes see the <a
+	
+		href = "https://github.com/vmware-samples/power-validated-solutions-for-cloud-foundation/blob/main/CHANGELOG.md"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		GitHub Changelog
+	</span>
+</a>.</p>
+<h3 id="general-availability-of-vmwarecloudfoundationreporting-v220">General Availability of VMware.CloudFoundation.Reporting v2.2.0</h3>
+<ul>
+<li><a
+	
+		href = "https://www.powershellgallery.com/packages/VMware.CloudFoundation.Reporting/2.2.0"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		PowerShell Gallery
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-reporting"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		GitHub Project
+	</span>
+</a></li>
+</ul>
+<p>A PowerShell module that has been written to support the ability to provide insight to the operational state of VMware Cloud Foundation using PowerShell cmdlets. These cmdlets provide quick access to information from the PowerShell console as well as the ability to publish pre-defined HTML reports.</p>
+<p>For a full list of changes see the <a
+	
+		href = "https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-reporting/blob/main/CHANGELOG.md"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		GitHub Changelog
+	</span>
+</a>.</p>
+<h3 id="general-availability-of-vmwarecloudfoundationcertificatemanagement-v110">General Availability of VMware.CloudFoundation.CertificateManagement v1.1.0</h3>
+<ul>
+<li><a
+	
+		href = "https://www.powershellgallery.com/packages/VMware.CloudFoundation.CertificateManagement/1.1.0"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		PowerShell Gallery
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-certificate-management/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		GitHub Project
+	</span>
+</a></li>
+</ul>
+<p>A PowerShell module that has been written to support the ability to manage ESXi host certificates across your VMware Cloud Foundatiоn instance.</p>
+<p>For a full list of changes see the <a
+	
+		href = "https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-certificate-management/blob/main/CHANGELOG.md"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		GitHub Changelog
+	</span>
+</a>.</p>
+<h3 id="general-availability-of-vmwarecloudfoundationpasswordmanagement-v120">General Availability of VMware.CloudFoundation.PasswordManagement v1.2.0</h3>
+<ul>
+<li><a
+	
+		href = "https://www.powershellgallery.com/packages/VMware.CloudFoundation.PasswordManagement/1.1.0"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		PowerShell Gallery
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		GitHub Project
+	</span>
+</a></li>
+</ul>
+<p>A PowerShell module that has been written to support the ability to report and configure the password policy settings across your VMware Cloud Foundation instance.</p>
+<p>For a full list of changes see the <a
+	
+		href = "https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management/blob/main/CHANGELOG.md"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		GitHub Changelog
+	</span>
+</a>.</p>
 
     </div>
 
@@ -280,7 +627,7 @@
     
   
   <div class="search">
-    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='post'>
+    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='archive'>
     <label for="find" class="search_label"><svg class="icon">
   <title>search</title>
   <use xlink:href="#search"></use>
@@ -317,6 +664,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/" class="nav-link" title="Adjusting ESX Certificate Key Size in VMware Cloud Foundation">Adjusting ESX Certificate Key Size in VMware Cloud Foundation</a>
+      </li>
+      <li>
         <a href="http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/" class="nav-link" title="Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI">Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI</a>
       </li>
       <li>
@@ -336,9 +686,6 @@
       </li>
       <li>
         <a href="http://localhost:1313/post/vcf-90/vcf-90-powercli-operations-cmdlets/" class="nav-link" title="Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations">Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations</a>
-      </li>
-      <li>
-        <a href="http://localhost:1313/post/vcf-90/vcf-90-powercli-sdk-modules/" class="nav-link" title="VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets">VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets</a>
       </li>
     </ul>
     <div>

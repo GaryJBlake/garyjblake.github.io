@@ -9,7 +9,7 @@
   
   >
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-<title>Adjusting ESX Certificate Key Size in VMware Cloud Foundation | My Cloudy World</title>
+<title>What&#39;s New for VMware Validated Solutions - Edition #13 (Feb 2023) | My Cloudy World</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,13 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
+<meta name="description" content="What&#39;s New for VMware Validated Solutions - Edition #13 (Feb 2023)" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@garyjblake">
-<meta name="twitter:title" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
-<meta property="og:url" content="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/" />
-<meta property="og:title" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
-<meta property="og:description" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
+<meta name="twitter:title" content="What&#39;s New for VMware Validated Solutions - Edition #13 (Feb 2023)" />
+<meta property="og:url" content="http://localhost:1313/archive/2023/edition-13/" />
+<meta property="og:title" content="What&#39;s New for VMware Validated Solutions - Edition #13 (Feb 2023)" />
+<meta property="og:description" content="What&#39;s New for VMware Validated Solutions - Edition #13 (Feb 2023)" />
 <meta property="og:image" content="http://localhost:1313/images/thumbnail.png" />
   <meta name="keywords" content="VMware,cloud,virtualization,vcf,cloud foundation" />
 
@@ -31,7 +31,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/favicon-32x32.png">
 <link rel="manifest" href="http://localhost:1313/icons/site.webmanifest">
 
-<link rel="canonical" href="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/">
+<link rel="canonical" href="http://localhost:1313/archive/2023/edition-13/">
 
 
 
@@ -143,7 +143,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Adjusting ESX Certificate Key Size in VMware Cloud Foundation</h1>
+    <h1 class="post_title">What's New for VMware Validated Solutions - Edition #13 (Feb 2023)</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -151,22 +151,21 @@
 </svg>
 </span>
     <span class="post_date">
-      Aug 26, 2025</span>
-    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/vcf' title="VCF" class="post_tag button button_translucent">VCF
-        </a><a href='http://localhost:1313/tags/certificates' title="Certificates" class="post_tag button button_translucent">Certificates
+      Feb 28, 2023</span>
+    <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/vvs' title="VVS" class="post_tag button button_translucent">VVS
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Adjusting%20ESX%20Certificate%20Key%20Size%20in%20VMware%20Cloud%20Foundation&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fvcf-90%2fvcf-90-esx-certificate-keysize%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=What%27s%20New%20for%20VMware%20Validated%20Solutions%20-%20Edition%20%2313%20%28Feb%202023%29&url=http%3a%2f%2flocalhost%3a1313%2farchive%2f2023%2fedition-13%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fvcf-90%2fvcf-90-esx-certificate-keysize%2f&t=Adjusting%20ESX%20Certificate%20Key%20Size%20in%20VMware%20Cloud%20Foundation" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2farchive%2f2023%2fedition-13%2f&t=What%27s%20New%20for%20VMware%20Validated%20Solutions%20-%20Edition%20%2313%20%28Feb%202023%29" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -180,7 +179,7 @@
 </svg>
 
     </a>
-    <a href="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/" title="Copy Link" class="link link_yank">
+    <a href="http://localhost:1313/archive/2023/edition-13/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -191,71 +190,192 @@
   </span>
   </div>
 
-    <div class="post_body"><p>If you have VMware Cloud Foundation 9.0 deployed and you have been using the Certificate Management capability of Fleet Management you may have noticed that with the exception of ESX you're able to use a certificate key size greater than 2048 for components such as VCF Operations, VCF Automation, SDDC Manager, vCenter and NSX Manager whereas ESX is limited to 2048.</p>
-<p>This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3072. Whilst this is a current limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3072 or 4096 and use this new value as part of the CSR creation process.</p>
-<h3 id="configuring-a-larger-key-size-for-esx-certificate-replacement">Configuring a Larger Key Size for ESX Certificate Replacement</h3>
-<ol>
-<li>
-<p>Log in to the vCenter at <em>https://&lt;_vcenter_server_fqdn&gt;/ui</em> with a user assigned the Administrator role.</p>
-</li>
-<li>
-<p>In the <strong>Hosts and clusters</strong> inventory, expand the vCenter tree and expand the data center.</p>
-</li>
-<li>
-<p>Select the ESX host, and click the <strong>Configure</strong> tab.</p>
-</li>
-<li>
-<p>In the left pane, select <strong>System &gt; Advanced System Settings</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Advanced System Settings</strong> page, click <strong>Edit</strong>.</p>
-</li>
-<li>
-<p>In the <strong>Edit Advanced System Settings</strong> dialog, click the filter icon in the <strong>Key</strong> column.</p>
-</li>
-<li>
-<p>Enter <strong>Config.HostAgent.ssl.minPrivateKeyLength</strong>, modify the Value from RSA-2048 to either RSA-3072 or RSA 4096 and click <strong>OK</strong>.</p>
-</li>
-</ol>
-<h3 id="replacing-a-certificate-of-an-esx-hosts">Replacing a Certificate of an ESX Hosts</h3>
-<ol>
-<li>
-<p>Log in to the VCF Operations interface at <em>https://&lt;aria_operations_fqdn&gt;</em> with a user assigned the Administrator role.</p>
-</li>
-<li>
-<p>In the navigation pane, select <strong>Fleet Management &gt; Certificates</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Certificate</strong> navigation pane, expand <strong>VCF Instances</strong> and select your VCF Instance.</p>
-</li>
-<li>
-<p>On the VCF Instance page, in the above the main widget click the <strong>Show ESX Hosts</strong> toggle.</p>
-</li>
-<li>
-<p>Select the radio button next to the ESX host.</p>
-</li>
-<li>
-<p>Click the ellipses (three dots) and select <strong>Generate CSR</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Generate CSR</strong> dialog, complete the inputs. You will only see a single Key Size of 2048, ignore this value as it will use the value defined in the earlier step. Click <strong>Save</strong>.</p>
-</li>
-<li>
-<p>Wait for the CSR generation process to complete.</p>
-</li>
-<li>
-<p>Click the ellipses (three dots) and select <strong>Replace With Configured CA Certificate</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Replace With Configured CA Certificate</strong> dialog, click <strong>Replace</strong>.</p>
-</li>
-<li>
-<p>Wait for the certificate replacement process to complete.</p>
-</li>
-<li>
-<p>Verify the ESX hosts new certificate by looking at the <strong>Subject's Public Key</strong> value which should show the value defined in the first step.</p>
-</li>
-</ol>
+    <div class="post_body"><p><strong>Last Updated:</strong> 28-Feb-2023</p>
+<p>Welcome to Edition #13 of the What's New for VMware Validated Solutions, today we announced the following updates:</p>
+<ul>
+<li>Added enhancements to <a
+	
+		href = "https://core.vmware.com/cloud-based-intelligent-operations-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Intelligent Operations for VMware Cloud Foundation
+	</span>
+</a></li>
+<li>Added enhancements to <a
+	
+		href = "https://core.vmware.com/cloud-based-automation-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Automation for VMware Cloud Foundation
+	</span>
+</a></li>
+</ul>
+<h3 id="cloud-based-intelligent-operations-for-vmware-cloud-foundation">Cloud-Based Intelligent Operations for VMware Cloud Foundation</h3>
+<p><a
+	
+		href = "https://core.vmware.com/detailed-design-cloud-based-intelligent-operations"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Detailed Design
+	</span>
+</a></p>
+<p>Updates to the following design decisions:</p>
+<p><strong>Design Decisions on Identity Management</strong></p>
+<ul>
+<li>CBO-IAM-SEC-003 - Assign vRealize Operations Cloud service roles to designated users. <strong>(NEW)</strong></li>
+</ul>
+<p><strong>Design Decisions on Password Policies</strong></p>
+<ul>
+<li>CBO-CDP-SEC-001 - Configure the local user password expiration policy for each Cloud Proxy instance. <strong>(NEW)</strong></li>
+<li>CBO-CDP-SEC-002 - Configure the local user password complexity policy for each Cloud Proxy instance. <strong>(NEW)</strong></li>
+<li>CBO-CDP-SEC-003 - Configure the local user account lockout policy for each Cloud Proxy instance. <strong>(NEW)</strong></li>
+</ul>
+<p><a
+	
+		href = "https://core.vmware.com/implementation-cloud-based-intelligent-operations"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Implementation
+	</span>
+</a></p>
+<p>Added PowerShell automation to the following procedures:</p>
+<ul>
+<li>Assign SDDC Manager Role to a Service Account for VMware Cloud Foundation Integration for Cloud-Based Intelligent Operations (<code>Add-SddcManagerRole</code>)</li>
+<li>Define a Custom Role in vSphere for vRealize Operations Cloud and VMware Cloud Foundation Integration for Cloud-Based Intelligent Operations (<code>Add-vSphereRole</code>)</li>
+<li>Assign vCenter Server Role to a Service Account for VMware Cloud Foundation Integration for Cloud-Based Intelligent Operations (<code>Add-vCenterGlobalPermission</code>)</li>
+<li>Create a Virtual Machine and Template Folder for Cloud Proxy Appliances for Cloud-Based Intelligent Operations (<code>Add-VMFolder</code>)</li>
+<li>Configure vSphere Anti-Affinity Rules for the Cloud Proxy Appliances for Cloud-Based Intelligent Operations (<code>Add-AntiAffinityRule</code>)</li>
+<li>Add the Cloud Proxy Appliances to the First Availability Zone VM Group for Cloud-Based Intelligent Operations (<code>Add-VmGroup</code>)</li>
+</ul>
+<p><a
+	
+		href = "https://core.vmware.com/operational-guidance-cloud-based-intelligent-operations"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Operational Guidance
+	</span>
+</a></p>
+<p>Added the following procedures:</p>
+<ul>
+<li>Personas in Cloud-Based Intelligent Operations for VMware Cloud Foundation</li>
+<li>Configure the Local User Password Expiration Policy of the Cloud Proxy Appliance for Cloud-Based Intelligent Operations</li>
+<li>Configure the Local User Password Complexity Policy for the Cloud Proxy Appliance for Cloud-Based Intelligent Operations</li>
+<li>Configure the Local User Account Lockout Policy for the Cloud Proxy Appliance for Cloud-Based Intelligent Operations</li>
+</ul>
+<h3 id="cloud-based-automation-for-vmware-cloud-foundation">Cloud-Based Automation for VMware Cloud Foundation</h3>
+<p><a
+	
+		href = "https://core.vmware.com/detailed-design-cloud-based-automation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Detailed Design
+	</span>
+</a></p>
+<p>Updates to the following design decisions:</p>
+<p><strong>Design Decisions on Password Policies</strong></p>
+<ul>
+<li>CBA-CDP-SEC-001 - Configure the local user password expiration policy for each Cloud Proxy instance. <strong>(NEW)</strong></li>
+<li>CBA-CDP-SEC-002 - Configure the local user password complexity policy for each Cloud Proxy instance. <strong>(NEW)</strong></li>
+<li>CBA-CDP-SEC-003 - Configure the local user account lockout policy for each Cloud Proxy instance. <strong>(NEW)</strong></li>
+<li>CBA-CEP-SEC-001 - Configure the local user password expiration policy for each Cloud Extensibility Proxy instance. <strong>(NEW)</strong></li>
+<li>CBA-CEP-SEC-002 - Configure the local user password complexity policy for each Cloud Extensibility Proxy instance. <strong>(NEW)</strong></li>
+<li>CBA-CEP-SEC-003 - Configure the local user account lockout policy for each Cloud Extensibility Proxy instance. <strong>(NEW)</strong></li>
+</ul>
+<p><a
+	
+		href = "https://core.vmware.com/operational-guidance-cloud-based-automation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Operational Guidance
+	</span>
+</a></p>
+<p>Added the following procedures:</p>
+<ul>
+<li>Personas in Cloud-Based Automation for VMware Cloud Foundation.</li>
+<li>Configure the Local User Password Expiration Policy of the Cloud Proxy and Cloud Extensibility Proxy Appliances for Cloud-Based Automation</li>
+<li>Configure the Local User Password Complexity Policy for the Cloud Proxy and Cloud Extensibility Proxy Appliances for Cloud-Based Automation</li>
+<li>Configure the Local User Account Lockout Policy for the Cloud Proxy and Cloud Extensibility Proxy Appliances for Cloud-Based Automation</li>
+<li>Dashboard Management for Cloud-Based Intelligent Operations for VMware Cloud Foundation</li>
+</ul>
+<h3 id="general-availability-of-powervalidatedsolutions-v201">General Availability of PowerValidatedSolutions v2.0.1</h3>
+<p>Release of <a
+	
+		href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.0.1"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		PowerValidatedSolutions v2.0.1
+	</span>
+</a>, which is a PowerShell module that we have developed to not only accelerate the implementation of Validated Solutions, but ensure consistency and robustness.  Here's a list of what's changed (this and previous updates can be tracked by reading the CHANGELOG.md file stored in the Git Hub repository):</p>
+<ul>
+<li>Added <code>Convert-CssClassStyle</code> cmdlet to modify the CSS Style in the HTML output.</li>
+<li>Fixed <code>Publish-*</code> cmdlets to use <code>Convert-CssClassStyle</code> rather than <code>Convert-CssClass</code> which is part of VMware Cloud Foundation reporting module.</li>
+<li>Added <code>cbl-vsphere-integration.role</code> role file to support adding the vRealize Log Insight Cloud to vSphere Integration role in vCenter Server.</li>
+<li>Added <code>cbo-vsphere-integration.role</code> role file to support adding the vRealize Operations Cloud to vSphere Integration role in vCenter Server.</li>
+</ul>
 
     </div>
 
@@ -280,7 +400,7 @@
     
   
   <div class="search">
-    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='post'>
+    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='archive'>
     <label for="find" class="search_label"><svg class="icon">
   <title>search</title>
   <use xlink:href="#search"></use>
@@ -317,6 +437,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/" class="nav-link" title="Adjusting ESX Certificate Key Size in VMware Cloud Foundation">Adjusting ESX Certificate Key Size in VMware Cloud Foundation</a>
+      </li>
+      <li>
         <a href="http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/" class="nav-link" title="Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI">Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI</a>
       </li>
       <li>
@@ -336,9 +459,6 @@
       </li>
       <li>
         <a href="http://localhost:1313/post/vcf-90/vcf-90-powercli-operations-cmdlets/" class="nav-link" title="Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations">Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations</a>
-      </li>
-      <li>
-        <a href="http://localhost:1313/post/vcf-90/vcf-90-powercli-sdk-modules/" class="nav-link" title="VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets">VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets</a>
       </li>
     </ul>
     <div>

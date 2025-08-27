@@ -22,7 +22,7 @@ This was recently raised by one of my colleagues in the field, where their custo
 
 ### Configuring a Larger Key Size for ESX Certificate Replacement
 
-1. Log in to the vCenter at *https://<_vcenter_server_fqdn>/ui* with a user assigned the Administrator role..
+1. Log in to the vCenter at *https://<_vcenter_server_fqdn>/ui* with a user assigned the Administrator role.
 
 2. In the **Hosts and clusters** inventory, expand the vCenter tree and expand the data center.
 

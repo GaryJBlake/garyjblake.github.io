@@ -9,7 +9,7 @@
   
   >
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-<title>Adjusting ESX Certificate Key Size in VMware Cloud Foundation | My Cloudy World</title>
+<title>What&#39;s New for VMware Validated Solutions - Edition #21 (October 2023) | My Cloudy World</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,13 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
+<meta name="description" content="What&#39;s New for VMware Validated Solutions - Edition #21 (October 2023)" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@garyjblake">
-<meta name="twitter:title" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
-<meta property="og:url" content="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/" />
-<meta property="og:title" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
-<meta property="og:description" content="Adjusting ESX Certificate Key Size in VMware Cloud Foundation" />
+<meta name="twitter:title" content="What&#39;s New for VMware Validated Solutions - Edition #21 (October 2023)" />
+<meta property="og:url" content="http://localhost:1313/archive/2023/edition-21/" />
+<meta property="og:title" content="What&#39;s New for VMware Validated Solutions - Edition #21 (October 2023)" />
+<meta property="og:description" content="What&#39;s New for VMware Validated Solutions - Edition #21 (October 2023)" />
 <meta property="og:image" content="http://localhost:1313/images/thumbnail.png" />
   <meta name="keywords" content="VMware,cloud,virtualization,vcf,cloud foundation" />
 
@@ -31,7 +31,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/favicon-32x32.png">
 <link rel="manifest" href="http://localhost:1313/icons/site.webmanifest">
 
-<link rel="canonical" href="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/">
+<link rel="canonical" href="http://localhost:1313/archive/2023/edition-21/">
 
 
 
@@ -143,7 +143,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Adjusting ESX Certificate Key Size in VMware Cloud Foundation</h1>
+    <h1 class="post_title">What's New for VMware Validated Solutions - Edition #21 (October 2023)</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -151,22 +151,21 @@
 </svg>
 </span>
     <span class="post_date">
-      Aug 26, 2025</span>
-    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/vcf' title="VCF" class="post_tag button button_translucent">VCF
-        </a><a href='http://localhost:1313/tags/certificates' title="Certificates" class="post_tag button button_translucent">Certificates
+      Nov 7, 2023</span>
+    <span class="post_time"> · 5 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/vvs' title="VVS" class="post_tag button button_translucent">VVS
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Adjusting%20ESX%20Certificate%20Key%20Size%20in%20VMware%20Cloud%20Foundation&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fvcf-90%2fvcf-90-esx-certificate-keysize%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=What%27s%20New%20for%20VMware%20Validated%20Solutions%20-%20Edition%20%2321%20%28October%202023%29&url=http%3a%2f%2flocalhost%3a1313%2farchive%2f2023%2fedition-21%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fvcf-90%2fvcf-90-esx-certificate-keysize%2f&t=Adjusting%20ESX%20Certificate%20Key%20Size%20in%20VMware%20Cloud%20Foundation" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2farchive%2f2023%2fedition-21%2f&t=What%27s%20New%20for%20VMware%20Validated%20Solutions%20-%20Edition%20%2321%20%28October%202023%29" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -180,7 +179,7 @@
 </svg>
 
     </a>
-    <a href="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/" title="Copy Link" class="link link_yank">
+    <a href="http://localhost:1313/archive/2023/edition-21/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -191,71 +190,859 @@
   </span>
   </div>
 
-    <div class="post_body"><p>If you have VMware Cloud Foundation 9.0 deployed and you have been using the Certificate Management capability of Fleet Management you may have noticed that with the exception of ESX you're able to use a certificate key size greater than 2048 for components such as VCF Operations, VCF Automation, SDDC Manager, vCenter and NSX Manager whereas ESX is limited to 2048.</p>
-<p>This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3072. Whilst this is a current limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3072 or 4096 and use this new value as part of the CSR creation process.</p>
-<h3 id="configuring-a-larger-key-size-for-esx-certificate-replacement">Configuring a Larger Key Size for ESX Certificate Replacement</h3>
-<ol>
-<li>
-<p>Log in to the vCenter at <em>https://&lt;_vcenter_server_fqdn&gt;/ui</em> with a user assigned the Administrator role.</p>
-</li>
-<li>
-<p>In the <strong>Hosts and clusters</strong> inventory, expand the vCenter tree and expand the data center.</p>
-</li>
-<li>
-<p>Select the ESX host, and click the <strong>Configure</strong> tab.</p>
-</li>
-<li>
-<p>In the left pane, select <strong>System &gt; Advanced System Settings</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Advanced System Settings</strong> page, click <strong>Edit</strong>.</p>
-</li>
-<li>
-<p>In the <strong>Edit Advanced System Settings</strong> dialog, click the filter icon in the <strong>Key</strong> column.</p>
-</li>
-<li>
-<p>Enter <strong>Config.HostAgent.ssl.minPrivateKeyLength</strong>, modify the Value from RSA-2048 to either RSA-3072 or RSA 4096 and click <strong>OK</strong>.</p>
-</li>
-</ol>
-<h3 id="replacing-a-certificate-of-an-esx-hosts">Replacing a Certificate of an ESX Hosts</h3>
-<ol>
-<li>
-<p>Log in to the VCF Operations interface at <em>https://&lt;aria_operations_fqdn&gt;</em> with a user assigned the Administrator role.</p>
-</li>
-<li>
-<p>In the navigation pane, select <strong>Fleet Management &gt; Certificates</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Certificate</strong> navigation pane, expand <strong>VCF Instances</strong> and select your VCF Instance.</p>
-</li>
-<li>
-<p>On the VCF Instance page, in the above the main widget click the <strong>Show ESX Hosts</strong> toggle.</p>
-</li>
-<li>
-<p>Select the radio button next to the ESX host.</p>
-</li>
-<li>
-<p>Click the ellipses (three dots) and select <strong>Generate CSR</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Generate CSR</strong> dialog, complete the inputs. You will only see a single Key Size of 2048, ignore this value as it will use the value defined in the earlier step. Click <strong>Save</strong>.</p>
-</li>
-<li>
-<p>Wait for the CSR generation process to complete.</p>
-</li>
-<li>
-<p>Click the ellipses (three dots) and select <strong>Replace With Configured CA Certificate</strong>.</p>
-</li>
-<li>
-<p>On the <strong>Replace With Configured CA Certificate</strong> dialog, click <strong>Replace</strong>.</p>
-</li>
-<li>
-<p>Wait for the certificate replacement process to complete.</p>
-</li>
-<li>
-<p>Verify the ESX hosts new certificate by looking at the <strong>Subject's Public Key</strong> value which should show the value defined in the first step.</p>
-</li>
-</ol>
+    <div class="post_body"><p><strong>Last Updated:</strong> 07-November-2023</p>
+<p>Welcome to Edition #21 of the <strong>What's New for VMware Validated Solutions</strong>, slightly delayed due to the availability of VMware Cloud Foundation 5.1 but today we announced the following updates:</p>
+<ul>
+<li><strong>New Solution</strong> – <a
+	
+		href = "https://core.vmware.com/cloud-based-ransomware-recovery-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Ransomware Recovery for VMware Cloud Foundation
+	</span>
+</a></li>
+<li>Updated branding from VMware vRealize Suite to VMware Aria Suite.</li>
+<li>Added support for <strong>VMware Cloud Foundation 5.1.0</strong> to all VMware Validated Solutions</li>
+<li>Added support to upgrade VMware Aria Suite Lifecycle to version 18.4.0 for VMware Aria Suite based VMware Validated Solutions</li>
+<li>Added enhancements to <a
+	
+		href = "https://core.vmware.com/cloud-based-network-visibility-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Network Visibility for VMware Cloud Foundation
+	</span>
+</a></li>
+<li>Added enhancements to <a
+	
+		href = "https://core.vmware.com/cloud-based-intelligent-operations-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Intelligent Operations for VMware Cloud Foundation
+	</span>
+</a></li>
+<li>Added enhancements to <a
+	
+		href = "https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Workload Protection for VMware Cloud Foundation
+	</span>
+</a></li>
+<li>Added enhancements to <a
+	
+		href = "https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Intelligent Operations Management for VMware Cloud Foundation
+	</span>
+</a></li>
+<li>Added enhancements to <a
+	
+		href = "https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Identity and Access Management for VMware Cloud Foundation
+	</span>
+</a></li>
+<li>Release of <a
+	
+		href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.7.0"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		PowerValidatedSolutions v2.7.0
+	</span>
+</a></li>
+</ul>
+<h3 id="cloud-based-ransomware-recovery-for-vmware-cloud-foundation">Cloud-Based Ransomware Recovery for VMware Cloud Foundation</h3>
+<p>Delighted to announce the release of this brand-new VMware Validated Solution.</p>
+<p>The <a
+	
+		href = "https://core.vmware.com/cloud-based-ransomware-recovery-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Ransomware Recovery for VMware Cloud Foundation
+	</span>
+</a> is a well-architected validated solutions that provides detailed design, implementation, configuration, and operation guidance on protecting business workloads running on a VMware Cloud Foundation instance against a ransomware attack by connecting the instance to VMware Cloud on AWS through the use of the VMware Cloud Disaster Recovery service.</p>
+<h3 id="vmware-vrealize-suite-to-vmware-aria-suite-rebrand">VMware vRealize Suite to VMware Aria Suite Rebrand</h3>
+<p>With the release of <strong>VMware Cloud Foundation 5.1.0</strong>, this also incorporates the VMware vRealize Suite to VMware Aria Suite rebranding and with that a rebrand across the following VMware Validated Solutions:</p>
+<ul>
+<li><a
+	
+		href = "https://core.vmware.com/intelligent-logging-and-analytics-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Intelligent Logging and Analytics for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Intelligent Operations Management for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Private Cloud Automation for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/health-reporting-and-monitoring-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Health Reporting and Monitoring for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Site Protection and Disaster Recovery for VMware Cloud Foundation
+	</span>
+</a></li>
+</ul>
+<p>In addition, the rebranding work has been carried out across the <strong>Solution Interoperability</strong> sections of the following VMware Validated Solutions:</p>
+<ul>
+<li><a
+	
+		href = "https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Identity and Access Management for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-intelligent-logging-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Intelligent Logging for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-network-visibility-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Network Visibility for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Workload Protection for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cross-cloud-mobility-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cross Cloud Mobility for VMware Cloud Foundation
+	</span>
+</a></li>
+</ul>
+<h3 id="added-support-for-vmware-cloud-foundation-510">Added Support for VMware Cloud Foundation 5.1.0</h3>
+<p>Delighted to announce support for <strong>VMware Cloud Foundation 5.1.0</strong> for the following VMware Validated Solutions:</p>
+<ul>
+<li><a
+	
+		href = "https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Identity and Access Management for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/developer-ready-infrastructure-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Developer Ready Infrastructure for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-intelligent-logging-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Intelligent Logging for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-intelligent-operations-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Intelligent Operations for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-automation-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Automation for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-network-visibility-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Network Visibility for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cloud-Based Workload Protection for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/cross-cloud-mobility-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Cross Cloud Mobility for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/intelligent-logging-and-analytics-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Intelligent Logging and Analytics for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Intelligent Operations Management for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Private Cloud Automation for VMware Cloud Foundation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Site Protection and Disaster Recovery for VMware Cloud Foundation
+	</span>
+</a></li>
+</ul>
+<h3 id="upgrade-vmware-aria-suite-lifecycle-to-version-8140">Upgrade VMware Aria Suite Lifecycle to Version 8.14.0</h3>
+<p>Following the introduction of guidance to help greenfield customers upgrade VMware Aria Suite Lifecycle to a consistent release across multiple versions of VMware Cloud Foundation, this months enhancement provides guidance for upgrading to VMware Aria Suite Lifecycle v8.14.0 based on the initial deployment of:</p>
+<ul>
+<li>VMware Cloud Foundation v4.5.2</li>
+<li>VMware Cloud Foundation v5.0</li>
+<li>VMware Cloud Foundation 5.1.0</li>
+</ul>
+<h3 id="cloud-based-network-visibility-for-vmware-cloud-foundation">Cloud-Based Network Visibility for VMware Cloud Foundation</h3>
+<p><a
+	
+		href = "https://core.vmware.com/implementation-cloud-based-network-visibility"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Implementation
+	</span>
+</a></p>
+<p>Replaced the following procedure:</p>
+<ul>
+<li>Configure Local Service Account Permissions for NSX Integration for Cloud-Based Network Visibility for VMware Cloud Foundation</li>
+</ul>
+<p>With this new procedure:</p>
+<ul>
+<li>Prepare the NSX to VMware Aria Operations for Networks Integration for Cloud-Based Network Visibility for VMware Cloud Foundation</li>
+</ul>
+<p><a
+	
+		href = "https://core.vmware.com/operational-guidance-cloud-based-network-visibility"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Operational Guidance
+	</span>
+</a></p>
+<p>Added the following procedures:</p>
+<ul>
+<li>Replace the NSX Principal Identity Certificate for Cloud-Based Network Visibility for VMware Cloud Foundation</li>
+<li>Refresh the NSX to VMware Aria Operations for Networks Integration for Cloud-Based Network Visibility for VMware Cloud Foundation</li>
+</ul>
+<h3 id="cloud-based-intelligent-operations-for-vmware-cloud-foundation">Cloud-Based Intelligent Operations for VMware Cloud Foundation</h3>
+<p><a
+	
+		href = "https://core.vmware.com/operational-guidance-cloud-based-intelligent-operations"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Operational Guidance
+	</span>
+</a></p>
+<p>Added the following procedures:</p>
+<ul>
+<li>Replace the NSX Principal Identity Certificate for Cloud-Based Intelligent Operations for VMware Cloud Foundation</li>
+<li>Refresh the NSX Credential in VMware Aria Operations for Cloud-Based Intelligent Operations for VMware Cloud Foundation</li>
+</ul>
+<h3 id="cloud-based-workload-protection-for-vmware-cloud-foundation">Cloud-Based Workload Protection for VMware Cloud Foundation</h3>
+<p>Provides guidance on the use of a vsphere.local domain user for establishing communication between VMware Cloud Disaster Recovery and vCenter Server.</p>
+<p><a
+	
+		href = "https://core.vmware.com/detailed-design-cloud-based-workload-protection"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Detailed Design
+	</span>
+</a></p>
+<ul>
+<li>Service Account Design for Cloud-Based Workload Protection for VMware Cloud Foundation</li>
+</ul>
+<p><a
+	
+		href = "https://core.vmware.com/implementation-cloud-based-workload-protection"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Implementation
+	</span>
+</a></p>
+<ul>
+<li>Create and Configure a Custom Role in vSphere for Cloud-Based Workload Protection for VMware Cloud Foundation</li>
+</ul>
+<h3 id="intelligent-operations-management-for-vmware-cloud-foundation">Intelligent Operations Management for VMware Cloud Foundation</h3>
+<p><a
+	
+		href = "https://core.vmware.com/implementation-intelligent-operations-management"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Implementation
+	</span>
+</a></p>
+<p><strong>Additional PowerValidatedSolutions Automation</strong></p>
+<ul>
+<li>Remove Existing vCenter Server Adapter in VMware Aria Operations for Intelligent Operations Management for VMware Cloud Foundation (<em><strong>Undo-vROPSAdapter</strong></em> and <em><strong>Undo-vROPSCredential</strong></em>)</li>
+<li>Activate the VMware Cloud Foundation Integration for Intelligent Operations Management for VMware Cloud Foundation (<em><strong>Register-vROPSManagementPack</strong></em>)</li>
+</ul>
+<p>Removed the following procedures as no longer require when use the VMware Aria Operations Cloud Proxies.</p>
+<ul>
+<li>Import the New Certificate for VMware Aria Operations to vRealize Suite Lifecycle Manager</li>
+<li>Replace the SSL Certificate on VMware Aria Operations</li>
+</ul>
+<h3 id="identity-and-access-management-for-vmware-cloud-foundation">Identity and Access Management for VMware Cloud Foundation</h3>
+<p><a
+	
+		href = "https://core.vmware.com/detailed-design-identity-and-access-management"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Detailed Design
+	</span>
+</a></p>
+<ul>
+<li>Updates to <a
+	
+		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-identity-and-access-management-v1/GUID-038B7BB7-DB77-4E1B-9CCD-049BA03E6979.html#nsx-password-management-6"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		NSX Password Management
+	</span>
+</a> design decisions IAM-NSX-SEC-011, IAM-NSX-SEC-012 and IAM-NSX-SEC-013 to support the addition of the management of the <code>audit</code> user for VI Workload Domains.</li>
+</ul>
+<p><a
+	
+		href = "https://core.vmware.com/implementation-identity-and-access-management"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Implementation
+	</span>
+</a></p>
+<ul>
+<li>Update to the PowerShell command for <a
+	
+		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-identity-and-access-management-v1/GUID-1E8ED6E4-D40C-4AFB-96BE-63E58329BA88.html#powershell-procedure-1"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Reconfigure the vSphere Role and Permissions Scope for NSX Service Accounts for Identity and Access Management for VMware Cloud Foundation
+	</span>
+</a></li>
+</ul>
+<p><a
+	
+		href = "https://core.vmware.com/operational-guidance-identity-and-access-management"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Operations
+	</span>
+</a></p>
+<ul>
+<li>Enhancements to <a
+	
+		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-identity-and-access-management-v1/GUID-6E9FD000-13AF-400B-8FEE-B42D96EA1C73.html"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Password Rotation and Remediation for Identity and Access Management for VMware Cloud Foundation
+	</span>
+</a></li>
+</ul>
+<h3 id="general-availability-of-powervalidatedsolutions-v270">General Availability of PowerValidatedSolutions v2.7.0</h3>
+<ul>
+<li><a
+	
+		href = "https://vmware-samples.github.io/power-validated-solutions-for-cloud-foundation/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Documentation
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.7.0"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		PowerShell Gallery
+	</span>
+</a></li>
+<li><a
+	
+		href = "https://github.com/vmware-samples/power-validated-solutions-for-cloud-foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		GitHub Project
+	</span>
+</a></li>
+</ul>
+<p>A PowerShell module that has been written to support the automation of many procedures associated with the implementation of the <a
+	
+		href = "https://vmware.com/go/vvs"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VMware Validated Solutions
+	</span>
+</a> for <a
+	
+		href = "https://docs.vmware.com/en/VMware-Cloud-Foundation"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VMware Cloud Foundation
+	</span>
+</a>.</p>
+<p>The module helps reduce human error, delivers consistency and robustness, and accelerates the time-to-deploy these solutions. The module's cmdlets reduce complexity by automating the deployment and configuration steps using the product APIs or command-line tools.</p>
+<p><strong>Release Highlights</strong></p>
+<ul>
+<li>Fixed a number of issues relating to Developer Ready Infrastructure cmdlets.</li>
+<li>Added new cmdlets to support the creation of different credentials in VMware Aria Operations.</li>
+<li>Added new cmdlets to support NSX APIs for LDAP Identity Providers and NSX Principal Identity management.</li>
+<li>Updated cmdlet descriptions and examples for VMware Aria Suite, formerly known as vRealize Suite, products to use the new VMware Aria names.</li>
+<li>Enhanced sample alerts and notification in <code>SampleNotifications</code> to reflect the new VMware Aria product names.</li>
+<li>Enhanced cmdlets to support VMware Cloud Foundation v5.1.0 and VMware Aria Suite 8.14.0.</li>
+</ul>
+<p>For a full list of changes see the <a
+	
+		href = "https://github.com/vmware-samples/power-validated-solutions-for-cloud-foundation/blob/main/CHANGELOG.md"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		GitHub Changelog
+	</span>
+</a>.</p>
 
     </div>
 
@@ -280,7 +1067,7 @@
     
   
   <div class="search">
-    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='post'>
+    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='archive'>
     <label for="find" class="search_label"><svg class="icon">
   <title>search</title>
   <use xlink:href="#search"></use>
@@ -317,6 +1104,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/" class="nav-link" title="Adjusting ESX Certificate Key Size in VMware Cloud Foundation">Adjusting ESX Certificate Key Size in VMware Cloud Foundation</a>
+      </li>
+      <li>
         <a href="http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/" class="nav-link" title="Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI">Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI</a>
       </li>
       <li>
@@ -336,9 +1126,6 @@
       </li>
       <li>
         <a href="http://localhost:1313/post/vcf-90/vcf-90-powercli-operations-cmdlets/" class="nav-link" title="Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations">Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations</a>
-      </li>
-      <li>
-        <a href="http://localhost:1313/post/vcf-90/vcf-90-powercli-sdk-modules/" class="nav-link" title="VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets">VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets</a>
       </li>
     </ul>
     <div>
