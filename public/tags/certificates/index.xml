@@ -6,10 +6,10 @@
     <description>Recent content in Certificates on My Cloudy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copyright © 2019–2024, Gary Blake; all rights reserved.</copyright>
+    <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
     <lastBuildDate>Tue, 26 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/certificates/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>VMware Cloud Foundation 9.0: Replacing ESX Certificates with a Key Size &gt; 2048</title>
+      <title>Adjusting ESX Certificate Key Size in VMware Cloud Foundation</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/</link>
       <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
       
@@ -18,7 +18,7 @@
         
           
             &lt;p&gt;If you have VMware Cloud Foundation 9.0 deployed and you have been using the Certificate Management capability of Fleet Management you may have noticed that with the exception of ESX you&#39;re able to use a certificate key size greater than 2048 for components such as VCF Operations, VCF Automation, SDDC Manager, vCenter and NSX Manager whereas ESX is limited to 2048.&lt;/p&gt;
-&lt;p&gt;This was recently raised by one of my colleagues in field, where their customer had a minimum requirement of 3076. Whilst this is a limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3076 or 4096 and use this new value as part of the CSR creation process.&lt;/p&gt;
+&lt;p&gt;This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3076. Whilst this is a current limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3076 or 4096 and use this new value as part of the CSR creation process.&lt;/p&gt;
           
           
         

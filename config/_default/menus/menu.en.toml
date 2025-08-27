@@ -10,6 +10,11 @@
 
 [[main]]
   parent = "Archive"
+  name = "2023"
+  weight = -12
+  url = "/archive/2023/"
+[[main]]
+  parent = "Archive"
   name = "2022"
   weight = -11
   url = "/archive/2022/"

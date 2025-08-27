@@ -55,7 +55,7 @@ The usage of the `VMware.CloudFoundation.PasswordManagement` module requires a n
 Test-VcfPasswordManagementPrereq
 ```
 
-![](/post/vcf/vcf-password-prereq.png)
+![](/archive/2023/vcf-password-prereq.png)
 
 ### Execution of the PowerShell Module
 

@@ -18,7 +18,7 @@ series = [
 
 If you have VMware Cloud Foundation 9.0 deployed and you have been using the Certificate Management capability of Fleet Management you may have noticed that with the exception of ESX you're able to use a certificate key size greater than 2048 for components such as VCF Operations, VCF Automation, SDDC Manager, vCenter and NSX Manager whereas ESX is limited to 2048.
 
-This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3076. Whilst this is a current limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3076 or 4096 and use this new value as part of the CSR creation process.
+This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3072. Whilst this is a current limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3072 or 4096 and use this new value as part of the CSR creation process.
 
 ### Configuring a Larger Key Size for ESX Certificate Replacement
 
@@ -34,7 +34,7 @@ This was recently raised by one of my colleagues in the field, where their custo
 
 6. In the **Edit Advanced System Settings** dialog, click the filter icon in the **Key** column.
 
-7. Enter **Config.HostAgent.ssl.minPrivateKeyLength**, modify the Value from RSA-2048 to either RSA-3076 or RSA 4096 and click **OK**.
+7. Enter **Config.HostAgent.ssl.minPrivateKeyLength**, modify the Value from RSA-2048 to either RSA-3072 or RSA 4096 and click **OK**.
 
 ### Replacing a Certificate of an ESX Hosts
 

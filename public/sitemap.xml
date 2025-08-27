@@ -5,7 +5,13 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-08-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/</loc>
+    <lastmod>2025-08-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-08-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/certificates/</loc>
     <lastmod>2025-08-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/esx/</loc>
@@ -24,9 +30,6 @@
     <lastmod>2025-08-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/vmware-cloud-foundation-9.0/</loc>
-    <lastmod>2025-08-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/</loc>
     <lastmod>2025-08-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/</loc>
@@ -275,10 +278,16 @@
     <loc>http://localhost:1313/tags/api/</loc>
     <lastmod>2023-04-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/archive/</loc>
+    <lastmod>2023-04-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/post/vcf/vcf-password-management/</loc>
     <lastmod>2023-04-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/powervcf/powervcf-ga-230/</loc>
+    <loc>http://localhost:1313/archive/2023/</loc>
+    <lastmod>2023-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/archive/2023/powervcf-ga-230/</loc>
     <lastmod>2023-04-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vvs-whats-new/edition-15/</loc>
@@ -304,9 +313,6 @@
   </url><url>
     <loc>http://localhost:1313/post/vvs-whats-new/edition-12/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/archive/</loc>
-    <lastmod>2022-12-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2022/vcf-cloud-reporting/</loc>
     <lastmod>2022-12-22T00:00:00+00:00</lastmod>

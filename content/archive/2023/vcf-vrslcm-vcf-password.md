@@ -27,7 +27,6 @@ However, all is not lost as the extra accounts can be safely deleted without any
 
 ### UI Procedure
 
-
 1. Log in to vRealize Suite Lifecycle Manager at `https://<vrealize_suite_lifecycle_manager_fqdn>` as vcfadmin@local.
 
 2. On the **My services** page, click **Locker**.
@@ -42,7 +41,8 @@ Chances are your looking at this blog post because you don't just have one or tw
 **NOTE**
 
 This script requires the PowerShell Module PowerValidatedSolution which can be installed directly from the Microsoft PSGallery. This modules provides the `Request-vRSLCMToken`, `Get-vRSLCMLockerPassword`, and `Remove-vRSLCMLockerPassword` functions that interact with the vRealize Suite Lifecycle Manager APIs.
-``` PowerShell
+
+``` powershell
 Install-Module -Name PowerValidatedSolutions
 
 Import-Module -Name PowerValidatedSolutions
@@ -55,7 +55,7 @@ Import-Module -Name PowerValidatedSolutions
 
 2. Replace the values in the sample code with values for the instance of vRealize Suite Lifecycle Manager and run the commands in the PowerShell console.
 
-``` PowerShell
+``` powershell
 $vrslcmFqdn = "xint-vrslcm01.rainpole.io"
 $vrslcmUser = "vcfadmin@local"
 $vrslcmPass = "VMw@re1!"
@@ -63,7 +63,7 @@ $vrslcmPass = "VMw@re1!"
 
 3. Perform the configuration by running the command in the PowerShell console.
 
-``` PowerShell
+``` powershell
 Request-vRSLCMToken -fqdn $vrslcmFqdn -username $vrslcmUser -password $vrslcmPass
 $unsedVcfAccounts = Get-vRSLCMLockerPassword | Where-Object {$_.alias -like "VCF-password*" -and $_.referenced -eq $false}
 if ($unsedVcfAccounts) {

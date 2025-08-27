@@ -2,7 +2,7 @@
 # if you set it to "/" share icons won't work properly on production
 baseurl = "http://jadenetworksolutions.co.uk/"
 title = "My Cloudy World"
-copyright = "Copyright © 2019–2024, Gary Blake; all rights reserved."
+copyright = "Copyright © 2019–2025, Gary Blake; all rights reserved."
 # canonifyurls = true
 pagination.pagerSize = 10
 theme = "hugo-clarity"

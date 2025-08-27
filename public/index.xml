@@ -6,7 +6,7 @@
     <description>Recent content on My Cloudy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copyright © 2019–2024, Gary Blake; all rights reserved.</copyright>
+    <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
     <lastBuildDate>Tue, 26 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adjusting ESX Certificate Key Size in VMware Cloud Foundation</title>
@@ -18,7 +18,7 @@
         
           
             &lt;p&gt;If you have VMware Cloud Foundation 9.0 deployed and you have been using the Certificate Management capability of Fleet Management you may have noticed that with the exception of ESX you&#39;re able to use a certificate key size greater than 2048 for components such as VCF Operations, VCF Automation, SDDC Manager, vCenter and NSX Manager whereas ESX is limited to 2048.&lt;/p&gt;
-&lt;p&gt;This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3076. Whilst this is a current limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3076 or 4096 and use this new value as part of the CSR creation process.&lt;/p&gt;
+&lt;p&gt;This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3072. Whilst this is a current limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3072 or 4096 and use this new value as part of the CSR creation process.&lt;/p&gt;
           
           
         
@@ -1870,30 +1870,6 @@
     </item>
     
     <item>
-      <title>Automating VCF Upgrade - Workload Domains</title>
-      <link>http://localhost:1313/post/vcf/vcf-automated-upgrade-04/</link>
-      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-automated-upgrade-04/</guid>
-      <description>
-        
-          
-            &lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
-&lt;p&gt;This is the final part of my blog series in which I talk about automating the VMware Cloud Foundation upgrade process. At this point you should have completed the following tasks:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Downloaded All Bundles&lt;/li&gt;
-&lt;li&gt;Initial Health Check&lt;/li&gt;
-&lt;li&gt;SDDC Manager Upgrade&lt;/li&gt;
-&lt;li&gt;SDDC Manager Configuration Drift Update&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We are now ready to begin the process of upgrading the individual components within a Workload Domain, for this we must first start with the Management Domain before we can carry out any component upgrades of a VI Workload Domain. The actual process is performed in the following way:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>What&#39;s New for VMware Validated Solutions - Edition #20 (September 2023)</title>
       <link>http://localhost:1313/post/vvs-whats-new/edition-20/</link>
       <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate>
@@ -1940,42 +1916,6 @@
 		Cross Cloud Mobility for VMware Cloud Foundation
 	&lt;/span&gt;
 &lt;/a&gt; is a well-architected validated solutions that provides detailed design, implementation, configuration, and operation guidance on establishing business workload mobility and migrating the workloads between a VMware Cloud Foundation instance and a VMware Cloud on AWS SDDC through the use of the VMware HCX service.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Automating VCF Upgrade - SDDC Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-automated-upgrade-03/</link>
-      <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-automated-upgrade-03/</guid>
-      <description>
-        
-          
-            &lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
-&lt;p&gt;This is part three of a four part blog series in which I talk about automating the VMware Cloud Foundation upgrade process. If you have been following the series so far then you will have your bundles downloaded, and performed various health checks to confirm that all is well and will now be ready to start the upgrade process.&lt;/p&gt;
-&lt;p&gt;Upgrading VMware Cloud Foundation is a multi-stage process, this post will focus on upgrading SDDC Manager which in itself involves two step:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Automating VCF Upgrade - Perform Health Checks</title>
-      <link>http://localhost:1313/post/vcf/vcf-automated-upgrade-02/</link>
-      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-automated-upgrade-02/</guid>
-      <description>
-        
-          
-            &lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
-&lt;p&gt;This is part two of a four part blog series in which I talk about automating the VMware Cloud Foundation upgrade process. In part one we discussed downloading the bundles to SDDC Manager to prepare the system for the upgrade process, in this post we discuss performing the upgrade pre-checks.&lt;/p&gt;
-&lt;p&gt;Ensuring your VMware Cloud Foundation instance is healthy prior to starting an upgrade is critical to a successful upgrade, SDDC Manager itself has a pre-check process which is executed on a per workload domain basis. Depending on the version of VMware Cloud Foundation your upgrading from this pre-check has seen some significant improvements over time. In addition to executing the specific workload domain pre-check at the SDDC Manager level our team released a PowerShell Module last year called &lt;code&gt;VMware.CloudFoundation.Reporting&lt;/code&gt; which can be utilized in conjunction with the internal pre-check to perform additional health checks prior to starting an upgrade step.&lt;/p&gt;
           
           
         
@@ -2131,98 +2071,6 @@
     </item>
     
     <item>
-      <title>Automating the Upgrade of VMware Cloud Foundation with APIs/PowerVCF/PowerShell</title>
-      <link>http://localhost:1313/post/vcf/vcf-automated-upgrade/</link>
-      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-automated-upgrade/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 21-Sep-2023&lt;/p&gt;
-&lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
-&lt;p&gt;A couple of years ago I wrote a series of blogs (&lt;a
-	
-		href = &#34;/archive/2020/powervcf-automation&#34;
-	
-
-	
-
-	&gt;
-
-	&lt;span&gt;
-		see here
-	&lt;/span&gt;
-&lt;/a&gt;) which discussed the process of automating the deployment procedures of VMware Cloud Foundation using the Public APIs, in this new series we will take a look at how we can automate the steps involved in upgrading VMware Cloud Foundation from one release to another.&lt;/p&gt;
-&lt;p&gt;But before we can begin performing any actual upgrade steps we must carry out some prerequisites which include:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Automating VCF Upgrade - Download Release Bundles</title>
-      <link>http://localhost:1313/post/vcf/vcf-automated-upgrade-01/</link>
-      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-automated-upgrade-01/</guid>
-      <description>
-        
-          
-            &lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
-&lt;p&gt;In order to upgrade VMware Cloud Foundation you must first download the upgrade bundles, I recently wrote a blog &lt;a
-	
-		href = &#34;/post/vcf/vcf-bundle-download&#34;
-	
-
-	
-
-	&gt;
-
-	&lt;span&gt;
-		Automating the Download of VCF Bundles for a Release
-	&lt;/span&gt;
-&lt;/a&gt; on this topic which I shared a script &lt;em&gt;&lt;strong&gt;vcfBundleDownload.ps1&lt;/strong&gt;&lt;/em&gt; which can be downloaded from &lt;a
-	
-		href = &#34;https://github.com/GaryJBlake/my-cloudy-world-scripts/blob/main/PowerShell/vcf/scripts/requestBundleDownloadList-4410.json&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		GitHub
-	&lt;/span&gt;
-&lt;/a&gt; which we will utilize as part of the procedure here. The script takes a JSON as input where we define the bundle IDs for download but as part of this post I will share a way to automate that part too.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Cleaning Up VCF-password* Accounts from vRealize Suite Lifecycle Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-vrslcm-vcf-password/</link>
-      <pubDate>Tue, 22 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-vrslcm-vcf-password/</guid>
-      <description>
-        
-          
-            &lt;p&gt;If you have had VMware Cloud Foundation and vRealize Suite Lifecycle Manager deployed within your infrastructure for some time you may have noticed in the vRealize Suite Lifecycle Manager Password Locker that there are many passwords called VCF-password-&amp;lt; guid &amp;gt;. This is an internal service account used by vRealize Suite Lifecycle Manager to make vCenter Server API calls and is rotated automatically by SDDC Manager.&lt;/p&gt;
-&lt;p&gt;This duplication of accounts happens due to the fact that there is no way to update the existing record and so SDDC Manager has to create a new account when the rotation process occurs. In theory it should then remove the previous account, I checked with a member of the engineering team and this would appear to be a bug which I have reported.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation</title>
       <link>http://localhost:1313/post/vvs/vvs-vrslcm-upgrade/</link>
       <pubDate>Thu, 27 Jul 2023 00:00:00 +0000</pubDate>
@@ -2352,37 +2200,6 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;added-support-for-vmware-cloud-foundation-500&#34;&gt;Added Support for VMware Cloud Foundation 5.0.0&lt;/h3&gt;
 &lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.0.0 for the remaining VMware Validated Solutions:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Remove vRealize Log Insight Agent from SDDC Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-remove-liagent/</link>
-      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-remove-liagent/</guid>
-      <description>
-        
-          
-            &lt;p&gt;If you have ever wanted to remove the vRealize Log Insight from VMware Cloud Foundation you may have skipped the step to uninstall the vRealize Log Insight Linux Agent from SDDC Manager, whilst the process is documented in the VMware documentation for vRealize Log Insight under &lt;a
-	
-		href = &#34;https://docs.vmware.com/en/vRealize-Log-Insight/8.10/com.vmware.log-insight.agent.admin.doc/GUID-01946617-34F8-4043-8637-2930FB751778.html&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Uninstall the Log Insight Linux Agent RPM package
-	&lt;/span&gt;
-&lt;/a&gt; the procedure does not help you establish the version installed so here is a quick blog to tie all the information together.&lt;/p&gt;
           
           
         
@@ -2666,118 +2483,6 @@
     </item>
     
     <item>
-      <title>Introducing a PowerShell Module for VMware Cloud Foundation Password Management</title>
-      <link>http://localhost:1313/post/vcf/vcf-password-management/</link>
-      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-password-management/</guid>
-      <description>
-        
-          
-            &lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
-&lt;p&gt;In January 2023 through the VMware Validated Solution programme we released both documentation and PowerShell cmdlets to help with the configuration of password policies across the VMware Cloud Foundation platform, enabling our customers to report and configure the password expiration, password complexity, and account lockout policies at scale.&lt;/p&gt;
-&lt;p&gt;The positive feedback received to date has blown us away and so last month during one of our planning sessions we discussed the merits
-for spinning out the cmdlets into their own dedicated open-source PowerShell module, during that discussion it was agreed that this would provide us and our customers the following benefits:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>PowerVCF v2.3.0 - General Availability</title>
-      <link>http://localhost:1313/post/powervcf/powervcf-ga-230/</link>
-      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/powervcf/powervcf-ga-230/</guid>
-      <description>
-        
-          
-            &lt;img align=&#34;left&#34; width=&#34;200&#34; height=&#34;200&#34; src=&#34;http://localhost:1313/images/powervcf-color-transparent.webp&#34; style=&#34;float:left; padding-right:20px&#34; &gt;
-&lt;p&gt;It&#39;s been a while since the last update but I&#39;m pleased to announce the general availability of PowerVCF v2.3.0 for download from the Microsoft PowerShell Library. PowerVCF is a open source project and the team works on adding support when time permits.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Download It Here&lt;/strong&gt;&lt;/em&gt;: &lt;a
-	
-		href = &#34;https://www.powershellgallery.com/packages/PowerVCF/2.3.0&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		PowerVCF v2.3.0 PowerShell Library Download
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;additions&#34;&gt;Additions&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Added region block identifiers for better developer and contributor experience when navigating the PowerShell module code.&lt;/li&gt;
-&lt;li&gt;Added &lt;a
-	
-		href = &#34;https://vmware.github.io/powershell-module-for-vmware-cloud-foundation/docs/&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		GitHub Pages Documentation
-	&lt;/span&gt;
-&lt;/a&gt; for PowerVCF.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Get-VCFFipsMode&lt;/code&gt; cmdlet to return the status for FIPS mode.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Get-VCFRelease&lt;/code&gt; cmdlet to retrieve details for releases.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Get-VCFCredentialExpiry&lt;/code&gt; cmdlet to retrieve the password expiry details for credentials.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;Get-VCFLicenseMode&lt;/code&gt; cmdlet to retrieve the current license mode of the system &amp;amp; each domain&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;New-VCFPersonality&lt;/code&gt; cmdlet to add a new vSphere Lifecycle Manager personality/image in the SDDC Manager inventory from an existing vLCM image based cluster&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;enhancements&#34;&gt;Enhancements&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; cmdlet for consistency across functions.&lt;/li&gt;
-&lt;li&gt;Enhanced &lt;code&gt;Get-VCFDepotCredential&lt;/code&gt; cmdlet to support retrieving the VxRail depot details.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;New-VCFCluster&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Add-VCFApplicationVirtualNetwork&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Set-VCFBackupConfiguration&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Start-VCFBundleUpload&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Set-VCFCluster&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Set-VCFCredential&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;New-VCFCluster&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Restart-VCFCredentialTask&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;New-VCFWorkloadDomain&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Set-VCFFederation&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;New-VCFCommissionedHost&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Remove-VCFCommissionedHost&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;New-VCFNetworkPool&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;New-VCFEdgeCluster&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Restart-CloudBuilderSDDC&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Start-VCFHealthSummary&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Start-VCFSupportBundle&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Start-VCFSystemPrecheck&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Start-VCFUpgrade&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Set-VCFConfigurationDNS&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Set-VCFConfigurationNTP&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;New-VCFvRSLCM&lt;/code&gt; cmdlet to consume enhanced &lt;code&gt;validateJsonInput&lt;/code&gt; function.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Get-VCFManager&lt;/code&gt; cmdlet synopsis, description and examples.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Set-VCFFederation&lt;/code&gt; cmdlet synopsis, description and examples.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Get-VCFConfigurationDNSValidation&lt;/code&gt; cmdlets synopsis, description and examples.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Get-VCFCertificateCSR&lt;/code&gt; cmdlets synopsis, description and examples.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;Get-VCFvRLI&lt;/code&gt; cmdlets synopsis, description and examples.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;README.md&lt;/code&gt;, and added module metadata.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;release-contributors&#34;&gt;Release Contributors&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;THANK YOU&lt;/strong&gt; to the following contributors who helped with this release:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>What&#39;s New for VMware Validated Solutions - Edition #15 (Apr 2023)</title>
       <link>http://localhost:1313/post/vvs-whats-new/edition-15/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
@@ -2871,38 +2576,6 @@ for spinning out the cmdlets into their own dedicated open-source PowerShell mod
 		Cloud-Based Intelligent Logging for VMware Cloud Foundation
 	&lt;/span&gt;
 &lt;/a&gt; validated solution:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>New Fling - VMware Cloud Foundation Configuration File Generator</title>
-      <link>http://localhost:1313/post/vcf/vcf-fling-cfg/</link>
-      <pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-fling-cfg/</guid>
-      <description>
-        
-          
-            &lt;p&gt;This week we released a new VMware Fling, &lt;a
-	
-		href = &#34;https://flings.vmware.com/vmware-cloud-foundation-configuration-file-generator&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		VMware Cloud Foundation Configuration File Generator
-	&lt;/span&gt;
-&lt;/a&gt; which is a containerized web application developed to replace the Deployment Parameter Workbook used for performing the VMware Cloud Foundation Bring-up of the Management Domain.&lt;/p&gt;
-&lt;p&gt;VMware Cloud Builder supports providing either the Deployment Parameter Workbook an Excel workbook which is then converted into JSON format and used by the Bring-up engine or simply providing the JSON file already created. Using this web-based application you can import a previous JSON file, create a new JSON file from scratch and export ready for use with VMware Cloud Builder.&lt;/p&gt;
           
           
         
@@ -3167,60 +2840,6 @@ for spinning out the cmdlets into their own dedicated open-source PowerShell mod
 		see here
 	&lt;/span&gt;
 &lt;/a&gt;) we have spent a significant amount of time reviewing and rewriting all aspects of our content as it relates to Password Policy Configuration.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>What&#39;s New for VMware Validated Solutions - Edition #12 (Jan 2023)</title>
-      <link>http://localhost:1313/post/vvs-whats-new/edition-12/</link>
-      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vvs-whats-new/edition-12/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 31-Jan-2023&lt;/p&gt;
-&lt;p&gt;Welcome to Edition #12 of the What&#39;s New for VMware Validated Solutions, today we announced the following updates:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; - &lt;a
-	
-		href = &#34;https://core.vmware.com/cloud-based-intelligent-operations-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Cloud-Based Intelligent Operations for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Enhancements to Password Policy Configuration within Identity and Access Management for VMware Cloud Foundation&lt;/li&gt;
-&lt;li&gt;Release of &lt;a
-	
-		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.0.0&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		PowerValidatedSolutions v2.0.0
-	&lt;/span&gt;
-&lt;/a&gt;, our PowerShell module developed to ensure robustness, consistency, and accelerate implementation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;cloud-based-intelligent-operations-for-vmware-cloud-foundation&#34;&gt;Cloud-Based Intelligent Operations for VMware Cloud Foundation&lt;/h3&gt;
-&lt;p&gt;Delighted to announce the release of this brand new VMware Validated Solution.&lt;/p&gt;
           
           
         

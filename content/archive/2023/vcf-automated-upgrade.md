@@ -24,10 +24,10 @@ A couple of years ago I wrote a series of blogs ([see here](/archive/2020/powerv
 
 But before we can begin performing any actual upgrade steps we must carry out some prerequisites which include:
 
-* [Automating VCF Upgrade - Download Release Bundles](/post/vcf/vcf-automated-upgrade-01)
-* [Automating VCF Upgrade - Perform Health Checks](/post/vcf/vcf-automated-upgrade-02)
+* [Automating VCF Upgrade - Download Release Bundles](/archive/2023/vcf-automated-upgrade-01)
+* [Automating VCF Upgrade - Perform Health Checks](/archive/2023/vcf-automated-upgrade-02)
 
 Once these prerequisites are complete we can begin the upgrade process.
 
-* [Automating VCF Upgrade - SDDC Manager](/post/vcf/vcf-automated-upgrade-03)
-* [Automating VCF Upgrade - Workload Domains](/post/vcf/vcf-automated-upgrade-04)
+* [Automating VCF Upgrade - SDDC Manager](/archive/2023/vcf-automated-upgrade-03)
+* [Automating VCF Upgrade - Workload Domains](/archive/2023/vcf-automated-upgrade-04)

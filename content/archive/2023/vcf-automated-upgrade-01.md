@@ -97,7 +97,7 @@ $json = New-Object -TypeName psobject
 $json | Add-Member -notepropertyname 'bundles' -notepropertyvalue $bundleList
 ```
 
-8. Convert the data to JSON format and output it to a file by running the following command:
+7. Convert the data to JSON format and output it to a file by running the following command:
 
 ``` PowerShell
 $json | ConvertTo-Json | Out-File $outJson

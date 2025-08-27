@@ -56,7 +56,7 @@ We are now ready to begin the process of upgrading the individual components wit
 
 2. Replace the values in the sample code with values for the instance of VMware Cloud Foundation and run the commands in the PowerShell console.
 
-``` PowerShell
+``` powershell
 $sddcManagerFqdn = "lax-vcf01.lax.rainpole.io"
 $sddcManagerUser = "administrator@vsphere.local"
 $sddcManagerPass = "VMw@re1!"
@@ -65,13 +65,13 @@ $vcfRelease = "4.5.2.0"
 
 3. Authenticate to the SDDC Manager appliance by running the following command:
 
-``` PowerShell
+``` powershell
 Request-VCFToken -fqdn $sddcManagerFqdn -username $sddcManagerUser -password $sddcManagerPass
 ```
 
 4. Perform a Health Check of the Management Domain
 
-``` PowerShell
+``` powershell
 $workloadDomain = (Get-VCFWorkloadDomain | Where-Object {$_.type -eq "MANAGEMENT"}).id
 $jsonSpec = '{ "resources" : [ { "resourceId" : "'+ $workloadDomain +'", "type" : "DOMAIN" } ] }'
 $task = Start-VCFSystemPrecheck -json $jsonSpec
@@ -83,7 +83,7 @@ In this step we use the **Get-VCFWorkloadDomain** cmdlet to get the Management D
 
 5. Perform NSX upgrade of the Management Domain by running the following command:
 
-``` PowerShell
+``` powershell
 $uri = "https://$sddcManager/v1/upgradables/domains/$workloadDomain/?targetVersion=$vcfRelease"
 $bundle = ((Invoke-RestMethod -Method GET -URI $uri -ContentType application/json -headers $headers).elements) | Where-Object {$_.status -eq "AVAILABLE" }
 if ((Get-VCFBundle -id $bundle.bundleId).downloadStatus -eq "SUCCESSFUL" -and (Get-VCFBundle -id $bundle.bundleId).components.type -eq "NSX_T_MANAGER") {
@@ -118,7 +118,7 @@ Once complete that's it we have successfully upgraded all NSX components within 
 
 2. Replace the values in the sample code with values for the instance of VMware Cloud Foundation and run the commands in the PowerShell console.
 
-``` PowerShell
+``` powershell
 $sddcManagerFqdn = "lax-vcf01.lax.rainpole.io"
 $sddcManagerUser = "administrator@vsphere.local"
 $sddcManagerPass = "VMw@re1!"
@@ -127,13 +127,13 @@ $vcfRelease = "4.5.2.0"
 
 3. Authenticate to the SDDC Manager appliance by running the following command:
 
-``` PowerShell
+``` powershell
 Request-VCFToken -fqdn $sddcManagerFqdn -username $sddcManagerUser -password $sddcManagerPass
 ```
 
 4. Perform a Health Check of the Management Domain
 
-``` PowerShell
+``` powershell
 $workloadDomain = (Get-VCFWorkloadDomain | Where-Object {$_.type -eq "MANAGEMENT"}).id
 $jsonSpec = '{ "resources" : [ { "resourceId" : "'+ $workloadDomain +'", "type" : "DOMAIN" } ] }'
 $task = Start-VCFSystemPrecheck -json $jsonSpec
@@ -143,7 +143,7 @@ $status.subtasks | Select-Object name, status
 
 5. Perform vCenter Server upgrade of the Management Domain by running the following command:
 
-``` PowerShell
+``` powershell
 $uri = "https://$sddcManager/v1/upgradables/domains/$workloadDomain/?targetVersion=$vcfRelease"
 $bundle = ((Invoke-RestMethod -Method GET -URI $uri -ContentType application/json -headers $headers).elements) | Where-Object {$_.status -eq "AVAILABLE" }
 if ((Get-VCFBundle -id $bundle.bundleId).downloadStatus -eq "SUCCESSFUL" -and (Get-VCFBundle -id $bundle.bundleId).components.type -eq "VCENTER") {
@@ -171,7 +171,7 @@ Once complete that's it we have successfully upgraded vCenter Server for the Man
 
 2. Replace the values in the sample code with values for the instance of VMware Cloud Foundation and run the commands in the PowerShell console.
 
-``` PowerShell
+``` powershell
 $sddcManagerFqdn = "lax-vcf01.lax.rainpole.io"
 $sddcManagerUser = "administrator@vsphere.local"
 $sddcManagerPass = "VMw@re1!"
@@ -180,13 +180,13 @@ $vcfRelease = "4.5.2.0"
 
 3. Authenticate to the SDDC Manager appliance by running the following command:
 
-``` PowerShell
+``` powershell
 Request-VCFToken -fqdn $sddcManagerFqdn -username $sddcManagerUser -password $sddcManagerPass
 ```
 
 4. Perform a Health Check of the Management Domain
 
-``` PowerShell
+``` powershell
 $workloadDomain = (Get-VCFWorkloadDomain | Where-Object {$_.type -eq "MANAGEMENT"}).id
 $jsonSpec = '{ "resources" : [ { "resourceId" : "'+ $workloadDomain +'", "type" : "DOMAIN" } ] }'
 $task = Start-VCFSystemPrecheck -json $jsonSpec
@@ -196,7 +196,7 @@ $status.subtasks | Select-Object name, status
 
 5. Perform ESXi Host upgrade of the Management Domain by running the following command:
 
-``` PowerShell
+``` powershell
 $uri = "https://$sddcManager/v1/upgradables/domains/$workloadDomain/?targetVersion=$vcfRelease"
 $bundle = ((Invoke-RestMethod -Method GET -URI $uri -ContentType application/json -headers $headers).elements) | Where-Object {$_.status -eq "AVAILABLE" }
 if ((Get-VCFBundle -id $bundle.bundleId).downloadStatus -eq "SUCCESSFUL" -and (Get-VCFBundle -id $bundle.bundleId).components.type -eq "HOST") {
@@ -238,13 +238,13 @@ $vcfRelease = "4.5.2.0"
 
 3. Authenticate to the SDDC Manager appliance by running the following command:
 
-``` PowerShell
+``` powershell
 Request-VCFToken -fqdn $sddcManagerFqdn -username $sddcManagerUser -password $sddcManagerPass
 ```
 
 4. Perform a Health Check of the VI Workload Domain
 
-``` PowerShell
+``` powershell
 $workloadDomain = (Get-VCFWorkloadDomain | Where-Object {$_.name -eq $sddcDomainName}).id
 $jsonSpec = '{ "resources" : [ { "resourceId" : "'+ $workloadDomain +'", "type" : "DOMAIN" } ] }'
 $task = Start-VCFSystemPrecheck -json $jsonSpec
@@ -256,7 +256,7 @@ In this step we use the **Get-VCFWorkloadDomain** cmdlet to get the Management D
 
 5. Perform NSX upgrade of the VI Workload Domain by running the following command:
 
-``` PowerShell
+``` powershell
 $uri = "https://$sddcManager/v1/upgradables/domains/$workloadDomain/?targetVersion=$vcfRelease"
 $bundle = ((Invoke-RestMethod -Method GET -URI $uri -ContentType application/json -headers $headers).elements) | Where-Object {$_.status -eq "AVAILABLE" }
 if ((Get-VCFBundle -id $bundle.bundleId).downloadStatus -eq "SUCCESSFUL" -and (Get-VCFBundle -id $bundle.bundleId).components.type -eq "NSX_T_MANAGER") {
