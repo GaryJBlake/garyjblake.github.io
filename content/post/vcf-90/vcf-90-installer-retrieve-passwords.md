@@ -22,7 +22,7 @@ When the auto-generate passwords options is selected within the VCF Installer UI
 
 The following procedure demonstrates how you can retrieve a specific section of the JSON specification.
 
-**VCF Operations APIs Used**
+**VCF Installer APIs Used**
 
 * POST /v1/tokens
 * GET /v1/sddcs/latest
