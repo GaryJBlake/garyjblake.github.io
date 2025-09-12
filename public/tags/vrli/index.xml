@@ -8,36 +8,5 @@
     <language>en</language>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
     <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vrli/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Remove vRealize Log Insight Agent from SDDC Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-remove-liagent/</link>
-      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-remove-liagent/</guid>
-      <description>
-        
-          
-            &lt;p&gt;If you have ever wanted to remove the vRealize Log Insight from VMware Cloud Foundation you may have skipped the step to uninstall the vRealize Log Insight Linux Agent from SDDC Manager, whilst the process is documented in the VMware documentation for vRealize Log Insight under &lt;a
-	
-		href = &#34;https://docs.vmware.com/en/vRealize-Log-Insight/8.10/com.vmware.log-insight.agent.admin.doc/GUID-01946617-34F8-4043-8637-2930FB751778.html&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Uninstall the Log Insight Linux Agent RPM package
-	&lt;/span&gt;
-&lt;/a&gt; the procedure does not help you establish the version installed so here is a quick blog to tie all the information together.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
   </channel>
 </rss>

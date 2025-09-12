@@ -7,7 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vmware-cloud-foundation-9.0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vmware-cloud-foundation-9.0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automate VMware Cloud Foundation 9.0 with OpenAPI</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</guid>
+      <description>
+        
+          
+            &lt;p&gt;If like me you&#39;re always looking for opportunities to replace manual repetitive steps with automation then this post is for you! Here I&#39;ve documented the location of various OpenAPI specification files for components of VMware Cloud Foundation 9.0 which can be downloaded directly from their appliances and imported into your favorite REST API tool such as Postman. Alternatively, you can also obtain the JSON files conforming to the OpenAPI 3.0.1 standard for VMware Cloud Foundation directly from the following GitHub &lt;a
+	
+		href = &#34;https://github.com/vmware/vcf-api-specs&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		github.com/vmware/vcf-api-specs
+	&lt;/span&gt;
+&lt;/a&gt; repository.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VCF Installer: Retrieve Component Passwords from VCF Installer</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-installer-retrieve-passwords/</link>

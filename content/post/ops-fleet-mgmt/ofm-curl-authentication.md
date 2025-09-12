@@ -26,6 +26,7 @@ In this post we will look at the process of authenticating to VCF Operations Fle
 **Procedure**
 
 1. Connect to a Linux based operating system over SSH.
+
 2. Replace the values in the sample code with values for your VCF Operations Fleet Management and run the commands SSH session.
 
 ``` Bash

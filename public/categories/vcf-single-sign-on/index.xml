@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VCF Single Sign-On on My Cloudy World</title>
+    <link>http://localhost:1313/categories/vcf-single-sign-on/</link>
+    <description>Recent content in VCF Single Sign-On on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 18 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vcf-single-sign-on/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCF Installer: Streamlining VMware Cloud Foundation Deployments</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-identity-broker/</link>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-identity-broker/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VMware Cloud Foundation 9.0 introduced the new VCF Identity Broker component to provide the totally revamped VCF Single Sign-On capability which provides single sign-on across VCF Operations, vCenter, NSX Manager, VCF Operations for logs, VCF Operations for networks and VCF Automation. VMware Cloud Foundation 9.0 added support for Ping Identity and Generic SAML 2.0 providers in addition to Okta, Microsoft Entra ID, Microsoft Active Directory, Microsoft ADFS and OpenLDAP.&lt;/p&gt;
+&lt;p&gt;When it comes to Role Based Access Control (RBAC) we&#39;ve typically used Microsoft Active Directory within our lab setups to provide group, service account and user access across the VMware Cloud Foundation platform. The biggest downside of this being the need to deploy at least one Windows Server virtual machine, this isn&#39;t a significant issue generally but it does require a Windows Server license. For this reason we recently took a look at OpenLDAP as an alternative.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

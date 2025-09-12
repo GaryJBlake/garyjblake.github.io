@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 13 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCF Installer: Retrieve Component Passwords from VCF Installer</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-installer-retrieve-passwords/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-installer-retrieve-passwords/</guid>
+      <description>
+        
+          
+            &lt;p&gt;When the auto-generate passwords options is selected within the VCF Installer UI, there maybe a scenario where you need to perform troubleshooting and a need to login to one of the underlying component appliances. Of course this is only possible if you know the passwords that were auto-generated, its relatively simple to retrieve the JSON specification used to perform the implementation from the VCF Installer appliance itself.&lt;/p&gt;
+&lt;p&gt;The following procedure demonstrates how you can retrieve a specific section of the JSON specification.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Simplified Consumption of PowerShell Automation with VMware Validated Solutions</title>
       <link>http://localhost:1313/post/vvs/vvs-powershell-menu/</link>
@@ -20,153 +37,6 @@
             &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 13-Jun-2024&lt;/p&gt;
 &lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
 &lt;p&gt;When we started on the VMware Validated Solution journey nearly three years ago, one of the main criteria we agreed on was to provide our customers with an automated way to deploy and configure whatever was defined within a solution. During the process we also did some analysis on tooling and came to the decision that we would use PowerShell as our automation tool of choice based on the flexibility it gave us.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Introducing a PowerShell Module for VMware Cloud Foundation Password Management</title>
-      <link>http://localhost:1313/post/vcf/vcf-password-management/</link>
-      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-password-management/</guid>
-      <description>
-        
-          
-            &lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
-&lt;p&gt;In January 2023 through the VMware Validated Solution programme we released both documentation and PowerShell cmdlets to help with the configuration of password policies across the VMware Cloud Foundation platform, enabling our customers to report and configure the password expiration, password complexity, and account lockout policies at scale.&lt;/p&gt;
-&lt;p&gt;The positive feedback received to date has blown us away and so last month during one of our planning sessions we discussed the merits
-for spinning out the cmdlets into their own dedicated open-source PowerShell module, during that discussion it was agreed that this would provide us and our customers the following benefits:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Configure Password Policies for VMware Cloud Foundation</title>
-      <link>http://localhost:1313/post/vvs/vvs-password-policy-config/</link>
-      <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vvs/vvs-password-policy-config/</guid>
-      <description>
-        
-          
-            &lt;p&gt;In a recent blog (&lt;a
-	
-		href = &#34;/post/vvs/vvs-password-policy&#34;
-	
-
-	
-
-	&gt;
-
-	&lt;span&gt;
-		see here
-	&lt;/span&gt;
-&lt;/a&gt;) I provided an overview of Password Policy Configuration for VMware Cloud Foundation, in this blog we will take a deep dive on using &lt;code&gt;Start-PasswordPolicyConfig&lt;/code&gt; which actually performs the configuration of all password policies across the VMware Cloud Foundation instance.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;Start-PasswordPolicyConfig&lt;/code&gt; cmdlet is part of the &lt;a
-	
-		href = &#34;https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		PowerShell Module for VMware Cloud Foundation Password Management
-	&lt;/span&gt;
-&lt;/a&gt; and provides the ability to automate the configuration of password policies using the provided configuration JSON for the following components:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Generating Password Policy Reports for VMware Cloud Foundation</title>
-      <link>http://localhost:1313/post/vvs/vvs-password-policy-reports/</link>
-      <pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vvs/vvs-password-policy-reports/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 25-Apr-2023&lt;/p&gt;
-&lt;p&gt;In a recent blog (&lt;a
-	
-		href = &#34;/post/vvs/vvs-password-policy&#34;
-	
-
-	
-
-	&gt;
-
-	&lt;span&gt;
-		see here
-	&lt;/span&gt;
-&lt;/a&gt;) I provided an overview of Password Policy Configuration for VMware Cloud Foundation, in this blog we will take a deep dive on using &lt;code&gt;Invoke-PasswordPolicyManager&lt;/code&gt; to generate the password policy reports.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;Invoke-PasswordPolicyManager&lt;/code&gt; cmdlet is part of the &lt;a
-	
-		href = &#34;https://github.com/vmware/powershell-module-for-vmware-cloud-foundation-password-management&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		PowerShell Module for VMware Cloud Foundation Password Management
-	&lt;/span&gt;
-&lt;/a&gt; and provides the ability to generate two types of HTML reports:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Password Policy Configuration for VMware Cloud Foundation Overview</title>
-      <link>http://localhost:1313/post/vvs/vvs-password-policy/</link>
-      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vvs/vvs-password-policy/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 25-Apr-2023&lt;/p&gt;
-&lt;p&gt;Password Policy Configuration may not be that important to some but for security teams it’s critical for ensuring their organization is protected. If you have ever looked deep into this area when it comes to VMware Cloud Foundation and the components involved you will quickly realize that unfortunately VMware today does not make things easy for our customers. We have:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;lack of consistency with default values&lt;/li&gt;
-&lt;li&gt;lack of consistency with common parameters&lt;/li&gt;
-&lt;li&gt;lack of consistency with API methods&lt;/li&gt;
-&lt;li&gt;lack of consistency with terminology and language&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This is why with the January Update to VMware Validated Solutions (&lt;a
-	
-		href = &#34;https://blogs.vmware.com/cloud-foundation/2023/01/31/vmware-validated-solutions-jan-2023-update/&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		see here
-	&lt;/span&gt;
-&lt;/a&gt;) we have spent a significant amount of time reviewing and rewriting all aspects of our content as it relates to Password Policy Configuration.&lt;/p&gt;
           
           
         

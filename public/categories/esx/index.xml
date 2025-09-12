@@ -18,7 +18,7 @@
         
           
             &lt;p&gt;If you have VMware Cloud Foundation 9.0 deployed and you have been using the Certificate Management capability of Fleet Management you may have noticed that with the exception of ESX you&#39;re able to use a certificate key size greater than 2048 for components such as VCF Operations, VCF Automation, SDDC Manager, vCenter and NSX Manager whereas ESX is limited to 2048.&lt;/p&gt;
-&lt;p&gt;This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3076. Whilst this is a current limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3076 or 4096 and use this new value as part of the CSR creation process.&lt;/p&gt;
+&lt;p&gt;This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3072. Whilst this is a current limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3072 or 4096 and use this new value as part of the CSR creation process.&lt;/p&gt;
           
           
         
