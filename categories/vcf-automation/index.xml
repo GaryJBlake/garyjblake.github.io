@@ -7,18 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vcf-automation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vcf-automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>VCF Automation: Obtaining an Authentication Token</title>
-      <link>http://localhost:1313/post/vcf-90/vcf-90-automation-token/</link>
-      <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
+      <title>VMware Cloud Foundation 9.0: Setting Up Custom LDAP Service for an Organization in VCF Automation</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/vcf-90/vcf-90-automation-token/</guid>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</guid>
       <description>
         
           
-            &lt;p&gt;When the auto-generate passwords options is selected within the VCF Installer UI, there maybe a scenario where you need to perform troubleshooting and a need to login to one of the underlying component appliances. Of course this is only possible if you know the passwords that were auto-generated, its relatively simple to retrieve the JSON specification used to perform the implementation from the VCF Installer appliance itself.&lt;/p&gt;
-&lt;p&gt;The following procedure demonstrates how you can retrieve a specific section of the JSON specification.&lt;/p&gt;
+            &lt;p&gt;In a recent post &lt;a
+	
+		href = &#34;/posts/vcf-90/vcf-90-identity-broker.md&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		VMware Cloud Foundation 9.0: Setting Up VCF Single Sign-On with OpenLDAP
+	&lt;/span&gt;
+&lt;/a&gt; I talked about setting up VCF Single Sign-On using the VCF Identity Broker component and OpenLDAP as the Identity Provider.&lt;/p&gt;
+&lt;p&gt;VMware Cloud Foundation 9.0 introduced the new VCF Identity Broker component to provide the totally revamped VCF Single Sign-On capability which provides single sign-on across VCF Operations, vCenter, NSX Manager, VCF Operations for logs, VCF Operations for networks, VCF Operations HCX and VCF Automation. VMware Cloud Foundation 9.0 added support for Ping Identity and Generic SAML 2.0 providers in addition to Okta, Microsoft Entra ID, Microsoft Active Directory, Microsoft ADFS and OpenLDAP.&lt;/p&gt;
           
           
         
