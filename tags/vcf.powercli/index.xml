@@ -1,29 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>VCF.PowerCLI on My Cloudy World</title>
-    <link>http://localhost:1313/tags/vcf.powercli/</link>
-    <description>Recent content in VCF.PowerCLI on My Cloudy World</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf.powercli/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Viewing a Task Status Using Curl with SDDC Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-sddcm-task-status/</link>
-      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-sddcm-task-status/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Interacting with the Public APIs for SDDC Manager can be achieved in many ways, my normal goto is PowerCLI but that requires the installation of the required modules and of course PowerShell itself to be available on either the component your wanting to interact with or a remote management host an alternative and faster method for interacting with the Public APIs then &lt;em&gt;CURL&lt;/em&gt; is your new best friend.&lt;/p&gt;
-&lt;p&gt;Using Public API you can check the status of running tasks in SDDC Manager. In this post we look at how this can be achieved using either &lt;em&gt;CURL&lt;/em&gt; or VCF.PowerShell&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VCF.PowerCLI on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/tags/vcf.powercli/</link><description>Recent content in VCF.PowerCLI on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/tags/vcf.powercli/index.xml" rel="self" type="application/rss+xml"/><item><title>VCF Automation: ?</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-sddc-user-management/</link><pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-sddc-user-management/</guid><description>
+In this procedure, we will use the /v1/users API exposed via the VCF.PowerCLI module VMware.Sdk.Vcf.SddcManager to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.
+Procedures Covered Assigning an SDDC Manager Role to a Group Assigning an SDDC Manager Role to a User Removing a User or Group from an SDDC Manager Role Assigning SDDC Manager Roles to Multiple Groups Removing Multiple Groups from SDDC Manager Roles SDDC Manager APIs Used</description></item></channel></rss>

@@ -9,16 +9,63 @@
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
     <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>VCF Automation: Obtaining an Authentication Token</title>
-      <link>http://localhost:1313/post/vcf-90/vcf-90-automation-token/</link>
+      <title>VCF Automation: ?</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</link>
       <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/vcf-90/vcf-90-automation-token/</guid>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</guid>
       <description>
         
           
-            &lt;p&gt;When the auto-generate passwords options is selected within the VCF Installer UI, there maybe a scenario where you need to perform troubleshooting and a need to login to one of the underlying component appliances. Of course this is only possible if you know the passwords that were auto-generated, its relatively simple to retrieve the JSON specification used to perform the implementation from the VCF Installer appliance itself.&lt;/p&gt;
-&lt;p&gt;The following procedure demonstrates how you can retrieve a specific section of the JSON specification.&lt;/p&gt;
+            &lt;p&gt;In this procedure, we will use the &lt;strong&gt;/v1/users&lt;/strong&gt; API exposed via the VCF.PowerCLI module &lt;code&gt;VMware.Sdk.Vcf.SddcManager&lt;/code&gt; to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;POST /v1/tokens&lt;/li&gt;
+&lt;li&gt;GET /v1/users&lt;/li&gt;
+&lt;li&gt;POST /v1/users&lt;/li&gt;
+&lt;li&gt;DELETE /v1/users&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;procedures-documented&#34;&gt;Procedures Documented&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#assigning-an-sddc-manager-role-to-a-group&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Assigning an SDDC Manager Role to a Group
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;assigning-an-sddc-manager-role-to-a-group&#34;&gt;Assigning an SDDC Manager Role to a Group&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;
           
           
         
