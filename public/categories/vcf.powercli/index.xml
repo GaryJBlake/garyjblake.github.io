@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VCF Automation on My Cloudy World</title>
-    <link>http://localhost:1313/tags/vcf-automation/</link>
-    <description>Recent content in VCF Automation on My Cloudy World</description>
+    <title>VCF.PowerCLI on My Cloudy World</title>
+    <link>http://localhost:1313/categories/vcf.powercli/</link>
+    <description>Recent content in VCF.PowerCLI on My Cloudy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-automation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vcf.powercli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VCF Automation: ?</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</link>
-      <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</guid>
       <description>
