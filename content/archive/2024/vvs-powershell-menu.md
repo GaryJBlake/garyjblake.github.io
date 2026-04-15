@@ -6,7 +6,7 @@ description = "Simplified Consumption of PowerShell Automation with VMware Valid
 tags = [
     "PowerShell",
     "PowerValidatedSolutions",
-	  "VVS"
+	"VVS"
 ]
 categories = [
     "VMware Validated Solutions"
@@ -48,7 +48,7 @@ Not only that we have built and included a simple menu to execute it all!! By ex
 Start-ValidatedSolutionMenu -jsonPath F:\vvs\generatedJsons\ -certificatePath F:\vvs\certificates\ -binaryPath F:\vvs\binaries\ -protectedWorkbook F:\vvs\pnpWorkbook.xlsx -logPath F:\vvs\logs\
 ```
 
-![](/post/vvs/vvs-powershell-menu.png)
+![](/archive/2024/vvs-powershell-menu.png)
 
 ### Conclusion
 

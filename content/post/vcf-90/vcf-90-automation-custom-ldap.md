@@ -4,12 +4,12 @@ title = "VMware Cloud Foundation 9.0: Setting Up Custom LDAP Service for an Orga
 date = "2025-09-18"
 description = "VMware Cloud Foundation 9.0: Setting Up Custom LDAP Service for an Organization in VCF Automation"
 tags = [
-    "VCF",
+    "VCF 9.0",
     "SSO",
     "LDAP"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
+    "VMware Cloud Foundation",
     "VCF Automation"
 ]
 series = [

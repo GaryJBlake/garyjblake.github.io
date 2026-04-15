@@ -44,7 +44,7 @@ The [Identity and Access Management for VMware Cloud Foundation](https://core.vm
 
 The [Health Reporting and Monitoring for VMware Cloud Foundation](https://core.vmware.com/health-reporting-and-monitoring-vmware-cloud-foundation) validated solution now supports multiple instances of VMware Cloud Foundation. This is achieved by configuring the second instance of the Python Module for VMware Cloud Foundation Health Monitoring.
 
-<img src="/post/vvs-whats-new/hrm-logical-design.png" alt="Health Reporting and Monitoring for VMware Cloud Foundation - Logical Design" width="600"/>
+<img src="/archive/2024/hrm-logical-design.png" alt="Health Reporting and Monitoring for VMware Cloud Foundation - Logical Design" width="600"/>
 
 [Implementation](https://core.vmware.com/implementation-health-reporting-and-monitoring)
 

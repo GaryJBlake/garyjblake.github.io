@@ -4,11 +4,12 @@ title = "Viewing Service Details Using Curl with SDDC Manager"
 date = "2025-01-07"
 description = "Viewing Service Details Using Curl with SDDC Manager"
 tags = [
-    "VCF",
+    "VCF 5.x",
     "Public APIs"
 ]
 categories = [
-    "SDDC Manager"
+    "SDDC Manager",
+    "VMware Cloud Foundation"
 ]
 series = [
 

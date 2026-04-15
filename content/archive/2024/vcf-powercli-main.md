@@ -4,7 +4,7 @@ title = "Native PowerCLI Modules for VMware Cloud Foundation"
 date = "2024-05-21"
 description = "Native PowerCLI Modules for VMware Cloud Foundation"
 tags = [
-    "VCF"
+    "VCF 5.x"
 ]
 categories = [
     "VMware Cloud Foundation",

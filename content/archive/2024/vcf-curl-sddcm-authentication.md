@@ -4,11 +4,12 @@ title = "Obtaining a Token Using Curl with SDDC Manager"
 date = "2024-11-28"
 description = "Obtaining a Token Using Curl with SDDC Manager"
 tags = [
-    "VCF",
+    "VCF 5.x",
     "Public APIs"
 ]
 categories = [
-    "SDDC Manager"
+    "SDDC Manager",
+    "VMware Cloud Foundation"
 ]
 series = [
 

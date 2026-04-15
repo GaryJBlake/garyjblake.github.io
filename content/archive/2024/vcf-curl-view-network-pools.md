@@ -4,11 +4,12 @@ title = "Viewing Network Pool Details Using Curl with SDDC Manager"
 date = "2024-12-03"
 description = "Viewing Network Pool Details Using Curl with SDDC Manager"
 tags = [
-    "VCF",
+    "VCF 5.x",
     "Public APIs"
 ]
 categories = [
-    "SDDC Manager"
+    "SDDC Manager",
+    "VMware Cloud Foundation"
 ]
 series = [
 
@@ -130,5 +131,4 @@ The output will look something like the following:
         }
     ]
 }
-
 ```
