@@ -1,3 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VCF.PowerCLI on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/tags/vcf.powercli/</link><description>Recent content in VCF.PowerCLI on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/tags/vcf.powercli/index.xml" rel="self" type="application/rss+xml"/><item><title>VCF Automation: ?</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-sddc-user-management/</link><pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-sddc-user-management/</guid><description>
-In this procedure, we will use the /v1/users API exposed via the VCF.PowerCLI module VMware.Sdk.Vcf.SddcManager to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.
-Procedures Covered Assigning an SDDC Manager Role to a Group Assigning an SDDC Manager Role to a User Removing a User or Group from an SDDC Manager Role Assigning SDDC Manager Roles to Multiple Groups Removing Multiple Groups from SDDC Manager Roles SDDC Manager APIs Used</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VCF.PowerCLI on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/tags/vcf.powercli/</link><description>Recent content in VCF.PowerCLI on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/tags/vcf.powercli/index.xml" rel="self" type="application/rss+xml"/><item><title>VCF Automation: ?</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-sddc-user-management/</link><pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-sddc-user-management/</guid><description>
+&lt;p&gt;In this procedure, we will use the &lt;strong&gt;/v1/users&lt;/strong&gt; API exposed via the VCF.PowerCLI module &lt;code&gt;VMware.Sdk.Vcf.SddcManager&lt;/code&gt; to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.&lt;/p&gt;
+&lt;h3 id="procedures-covered"&gt;Procedures Covered&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+href = "#assigning-an-sddc-manager-role-to-a-group"
+&gt;
+&lt;span&gt;
+Assigning an SDDC Manager Role to a Group
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "#assigning-an-sddc-manager-role-to-a-user"
+&gt;
+&lt;span&gt;
+Assigning an SDDC Manager Role to a User
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "#removing-a-user-or-group-from-an-sddc-manager-role"
+&gt;
+&lt;span&gt;
+Removing a User or Group from an SDDC Manager Role
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "#assigning-sddc-manager-roles-to-multiple-groups"
+&gt;
+&lt;span&gt;
+Assigning SDDC Manager Roles to Multiple Groups
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "#removing-multiple-groups-from-sddc-manager-roles"
+&gt;
+&lt;span&gt;
+Removing Multiple Groups from SDDC Manager Roles
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

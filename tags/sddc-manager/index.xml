@@ -1,5 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SDDC Manager on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/tags/sddc-manager/</link><description>Recent content in SDDC Manager on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/tags/sddc-manager/index.xml" rel="self" type="application/rss+xml"/><item><title>Using VMware.Sdk.Vcf.SddcManager: Commands for SDDC Manager in PowerCLI</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</link><pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</guid><description>
-VCF PowerCLI 9.0 now includes a module called VMware.Sdk.Vcf.SddcManager, this modules contains auto-generated cmdlets to support SDDC Manager Public APIs. Use can use this post as a quick reference guide.
-Connecting to a SDDC Manager Instance with Local Credentials Start a PowerShell session.
-Connect to a SDDC Manager instance using local credentials by running the following command:
-1Connect-VcfSddcManagerServer -Server sfo-vcf01.sfo.rainpole.io -User administrator@vsphere.local -Password VMw@re1!VMw@re1! Once connected the following information is stored in $defaultSddcManagerConnections.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SDDC Manager on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/tags/sddc-manager/</link><description>Recent content in SDDC Manager on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/tags/sddc-manager/index.xml" rel="self" type="application/rss+xml"/><item><title>Using VMware.Sdk.Vcf.SddcManager: Commands for SDDC Manager in PowerCLI</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</link><pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</guid><description>
+&lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Vcf.SddcManager&lt;/code&gt;, this modules contains auto-generated cmdlets to support SDDC Manager Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id="connecting-to-a-sddc-manager-instance-with-local-credentials"&gt;Connecting to a SDDC Manager Instance with Local Credentials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to a SDDC Manager instance using local credentials by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Connect-VcfSddcManagerServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;sfo-vcf01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;sfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt; &lt;span class="n"&gt;-User&lt;/span&gt; &lt;span class="n"&gt;administrator&lt;/span&gt;&lt;span class="nv"&gt;@vsphere&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;local&lt;/span&gt; &lt;span class="n"&gt;-Password&lt;/span&gt; &lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;&lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="3"&gt;
+&lt;li&gt;Once connected the following information is stored in &lt;code&gt;$defaultSddcManagerConnections&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 1&lt;/span&gt;&lt;span class="cl"&gt;ServiceUri : https://sfo-vcf01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 2&lt;/span&gt;&lt;span class="cl"&gt;SessionSecret : &amp;lt;sessionSecret&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 3&lt;/span&gt;&lt;span class="cl"&gt;User : administrator@vsphere.local
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 4&lt;/span&gt;&lt;span class="cl"&gt;IsConnected : True
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 5&lt;/span&gt;&lt;span class="cl"&gt;Id : /VcfSddcManagerServer&lt;span class="o"&gt;=&lt;/span&gt;administrator@vsphere.local@sfo-vcf01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 6&lt;/span&gt;&lt;span class="cl"&gt;Name : sfo-vcf01.sfo.rainpole.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 7&lt;/span&gt;&lt;span class="cl"&gt;Uid : /VcfSddcManagerServer&lt;span class="o"&gt;=&lt;/span&gt;administrator@vsphere.local@sfo-vcf01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 8&lt;/span&gt;&lt;span class="cl"&gt;ProductVersion : 9.0.0.0.24703748
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 9&lt;/span&gt;&lt;span class="cl"&gt;ServerUri : https://sfo-vcf01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;10&lt;/span&gt;&lt;span class="cl"&gt;UUID : /VcfSddcManagerServer&lt;span class="o"&gt;=&lt;/span&gt;administrator@vsphere.local@sfo-vcf01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;11&lt;/span&gt;&lt;span class="cl"&gt;Port : &lt;span class="m"&gt;443&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
+&lt;li&gt;Disconnect from a SDDC Manager instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Disconnect-VcfSddcManagerServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;sfo-vcf01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;sfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="display-all-sddc-manager-get-command-details"&gt;Display All SDDC Manager GET Command Details&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;</description></item></channel></rss>

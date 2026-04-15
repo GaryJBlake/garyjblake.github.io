@@ -1,22 +1,299 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VMware Validated Solutions on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/categories/vmware-validated-solutions/</link><description>Recent content in VMware Validated Solutions on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/categories/vmware-validated-solutions/index.xml" rel="self" type="application/rss+xml"/><item><title>Where Has The VMware Validated Solution Content Gone</title><link>http://jadenetworksolutions.co.uk/post/vvs/vvs-content-locations/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vvs/vvs-content-locations/</guid><description>
-Since the acquisition of VMware by Broadcom there has been a significant amount of effort behind the scenes to consolidate systems, processes and portals, as a result of this work a couple of key areas have been affected that impact VMware Validated Solutions. If as a result you have been struggling to find the content then read on!
-VMware Validated Solutions Landing Page When we first launched VMware Validated Solutions back in October 2021 we decided to utilize one of the Technical Marketing portals known as TechZone and in particular the core.</description></item><item><title>What's New for VMware Validated Solutions - Blog Index</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/whats-new-index/</link><pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/whats-new-index/</guid><description>
-Last Updated 08-Oct-2024 VMware Validated Solutions are byte sized solutions developed to extend the foundational capabilities of VMware Cloud Foundation, for background reading see my previous post here. Over time the team intends to add incremental value where opportunities arise and I plan to share as much detail as I can with each new update using my What's New for VMware Validated Solutions series of blog posts. I've decided to create this single landing page where I will provide a consolidated list of links to the relevant Editions of this series so you can bookmark this single page for ease of use.</description></item><item><title>What's New for VMware Validated Solutions - Edition #26 (October 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-26/</link><pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-26/</guid><description>
-Last Updated: 08-Oct-2024
-Welcome to Edition #26 of the What's New for VMware Validated Solutions, this is the update for October 2024, the highlights of which are:
-Added support for VMware Cloud Foundation 5.2.1 to VMware Validated Solutions Release of PowerValidatedSolutions v2.12.0 Added Support for VMware Cloud Foundation 5.2.1 Delighted to announce support for VMware Cloud Foundation 5.2.1 for the following VMware Validated Solutions:
-Identity and Access Management for VMware Cloud Foundation Developer Ready Infrastructure for VMware Cloud Foundation Private AI Ready Infrastructure for VMware Cloud Foundation Intelligent Logging and Analytics for VMware Cloud Foundation Intelligent Operations Management for VMware Cloud Foundation Intelligent Network Visibility for VMware Cloud Foundation Private Cloud Automation for VMware Cloud Foundation Site Protection and Disaster Recovery for VMware Cloud Foundation Health Reporting and Monitoring for VMware Cloud Foundation Cloud-Based Ransomware Recovery for VMware Cloud Foundation Cross Cloud Mobility for VMware Cloud Foundation General Availability of PowerValidatedSolutions v2.</description></item><item><title>What's New for VMware Validated Solutions - Edition #25 (July 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-25/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-25/</guid><description>
-Last Updated: 23-Jul-2024
-Welcome to Edition #25 of the What's New for VMware Validated Solutions, this is the update for July 2024, the highlights of which are:
-Added support for VMware Cloud Foundation 5.2.0 to VMware Validated Solutions Enhancements to Developer Ready Infrastructure for VMware Cloud Foundation Enhancements to Intelligent Network Visibility for VMware Cloud Foundation New end-to-end automated implementation using PowerShell for all VMware Validated Solutions Support for automated deployment of Solution Interoperability from the validated solution menu Guidance on importing the VMware Aria Suite OVA files into a vSphere Content Library Signed Certificate Generation using the PowerShell Module for VMware Validated Solutions Deprecation of Cloud-Based Workload Protection for VMware Cloud Foundation Release of PowerValidatedSolutions v2.</description></item><item><title>Simplified Consumption of PowerShell Automation with VMware Validated Solutions</title><link>http://jadenetworksolutions.co.uk/post/vvs/vvs-powershell-menu/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vvs/vvs-powershell-menu/</guid><description>
-Last Updated: 13-Jun-2024
-Background When we started on the VMware Validated Solution journey nearly three years ago, one of the main criteria we agreed on was to provide our customers with an automated way to deploy and configure whatever was defined within a solution. During the process we also did some analysis on tooling and came to the decision that we would use PowerShell as our automation tool of choice based on the flexibility it gave us.</description></item><item><title>What's New for VMware Validated Solutions - Edition #24 (May 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-24/</link><pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-24/</guid><description>
-Last Updated: 28-May-2024
-Welcome to Edition #24 of the What's New for VMware Validated Solutions, this is the update for May 2024, the highlights of which are:
-New Solution – Private AI Ready Infrastructure for VMware Cloud Foundation Added Support for VxRail to Health Reporting and Monitoring for VMware Cloud Foundation Added Support for VMware Aria Automation 8.16.2 to Private Cloud Automation for VMware Cloud Foundation Added Support for VMware Site Recovery Manager 9.</description></item><item><title>What's New for VMware Validated Solutions - Edition #23 (March 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-23/</link><pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-23/</guid><description>
-Last Updated: 26-Mar-2024
-Welcome to Edition #23 of the What's New for VMware Validated Solutions, this is the update for March 2024, the highlights of which are:
-Added support for VMware Cloud Foundation 5.1.1 for all VMware Validated Solutions Update to password management for the latest Photon OS Various enhancements to Intelligent Operations Management for VMware Cloud Foundation Various enhancements to Intelligent Network Visibility for VMware Cloud Foundation Various enhancements to Private Cloud Automation for VMware Cloud Foundation Various enhancements to Site Protection and Disaster Recovery for VMware Cloud Foundation Various enhancements to Cloud-Based Workload Protection for VMware Cloud Foundation Various enhancements to Cloud-Based Ransomware Recovery for VMware Cloud Foundation Various enhancements to Cross Cloud Mobility for VMware Cloud Foundation Release of PowerValidatedSolutions v2.</description></item><item><title>What's New for VMware Validated Solutions - Edition #22 (January 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-22/</link><pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-22/</guid><description>
-Last Updated: 30-January-2024
-Welcome to Edition #22 of the What's New for VMware Validated Solutions, this is a our first update for 2024 and the team has been busy over the festive period. Highlights include:
-New Solution – Intelligent Network Visibility for VMware Cloud Foundation Architectural change to Identity and Access Management for VMware Cloud Foundation Multi-instance support for Health Reporting and Monitoring for VMware Cloud Foundation Various enhancements to Intelligent Logging and Analytics for VMware Cloud Foundation Various enhancements to Intelligent Operations Management for VMware Cloud Foundation Various enhancements to Private Cloud Automation for VMware Cloud Foundation Various enhancements to Site Protection and Disaster Recovery for VMware Cloud Foundation Deprecation of VMware Aria SaaS based validated solutions.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VMware Validated Solutions on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/categories/vmware-validated-solutions/</link><description>Recent content in VMware Validated Solutions on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/categories/vmware-validated-solutions/index.xml" rel="self" type="application/rss+xml"/><item><title>Where Has The VMware Validated Solution Content Gone</title><link>http://jadenetworksolutions.co.uk/post/vvs/vvs-content-locations/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs/vvs-content-locations/</guid><description>
+&lt;p&gt;Since the acquisition of VMware by Broadcom there has been a significant amount of effort behind the scenes to consolidate systems, processes and portals, as a result of this work a couple of key areas have been affected that impact VMware Validated Solutions. If as a result you have been struggling to find the content then read on!&lt;/p&gt;
+&lt;h3 id="vmware-validated-solutions-landing-page"&gt;VMware Validated Solutions Landing Page&lt;/h3&gt;
+&lt;p&gt;When we first launched VMware Validated Solutions back in October 2021 we decided to utilize one of the Technical Marketing portals known as TechZone and in particular the core.vmware.com TechZone portal, this provided more flexibility in how we could lay out the content helping direct customers to the relevant content based on their task at hand. The TechZone portal was shutdown in November 2024, and so we looked at how we could provide a similar experience. If your familiar with VMware Validated Solutions you will be aware of the automation we have delivered across solutions and no doubt be aware of a couple of GitHub repositories that exist to support this effort and so we have created a documentation landing page within the companion GitHub repository &lt;a
+href = "https://vmware.github.io/validated-solutions-for-cloud-foundation/"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+VMware Validated Solutions
+&lt;/span&gt;
+&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Blog Index</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/whats-new-index/</link><pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/whats-new-index/</guid><description>
+&lt;h2 id="last-updated-08-oct-2024"&gt;Last Updated 08-Oct-2024&lt;/h2&gt;
+&lt;p&gt;VMware Validated Solutions are byte sized solutions developed to extend the foundational capabilities of VMware Cloud Foundation, for background reading see my previous post here. Over time the team intends to add incremental value where opportunities arise and I plan to share as much detail as I can with each new update using my What's New for VMware Validated Solutions series of blog posts. I've decided to create this single landing page where I will provide a consolidated list of links to the relevant Editions of this series so you can bookmark this single page for ease of use.&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Edition #26 (October 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-26/</link><pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-26/</guid><description>
+&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 08-Oct-2024&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #26 of the &lt;strong&gt;What's New for VMware Validated Solutions&lt;/strong&gt;, this is the update for October 2024, the highlights of which are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for &lt;strong&gt;VMware Cloud Foundation 5.2.1&lt;/strong&gt; to VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.12.0"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+PowerValidatedSolutions v2.12.0
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="added-support-for-vmware-cloud-foundation-521"&gt;Added Support for VMware Cloud Foundation 5.2.1&lt;/h3&gt;
+&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.2.1 for the following VMware Validated Solutions:&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Edition #25 (July 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-25/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-25/</guid><description>
+&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 23-Jul-2024&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #25 of the &lt;strong&gt;What's New for VMware Validated Solutions&lt;/strong&gt;, this is the update for July 2024, the highlights of which are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for VMware Cloud Foundation 5.2.0 to VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Enhancements to &lt;a
+href = "https://core.vmware.com/developer-ready-infrastructure-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Developer Ready Infrastructure for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Enhancements to &lt;a
+href = "https://core.vmware.com/intelligent-network-visibility-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Intelligent Network Visibility for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New end-to-end automated implementation using PowerShell for all VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Support for automated deployment of Solution Interoperability from the validated solution menu&lt;/li&gt;
+&lt;li&gt;Guidance on importing the VMware Aria Suite OVA files into a vSphere Content Library&lt;/li&gt;
+&lt;li&gt;Signed Certificate Generation using the PowerShell Module for VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Deprecation of &lt;a
+href = "https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Cloud-Based Workload Protection for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.11.0"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+PowerValidatedSolutions v2.11.0
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="added-support-for-vmware-cloud-foundation-520"&gt;Added Support for VMware Cloud Foundation 5.2.0&lt;/h3&gt;
+&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.2.0 for the following VMware Validated Solutions:&lt;/p&gt;</description></item><item><title>Simplified Consumption of PowerShell Automation with VMware Validated Solutions</title><link>http://jadenetworksolutions.co.uk/post/vvs/vvs-powershell-menu/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs/vvs-powershell-menu/</guid><description>
+&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 13-Jun-2024&lt;/p&gt;
+&lt;h3 id="background"&gt;Background&lt;/h3&gt;
+&lt;p&gt;When we started on the VMware Validated Solution journey nearly three years ago, one of the main criteria we agreed on was to provide our customers with an automated way to deploy and configure whatever was defined within a solution. During the process we also did some analysis on tooling and came to the decision that we would use PowerShell as our automation tool of choice based on the flexibility it gave us.&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Edition #24 (May 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-24/</link><pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-24/</guid><description>
+&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 28-May-2024&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #24 of the &lt;strong&gt;What's New for VMware Validated Solutions&lt;/strong&gt;, this is the update for May 2024, the highlights of which are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; – &lt;a
+href = "https://core.vmware.com/private-ai-ready-infrastructure-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Private AI Ready Infrastructure for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added Support for VxRail to &lt;a
+href = "https://core.vmware.com/health-reporting-and-monitoring-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Health Reporting and Monitoring for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added Support for VMware Aria Automation 8.16.2 to &lt;a
+href = "https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Private Cloud Automation for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added Support for VMware Site Recovery Manager 9.0 and vSphere Replication 9.0 to &lt;a
+href = "https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Site Protection and Disaster Recovery for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updated automation steps for &lt;a
+href = "https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Identity and Access Management for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.10.0"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+PowerValidatedSolutions v2.10.0
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="private-ai-ready-infrastructure-for-vmware-cloud-foundation"&gt;Private AI Ready Infrastructure for VMware Cloud Foundation&lt;/h3&gt;
+&lt;p&gt;Delighted to announce the release of this brand-new VMware Validated Solution.&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Edition #23 (March 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-23/</link><pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-23/</guid><description>
+&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 26-Mar-2024&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #23 of the &lt;strong&gt;What's New for VMware Validated Solutions&lt;/strong&gt;, this is the update for March 2024, the highlights of which are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for VMware Cloud Foundation 5.1.1 for all VMware Validated Solutions&lt;/li&gt;
+&lt;li&gt;Update to password management for the latest Photon OS&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+href = "https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Intelligent Operations Management for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+href = "https://core.vmware.com/intelligent-network-visibility-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Intelligent Network Visibility for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+href = "https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Private Cloud Automation for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+href = "https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Site Protection and Disaster Recovery for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+href = "https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Cloud-Based Workload Protection for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+href = "https://core.vmware.com/cloud-based-ransomware-recovery-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Cloud-Based Ransomware Recovery for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+href = "https://core.vmware.com/cross-cloud-mobility-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Cross Cloud Mobility for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.9.0"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+PowerValidatedSolutions v2.9.0
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="added-support-for-vmware-cloud-foundation-511"&gt;Added Support for VMware Cloud Foundation 5.1.1&lt;/h3&gt;
+&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.1.1 for the following VMware Validated Solutions:&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Edition #22 (January 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-22/</link><pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-22/</guid><description>
+&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 30-January-2024&lt;/p&gt;
+&lt;p&gt;Welcome to Edition #22 of the &lt;strong&gt;What's New for VMware Validated Solutions&lt;/strong&gt;, this is a our first update for 2024 and the team has been busy over the festive period. Highlights include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; – &lt;a
+href = "https://core.vmware.com/instelligent-network-visibility-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Intelligent Network Visibility for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Architectural change to &lt;a
+href = "https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Identity and Access Management for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Multi-instance support for &lt;a
+href = "https://core.vmware.com/health-reporting-and-monitoring-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Health Reporting and Monitoring for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+href = "https://core.vmware.com/intelligent-logging-and-analytics-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Intelligent Logging and Analytics for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+href = "https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Intelligent Operations Management for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+href = "https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Private Cloud Automation for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various enhancements to &lt;a
+href = "https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Site Protection and Disaster Recovery for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Deprecation of VMware Aria SaaS based validated solutions.&lt;/li&gt;
+&lt;li&gt;Release of &lt;a
+href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.8.0"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+PowerValidatedSolutions v2.8.0
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="intelligent-network-visibility-for-vmware-cloud-foundation"&gt;Intelligent Network Visibility for VMware Cloud Foundation&lt;/h3&gt;
+&lt;p&gt;Delighted to announce the release of this brand-new VMware Validated Solution.&lt;/p&gt;</description></item></channel></rss>

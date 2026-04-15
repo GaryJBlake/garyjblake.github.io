@@ -1,47 +1,761 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VMware Cloud Foundation 9.0 on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation-9.0/</link><description>Recent content in VMware Cloud Foundation 9.0 on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation-9.0/index.xml" rel="self" type="application/rss+xml"/><item><title>Latency Requirements for VMware Cloud Foundation 9.0</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-fleet-latency/</link><pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-fleet-latency/</guid><description>
-Since the initial release of VMware Cloud Foundation 9.0, a significant proportion of conversations with customers have revolved around the topic of latency between components of a VCF fleet. Finally, I'm delighted to be able to share v1 of the newly published VMware Cloud Foundation 9.0 Fleet Latency v1 diagram which can be found here .
-The intent of this diagram is to help better define the latency limitations across a VCF fleet as it brings all of the latency numbers into a single location.</description></item><item><title>VMware Cloud Foundation 9.0: Setting Up Custom LDAP Service for an Organization in VCF Automation</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-automation-custom-ldap/</link><pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-automation-custom-ldap/</guid><description>
-If you have looked at VCF Automation in any detail you may be aware that you can configure one or more external identity providers (IdPs), and import users and groups to your organizations. This configuration can use an LDAP server connection which can be configured at either the system or the organization level, a SAML integration at the organization level, or an OpenID Connect (OIDC) integration at the organization level.</description></item><item><title>VCF Automation: ?</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-sddc-user-management/</link><pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-sddc-user-management/</guid><description>
-In this procedure, we will use the /v1/users API exposed via the VCF.PowerCLI module VMware.Sdk.Vcf.SddcManager to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.
-Procedures Covered Assigning an SDDC Manager Role to a Group Assigning an SDDC Manager Role to a User Removing a User or Group from an SDDC Manager Role Assigning SDDC Manager Roles to Multiple Groups Removing Multiple Groups from SDDC Manager Roles SDDC Manager APIs Used</description></item><item><title>VMware Cloud Foundation 9.0: Setting Up VCF Single Sign-On with OpenLDAP</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-identity-broker/</link><pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-identity-broker/</guid><description>
-VMware Cloud Foundation 9.0 introduced the new VCF Identity Broker component to provide the totally revamped VCF Single Sign-On capability which provides single sign-on across VCF Operations, vCenter, NSX Manager, VCF Operations for logs, VCF Operations for networks, VCF Operations HCX and VCF Automation. VMware Cloud Foundation 9.0 added support for Ping Identity and Generic SAML 2.0 providers in addition to Okta, Microsoft Entra ID, Microsoft Active Directory, Microsoft ADFS and OpenLDAP.</description></item><item><title>Automate VMware Cloud Foundation 9.0 with OpenAPI</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-open-api-specs/</link><pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-open-api-specs/</guid><description>
-If like me you're always looking for opportunities to replace manual repetitive steps with automation then this post is for you! Here I've documented the location of various OpenAPI specification files for components of VMware Cloud Foundation 9.0 which can be downloaded directly from their appliances and imported into your favorite REST API tool such as Postman. Alternatively, you can also obtain the JSON files conforming to the OpenAPI 3.0.1 standard for VMware Cloud Foundation directly from the following GitHub github.</description></item><item><title>VCF Installer: Retrieve Component Passwords from VCF Installer</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-installer-retrieve-passwords/</link><pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-installer-retrieve-passwords/</guid><description>
-When the auto-generate passwords options is selected within the VCF Installer UI, there maybe a scenario where you need to perform troubleshooting and a need to login to one of the underlying component appliances. Of course this is only possible if you know the passwords that were auto-generated, its relatively simple to retrieve the JSON specification used to perform the implementation from the VCF Installer appliance itself.
-The following procedure demonstrates how you can retrieve a specific section of the JSON specification.</description></item><item><title>Adjusting ESX Certificate Key Size in VMware Cloud Foundation</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-esx-certificate-keysize/</link><pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-esx-certificate-keysize/</guid><description>
-If you have VMware Cloud Foundation 9.0 deployed and you have been using the Certificate Management capability of Fleet Management you may have noticed that with the exception of ESX you're able to use a certificate key size greater than 2048 for components such as VCF Operations, VCF Automation, SDDC Manager, vCenter and NSX Manager whereas ESX is limited to 2048.
-This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3072.</description></item><item><title>Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-srm-cmdlets/</link><pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-srm-cmdlets/</guid><description>
-VCF PowerCLI 9.0 now includes a module called VMware.Sdk.Srm, this modules contains auto-generated cmdlets to support VMware Live Site Recovery Public APIs. Use can use this post as a quick reference guide.
-Display All VMware Live Recovery GET Command Details Start a PowerShell session.
-Display all GET cmdlets supported in VMware.Sdk.Srm by running the following command:
-1Get-SrmOperation -Method Get | Select-Object CommandInfo, Path, Method Output for all GET cmdlets in VMware.</description></item><item><title>Using VMware.Sdk.Vsphere: Commands for vSphere</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</link><pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</guid><description>
-VCF PowerCLI 9.0 now includes a module called VMware.Sdk.Vsphere, this modules contains auto-generated cmdlets to support vSphere Public APIs. Use can use this post as a quick reference guide.
-Connecting to a vCenter Instance with Local Credentials Start a PowerShell session.
-Connect to a vCenter instance using local credentials by running the following command:
-1Connect-VIServer -Server sfo-m01-vc01.sfo.rainpole.io -Username administrator@vsphere.local -Password VMw@re1!VMw@re1! Once connected the following information is stored in $global:DefaultVIServer. 1Name : sfo-m01-vc01.</description></item><item><title>Using VMware.Sdk.Vcf.SddcManager: Commands for SDDC Manager in PowerCLI</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</link><pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</guid><description>
-VCF PowerCLI 9.0 now includes a module called VMware.Sdk.Vcf.SddcManager, this modules contains auto-generated cmdlets to support SDDC Manager Public APIs. Use can use this post as a quick reference guide.
-Connecting to a SDDC Manager Instance with Local Credentials Start a PowerShell session.
-Connect to a SDDC Manager instance using local credentials by running the following command:
-1Connect-VcfSddcManagerServer -Server sfo-vcf01.sfo.rainpole.io -User administrator@vsphere.local -Password VMw@re1!VMw@re1! Once connected the following information is stored in $defaultSddcManagerConnections.</description></item><item><title>Using VMware.Sdk.Nsx.Policy: Commands for NSX</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-nsx-policy-cmdlets/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-nsx-policy-cmdlets/</guid><description>
-VCF PowerCLI 9.0 now includes a module called VMware.Sdk.Nsx.Policy, this modules contains auto-generated cmdlets to support NSX Policy Public APIs. Use can use this post as a quick reference guide.
-Connecting to a NSX Instance with Local Credentials Start a PowerShell session.
-Connect to a NSX instance using local credentials by running the following command:
-1Connect-NsxServer -Server sfo-m01-nsx01.sfo.rainpole.io -User admin -Password VMw@re1!VMw@re1! Once connected the following information is stored in $defaultNsxConnections.</description></item><item><title>Using VMware.Sdk.Vcf.Installer: Commands for VCF Installer in PowerCLI</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-vcfinstaller-cmdlets/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-vcfinstaller-cmdlets/</guid><description>
-VCF PowerCLI 9.0 now includes a module called VMware.Sdk.Vcf.Installer, this modules contains auto-generated cmdlets to support VCF Installer Public APIs. Use can use this post as a quick reference guide.
-Connecting to a VCF Installer Instance with Local Credentials Start a PowerShell session.
-Connect to a VCF Installer instance using local credentials by running the following command:
-1Connect-VcfInstallerServer -Server sfo-ins01.sfo.rainpole.io -User admin@local -Password VMw@re1!VMw@re1! Once connected the following information is stored in $defaultInstallerConnections.</description></item><item><title>Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-operations-cmdlets/</link><pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-operations-cmdlets/</guid><description>
-VCF PowerCLI 9.0 now includes a module called VMware.Sdk.Vcf.Ops, this modules contains auto-generated cmdlets to support VCF Operations Public APIs. Use can use this post as a quick reference guide.
-Connecting to a VCF Operations Instance with Local Credentials Start a PowerShell session.
-Connect to a VCF Operations instance using local credentials by running the following command:
-1Connect-VcfOpsServer -Server flt-ops01a.rainpole.io -User admin -Password VMw@re1!VMw@re1! Once connected the following information is stored in $defaultOpsConnections.</description></item><item><title>VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sdk-modules/</link><pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sdk-modules/</guid><description>
-Along with the release of VMware Cloud Foundation 9.0 a new version of PowerCLI has also been shipped, for a full rundown of what's new I would suggest reading the official blog Introducing VCF PowerCLI 9.0 , but here are the quick highlights:
-Name Change to VCF PowerCLI Performance Improvements New Module for NSX Virtual Private Cloud New Module for SDDC Manager Usability improvements with PowerCLI SDK Global Authorization APIs and PowerCLI bindings Bug fixes For the purposes of this blog I want to focus on the PowerCLI SDK improvements.</description></item><item><title>How to Install VCF PowerCLI 9.0: Step-by-Step Guide</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-updating/</link><pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-updating/</guid><description>
-The fastest and easiest way to start utilising VCF PowerCLI 9.0 is to first remove any old versions and then perform a fresh install.
-Remove Existing VMware PowerCLI Modules Start a PowerShell session.
-Uninstall all VMware modules by running the following command:
-1Get-Module VMware* -ListAvailable | Uninstall-Module -Force -AllVersions Verify that all VMware modules have been uninstalled by running the following command: 1Get-Module VMware* -ListAvailable Installing VCF PowerCLI 9.0 Start a PowerShell session.</description></item><item><title>VMware Cloud Foundation 9.0: Transitioning from SDDC Manager to VCF Operations</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-task-locations/</link><pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-task-locations/</guid><description>
-Where Do I Perform Tasks in VMware Cloud Foundation 9.0 With the release of VMware Cloud Foundation 9.0 and if you’re familiar with previous releases there are some significant changes when it comes to navigating and performing various tasks.
-If you’re not aware with VMware Cloud Foundation 9.0 Broadcom has announced that the SDDC Manager User Interface is deprecated and will be removed in a future release, the reason for this being that in order to deliver a truly integrated platform and simplified management VCF Operations is now the central console.</description></item><item><title>VCF Installer: Streamlining VMware Cloud Foundation Deployments</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-installer-introduction/</link><pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-installer-introduction/</guid><description>
-What is the VCF Installer Appliance? The VCF Installer is a new unified appliance for VMware Cloud Foundation 9.0 which is a direct replacement for VMware Cloud Builder used in previous versions. Developed and delivered as part of the same OVA as SDDC Manager the bring-up capabilities of VMware Cloud Builder have been ported over.
-In addition the Deployment Parameter Workbook has been completely deprecated and replaced with a new VCF Installer User Interface.</description></item><item><title>Understanding VMware Cloud Foundation 9.0: Key Terminology Explained</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-understanding-terminology/</link><pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-understanding-terminology/</guid><description>
-VMware Cloud Foundation 9.0 has finally arrived, this much anticipated release brings together what were a collection of individual products into what is now considered a single on-premies private cloud platform. In this post I'm going to help you understand some of the terminology and constructs behind VMware Cloud Foundation 9.0, if you can master these then your well on your way to getting your head around whats changed and the direction in which Broadcom is taking the product.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VMware Cloud Foundation 9.0 on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation-9.0/</link><description>Recent content in VMware Cloud Foundation 9.0 on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation-9.0/index.xml" rel="self" type="application/rss+xml"/><item><title>Latency Requirements for VMware Cloud Foundation 9.0</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-fleet-latency/</link><pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-fleet-latency/</guid><description>
+&lt;p&gt;Since the initial release of VMware Cloud Foundation 9.0, a significant proportion of conversations with customers have revolved around the topic of latency between components of a VCF fleet. Finally, I'm delighted to be able to share v1 of the newly published VMware Cloud Foundation 9.0 Fleet Latency v1 diagram which can be found &lt;a
+href = "https://ports.broadcom.com/network-diagrams/VMware-Cloud-Foundation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+here
+&lt;/span&gt;
+&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The intent of this diagram is to help better define the latency limitations across a VCF fleet as it brings all of the latency numbers into a single location.&lt;/p&gt;</description></item><item><title>VMware Cloud Foundation 9.0: Setting Up Custom LDAP Service for an Organization in VCF Automation</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-automation-custom-ldap/</link><pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-automation-custom-ldap/</guid><description>
+&lt;p&gt;If you have looked at VCF Automation in any detail you may be aware that you can configure one or more external identity providers (IdPs), and import users and groups to your organizations. This configuration can use an LDAP server connection which can be configured at either the system or the organization level, a SAML integration at the organization level, or an OpenID Connect (OIDC) integration at the organization level.&lt;/p&gt;</description></item><item><title>VCF Automation: ?</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-sddc-user-management/</link><pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-sddc-user-management/</guid><description>
+&lt;p&gt;In this procedure, we will use the &lt;strong&gt;/v1/users&lt;/strong&gt; API exposed via the VCF.PowerCLI module &lt;code&gt;VMware.Sdk.Vcf.SddcManager&lt;/code&gt; to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.&lt;/p&gt;
+&lt;h3 id="procedures-covered"&gt;Procedures Covered&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+href = "#assigning-an-sddc-manager-role-to-a-group"
+&gt;
+&lt;span&gt;
+Assigning an SDDC Manager Role to a Group
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "#assigning-an-sddc-manager-role-to-a-user"
+&gt;
+&lt;span&gt;
+Assigning an SDDC Manager Role to a User
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "#removing-a-user-or-group-from-an-sddc-manager-role"
+&gt;
+&lt;span&gt;
+Removing a User or Group from an SDDC Manager Role
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "#assigning-sddc-manager-roles-to-multiple-groups"
+&gt;
+&lt;span&gt;
+Assigning SDDC Manager Roles to Multiple Groups
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "#removing-multiple-groups-from-sddc-manager-roles"
+&gt;
+&lt;span&gt;
+Removing Multiple Groups from SDDC Manager Roles
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>VMware Cloud Foundation 9.0: Setting Up VCF Single Sign-On with OpenLDAP</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-identity-broker/</link><pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-identity-broker/</guid><description>
+&lt;p&gt;VMware Cloud Foundation 9.0 introduced the new VCF Identity Broker component to provide the totally revamped VCF Single Sign-On capability which provides single sign-on across VCF Operations, vCenter, NSX Manager, VCF Operations for logs, VCF Operations for networks, VCF Operations HCX and VCF Automation. VMware Cloud Foundation 9.0 added support for Ping Identity and Generic SAML 2.0 providers in addition to Okta, Microsoft Entra ID, Microsoft Active Directory, Microsoft ADFS and OpenLDAP.&lt;/p&gt;</description></item><item><title>Automate VMware Cloud Foundation 9.0 with OpenAPI</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-open-api-specs/</link><pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-open-api-specs/</guid><description>
+&lt;p&gt;If like me you're always looking for opportunities to replace manual repetitive steps with automation then this post is for you! Here I've documented the location of various OpenAPI specification files for components of VMware Cloud Foundation 9.0 which can be downloaded directly from their appliances and imported into your favorite REST API tool such as Postman. Alternatively, you can also obtain the JSON files conforming to the OpenAPI 3.0.1 standard for VMware Cloud Foundation directly from the following GitHub &lt;a
+href = "https://github.com/vmware/vcf-api-specs"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+github.com/vmware/vcf-api-specs
+&lt;/span&gt;
+&lt;/a&gt; repository.&lt;/p&gt;</description></item><item><title>VCF Installer: Retrieve Component Passwords from VCF Installer</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-installer-retrieve-passwords/</link><pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-installer-retrieve-passwords/</guid><description>
+&lt;p&gt;When the auto-generate passwords options is selected within the VCF Installer UI, there maybe a scenario where you need to perform troubleshooting and a need to login to one of the underlying component appliances. Of course this is only possible if you know the passwords that were auto-generated, its relatively simple to retrieve the JSON specification used to perform the implementation from the VCF Installer appliance itself.&lt;/p&gt;
+&lt;p&gt;The following procedure demonstrates how you can retrieve a specific section of the JSON specification.&lt;/p&gt;</description></item><item><title>Adjusting ESX Certificate Key Size in VMware Cloud Foundation</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-esx-certificate-keysize/</link><pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-esx-certificate-keysize/</guid><description>
+&lt;p&gt;If you have VMware Cloud Foundation 9.0 deployed and you have been using the Certificate Management capability of Fleet Management you may have noticed that with the exception of ESX you're able to use a certificate key size greater than 2048 for components such as VCF Operations, VCF Automation, SDDC Manager, vCenter and NSX Manager whereas ESX is limited to 2048.&lt;/p&gt;
+&lt;p&gt;This was recently raised by one of my colleagues in the field, where their customer had a minimum requirement of 3072. Whilst this is a current limitation in VMware Cloud Foundation 9.0 and the User Interface of VCF Operations, there are enhancements planned for a future release but there is a way to adjust the key size to either 3072 or 4096 and use this new value as part of the CSR creation process.&lt;/p&gt;</description></item><item><title>Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-srm-cmdlets/</link><pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-srm-cmdlets/</guid><description>
+&lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Srm&lt;/code&gt;, this modules contains auto-generated cmdlets to support VMware Live Site Recovery Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id="display-all-vmware-live-recovery-get-command-details"&gt;Display All VMware Live Recovery GET Command Details&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Display all GET cmdlets supported in &lt;code&gt;VMware.Sdk.Srm&lt;/code&gt; by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Get-SrmOperation&lt;/span&gt; &lt;span class="n"&gt;-Method&lt;/span&gt; &lt;span class="n"&gt;Get&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="nb"&gt;Select-Object&lt;/span&gt; &lt;span class="n"&gt;CommandInfo&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Method&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="3"&gt;
+&lt;li&gt;Output for all GET cmdlets in &lt;code&gt;VMware.Sdk.Srm&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command Info&lt;/th&gt;
+&lt;th&gt;Path&lt;/th&gt;
+&lt;th&gt;Method&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetFolderMapping&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/folders/{mapping_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetFolderMappings&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/folders&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetNetworkIpSubnetMapping&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/networks/{mapping_id}/ip-subnet-mapping&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetNetworkMapping&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/networks/{mapping_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetNetworkMappings&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/networks&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlaceholderDatastore&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/placeholder-datastores/{datastore_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlaceholderDatastores&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/placeholder-datastores&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetResourceMapping&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/resources/{mapping_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetResourceMappings&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/resources&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetStoragePolicyMapping&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/storage-policies/{mapping_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetStoragePolicyMappings&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/storage-policies&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetTestNetworkMapping&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/test-networks/{mapping_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetTestNetworkMappings&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/test-networks&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetLicensing&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/licensing&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPairing&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPairingIssues&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/issues&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPairings&lt;/td&gt;
+&lt;td&gt;/pairings&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetSrm&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetSrmIssues&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/issues&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetSrmPermissions&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/permissions&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetSrms&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetAllGroups&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/groups&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetDatastoreGroup&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/datastore-groups/{datastore_group_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetDatastoreGroups&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/datastore-groups&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetGroup&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetGroupIssues&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/issues&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetGroupRelatedRecoveryPlans&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/recovery-plans&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetGroupVm&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/vms/{vm_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetGroupVms&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/vms&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetProtectionGroupFolder&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/inventory/{folder_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetProtectionGroupFolderChildren&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/inventory/{folder_id}/children&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetProtectionGroupFolders&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/inventory&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVmProtectionSettings&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/vms/{vm_id}/protection-settings&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVvolReplicationGroup&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/replication-groups/{replication_group_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVvolReplicationGroups&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/protection-management/groups/{group_id}/replication-groups&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetAllPlanHistoryRecords&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/history-reports&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetAllRecoveryPlans&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlanHistoryRecord&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/history-reports/{report_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlanHistoryRecords&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/history-reports&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlanRelatedProtectionGroups&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/protection-groups&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlanRelatedTestNetworks&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/test-networks&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlanVirtualMachine&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlanVirtualMachineDependentVms&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}/recovery-settings/dependent-vms&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlanVirtualMachineIpCustomization&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}/recovery-settings/ip-customization&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlanVirtualMachineRecoveryPriority&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}/recovery-settings/priority&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlanVirtualMachineRecoverySettings&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}/recovery-settings&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlanVirtualMachineSummarizedRecoverySettings&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms/{vm_id}/recovery-settings/summary&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetPlanVirtualMachines&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/vms&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetRecoveryPlan&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetRecoveryPlanFolder&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/inventory/{folder_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetRecoveryPlanFolderChildren&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/inventory/{folder_id}/children&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetRecoveryPlanFolders&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/inventory&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetRecoveryPlanIssues&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/issues&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetRecoveryStep&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/recovery-steps/{view_mode}/{recovery_step_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetRecoverySteps&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/recovery-steps/{view_mode}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetRecoveryStepsCalloutDetails&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/recovery-steps/{view_mode}/{recovery_step_id}/callout-data&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetRecoveryStepsUserPrompt&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/recovery-steps/user-prompts/{prompt_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetRecoveryStepsUserPrompts&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/recovery-management/plans/{plan_id}/recovery-steps/user-prompts&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetAllVvolFaultDomainReplicationGroups&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vvol/fault-domains/{domain_id}/replication-groups&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetAllVvolFaultDomains&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vvol/fault-domains&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetArrayManager&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-managers/{array_manager_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetArrayManagers&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-managers&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetReplicatedArrayPair&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-pairs/{array_pair_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetReplicatedArrayPairs&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-pairs&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetStorageAdapter&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/storage-adapters/{storage_adapter_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetStorageAdapterConnectionParams&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/storage-adapters/{storage_adapter_id}/connection-params&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetStorageAdapters&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/storage-adapters&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetStorageDevices&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-pairs/{array_pair_id}/storage-devices&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVsanProtectionGroup&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vsan/protection-groups/{protection_group_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVsanProtectionGroups&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vsan/protection-groups&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVvolFaultDomain&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vvol/fault-domains/{domain_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVvolFaultDomainReplicationGroup&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/srms/{srm_id}/replication-management/vvol/fault-domains/{domain_id}/replication-groups/{replication_group}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetExportFilesInfo&lt;/td&gt;
+&lt;td&gt;/server/configuration/backup/files&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetExportSettings&lt;/td&gt;
+&lt;td&gt;/server/configuration/backup/settings&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetInfo&lt;/td&gt;
+&lt;td&gt;/server/info&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmRetrieveExportFile&lt;/td&gt;
+&lt;td&gt;/server/configuration/backup/files/{file_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetRecentTasksInfo&lt;/td&gt;
+&lt;td&gt;/tasks&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetTaskInfo&lt;/td&gt;
+&lt;td&gt;/tasks/{taskId}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmBrowseVcenterComputeItem&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/compute/{compute_id}/browser&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetReplicatedVms&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/replicated-vms&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcStoragePolicies&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/storage-policies&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcStoragePolicy&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/storage-policies/{storage_policy_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcenter&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcenterComputeInventory&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/compute&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcenterComputeItem&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/compute/{compute_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcenterDatastoreItem&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/datastores/{datastore_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcenterDatastores&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/datastores&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcenterNetworkInventory&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/network&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcenterNetworkItem&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/network/{network_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcenterVmFolder&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/vm-folder/{vm_folder_id}&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcenterVmFolderInventory&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters/{vcenter_id}/inventory/vm-folder&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Invoke-SrmGetVcenters&lt;/td&gt;
+&lt;td&gt;/pairings/{pairing_id}/vcenters&lt;/td&gt;
+&lt;td&gt;GET&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="display-all-vmware-live-recovery-post-command-details"&gt;Display All VMware Live Recovery POST Command Details&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;</description></item><item><title>Using VMware.Sdk.Vsphere: Commands for vSphere</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</link><pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</guid><description>
+&lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Vsphere&lt;/code&gt;, this modules contains auto-generated cmdlets to support vSphere Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id="connecting-to-a-vcenter-instance-with-local-credentials"&gt;Connecting to a vCenter Instance with Local Credentials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to a vCenter instance using local credentials by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Connect-VIServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;sfo-m01&lt;/span&gt;&lt;span class="n"&gt;-vc01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;sfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt; &lt;span class="n"&gt;-Username&lt;/span&gt; &lt;span class="n"&gt;administrator&lt;/span&gt;&lt;span class="nv"&gt;@vsphere&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;local&lt;/span&gt; &lt;span class="n"&gt;-Password&lt;/span&gt; &lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;&lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;Once connected the following information is stored in &lt;code&gt;$global:DefaultVIServer&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;Name : sfo-m01-vc01.sfo.rainpole.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt;Port : &lt;span class="m"&gt;443&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt;User VSPHERE.LOCAL&lt;span class="se"&gt;\A&lt;/span&gt;dministrator
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
+&lt;li&gt;Disconnect from a vCenter instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Disconnect-VIServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;sfo-m01&lt;/span&gt;&lt;span class="n"&gt;-vc01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;sfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Using VMware.Sdk.Vcf.SddcManager: Commands for SDDC Manager in PowerCLI</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</link><pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</guid><description>
+&lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Vcf.SddcManager&lt;/code&gt;, this modules contains auto-generated cmdlets to support SDDC Manager Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id="connecting-to-a-sddc-manager-instance-with-local-credentials"&gt;Connecting to a SDDC Manager Instance with Local Credentials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to a SDDC Manager instance using local credentials by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Connect-VcfSddcManagerServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;sfo-vcf01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;sfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt; &lt;span class="n"&gt;-User&lt;/span&gt; &lt;span class="n"&gt;administrator&lt;/span&gt;&lt;span class="nv"&gt;@vsphere&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;local&lt;/span&gt; &lt;span class="n"&gt;-Password&lt;/span&gt; &lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;&lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="3"&gt;
+&lt;li&gt;Once connected the following information is stored in &lt;code&gt;$defaultSddcManagerConnections&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 1&lt;/span&gt;&lt;span class="cl"&gt;ServiceUri : https://sfo-vcf01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 2&lt;/span&gt;&lt;span class="cl"&gt;SessionSecret : &amp;lt;sessionSecret&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 3&lt;/span&gt;&lt;span class="cl"&gt;User : administrator@vsphere.local
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 4&lt;/span&gt;&lt;span class="cl"&gt;IsConnected : True
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 5&lt;/span&gt;&lt;span class="cl"&gt;Id : /VcfSddcManagerServer&lt;span class="o"&gt;=&lt;/span&gt;administrator@vsphere.local@sfo-vcf01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 6&lt;/span&gt;&lt;span class="cl"&gt;Name : sfo-vcf01.sfo.rainpole.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 7&lt;/span&gt;&lt;span class="cl"&gt;Uid : /VcfSddcManagerServer&lt;span class="o"&gt;=&lt;/span&gt;administrator@vsphere.local@sfo-vcf01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 8&lt;/span&gt;&lt;span class="cl"&gt;ProductVersion : 9.0.0.0.24703748
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 9&lt;/span&gt;&lt;span class="cl"&gt;ServerUri : https://sfo-vcf01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;10&lt;/span&gt;&lt;span class="cl"&gt;UUID : /VcfSddcManagerServer&lt;span class="o"&gt;=&lt;/span&gt;administrator@vsphere.local@sfo-vcf01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;11&lt;/span&gt;&lt;span class="cl"&gt;Port : &lt;span class="m"&gt;443&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
+&lt;li&gt;Disconnect from a SDDC Manager instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Disconnect-VcfSddcManagerServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;sfo-vcf01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;sfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="display-all-sddc-manager-get-command-details"&gt;Display All SDDC Manager GET Command Details&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;</description></item><item><title>Using VMware.Sdk.Nsx.Policy: Commands for NSX</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-nsx-policy-cmdlets/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-nsx-policy-cmdlets/</guid><description>
+&lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Nsx.Policy&lt;/code&gt;, this modules contains auto-generated cmdlets to support NSX Policy Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id="connecting-to-a-nsx-instance-with-local-credentials"&gt;Connecting to a NSX Instance with Local Credentials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to a NSX instance using local credentials by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Connect-NsxServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;sfo-m01&lt;/span&gt;&lt;span class="n"&gt;-nsx01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;sfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt; &lt;span class="n"&gt;-User&lt;/span&gt; &lt;span class="n"&gt;admin&lt;/span&gt; &lt;span class="n"&gt;-Password&lt;/span&gt; &lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;&lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;Once connected the following information is stored in &lt;code&gt;$defaultNsxConnections&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 1&lt;/span&gt;&lt;span class="cl"&gt;ServiceUri : https://sfo-m01-nsx01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 2&lt;/span&gt;&lt;span class="cl"&gt;SessionSecret :
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 3&lt;/span&gt;&lt;span class="cl"&gt;User : admin
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 4&lt;/span&gt;&lt;span class="cl"&gt;IsConnected : True
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 5&lt;/span&gt;&lt;span class="cl"&gt;Id : /NsxServer&lt;span class="o"&gt;=&lt;/span&gt;admin@sfo-m01-nsx01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 6&lt;/span&gt;&lt;span class="cl"&gt;Name : sfo-m01-nsx01.sfo.rainpole.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 7&lt;/span&gt;&lt;span class="cl"&gt;Uid : /NsxServer&lt;span class="o"&gt;=&lt;/span&gt;admin@sfo-m01-nsx01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 8&lt;/span&gt;&lt;span class="cl"&gt;ProductVersion : 9.0.0.0.24705144
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 9&lt;/span&gt;&lt;span class="cl"&gt;ServerUri : https://sfo-m01-nsx01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;10&lt;/span&gt;&lt;span class="cl"&gt;UUID : /NsxServer&lt;span class="o"&gt;=&lt;/span&gt;admin@sfo-m01-nsx01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;11&lt;/span&gt;&lt;span class="cl"&gt;Port : &lt;span class="m"&gt;443&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
+&lt;li&gt;Disconnect from a NSX instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Disconnect-NsxServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;sfo-m01&lt;/span&gt;&lt;span class="n"&gt;-nsx01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;sfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Using VMware.Sdk.Vcf.Installer: Commands for VCF Installer in PowerCLI</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-vcfinstaller-cmdlets/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-vcfinstaller-cmdlets/</guid><description>
+&lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Vcf.Installer&lt;/code&gt;, this modules contains auto-generated cmdlets to support VCF Installer Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id="connecting-to-a-vcf-installer-instance-with-local-credentials"&gt;Connecting to a VCF Installer Instance with Local Credentials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to a VCF Installer instance using local credentials by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Connect-VcfInstallerServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;sfo-ins01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;sfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt; &lt;span class="n"&gt;-User&lt;/span&gt; &lt;span class="n"&gt;admin&lt;/span&gt;&lt;span class="nv"&gt;@local&lt;/span&gt; &lt;span class="n"&gt;-Password&lt;/span&gt; &lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;&lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="3"&gt;
+&lt;li&gt;Once connected the following information is stored in &lt;code&gt;$defaultInstallerConnections&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 1&lt;/span&gt;&lt;span class="cl"&gt;ServiceUri : https://sfo-ins01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 2&lt;/span&gt;&lt;span class="cl"&gt;SessionSecret : &amp;lt;SessionSecret&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 3&lt;/span&gt;&lt;span class="cl"&gt;User : admin@local
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 4&lt;/span&gt;&lt;span class="cl"&gt;IsConnected : True
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 5&lt;/span&gt;&lt;span class="cl"&gt;Id : /VcfInstallerServer&lt;span class="o"&gt;=&lt;/span&gt;admin@local@sfo-ins01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 6&lt;/span&gt;&lt;span class="cl"&gt;Name : sfo-ins01.sfo.rainpole.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 7&lt;/span&gt;&lt;span class="cl"&gt;Uid : /VcfInstallerServer&lt;span class="o"&gt;=&lt;/span&gt;admin@local@sfo-ins01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 8&lt;/span&gt;&lt;span class="cl"&gt;ProductVersion : 9.0.0.0.24703748
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 9&lt;/span&gt;&lt;span class="cl"&gt;ServerUri : https://sfo-ins01.sfo.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;10&lt;/span&gt;&lt;span class="cl"&gt;UUID : /VcfInstallerServer&lt;span class="o"&gt;=&lt;/span&gt;admin@local@sfo-ins01.sfo.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;11&lt;/span&gt;&lt;span class="cl"&gt;Port : &lt;span class="m"&gt;443&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
+&lt;li&gt;Disconnect from a VCF Installer instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Disconnect-VcfInstallerServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;sfo-ins01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;sfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="display-all-vcf-installer-get-command-details"&gt;Display All VCF Installer GET Command Details&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;</description></item><item><title>Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-operations-cmdlets/</link><pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-operations-cmdlets/</guid><description>
+&lt;p&gt;VCF PowerCLI 9.0 now includes a module called &lt;code&gt;VMware.Sdk.Vcf.Ops&lt;/code&gt;, this modules contains auto-generated cmdlets to support VCF Operations Public APIs. Use can use this post as a quick reference guide.&lt;/p&gt;
+&lt;h3 id="connecting-to-a-vcf-operations-instance-with-local-credentials"&gt;Connecting to a VCF Operations Instance with Local Credentials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to a VCF Operations instance using local credentials by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Connect-VcfOpsServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;flt-ops01a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt; &lt;span class="n"&gt;-User&lt;/span&gt; &lt;span class="n"&gt;admin&lt;/span&gt; &lt;span class="n"&gt;-Password&lt;/span&gt; &lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;&lt;span class="n"&gt;VMw&lt;/span&gt;&lt;span class="nv"&gt;@re1&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="3"&gt;
+&lt;li&gt;Once connected the following information is stored in &lt;code&gt;$defaultOpsConnections&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 1&lt;/span&gt;&lt;span class="cl"&gt;ServiceUri : https://flt-ops01a.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 2&lt;/span&gt;&lt;span class="cl"&gt;SessionSecret : 54aa4efb-3acd-4a14-ad75-10e66742a96d::c38a1c14-0ea4-4f3f-abe8-40afc55bae6d
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 3&lt;/span&gt;&lt;span class="cl"&gt;User : admin
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 4&lt;/span&gt;&lt;span class="cl"&gt;IsConnected : True
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 5&lt;/span&gt;&lt;span class="cl"&gt;Id : /VcfOpsServer&lt;span class="o"&gt;=&lt;/span&gt;admin@flt-ops01a.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 6&lt;/span&gt;&lt;span class="cl"&gt;Name : flt-ops01a.rainpole.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 7&lt;/span&gt;&lt;span class="cl"&gt;Uid : /VcfOpsServer&lt;span class="o"&gt;=&lt;/span&gt;admin@flt-ops01a.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 8&lt;/span&gt;&lt;span class="cl"&gt;ProductVersion : VCF Operations 9.0.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt; 9&lt;/span&gt;&lt;span class="cl"&gt;ServerUri : https://flt-ops01a.rainpole.io/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;10&lt;/span&gt;&lt;span class="cl"&gt;UUID : /VcfOpsServer&lt;span class="o"&gt;=&lt;/span&gt;admin@flt-ops01a.rainpole.io:443/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;11&lt;/span&gt;&lt;span class="cl"&gt;Port : &lt;span class="m"&gt;443&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
+&lt;li&gt;Disconnect from a VCF Operations instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Disconnect-VcfOpsServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;flt-ops01a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="display-all-vcf-operations-get-command-details"&gt;Display All VCF Operations GET Command Details&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;</description></item><item><title>VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sdk-modules/</link><pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-sdk-modules/</guid><description>
+&lt;p&gt;Along with the release of VMware Cloud Foundation 9.0 a new version of PowerCLI has also been shipped, for a full rundown of what's new I would suggest reading the official blog &lt;a
+href = "https://blogs.vmware.com/cloud-foundation/2025/06/24/introducing-vcf-powercli-9-0"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Introducing VCF PowerCLI 9.0
+&lt;/span&gt;
+&lt;/a&gt;, but here are the quick highlights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Name Change to VCF PowerCLI&lt;/li&gt;
+&lt;li&gt;Performance Improvements&lt;/li&gt;
+&lt;li&gt;New Module for NSX Virtual Private Cloud&lt;/li&gt;
+&lt;li&gt;New Module for SDDC Manager&lt;/li&gt;
+&lt;li&gt;Usability improvements with PowerCLI SDK&lt;/li&gt;
+&lt;li&gt;Global Authorization APIs and PowerCLI bindings&lt;/li&gt;
+&lt;li&gt;Bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the purposes of this blog I want to focus on the PowerCLI SDK improvements.&lt;/p&gt;</description></item><item><title>How to Install VCF PowerCLI 9.0: Step-by-Step Guide</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-updating/</link><pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-powercli-updating/</guid><description>
+&lt;p&gt;The fastest and easiest way to start utilising &lt;a
+href = "https://www.powershellgallery.com/packages/VCF.PowerCLI/9.0.0.24798382"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+VCF PowerCLI 9.0
+&lt;/span&gt;
+&lt;/a&gt; is to first remove any old versions and then perform a fresh install.&lt;/p&gt;
+&lt;h3 id="remove-existing-vmware-powercli-modules"&gt;Remove Existing VMware PowerCLI Modules&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Uninstall all VMware modules by running the following command:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Get-Module&lt;/span&gt; &lt;span class="n"&gt;VMware&lt;/span&gt;&lt;span class="p"&gt;*&lt;/span&gt; &lt;span class="n"&gt;-ListAvailable&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="nb"&gt;Uninstall-Module&lt;/span&gt; &lt;span class="n"&gt;-Force&lt;/span&gt; &lt;span class="n"&gt;-AllVersions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="3"&gt;
+&lt;li&gt;Verify that all VMware modules have been uninstalled by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Get-Module&lt;/span&gt; &lt;span class="n"&gt;VMware&lt;/span&gt;&lt;span class="p"&gt;*&lt;/span&gt; &lt;span class="n"&gt;-ListAvailable&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="installing-vcf-powercli-90"&gt;Installing VCF PowerCLI 9.0&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start a PowerShell session.&lt;/p&gt;</description></item><item><title>VMware Cloud Foundation 9.0: Transitioning from SDDC Manager to VCF Operations</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-task-locations/</link><pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-task-locations/</guid><description>
+&lt;h3 id="where-do-i-perform-tasks-in-vmware-cloud-foundation-90"&gt;Where Do I Perform Tasks in VMware Cloud Foundation 9.0&lt;/h3&gt;
+&lt;p&gt;With the release of VMware Cloud Foundation 9.0 and if you’re familiar with previous releases there are some significant changes when it comes to navigating and performing various tasks.&lt;/p&gt;
+&lt;p&gt;If you’re not aware with VMware Cloud Foundation 9.0 Broadcom has announced that the SDDC Manager User Interface is deprecated and will be removed in a future release, the reason for this being that in order to deliver a truly integrated platform and simplified management VCF Operations is now the central console.&lt;/p&gt;</description></item><item><title>VCF Installer: Streamlining VMware Cloud Foundation Deployments</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-installer-introduction/</link><pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-installer-introduction/</guid><description>
+&lt;h3 id="what-is-the-vcf-installer-appliance"&gt;What is the VCF Installer Appliance?&lt;/h3&gt;
+&lt;p&gt;The VCF Installer is a new unified appliance for VMware Cloud Foundation 9.0 which is a direct replacement for VMware Cloud Builder used in previous versions. Developed and delivered as part of the same OVA as SDDC Manager the bring-up capabilities of VMware Cloud Builder have been ported over.&lt;/p&gt;
+&lt;p&gt;In addition the Deployment Parameter Workbook has been completely deprecated and replaced with a new VCF Installer User Interface.&lt;/p&gt;</description></item><item><title>Understanding VMware Cloud Foundation 9.0: Key Terminology Explained</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-understanding-terminology/</link><pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-understanding-terminology/</guid><description>
+&lt;p&gt;VMware Cloud Foundation 9.0 has finally arrived, this much anticipated release brings together what were a collection of individual products into what is now considered a single on-premies private cloud platform. In this post I'm going to help you understand some of the terminology and constructs behind VMware Cloud Foundation 9.0, if you can master these then your well on your way to getting your head around whats changed and the direction in which Broadcom is taking the product.&lt;/p&gt;</description></item></channel></rss>
