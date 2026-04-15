@@ -7,7 +7,127 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuring VCF Single Sign-On: Using OpenLDAP Identity Provider</title>
+      <link>http://localhost:1313/post/operations/ops-configure-sso-openldap/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/operations/ops-configure-sso-openldap/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VMware Cloud Foundation 9.0 introduced the new identity broker capabilities where you can configure VCF Single Sign-On across VCF components within a single VCF Instance, across a set of VCF Instances, and/or across an entire VCF fleet of VCF Instances. This post walks through the process of configuring OpenLDAP as an identity provider.&lt;/p&gt;
+&lt;p&gt;In this post we walk through the following steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#configure-an-identity-provider&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Configure an Identity Provider
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#configure-vcf-single-sign-in-for-vcf-management-components&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Configure VCF Single Sign-In for VCF Management Components
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#configure-vcf-single-sign-in-for-additional-vcf-instances&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Configure VCF Single Sign-In for Additional VCF Instances
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;configure-an-identity-provider&#34;&gt;Configure an Identity Provider&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Log in to the VCF Operations console at &lt;a
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		https://&amp;lt;vcf_operations_fqdn&amp;gt;
+	&lt;/span&gt;
+&lt;/a&gt; with a user assigned the Administrator role.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Latency Requirements for VMware Cloud Foundation 9.0</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-fleet-latency/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-fleet-latency/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Since the initial release of VMware Cloud Foundation 9.0, a significant proportion of conversations with customers have revolved around the topic of latency between components of a VCF fleet. Finally, I&#39;m delighted to be able to share v1 of the newly published VMware Cloud Foundation 9.0 Fleet Latency v1 diagram which can be found &lt;a
+	
+		href = &#34;https://ports.broadcom.com/network-diagrams/VMware-Cloud-Foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		here
+	&lt;/span&gt;
+&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The intent of this diagram is to help better define the latency limitations across a VCF fleet as it brings all of the latency numbers into a single location.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation 9.0: Setting Up Custom LDAP Service for an Organization in VCF Automation</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</link>
+      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</guid>
+      <description>
+        
+          
+            &lt;p&gt;If you have looked at VCF Automation in any detail you may be aware that you can configure one or more external identity providers (IdPs), and import users and groups to your organizations. This configuration can use an LDAP server connection which can be configured at either the system or the organization level, a SAML integration at the organization level, or an OpenID Connect (OIDC) integration at the organization level.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VCF Automation: ?</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</link>

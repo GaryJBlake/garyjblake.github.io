@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 21 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vcf-operations/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vcf-operations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuring VCF Single Sign-On: Using OpenLDAP Identity Provider</title>
+      <link>http://localhost:1313/post/operations/ops-configure-sso-openldap/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/operations/ops-configure-sso-openldap/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VMware Cloud Foundation 9.0 introduced the new identity broker capabilities where you can configure VCF Single Sign-On across VCF components within a single VCF Instance, across a set of VCF Instances, and/or across an entire VCF fleet of VCF Instances. This post walks through the process of configuring OpenLDAP as an identity provider.&lt;/p&gt;
+&lt;h2 id=&#34;procedure---configure-an-identity-provider&#34;&gt;Procedure - Configure an Identity Provider&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Log in to the VCF Operations console at &lt;a
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		https://&amp;lt;vcf_operations_fqdn&amp;gt;
+	&lt;/span&gt;
+&lt;/a&gt; with a user assigned the Administrator role.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VCF Operations 9.0: Managing Alert Definitions</title>
       <link>http://localhost:1313/post/operations/ops-supress-compliance-alerts/</link>

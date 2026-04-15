@@ -7,18 +7,86 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf.powercli/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf.powercli/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Viewing a Task Status Using Curl with SDDC Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-sddcm-task-status/</link>
-      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <title>VCF Automation: ?</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/vcf/vcf-sddcm-task-status/</guid>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</guid>
       <description>
         
           
-            &lt;p&gt;Interacting with the Public APIs for SDDC Manager can be achieved in many ways, my normal goto is PowerCLI but that requires the installation of the required modules and of course PowerShell itself to be available on either the component your wanting to interact with or a remote management host an alternative and faster method for interacting with the Public APIs then &lt;em&gt;CURL&lt;/em&gt; is your new best friend.&lt;/p&gt;
-&lt;p&gt;Using Public API you can check the status of running tasks in SDDC Manager. In this post we look at how this can be achieved using either &lt;em&gt;CURL&lt;/em&gt; or VCF.PowerShell&lt;/p&gt;
+            &lt;p&gt;In this procedure, we will use the &lt;strong&gt;/v1/users&lt;/strong&gt; API exposed via the VCF.PowerCLI module &lt;code&gt;VMware.Sdk.Vcf.SddcManager&lt;/code&gt; to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.&lt;/p&gt;
+&lt;h3 id=&#34;procedures-covered&#34;&gt;Procedures Covered&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#assigning-an-sddc-manager-role-to-a-group&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Assigning an SDDC Manager Role to a Group
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#assigning-an-sddc-manager-role-to-a-user&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Assigning an SDDC Manager Role to a User
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#removing-a-user-or-group-from-an-sddc-manager-role&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Removing a User or Group from an SDDC Manager Role
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#assigning-sddc-manager-roles-to-multiple-groups&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Assigning SDDC Manager Roles to Multiple Groups
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#removing-multiple-groups-from-sddc-manager-roles&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Removing Multiple Groups from SDDC Manager Roles
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
           
           
         

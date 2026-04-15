@@ -3,36 +3,84 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/operations/ops-configure-sso-openldap/</loc>
+    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/index/</loc>
+    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vcf/</loc>
+    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vcf-operations/</loc>
+    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vcf-sso/</loc>
+    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vmware-cloud-foundation/</loc>
+    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/architecture/</loc>
+    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-90/vcf-90-fleet-latency/</loc>
+    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vmware-cloud-foundation-9.0/</loc>
+    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ldap/</loc>
+    <lastmod>2025-09-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sso/</loc>
+    <lastmod>2025-09-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vcf-automation/</loc>
+    <lastmod>2025-09-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</loc>
+    <lastmod>2025-09-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/public-apis/</loc>
+    <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/sddc-manager/</loc>
+    <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</loc>
+    <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vcf.powercli/</loc>
+    <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vcf.powercli/</loc>
+    <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vcf-identity-broker/</loc>
+    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vcf-single-sign-on/</loc>
+    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-90/vcf-90-identity-broker/</loc>
+    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</loc>
     <lastmod>2025-09-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/index/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/public-apis/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/sddc-manager/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vcf/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/vcf-installer/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/vmware-cloud-foundation-9.0/</loc>
     <lastmod>2025-09-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/powershell/</loc>
@@ -79,9 +127,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/vsphere-9.0/</loc>
     <lastmod>2025-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/vcf-operations/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/vcf-operations/</loc>
     <lastmod>2025-07-21T00:00:00+00:00</lastmod>
@@ -198,9 +243,6 @@
     <lastmod>2024-05-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/powershell/</loc>
-    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/vmware-cloud-foundation/</loc>
     <lastmod>2024-05-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vvs-whats-new/edition-23/</loc>

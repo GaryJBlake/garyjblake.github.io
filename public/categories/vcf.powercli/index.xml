@@ -18,14 +18,7 @@
         
           
             &lt;p&gt;In this procedure, we will use the &lt;strong&gt;/v1/users&lt;/strong&gt; API exposed via the VCF.PowerCLI module &lt;code&gt;VMware.Sdk.Vcf.SddcManager&lt;/code&gt; to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;POST /v1/tokens&lt;/li&gt;
-&lt;li&gt;GET /v1/users&lt;/li&gt;
-&lt;li&gt;POST /v1/users&lt;/li&gt;
-&lt;li&gt;DELETE /v1/users&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;procedures-documented&#34;&gt;Procedures Documented&lt;/h3&gt;
+&lt;h3 id=&#34;procedures-covered&#34;&gt;Procedures Covered&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a
 	
@@ -42,30 +35,58 @@
 &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
 	
+		href = &#34;#assigning-an-sddc-manager-role-to-a-user&#34;
+	
 
 	
 
 	&gt;
 
 	&lt;span&gt;
-		
+		Assigning an SDDC Manager Role to a User
 	&lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
 	
+		href = &#34;#removing-a-user-or-group-from-an-sddc-manager-role&#34;
+	
 
 	
 
 	&gt;
 
 	&lt;span&gt;
-		
+		Removing a User or Group from an SDDC Manager Role
 	&lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#assigning-sddc-manager-roles-to-multiple-groups&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Assigning SDDC Manager Roles to Multiple Groups
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#removing-multiple-groups-from-sddc-manager-roles&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Removing Multiple Groups from SDDC Manager Roles
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;assigning-an-sddc-manager-role-to-a-group&#34;&gt;Assigning an SDDC Manager Role to a Group&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
           
           
         

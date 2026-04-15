@@ -7,7 +7,186 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuring VCF Single Sign-On: Using OpenLDAP Identity Provider</title>
+      <link>http://localhost:1313/post/operations/ops-configure-sso-openldap/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/operations/ops-configure-sso-openldap/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VMware Cloud Foundation 9.0 introduced the new identity broker capabilities where you can configure VCF Single Sign-On across VCF components within a single VCF Instance, across a set of VCF Instances, and/or across an entire VCF fleet of VCF Instances. This post walks through the process of configuring OpenLDAP as an identity provider.&lt;/p&gt;
+&lt;h2 id=&#34;procedure---configure-an-identity-provider&#34;&gt;Procedure - Configure an Identity Provider&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Log in to the VCF Operations console at &lt;a
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		https://&amp;lt;vcf_operations_fqdn&amp;gt;
+	&lt;/span&gt;
+&lt;/a&gt; with a user assigned the Administrator role.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Latency Requirements for VMware Cloud Foundation 9.0</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-fleet-latency/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-fleet-latency/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Since the initial release of VMware Cloud Foundation 9.0, a significant proportion of conversations with customers have revolved around the topic of latency between components of a VCF fleet. Finally, I&#39;m delighted to be able to share v1 of the newly published VMware Cloud Foundation 9.0 Fleet Latency v1 diagram which can be found &lt;a
+	
+		href = &#34;https://ports.broadcom.com/network-diagrams/VMware-Cloud-Foundation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		here
+	&lt;/span&gt;
+&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The intent of this diagram is to help better define the latency limitations across a VCF fleet as it brings all of the latency numbers into a single location.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation 9.0: Setting Up Custom LDAP Service for an Organization in VCF Automation</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</link>
+      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</guid>
+      <description>
+        
+          
+            &lt;p&gt;If you have looked at VCF Automation in any detail you may be aware that you can configure one or more external identity providers (IdPs), and import users and groups to your organizations. This configuration can use an LDAP server connection which can be configured at either the system or the organization level, a SAML integration at the organization level, or an OpenID Connect (OIDC) integration at the organization level.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Automation: ?</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</guid>
+      <description>
+        
+          
+            &lt;p&gt;In this procedure, we will use the &lt;strong&gt;/v1/users&lt;/strong&gt; API exposed via the VCF.PowerCLI module &lt;code&gt;VMware.Sdk.Vcf.SddcManager&lt;/code&gt; to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.&lt;/p&gt;
+&lt;h3 id=&#34;procedures-covered&#34;&gt;Procedures Covered&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#assigning-an-sddc-manager-role-to-a-group&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Assigning an SDDC Manager Role to a Group
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#assigning-an-sddc-manager-role-to-a-user&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Assigning an SDDC Manager Role to a User
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#removing-a-user-or-group-from-an-sddc-manager-role&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Removing a User or Group from an SDDC Manager Role
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#assigning-sddc-manager-roles-to-multiple-groups&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Assigning SDDC Manager Roles to Multiple Groups
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#removing-multiple-groups-from-sddc-manager-roles&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Removing Multiple Groups from SDDC Manager Roles
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation 9.0: Setting Up VCF Single Sign-On with OpenLDAP</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-identity-broker/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-identity-broker/</guid>
+      <description>
+        
+          
+            &lt;p&gt;VMware Cloud Foundation 9.0 introduced the new VCF Identity Broker component to provide the totally revamped VCF Single Sign-On capability which provides single sign-on across VCF Operations, vCenter, NSX Manager, VCF Operations for logs, VCF Operations for networks, VCF Operations HCX and VCF Automation. VMware Cloud Foundation 9.0 added support for Ping Identity and Generic SAML 2.0 providers in addition to Okta, Microsoft Entra ID, Microsoft Active Directory, Microsoft ADFS and OpenLDAP.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Automate VMware Cloud Foundation 9.0 with OpenAPI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</link>
