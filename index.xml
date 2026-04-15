@@ -575,7 +575,7 @@ github.com/vmware/vcf-api-specs
 &lt;/ol&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-powershell" data-lang="powershell"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;Disconnect-VIServer&lt;/span&gt; &lt;span class="n"&gt;-Server&lt;/span&gt; &lt;span class="nb"&gt;sfo-m01&lt;/span&gt;&lt;span class="n"&gt;-vc01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;sfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;rainpole&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="py"&gt;io&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>VCF Operations 9.0: Managing Alert Definitions</title><link>http://jadenetworksolutions.co.uk/post/operations/ops-supress-compliance-alerts/</link><pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/operations/ops-supress-compliance-alerts/</guid><description>
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>VCF Operations 9.0: Managing Alert Definitions</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-ops-supress-compliance-alerts/</link><pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-ops-supress-compliance-alerts/</guid><description>
 &lt;h3 id="excluding-triggered-alerts-from-a-policy"&gt;Excluding Triggered Alerts from a Policy&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -788,7 +788,7 @@ rel = "nofollow noopener noreferrer"
 &lt;span&gt;
 VMware Validated Solutions
 &lt;/span&gt;
-&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Authentication Using Curl for VCF Operations Fleet Management</title><link>http://jadenetworksolutions.co.uk/post/ops-fleet-mgmt/ofm-curl-authentication/</link><pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/ops-fleet-mgmt/ofm-curl-authentication/</guid><description>
+&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Authentication Using Curl for VCF Operations Fleet Management</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-ops-fleet-mgmt-curl-authentication/</link><pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-ops-fleet-mgmt-curl-authentication/</guid><description>
 &lt;p&gt;In this post we will look at the process of authenticating to VCF Operations Fleet Management.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;VCF Operations Fleet Management APIs Used&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -811,7 +811,7 @@ VMware Validated Solutions
 &lt;li&gt;Connect to VCF Operations Fleet Management with the provided credentials and check the health by running the following command:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-Bash" data-lang="Bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;curl -k -X GET &lt;span class="s2"&gt;&amp;#34;https://&lt;/span&gt;&lt;span class="nv"&gt;$ariaSuiteLifecycleFqdn&lt;/span&gt;&lt;span class="s2"&gt;/lcm/health/api/v2/status&amp;#34;&lt;/span&gt; -u &lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;&lt;span class="nv"&gt;$ariaSuiteLifecycleUser&lt;/span&gt;&lt;span class="s2"&gt;:&lt;/span&gt;&lt;span class="nv"&gt;$ariaSuiteLifecyclePass&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt; -H &lt;span class="s2"&gt;&amp;#34;accept: application/json&amp;#34;&lt;/span&gt; -H &lt;span class="s2"&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; json_pp
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Obtaining a Token Using Curl for VCF Operations for Networks</title><link>http://jadenetworksolutions.co.uk/post/ops-for-networks/ofn-curl-authentication/</link><pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/ops-for-networks/ofn-curl-authentication/</guid><description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Obtaining a Token Using Curl for VCF Operations for Networks</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-ops-networks-curl-authentication/</link><pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-ops-networks-curl-authentication/</guid><description>
 &lt;p&gt;In this post we will look at the process of obtaining an authentication token from VCF Operations for networks which we can then use in subsequent API requests.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;VCF Operations for Networks APIs Used&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -820,7 +820,7 @@ VMware Validated Solutions
 &lt;li&gt;GET /api/ni/info/version&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="obtaining-an-authentication-token-from-vcf-operations-for-networks"&gt;Obtaining an Authentication Token From VCF Operations for Networks&lt;/h3&gt;
-&lt;p&gt;In this procedure, we will use the &lt;strong&gt;/api/ni/auth/token&lt;/strong&gt; API passing valid credentials to perform the authentication process and obtain an authentication token for the session. Then reading the response from the curl request we will extract the &lt;em&gt;token&lt;/em&gt; portion placing it into a variable named &lt;em&gt;TOKEN&lt;/em&gt;. Once we have done this we will have a valid authentication token which can be used within future curl requests.&lt;/p&gt;</description></item><item><title>Viewing Service Details Using Curl with SDDC Manager</title><link>http://jadenetworksolutions.co.uk/post/vcf/vcf-curl-sddcm-view-services/</link><pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf/vcf-curl-sddcm-view-services/</guid><description>
+&lt;p&gt;In this procedure, we will use the &lt;strong&gt;/api/ni/auth/token&lt;/strong&gt; API passing valid credentials to perform the authentication process and obtain an authentication token for the session. Then reading the response from the curl request we will extract the &lt;em&gt;token&lt;/em&gt; portion placing it into a variable named &lt;em&gt;TOKEN&lt;/em&gt;. Once we have done this we will have a valid authentication token which can be used within future curl requests.&lt;/p&gt;</description></item><item><title>Viewing Service Details Using Curl with SDDC Manager</title><link>http://jadenetworksolutions.co.uk/post/vcf-5x/vcf-curl-sddcm-view-services/</link><pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-5x/vcf-curl-sddcm-view-services/</guid><description>
 &lt;p&gt;In this procedure, we will use the &lt;strong&gt;/v1/vcf-services&lt;/strong&gt; API to retrieve service details for a SDDC Manager instance.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -845,327 +845,4 @@ VMware Validated Solutions
 &lt;/ol&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;curl -k -X GET &lt;span class="s2"&gt;&amp;#34;https://&lt;/span&gt;&lt;span class="nv"&gt;$sddcManagerFqdn&lt;/span&gt;&lt;span class="s2"&gt;/v1/vcf-services&amp;#34;&lt;/span&gt; -H &lt;span class="s2"&gt;&amp;#34;Authorization: Bearer &lt;/span&gt;&lt;span class="nv"&gt;$TOKEN&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt; -H &lt;span class="s2"&gt;&amp;#34;Accept: application/json&amp;#34;&lt;/span&gt; -H &lt;span class="s2"&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; jq &lt;span class="s1"&gt;&amp;#39;.elements[]&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="obtaining-service-details-for-a-specific-service-from-sddc-manager"&gt;Obtaining Service Details for a Specific Service from SDDC Manager&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Viewing Network Pool Details Using Curl with SDDC Manager</title><link>http://jadenetworksolutions.co.uk/post/vcf/vcf-curl-view-network-pools/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf/vcf-curl-view-network-pools/</guid><description>
-&lt;p&gt;In this post we will use curl to view the details of a Network Pool in SDDC Manager.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;POST /v1/tokens&lt;/li&gt;
-&lt;li&gt;GET /v1/network-pools&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="view-all-network-pools-configured-in-sddc-manager"&gt;View All Network Pools Configured in SDDC Manager&lt;/h3&gt;
-&lt;p&gt;In this procedure we will authenticate to SDDC Manager and then using the &lt;strong&gt;/v1/network-pools&lt;/strong&gt; API we will retrieve a list of all the Network Pools configured within the SDDC Manager instance.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Connect to the SDDC Manager appliance over SSH.&lt;/li&gt;
-&lt;li&gt;Replace the values in the sample code with values for your SDDC Manager instance and run the following commands:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;sddcManagerFqdn&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;sfo-vcf01.sfo.rainpole.io&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;sddcManagerUser&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;admin@local&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;sddcManagerPass&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;VMw@re1!VMw@re1!&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="3"&gt;
-&lt;li&gt;Authenticate to the SDDC Manager instance and obtain an authentication token by running the following command:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;TOKEN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;curl -k -X POST https://&lt;span class="nv"&gt;$sddcManagerFqdn&lt;/span&gt;/v1/tokens -H &lt;span class="s1"&gt;&amp;#39;Content-Type:application/json&amp;#39;&lt;/span&gt; -d &lt;span class="s1"&gt;&amp;#39;{&amp;#34;username&amp;#34;: &amp;#34;&amp;#39;&lt;/span&gt;&lt;span class="nv"&gt;$sddcManagerUser&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#34;,&amp;#34;password&amp;#34;: &amp;#34;&amp;#39;&lt;/span&gt;&lt;span class="nv"&gt;$sddcManagerPass&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#34;}&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; jq -r &lt;span class="s1"&gt;&amp;#39;.accessToken&amp;#39;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
-&lt;li&gt;Retrieve all Network Pools from your SDDC Manager instance by running the following command:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;curl -k -X GET &lt;span class="s2"&gt;&amp;#34;https://&lt;/span&gt;&lt;span class="nv"&gt;$sddcManagerFqdn&lt;/span&gt;&lt;span class="s2"&gt;/v1/network-pools&amp;#34;&lt;/span&gt; -H &lt;span class="s2"&gt;&amp;#34;Authorization: Bearer &lt;/span&gt;&lt;span class="nv"&gt;$TOKEN&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt; -H &lt;span class="s2"&gt;&amp;#34;Accept: application/json&amp;#34;&lt;/span&gt; -H &lt;span class="s2"&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; jq &lt;span class="s1"&gt;&amp;#39;.elements[]&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The output will look something like the following, here we can see that my platform has two network pools configured. Each containing two networks, but all we can see from this output are the ids so in order to get a more detailed information we will need to pass the id of one of the Network Pools into the &lt;strong&gt;/v1/network-pools&lt;/strong&gt; API.&lt;/p&gt;</description></item><item><title>Obtaining a Token Using Curl with SDDC Manager</title><link>http://jadenetworksolutions.co.uk/post/vcf/vcf-curl-sddcm-authentication/</link><pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf/vcf-curl-sddcm-authentication/</guid><description>
-&lt;p&gt;Interacting with the Public APIs for SDDC Manager can be achieved in many ways, my normal goto is PowerCLI but that requires the installation of the required modules and of course PowerShell itself to be available on either the component your wanting to interact with or a remote management host. If your looking for a faster method for interacting with the Public APIs then &lt;em&gt;CURL&lt;/em&gt; is your new best friend.&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Blog Index</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/whats-new-index/</link><pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/whats-new-index/</guid><description>
-&lt;h2 id="last-updated-08-oct-2024"&gt;Last Updated 08-Oct-2024&lt;/h2&gt;
-&lt;p&gt;VMware Validated Solutions are byte sized solutions developed to extend the foundational capabilities of VMware Cloud Foundation, for background reading see my previous post here. Over time the team intends to add incremental value where opportunities arise and I plan to share as much detail as I can with each new update using my What's New for VMware Validated Solutions series of blog posts. I've decided to create this single landing page where I will provide a consolidated list of links to the relevant Editions of this series so you can bookmark this single page for ease of use.&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Edition #26 (October 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-26/</link><pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-26/</guid><description>
-&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 08-Oct-2024&lt;/p&gt;
-&lt;p&gt;Welcome to Edition #26 of the &lt;strong&gt;What's New for VMware Validated Solutions&lt;/strong&gt;, this is the update for October 2024, the highlights of which are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for &lt;strong&gt;VMware Cloud Foundation 5.2.1&lt;/strong&gt; to VMware Validated Solutions&lt;/li&gt;
-&lt;li&gt;Release of &lt;a
-href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.12.0"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-PowerValidatedSolutions v2.12.0
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="added-support-for-vmware-cloud-foundation-521"&gt;Added Support for VMware Cloud Foundation 5.2.1&lt;/h3&gt;
-&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.2.1 for the following VMware Validated Solutions:&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Edition #25 (July 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-25/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-25/</guid><description>
-&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 23-Jul-2024&lt;/p&gt;
-&lt;p&gt;Welcome to Edition #25 of the &lt;strong&gt;What's New for VMware Validated Solutions&lt;/strong&gt;, this is the update for July 2024, the highlights of which are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for VMware Cloud Foundation 5.2.0 to VMware Validated Solutions&lt;/li&gt;
-&lt;li&gt;Enhancements to &lt;a
-href = "https://core.vmware.com/developer-ready-infrastructure-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Developer Ready Infrastructure for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Enhancements to &lt;a
-href = "https://core.vmware.com/intelligent-network-visibility-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Intelligent Network Visibility for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;New end-to-end automated implementation using PowerShell for all VMware Validated Solutions&lt;/li&gt;
-&lt;li&gt;Support for automated deployment of Solution Interoperability from the validated solution menu&lt;/li&gt;
-&lt;li&gt;Guidance on importing the VMware Aria Suite OVA files into a vSphere Content Library&lt;/li&gt;
-&lt;li&gt;Signed Certificate Generation using the PowerShell Module for VMware Validated Solutions&lt;/li&gt;
-&lt;li&gt;Deprecation of &lt;a
-href = "https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Cloud-Based Workload Protection for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Release of &lt;a
-href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.11.0"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-PowerValidatedSolutions v2.11.0
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="added-support-for-vmware-cloud-foundation-520"&gt;Added Support for VMware Cloud Foundation 5.2.0&lt;/h3&gt;
-&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.2.0 for the following VMware Validated Solutions:&lt;/p&gt;</description></item><item><title>Simplified Consumption of PowerShell Automation with VMware Validated Solutions</title><link>http://jadenetworksolutions.co.uk/post/vvs/vvs-powershell-menu/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs/vvs-powershell-menu/</guid><description>
-&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 13-Jun-2024&lt;/p&gt;
-&lt;h3 id="background"&gt;Background&lt;/h3&gt;
-&lt;p&gt;When we started on the VMware Validated Solution journey nearly three years ago, one of the main criteria we agreed on was to provide our customers with an automated way to deploy and configure whatever was defined within a solution. During the process we also did some analysis on tooling and came to the decision that we would use PowerShell as our automation tool of choice based on the flexibility it gave us.&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Edition #24 (May 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-24/</link><pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-24/</guid><description>
-&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 28-May-2024&lt;/p&gt;
-&lt;p&gt;Welcome to Edition #24 of the &lt;strong&gt;What's New for VMware Validated Solutions&lt;/strong&gt;, this is the update for May 2024, the highlights of which are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; – &lt;a
-href = "https://core.vmware.com/private-ai-ready-infrastructure-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Private AI Ready Infrastructure for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Added Support for VxRail to &lt;a
-href = "https://core.vmware.com/health-reporting-and-monitoring-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Health Reporting and Monitoring for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Added Support for VMware Aria Automation 8.16.2 to &lt;a
-href = "https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Private Cloud Automation for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Added Support for VMware Site Recovery Manager 9.0 and vSphere Replication 9.0 to &lt;a
-href = "https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Site Protection and Disaster Recovery for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Updated automation steps for &lt;a
-href = "https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Identity and Access Management for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Release of &lt;a
-href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.10.0"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-PowerValidatedSolutions v2.10.0
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="private-ai-ready-infrastructure-for-vmware-cloud-foundation"&gt;Private AI Ready Infrastructure for VMware Cloud Foundation&lt;/h3&gt;
-&lt;p&gt;Delighted to announce the release of this brand-new VMware Validated Solution.&lt;/p&gt;</description></item><item><title>Native PowerCLI Modules for VMware Cloud Foundation</title><link>http://jadenetworksolutions.co.uk/post/vcf/vcf-powercli-main/</link><pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf/vcf-powercli-main/</guid><description>
-&lt;h3 id="the-birth-of-powervcf"&gt;The Birth of PowerVCF&lt;/h3&gt;
-&lt;p&gt;Back in January 2020 my friend and colleague &lt;a
-href = "https://lifeofbrianoc.com"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Brian OConnell
-&lt;/span&gt;
-&lt;/a&gt; embarked on a community project to write a PowerShell module to make consumption of the VMware Cloud Foundation APIs simple and easy to consume by VI Admins, each cmdlet was hand-built using standard PowerShell verbs that the community is well versed in consuming. He saw that the need for automation within our customer based was growing and at the time there was no alternative solution available.&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Edition #23 (March 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-23/</link><pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-23/</guid><description>
-&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 26-Mar-2024&lt;/p&gt;
-&lt;p&gt;Welcome to Edition #23 of the &lt;strong&gt;What's New for VMware Validated Solutions&lt;/strong&gt;, this is the update for March 2024, the highlights of which are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for VMware Cloud Foundation 5.1.1 for all VMware Validated Solutions&lt;/li&gt;
-&lt;li&gt;Update to password management for the latest Photon OS&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-href = "https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Intelligent Operations Management for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-href = "https://core.vmware.com/intelligent-network-visibility-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Intelligent Network Visibility for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-href = "https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Private Cloud Automation for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-href = "https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Site Protection and Disaster Recovery for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-href = "https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Cloud-Based Workload Protection for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-href = "https://core.vmware.com/cloud-based-ransomware-recovery-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Cloud-Based Ransomware Recovery for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-href = "https://core.vmware.com/cross-cloud-mobility-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Cross Cloud Mobility for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Release of &lt;a
-href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.9.0"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-PowerValidatedSolutions v2.9.0
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="added-support-for-vmware-cloud-foundation-511"&gt;Added Support for VMware Cloud Foundation 5.1.1&lt;/h3&gt;
-&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.1.1 for the following VMware Validated Solutions:&lt;/p&gt;</description></item><item><title>What's New for VMware Validated Solutions - Edition #22 (January 2024)</title><link>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-22/</link><pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vvs-whats-new/edition-22/</guid><description>
-&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 30-January-2024&lt;/p&gt;
-&lt;p&gt;Welcome to Edition #22 of the &lt;strong&gt;What's New for VMware Validated Solutions&lt;/strong&gt;, this is a our first update for 2024 and the team has been busy over the festive period. Highlights include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; – &lt;a
-href = "https://core.vmware.com/instelligent-network-visibility-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Intelligent Network Visibility for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Architectural change to &lt;a
-href = "https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Identity and Access Management for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Multi-instance support for &lt;a
-href = "https://core.vmware.com/health-reporting-and-monitoring-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Health Reporting and Monitoring for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-href = "https://core.vmware.com/intelligent-logging-and-analytics-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Intelligent Logging and Analytics for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-href = "https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Intelligent Operations Management for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-href = "https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Private Cloud Automation for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-href = "https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-Site Protection and Disaster Recovery for VMware Cloud Foundation
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Deprecation of VMware Aria SaaS based validated solutions.&lt;/li&gt;
-&lt;li&gt;Release of &lt;a
-href = "https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.8.0"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-PowerValidatedSolutions v2.8.0
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="intelligent-network-visibility-for-vmware-cloud-foundation"&gt;Intelligent Network Visibility for VMware Cloud Foundation&lt;/h3&gt;
-&lt;p&gt;Delighted to announce the release of this brand-new VMware Validated Solution.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

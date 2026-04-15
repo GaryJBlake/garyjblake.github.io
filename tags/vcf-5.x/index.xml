@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VCF 5.x on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/tags/vcf-5.x/</link><description>Recent content in VCF 5.x on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Tue, 07 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/tags/vcf-5.x/index.xml" rel="self" type="application/rss+xml"/><item><title>Viewing Service Details Using Curl with SDDC Manager</title><link>http://jadenetworksolutions.co.uk/post/vcf-5x/vcf-curl-sddcm-view-services/</link><pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-5x/vcf-curl-sddcm-view-services/</guid><description>
+&lt;p&gt;In this procedure, we will use the &lt;strong&gt;/v1/vcf-services&lt;/strong&gt; API to retrieve service details for a SDDC Manager instance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;POST /v1/tokens&lt;/li&gt;
+&lt;li&gt;GET /v1/vcf-services&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="obtaining-service-details-for-all-services-from-sddc-manager"&gt;Obtaining Service Details for all Services from SDDC Manager&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Connect to the SDDC Manager appliance over SSH.&lt;/li&gt;
+&lt;li&gt;Replace the values in the sample code with values for your SDDC Manager instance and run the commands SSH session.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;sddcManagerFqdn&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;sfo-vcf01.sfo.rainpole.io&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;sddcManagerUser&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;admin@local&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;sddcManagerPass&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;VMw@re1!VMw@re1!&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="3"&gt;
+&lt;li&gt;Authenticate to SDDC Manager and obtain a token by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;TOKEN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;curl -k -X POST https://&lt;span class="nv"&gt;$sddcManagerFqdn&lt;/span&gt;/v1/tokens -H &lt;span class="s1"&gt;&amp;#39;Content-Type:application/json&amp;#39;&lt;/span&gt; -d &lt;span class="s1"&gt;&amp;#39;{&amp;#34;username&amp;#34;: &amp;#34;&amp;#39;&lt;/span&gt;&lt;span class="nv"&gt;$sddcManagerUser&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#34;,&amp;#34;password&amp;#34;: &amp;#34;&amp;#39;&lt;/span&gt;&lt;span class="nv"&gt;$sddcManagerPass&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#34;}&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; jq -r &lt;span class="s1"&gt;&amp;#39;.accessToken&amp;#39;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
+&lt;li&gt;Retrieve all service details from the SDDC Manager instance by running the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;curl -k -X GET &lt;span class="s2"&gt;&amp;#34;https://&lt;/span&gt;&lt;span class="nv"&gt;$sddcManagerFqdn&lt;/span&gt;&lt;span class="s2"&gt;/v1/vcf-services&amp;#34;&lt;/span&gt; -H &lt;span class="s2"&gt;&amp;#34;Authorization: Bearer &lt;/span&gt;&lt;span class="nv"&gt;$TOKEN&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt; -H &lt;span class="s2"&gt;&amp;#34;Accept: application/json&amp;#34;&lt;/span&gt; -H &lt;span class="s2"&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; jq &lt;span class="s1"&gt;&amp;#39;.elements[]&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="obtaining-service-details-for-a-specific-service-from-sddc-manager"&gt;Obtaining Service Details for a Specific Service from SDDC Manager&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
