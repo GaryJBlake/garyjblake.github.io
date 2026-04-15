@@ -108,6 +108,7 @@ iconsDir = "icons/" # without a leading forward slash
 # website author
 [author]
 name = "Gary Blake"
+email = "gblake@jadenetworks.co.uk"
 photo = "images/gary-blake.png" #include this if you would like to show the author photo on the sidebar
 
 [plausible_analytics]
