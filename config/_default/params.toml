@@ -85,7 +85,7 @@ languageMenuName = "🌐"
 # utterancesIssueTerm = "pathname" # Default: pathname
 
 # Maximum number of recent posts.
-# numberOfRecentPosts = 8
+numberOfRecentPosts = 5
 
 # Maximum number of featured posts.
 # numberOfFeaturedPosts = 8
@@ -113,7 +113,7 @@ photo = "images/gary-blake.png" #include this if you would like to show the auth
 
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.
-websiteDomain = "example.com" # domain name of your website, most cases same as your base url
+websiteDomain = "jadenetworksolutions.co.uk" # domain name of your website, most cases same as your base url
 # plausibleDomain = "plausible.io" # default is set to plausible.io, only required if plausible is selfhosted
 # scritpName = "plausible" # default is set to plausible, only required if using a custome name for script
 

@@ -6,13 +6,15 @@
     <description>Recent content in VMware Cloud Foundation 9.0 on My Cloudy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
+    <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
     <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vmware-cloud-foundation-9.0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Latency Requirements for VMware Cloud Foundation 9.0</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-fleet-latency/</link>
       <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-fleet-latency/</guid>
       <description>
         
@@ -41,26 +43,10 @@
     </item>
     
     <item>
-      <title>VMware Cloud Foundation 9.0: Setting Up Custom LDAP Service for an Organization in VCF Automation</title>
-      <link>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</link>
-      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</guid>
-      <description>
-        
-          
-            &lt;p&gt;If you have looked at VCF Automation in any detail you may be aware that you can configure one or more external identity providers (IdPs), and import users and groups to your organizations. This configuration can use an LDAP server connection which can be configured at either the system or the organization level, a SAML integration at the organization level, or an OpenID Connect (OIDC) integration at the organization level.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>VCF Automation: ?</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</link>
       <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</guid>
       <description>
         
@@ -145,7 +131,7 @@
       <title>VMware Cloud Foundation 9.0: Setting Up VCF Single Sign-On with OpenLDAP</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-identity-broker/</link>
       <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-identity-broker/</guid>
       <description>
         
@@ -161,7 +147,7 @@
       <title>Automate VMware Cloud Foundation 9.0 with OpenAPI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</link>
       <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</guid>
       <description>
         
@@ -192,7 +178,7 @@
       <title>VCF Installer: Retrieve Component Passwords from VCF Installer</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-installer-retrieve-passwords/</link>
       <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-installer-retrieve-passwords/</guid>
       <description>
         
@@ -209,7 +195,7 @@
       <title>Adjusting ESX Certificate Key Size in VMware Cloud Foundation</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/</link>
       <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/</guid>
       <description>
         
@@ -226,7 +212,7 @@
       <title>Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/</link>
       <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/</guid>
       <description>
         
@@ -730,7 +716,7 @@
       <title>Using VMware.Sdk.Vsphere: Commands for vSphere</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</link>
       <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</guid>
       <description>
         
@@ -768,7 +754,7 @@
       <title>Using VMware.Sdk.Vcf.SddcManager: Commands for SDDC Manager in PowerCLI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</guid>
       <description>
         
@@ -816,7 +802,7 @@
       <title>Using VMware.Sdk.Nsx.Policy: Commands for NSX</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-nsx-policy-cmdlets/</link>
       <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-nsx-policy-cmdlets/</guid>
       <description>
         
@@ -862,7 +848,7 @@
       <title>Using VMware.Sdk.Vcf.Installer: Commands for VCF Installer in PowerCLI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-vcfinstaller-cmdlets/</link>
       <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-vcfinstaller-cmdlets/</guid>
       <description>
         
@@ -910,7 +896,7 @@
       <title>Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-operations-cmdlets/</link>
       <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-operations-cmdlets/</guid>
       <description>
         
@@ -958,7 +944,7 @@
       <title>VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-sdk-modules/</link>
       <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-sdk-modules/</guid>
       <description>
         
@@ -999,7 +985,7 @@
       <title>How to Install VCF PowerCLI 9.0: Step-by-Step Guide</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-updating/</link>
       <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-updating/</guid>
       <description>
         
@@ -1048,7 +1034,7 @@
       <title>VMware Cloud Foundation 9.0: Transitioning from SDDC Manager to VCF Operations</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-task-locations/</link>
       <pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-task-locations/</guid>
       <description>
         
@@ -1066,7 +1052,7 @@
       <title>VCF Installer: Streamlining VMware Cloud Foundation Deployments</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-installer-introduction/</link>
       <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-installer-introduction/</guid>
       <description>
         
@@ -1084,7 +1070,7 @@
       <title>Understanding VMware Cloud Foundation 9.0: Key Terminology Explained</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-understanding-terminology/</link>
       <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-understanding-terminology/</guid>
       <description>
         

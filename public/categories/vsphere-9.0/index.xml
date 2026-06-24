@@ -6,13 +6,15 @@
     <description>Recent content in VSphere 9.0 on My Cloudy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
+    <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
     <lastBuildDate>Tue, 22 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vsphere-9.0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using VMware.Sdk.Vsphere: Commands for vSphere</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</link>
       <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</guid>
       <description>
         

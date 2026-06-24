@@ -6,13 +6,15 @@
     <description>Recent content in VMware Live Site Recovery on My Cloudy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
+    <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
     <lastBuildDate>Tue, 29 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vmware-live-site-recovery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/</link>
       <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/</guid>
       <description>
         

@@ -6,13 +6,47 @@
     <description>Recent content in SDDC Manager on My Cloudy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
+    <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/sddc-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/sddc-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.&lt;/p&gt;
+&lt;p&gt;Whilst public API documentation is available across the VMware Cloud Foundation platform (see &lt;a
+	
+		href = &#34;https://developer.broadcom.com/xapis?tab=Cloud%2520Management&amp;amp;fireglass_rsn=true#fireglass_params&amp;amp;tabid=a9ffd1dabd48ea13&amp;amp;start_with_session_counter=3&amp;amp;application_server_address=isolation-2-europe-west2.prod.fire.glass&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		developer.broadcom.com
+	&lt;/span&gt;
+&lt;/a&gt;), concrete examples of how to consume the various APIs is either not consistent or lacking, for this reason I decided to pull together this post to help with the specifics, this post covers the following end-points:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VCF Automation: ?</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</link>
       <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</guid>
       <description>
         
@@ -97,7 +131,7 @@
       <title>Automate VMware Cloud Foundation 9.0 with OpenAPI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</link>
       <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</guid>
       <description>
         
@@ -128,7 +162,7 @@
       <title>Using VMware.Sdk.Vcf.SddcManager: Commands for SDDC Manager in PowerCLI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</guid>
       <description>
         
@@ -174,10 +208,10 @@
     
     <item>
       <title>Viewing Service Details Using Curl with SDDC Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-curl-sddcm-view-services/</link>
+      <link>http://localhost:1313/post/vcf-5x/vcf-curl-sddcm-view-services/</link>
       <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-curl-sddcm-view-services/</guid>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-5x/vcf-curl-sddcm-view-services/</guid>
       <description>
         
           
@@ -206,62 +240,6 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;curl -k -X GET &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$sddcManagerFqdn&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/v1/vcf-services&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Authorization: Bearer &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$TOKEN&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Accept: application/json&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; jq &lt;span class=&#34;s1&#34;&gt;&amp;#39;.elements[]&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;obtaining-service-details-for-a-specific-service-from-sddc-manager&#34;&gt;Obtaining Service Details for a Specific Service from SDDC Manager&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Viewing Network Pool Details Using Curl with SDDC Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-curl-view-network-pools/</link>
-      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-curl-view-network-pools/</guid>
-      <description>
-        
-          
-            &lt;p&gt;In this post we will use curl to view the details of a Network Pool in SDDC Manager.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;POST /v1/tokens&lt;/li&gt;
-&lt;li&gt;GET /v1/network-pools&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;view-all-network-pools-configured-in-sddc-manager&#34;&gt;View All Network Pools Configured in SDDC Manager&lt;/h3&gt;
-&lt;p&gt;In this procedure we will authenticate to SDDC Manager and then using the &lt;strong&gt;/v1/network-pools&lt;/strong&gt; API we will retrieve a list of all the Network Pools configured within the SDDC Manager instance.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Connect to the SDDC Manager appliance over SSH.&lt;/li&gt;
-&lt;li&gt;Replace the values in the sample code with values for your SDDC Manager instance and run the following commands:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;sddcManagerFqdn&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;$&amp;#39;sfo-vcf01.sfo.rainpole.io&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;sddcManagerUser&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;$&amp;#39;admin@local&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;sddcManagerPass&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;$&amp;#39;VMw@re1!VMw@re1!&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Authenticate to the SDDC Manager instance and obtain an authentication token by running the following command:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;TOKEN&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -k -X POST https://&lt;span class=&#34;nv&#34;&gt;$sddcManagerFqdn&lt;/span&gt;/v1/tokens -H &lt;span class=&#34;s1&#34;&gt;&amp;#39;Content-Type:application/json&amp;#39;&lt;/span&gt; -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;{&amp;#34;username&amp;#34;: &amp;#34;&amp;#39;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$sddcManagerUser&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#34;,&amp;#34;password&amp;#34;: &amp;#34;&amp;#39;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$sddcManagerPass&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#34;}&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; jq -r &lt;span class=&#34;s1&#34;&gt;&amp;#39;.accessToken&amp;#39;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Retrieve all Network Pools from your SDDC Manager instance by running the following command:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;curl -k -X GET &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$sddcManagerFqdn&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/v1/network-pools&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Authorization: Bearer &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$TOKEN&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Accept: application/json&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; jq &lt;span class=&#34;s1&#34;&gt;&amp;#39;.elements[]&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The output will look something like the following, here we can see that my platform has two network pools configured. Each containing two networks, but all we can see from this output are the ids so in order to get a more detailed information we will need to pass the id of one of the Network Pools into the &lt;strong&gt;/v1/network-pools&lt;/strong&gt; API.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Obtaining a Token Using Curl with SDDC Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-curl-sddcm-authentication/</link>
-      <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-curl-sddcm-authentication/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Interacting with the Public APIs for SDDC Manager can be achieved in many ways, my normal goto is PowerCLI but that requires the installation of the required modules and of course PowerShell itself to be available on either the component your wanting to interact with or a remote management host. If your looking for a faster method for interacting with the Public APIs then &lt;em&gt;CURL&lt;/em&gt; is your new best friend.&lt;/p&gt;
           
           
         

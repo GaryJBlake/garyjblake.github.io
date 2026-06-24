@@ -6,22 +6,206 @@
     <description>Recent content in Posts on My Cloudy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
+    <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Dec 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Configuring VCF Single Sign-On: Using OpenLDAP Identity Provider</title>
-      <link>http://localhost:1313/post/operations/ops-configure-sso-openldap/</link>
-      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/operations/ops-configure-sso-openldap/</guid>
+      <title>VMware Cloud Foundation 9.1 Now Available: Key Links</title>
+      <link>http://localhost:1313/post/vcf-91/vcf-91-vcf-release/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91/vcf-91-vcf-release/</guid>
       <description>
         
           
-            &lt;p&gt;VMware Cloud Foundation 9.0 introduced the new identity broker capabilities where you can configure VCF Single Sign-On across VCF components within a single VCF Instance, across a set of VCF Instances, and/or across an entire VCF fleet of VCF Instances. This post walks through the process of configuring OpenLDAP as an identity provider.&lt;/p&gt;
-&lt;h2 id=&#34;procedure---configure-an-identity-provider&#34;&gt;Procedure - Configure an Identity Provider&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Log in to the VCF Operations console at &lt;a
+            &lt;p&gt;Excited to share that VMware Cloud Foundation and VMware vSphere Foundation 9.1 are now available for download, here are a number of useful links, if you have not already seen or read the news release please see &lt;a
+	
+		href = &#34;https://news.broadcom.com/releases/broadcom-announces-vmware-cloud-foundation-9-1&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		News Release
+	&lt;/span&gt;
+&lt;/a&gt; that was posted following last weeks launch event.&lt;/p&gt;
+&lt;h3 id=&#34;vmware-cloud-foundation&#34;&gt;VMware Cloud Foundation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;https://techdocs.broadcom.com/bin/gethidpage?ux-context-string=release_notes-9-1&amp;amp;appid=vcf-9-1&amp;amp;language=&amp;amp;format=rendered&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Release Notes
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1.html&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		All Documentation
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/design.html&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Design Guide
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/administration-sdks-cli-and-tools.html&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Administration SDKs, APIs, and CLI
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Cloud%20Foundation&amp;amp;displayGroup=VMware%20Cloud%20Foundation%209&amp;amp;release=9.1.0.0&amp;amp;os=&amp;amp;servicePk=540528&amp;amp;language=EN&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware Cloud Foundation Download Site
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tooling&#34;&gt;Tooling&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;https://vmware.github.io/vcf-upgrade-planner/index.html&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VCF Upgrade Planner
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;https://vcf-tools-dev.broadcom.net/tools/pcsizer/&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Private Cloud Sizer
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;https://vropssizer.broadcom.com/#/sizing-wizard/choose-installation&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VCF Operations Sizing Estimator
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;vmware-vsphere-foundation&#34;&gt;VMware vSphere Foundation&lt;/h3&gt;
+&lt;p&gt;&lt;a
+	
+		href = &#34;https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20vSphere%20Foundation&amp;amp;displayGroup=VMware%20vSphere%20Foundation%209&amp;amp;release=9.1.0.0&amp;amp;os=&amp;amp;servicePk=542815&amp;amp;language=EN&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VMware vSphere Foundation Download Site
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation 9.1: VCF Installer What&#39;s New</title>
+      <link>http://localhost:1313/post/vcf-91/vcf-91-vcf-installer-whats-new/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91/vcf-91-vcf-installer-whats-new/</guid>
+      <description>
+        
+          
+            &lt;p&gt;With the release of VMware Cloud Foundation 9.1, there comes a new version of the VCF Installer. This release introduces a lot of new capabilities so lets dig into the details of what&#39;s new. For the purpose of this post I&#39;ve broken these down into the following key areas.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#progress-bar&#34;
 	
 
 	
@@ -29,9 +213,177 @@
 	&gt;
 
 	&lt;span&gt;
-		https://&amp;lt;vcf_operations_fqdn&amp;gt;
+		Progress Bar
 	&lt;/span&gt;
-&lt;/a&gt; with a user assigned the Administrator role.&lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#deployment-paths&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Deployment Paths
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#plan-section&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Plan Section
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+	
+		href = &#34;#prepare-section&#34;
+	
+
+	
+
+	&gt;
+
+	&lt;span&gt;
+		Prepare Section
+	&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;progress-bar&#34;&gt;Progress Bar&lt;/h3&gt;
+&lt;p&gt;The first big change involves an overhaul of the general workflow where a new progress bar has been added covering four key stages &lt;strong&gt;Introduction&lt;/strong&gt;, &lt;strong&gt;Plan&lt;/strong&gt;, &lt;strong&gt;Prepare&lt;/strong&gt; and &lt;strong&gt;Deploy&lt;/strong&gt;. Once a stage has been completed, you move into the next stage of the progress bar. These stage markers can also be used as navigation allowing you to return to a previous stage if needed, this reduces the number backward clicks required compared to the previous release.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Installer APIs: Validating Your JSON Using VCF Installer</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</link>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</guid>
+      <description>
+        
+          
+            &lt;p&gt;The first step to automating the deployment of a new VMware Cloud Foundation platform is the creation and validation of your JSON specification file. This JSON specification file describes the environment to be configured.&lt;/p&gt;
+&lt;p&gt;There are a few ways in which you can build your JSON specification file, probably the easiest is through the use of the Planning and Preparation Workbook and a PowerShell utility my friend and colleague &lt;a
+	
+		href = &#34;https://www.linkedin.com/in/gouldken/&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Ken Gould
+	&lt;/span&gt;
+&lt;/a&gt; created called &lt;a
+	
+		href = &#34;https://www.powershellgallery.com/packages/VCF.JSONGenerator&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VCF.JSONGenerator
+	&lt;/span&gt;
+&lt;/a&gt; (for a full rundown of the tool see Ken&#39;s blog post &lt;a
+	
+		href = &#34;https://feardamhan.com/2025/08/14/introducing-the-vcf-jsongenerator-powershell-module-for-vmware-cloud-foundation/&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		Introducing the VCF.JSONGenerator PowerShell Module for VMware Cloud Foundation
+	&lt;/span&gt;
+&lt;/a&gt;).&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Installer APIs: Download Binaries from Broadcom Depot</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the &lt;a
+	
+		href = &#34;https://vcf.broadcom.com&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VCF Business Services Console
+	&lt;/span&gt;
+&lt;/a&gt;, once you have your download token you can proceed with setting up the VCF Installer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VCF Installer APIs Used&lt;/strong&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.&lt;/p&gt;
+&lt;p&gt;Whilst public API documentation is available across the VMware Cloud Foundation platform (see &lt;a
+	
+		href = &#34;https://developer.broadcom.com/xapis?tab=Cloud%2520Management&amp;amp;fireglass_rsn=true#fireglass_params&amp;amp;tabid=a9ffd1dabd48ea13&amp;amp;start_with_session_counter=3&amp;amp;application_server_address=isolation-2-europe-west2.prod.fire.glass&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		developer.broadcom.com
+	&lt;/span&gt;
+&lt;/a&gt;), concrete examples of how to consume the various APIs is either not consistent or lacking, for this reason I decided to pull together this post to help with the specifics, this post covers the following end-points:&lt;/p&gt;
           
           
         
@@ -42,7 +394,7 @@
       <title>Latency Requirements for VMware Cloud Foundation 9.0</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-fleet-latency/</link>
       <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-fleet-latency/</guid>
       <description>
         
@@ -74,7 +426,7 @@
       <title>VMware Cloud Foundation 9.0: Setting Up Custom LDAP Service for an Organization in VCF Automation</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</link>
       <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</guid>
       <description>
         
@@ -90,7 +442,7 @@
       <title>VCF Automation: ?</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</link>
       <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</guid>
       <description>
         
@@ -175,7 +527,7 @@
       <title>VMware Cloud Foundation 9.0: Setting Up VCF Single Sign-On with OpenLDAP</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-identity-broker/</link>
       <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-identity-broker/</guid>
       <description>
         
@@ -191,7 +543,7 @@
       <title>Automate VMware Cloud Foundation 9.0 with OpenAPI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</link>
       <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</guid>
       <description>
         
@@ -222,7 +574,7 @@
       <title>VCF Installer: Retrieve Component Passwords from VCF Installer</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-installer-retrieve-passwords/</link>
       <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-installer-retrieve-passwords/</guid>
       <description>
         
@@ -239,7 +591,7 @@
       <title>Adjusting ESX Certificate Key Size in VMware Cloud Foundation</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/</link>
       <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/</guid>
       <description>
         
@@ -256,7 +608,7 @@
       <title>Using VMware.Sdk.Srm: Commands for VMware Live Site Recovery in PowerCLI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/</link>
       <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-srm-cmdlets/</guid>
       <description>
         
@@ -760,7 +1112,7 @@
       <title>Using VMware.Sdk.Vsphere: Commands for vSphere</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</link>
       <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</guid>
       <description>
         
@@ -796,10 +1148,10 @@
     
     <item>
       <title>VCF Operations 9.0: Managing Alert Definitions</title>
-      <link>http://localhost:1313/post/operations/ops-supress-compliance-alerts/</link>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-ops-supress-compliance-alerts/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/operations/ops-supress-compliance-alerts/</guid>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-ops-supress-compliance-alerts/</guid>
       <description>
         
           
@@ -832,7 +1184,7 @@
       <title>Using VMware.Sdk.Vcf.SddcManager: Commands for SDDC Manager in PowerCLI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</guid>
       <description>
         
@@ -880,7 +1232,7 @@
       <title>Using VMware.Sdk.Nsx.Policy: Commands for NSX</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-nsx-policy-cmdlets/</link>
       <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-nsx-policy-cmdlets/</guid>
       <description>
         
@@ -926,7 +1278,7 @@
       <title>Using VMware.Sdk.Vcf.Installer: Commands for VCF Installer in PowerCLI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-vcfinstaller-cmdlets/</link>
       <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-vcfinstaller-cmdlets/</guid>
       <description>
         
@@ -974,7 +1326,7 @@
       <title>Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-operations-cmdlets/</link>
       <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-operations-cmdlets/</guid>
       <description>
         
@@ -1022,7 +1374,7 @@
       <title>VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-sdk-modules/</link>
       <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-sdk-modules/</guid>
       <description>
         
@@ -1063,7 +1415,7 @@
       <title>How to Install VCF PowerCLI 9.0: Step-by-Step Guide</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-updating/</link>
       <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-updating/</guid>
       <description>
         
@@ -1112,7 +1464,7 @@
       <title>VMware Cloud Foundation 9.0: Transitioning from SDDC Manager to VCF Operations</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-task-locations/</link>
       <pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-task-locations/</guid>
       <description>
         
@@ -1130,7 +1482,7 @@
       <title>VCF Installer: Streamlining VMware Cloud Foundation Deployments</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-installer-introduction/</link>
       <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-installer-introduction/</guid>
       <description>
         
@@ -1148,7 +1500,7 @@
       <title>Understanding VMware Cloud Foundation 9.0: Key Terminology Explained</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-understanding-terminology/</link>
       <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-90/vcf-90-understanding-terminology/</guid>
       <description>
         
@@ -1164,7 +1516,7 @@
       <title>Where Has The VMware Validated Solution Content Gone</title>
       <link>http://localhost:1313/post/vvs/vvs-content-locations/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vvs/vvs-content-locations/</guid>
       <description>
         
@@ -1195,10 +1547,10 @@
     
     <item>
       <title>Authentication Using Curl for VCF Operations Fleet Management</title>
-      <link>http://localhost:1313/post/ops-fleet-mgmt/ofm-curl-authentication/</link>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-ops-fleet-mgmt-curl-authentication/</link>
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/ops-fleet-mgmt/ofm-curl-authentication/</guid>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-ops-fleet-mgmt-curl-authentication/</guid>
       <description>
         
           
@@ -1233,10 +1585,10 @@
     
     <item>
       <title>Obtaining a Token Using Curl for VCF Operations for Networks</title>
-      <link>http://localhost:1313/post/ops-for-networks/ofn-curl-authentication/</link>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-ops-networks-curl-authentication/</link>
       <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/ops-for-networks/ofn-curl-authentication/</guid>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-ops-networks-curl-authentication/</guid>
       <description>
         
           
@@ -1257,10 +1609,10 @@
     
     <item>
       <title>Viewing Service Details Using Curl with SDDC Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-curl-sddcm-view-services/</link>
+      <link>http://localhost:1313/post/vcf-5x/vcf-curl-sddcm-view-services/</link>
       <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-curl-sddcm-view-services/</guid>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-5x/vcf-curl-sddcm-view-services/</guid>
       <description>
         
           
@@ -1289,675 +1641,6 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;curl -k -X GET &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$sddcManagerFqdn&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/v1/vcf-services&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Authorization: Bearer &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$TOKEN&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Accept: application/json&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; jq &lt;span class=&#34;s1&#34;&gt;&amp;#39;.elements[]&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;obtaining-service-details-for-a-specific-service-from-sddc-manager&#34;&gt;Obtaining Service Details for a Specific Service from SDDC Manager&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Viewing Network Pool Details Using Curl with SDDC Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-curl-view-network-pools/</link>
-      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-curl-view-network-pools/</guid>
-      <description>
-        
-          
-            &lt;p&gt;In this post we will use curl to view the details of a Network Pool in SDDC Manager.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;POST /v1/tokens&lt;/li&gt;
-&lt;li&gt;GET /v1/network-pools&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;view-all-network-pools-configured-in-sddc-manager&#34;&gt;View All Network Pools Configured in SDDC Manager&lt;/h3&gt;
-&lt;p&gt;In this procedure we will authenticate to SDDC Manager and then using the &lt;strong&gt;/v1/network-pools&lt;/strong&gt; API we will retrieve a list of all the Network Pools configured within the SDDC Manager instance.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Connect to the SDDC Manager appliance over SSH.&lt;/li&gt;
-&lt;li&gt;Replace the values in the sample code with values for your SDDC Manager instance and run the following commands:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;sddcManagerFqdn&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;$&amp;#39;sfo-vcf01.sfo.rainpole.io&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;sddcManagerUser&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;$&amp;#39;admin@local&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;sddcManagerPass&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;$&amp;#39;VMw@re1!VMw@re1!&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Authenticate to the SDDC Manager instance and obtain an authentication token by running the following command:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;TOKEN&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -k -X POST https://&lt;span class=&#34;nv&#34;&gt;$sddcManagerFqdn&lt;/span&gt;/v1/tokens -H &lt;span class=&#34;s1&#34;&gt;&amp;#39;Content-Type:application/json&amp;#39;&lt;/span&gt; -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;{&amp;#34;username&amp;#34;: &amp;#34;&amp;#39;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$sddcManagerUser&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#34;,&amp;#34;password&amp;#34;: &amp;#34;&amp;#39;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$sddcManagerPass&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#34;}&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; jq -r &lt;span class=&#34;s1&#34;&gt;&amp;#39;.accessToken&amp;#39;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Retrieve all Network Pools from your SDDC Manager instance by running the following command:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;curl -k -X GET &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$sddcManagerFqdn&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/v1/network-pools&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Authorization: Bearer &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$TOKEN&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Accept: application/json&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; jq &lt;span class=&#34;s1&#34;&gt;&amp;#39;.elements[]&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The output will look something like the following, here we can see that my platform has two network pools configured. Each containing two networks, but all we can see from this output are the ids so in order to get a more detailed information we will need to pass the id of one of the Network Pools into the &lt;strong&gt;/v1/network-pools&lt;/strong&gt; API.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Obtaining a Token Using Curl with SDDC Manager</title>
-      <link>http://localhost:1313/post/vcf/vcf-curl-sddcm-authentication/</link>
-      <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-curl-sddcm-authentication/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Interacting with the Public APIs for SDDC Manager can be achieved in many ways, my normal goto is PowerCLI but that requires the installation of the required modules and of course PowerShell itself to be available on either the component your wanting to interact with or a remote management host. If your looking for a faster method for interacting with the Public APIs then &lt;em&gt;CURL&lt;/em&gt; is your new best friend.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>What&#39;s New for VMware Validated Solutions - Blog Index</title>
-      <link>http://localhost:1313/post/vvs-whats-new/whats-new-index/</link>
-      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vvs-whats-new/whats-new-index/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;last-updated-08-oct-2024&#34;&gt;Last Updated 08-Oct-2024&lt;/h2&gt;
-&lt;p&gt;VMware Validated Solutions are byte sized solutions developed to extend the foundational capabilities of VMware Cloud Foundation, for background reading see my previous post here. Over time the team intends to add incremental value where opportunities arise and I plan to share as much detail as I can with each new update using my What&#39;s New for VMware Validated Solutions series of blog posts. I&#39;ve decided to create this single landing page where I will provide a consolidated list of links to the relevant Editions of this series so you can bookmark this single page for ease of use.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>What&#39;s New for VMware Validated Solutions - Edition #26 (October 2024)</title>
-      <link>http://localhost:1313/post/vvs-whats-new/edition-26/</link>
-      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vvs-whats-new/edition-26/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 08-Oct-2024&lt;/p&gt;
-&lt;p&gt;Welcome to Edition #26 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, this is the update for October 2024, the highlights of which are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for &lt;strong&gt;VMware Cloud Foundation 5.2.1&lt;/strong&gt; to VMware Validated Solutions&lt;/li&gt;
-&lt;li&gt;Release of &lt;a
-	
-		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.12.0&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		PowerValidatedSolutions v2.12.0
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;added-support-for-vmware-cloud-foundation-521&#34;&gt;Added Support for VMware Cloud Foundation 5.2.1&lt;/h3&gt;
-&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.2.1 for the following VMware Validated Solutions:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>What&#39;s New for VMware Validated Solutions - Edition #25 (July 2024)</title>
-      <link>http://localhost:1313/post/vvs-whats-new/edition-25/</link>
-      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vvs-whats-new/edition-25/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 23-Jul-2024&lt;/p&gt;
-&lt;p&gt;Welcome to Edition #25 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, this is the update for July 2024, the highlights of which are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for VMware Cloud Foundation 5.2.0 to VMware Validated Solutions&lt;/li&gt;
-&lt;li&gt;Enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/developer-ready-infrastructure-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Developer Ready Infrastructure for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/intelligent-network-visibility-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Intelligent Network Visibility for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;New end-to-end automated implementation using PowerShell for all VMware Validated Solutions&lt;/li&gt;
-&lt;li&gt;Support for automated deployment of Solution Interoperability from the validated solution menu&lt;/li&gt;
-&lt;li&gt;Guidance on importing the VMware Aria Suite OVA files into a vSphere Content Library&lt;/li&gt;
-&lt;li&gt;Signed Certificate Generation using the PowerShell Module for VMware Validated Solutions&lt;/li&gt;
-&lt;li&gt;Deprecation of &lt;a
-	
-		href = &#34;https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Cloud-Based Workload Protection for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Release of &lt;a
-	
-		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.11.0&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		PowerValidatedSolutions v2.11.0
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;added-support-for-vmware-cloud-foundation-520&#34;&gt;Added Support for VMware Cloud Foundation 5.2.0&lt;/h3&gt;
-&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.2.0 for the following VMware Validated Solutions:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Simplified Consumption of PowerShell Automation with VMware Validated Solutions</title>
-      <link>http://localhost:1313/post/vvs/vvs-powershell-menu/</link>
-      <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vvs/vvs-powershell-menu/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 13-Jun-2024&lt;/p&gt;
-&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
-&lt;p&gt;When we started on the VMware Validated Solution journey nearly three years ago, one of the main criteria we agreed on was to provide our customers with an automated way to deploy and configure whatever was defined within a solution. During the process we also did some analysis on tooling and came to the decision that we would use PowerShell as our automation tool of choice based on the flexibility it gave us.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>What&#39;s New for VMware Validated Solutions - Edition #24 (May 2024)</title>
-      <link>http://localhost:1313/post/vvs-whats-new/edition-24/</link>
-      <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vvs-whats-new/edition-24/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 28-May-2024&lt;/p&gt;
-&lt;p&gt;Welcome to Edition #24 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, this is the update for May 2024, the highlights of which are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; – &lt;a
-	
-		href = &#34;https://core.vmware.com/private-ai-ready-infrastructure-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Private AI Ready Infrastructure for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Added Support for VxRail to &lt;a
-	
-		href = &#34;https://core.vmware.com/health-reporting-and-monitoring-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Health Reporting and Monitoring for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Added Support for VMware Aria Automation 8.16.2 to &lt;a
-	
-		href = &#34;https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Private Cloud Automation for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Added Support for VMware Site Recovery Manager 9.0 and vSphere Replication 9.0 to &lt;a
-	
-		href = &#34;https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Site Protection and Disaster Recovery for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Updated automation steps for &lt;a
-	
-		href = &#34;https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Identity and Access Management for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Release of &lt;a
-	
-		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.10.0&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		PowerValidatedSolutions v2.10.0
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;private-ai-ready-infrastructure-for-vmware-cloud-foundation&#34;&gt;Private AI Ready Infrastructure for VMware Cloud Foundation&lt;/h3&gt;
-&lt;p&gt;Delighted to announce the release of this brand-new VMware Validated Solution.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Native PowerCLI Modules for VMware Cloud Foundation</title>
-      <link>http://localhost:1313/post/vcf/vcf-powercli-main/</link>
-      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf/vcf-powercli-main/</guid>
-      <description>
-        
-          
-            &lt;h3 id=&#34;the-birth-of-powervcf&#34;&gt;The Birth of PowerVCF&lt;/h3&gt;
-&lt;p&gt;Back in January 2020 my friend and colleague &lt;a
-	
-		href = &#34;https://lifeofbrianoc.com&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Brian OConnell
-	&lt;/span&gt;
-&lt;/a&gt; embarked on a community project to write a PowerShell module to make consumption of the VMware Cloud Foundation APIs simple and easy to consume by VI Admins, each cmdlet was hand-built using standard PowerShell verbs that the community is well versed in consuming. He saw that the need for automation within our customer based was growing and at the time there was no alternative solution available.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>What&#39;s New for VMware Validated Solutions - Edition #23 (March 2024)</title>
-      <link>http://localhost:1313/post/vvs-whats-new/edition-23/</link>
-      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vvs-whats-new/edition-23/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 26-Mar-2024&lt;/p&gt;
-&lt;p&gt;Welcome to Edition #23 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, this is the update for March 2024, the highlights of which are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added support for VMware Cloud Foundation 5.1.1 for all VMware Validated Solutions&lt;/li&gt;
-&lt;li&gt;Update to password management for the latest Photon OS&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Intelligent Operations Management for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/intelligent-network-visibility-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Intelligent Network Visibility for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Private Cloud Automation for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Site Protection and Disaster Recovery for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/cloud-based-workload-protection-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Cloud-Based Workload Protection for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/cloud-based-ransomware-recovery-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Cloud-Based Ransomware Recovery for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/cross-cloud-mobility-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Cross Cloud Mobility for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Release of &lt;a
-	
-		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.9.0&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		PowerValidatedSolutions v2.9.0
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;added-support-for-vmware-cloud-foundation-511&#34;&gt;Added Support for VMware Cloud Foundation 5.1.1&lt;/h3&gt;
-&lt;p&gt;Delighted to announce support for VMware Cloud Foundation 5.1.1 for the following VMware Validated Solutions:&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>What&#39;s New for VMware Validated Solutions - Edition #22 (January 2024)</title>
-      <link>http://localhost:1313/post/vvs-whats-new/edition-22/</link>
-      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vvs-whats-new/edition-22/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 30-January-2024&lt;/p&gt;
-&lt;p&gt;Welcome to Edition #22 of the &lt;strong&gt;What&#39;s New for VMware Validated Solutions&lt;/strong&gt;, this is a our first update for 2024 and the team has been busy over the festive period. Highlights include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;New Solution&lt;/strong&gt; – &lt;a
-	
-		href = &#34;https://core.vmware.com/instelligent-network-visibility-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Intelligent Network Visibility for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Architectural change to &lt;a
-	
-		href = &#34;https://core.vmware.com/identity-and-access-management-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Identity and Access Management for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Multi-instance support for &lt;a
-	
-		href = &#34;https://core.vmware.com/health-reporting-and-monitoring-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Health Reporting and Monitoring for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/intelligent-logging-and-analytics-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Intelligent Logging and Analytics for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/intelligent-operations-management-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Intelligent Operations Management for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/private-cloud-automation-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Private Cloud Automation for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Various enhancements to &lt;a
-	
-		href = &#34;https://core.vmware.com/site-protection-and-disaster-recovery-vmware-cloud-foundation&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Site Protection and Disaster Recovery for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Deprecation of VMware Aria SaaS based validated solutions.&lt;/li&gt;
-&lt;li&gt;Release of &lt;a
-	
-		href = &#34;https://www.powershellgallery.com/packages/PowerValidatedSolutions/2.8.0&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		PowerValidatedSolutions v2.8.0
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;intelligent-network-visibility-for-vmware-cloud-foundation&#34;&gt;Intelligent Network Visibility for VMware Cloud Foundation&lt;/h3&gt;
-&lt;p&gt;Delighted to announce the release of this brand-new VMware Validated Solution.&lt;/p&gt;
           
           
         
