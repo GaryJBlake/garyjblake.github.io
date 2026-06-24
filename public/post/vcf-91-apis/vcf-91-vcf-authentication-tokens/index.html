@@ -195,7 +195,8 @@
   </span>
   </div>
 
-    <div class="post_body"><p>Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.</p>
+    <div class="post_body"><p><strong>Last Updated:</strong> 24-Jun-2026</p>
+<p>Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.</p>
 <p>Whilst public API documentation is available across the VMware Cloud Foundation platform (see <a
 	
 		href = "https://developer.broadcom.com/xapis?tab=Cloud%2520Management&amp;fireglass_rsn=true#fireglass_params&amp;tabid=a9ffd1dabd48ea13&amp;start_with_session_counter=3&amp;application_server_address=isolation-2-europe-west2.prod.fire.glass"
@@ -215,7 +216,7 @@
 <ul>
 <li><a
 	
-		href = "#vcf-installer"
+		href = "#vcf-installer-vcf-installer"
 	
 
 	
@@ -223,12 +224,12 @@
 	>
 
 	<span>
-		VCF Installer
+		VCF Installer {#vcf-installer}
 	</span>
 </a></li>
 <li><a
 	
-		href = "#vcf-operations"
+		href = "#vcf-operations-vcf-operations"
 	
 
 	
@@ -236,12 +237,12 @@
 	>
 
 	<span>
-		VCF Operations
+		VCF Operations {#vcf-operations}
 	</span>
 </a></li>
 <li><a
 	
-		href = "#sddc-manager"
+		href = "#sddc-manager-sddc-manager"
 	
 
 	
@@ -249,12 +250,12 @@
 	>
 
 	<span>
-		SDDC Manager
+		SDDC Manager {#sddc-manager}
 	</span>
 </a></li>
 <li><a
 	
-		href = "#vcf-runtime"
+		href = "#vcf-services-runtime-vcf-runtime"
 	
 
 	
@@ -262,7 +263,7 @@
 	>
 
 	<span>
-		VCF Services Runtime
+		VCF Services Runtime {#vcf-runtime}
 	</span>
 </a></li>
 </ul>
@@ -287,9 +288,9 @@
 <li>Authenticate to VCF Installer and obtain a token by running the following command:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcfInstallerToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST <span class="s2">&#34;https://</span><span class="nv">$vcfInstallerFqdn</span><span class="s2">/v1/tokens&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span>    --header <span class="s1">&#39;Content-Type:application/json&#39;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="se"></span>    -d <span class="s2">&#34;{\&#34;username\&#34;:\&#34;</span><span class="nv">$vcfInstallerUser</span><span class="s2">\&#34;, \&#34;password\&#34;:\&#34;</span><span class="nv">$vcfInstallerPass</span><span class="s2">\&#34;}&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="se"></span>    <span class="p">|</span> jq -r <span class="s1">&#39;.accessToken&#39;</span><span class="k">)</span>
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s1">&#39;Content-Type:application/json&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    -d <span class="s2">&#34;{\&#34;username\&#34;:\&#34;</span><span class="nv">$vcfInstallerUser</span><span class="s2">\&#34;, \&#34;password\&#34;:\&#34;</span><span class="nv">$vcfInstallerPass</span><span class="s2">\&#34;}&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="p">|</span> jq -r <span class="s1">&#39;.accessToken&#39;</span><span class="k">)</span>
 </span></span></code></pre></div><ol start="4">
 <li>Verify you were able to successfully obtain an authentication token by running the following command:</li>
 </ol>
@@ -315,9 +316,9 @@
 <li>Authenticate to VCF Operations and obtain a token by running the following command:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcfOperationsToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST https://<span class="nv">$vcfOperationsFqdn</span>/suite-api/api/auth/token/acquire <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span>    --header <span class="s1">&#39;Content-Type:application/json&#39;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="se"></span>    -d <span class="s2">&#34;{\&#34;username\&#34;:\&#34;</span><span class="nv">$vcfOperationsUser</span><span class="s2">\&#34;, \&#34;password\&#34;:\&#34;</span><span class="nv">$vcfOperationsPass</span><span class="s2">\&#34;, \&#34;authSource\&#34;:\&#34;LOCAL\&#34;}&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="se"></span>    <span class="p">|</span> jq -r <span class="s1">&#39;.token&#39;</span><span class="k">)</span>
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s1">&#39;Content-Type:application/json&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    -d <span class="s2">&#34;{\&#34;username\&#34;:\&#34;</span><span class="nv">$vcfOperationsUser</span><span class="s2">\&#34;, \&#34;password\&#34;:\&#34;</span><span class="nv">$vcfOperationsPass</span><span class="s2">\&#34;, \&#34;authSource\&#34;:\&#34;LOCAL\&#34;}&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="p">|</span> jq -r <span class="s1">&#39;.token&#39;</span><span class="k">)</span>
 </span></span></code></pre></div><ol start="4">
 <li>Verify you were able to successfully obtain an authentication token by running the following command:</li>
 </ol>
@@ -336,16 +337,16 @@
 <p>Replace the values in the sample code with values for your SDDC Manager instance and run the commands in the console.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">sddcManagerFqdn</span><span class="o">=</span><span class="s1">$&#39;sfo-vcf01.sfo.rainpole.io&#39;</span>
-</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nv">sddcManagerUser</span><span class="o">=</span><span class="s1">$&#39;administrator@vsphere.local&#39;</span>
-</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nv">sddcManagerPass</span><span class="o">=</span><span class="s1">$&#39;VMw@re1!VMw@re1!&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">export</span> <span class="nv">sddcManagerFqdn</span><span class="o">=</span><span class="s1">&#39;sfo-vcf01.sfo.rainpole.io&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">export</span> <span class="nv">sddcManagerUser</span><span class="o">=</span><span class="s1">&#39;administrator@vsphere.local&#39;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">export</span> <span class="nv">sddcManagerPass</span><span class="o">=</span><span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span>
 </span></span></code></pre></div><ol start="3">
 <li>Authenticate to SDDC Manager and obtain a token by running the following command:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">sddcManagerToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST https://<span class="nv">$sddcManagerFqdn</span>/v1/tokens <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span>    -H <span class="s1">&#39;Content-Type:application/json&#39;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="se"></span>    --data <span class="s2">&#34;username=</span><span class="nv">$sddcManagerUser</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="se"></span>    --data <span class="s2">&#34;password=</span><span class="nv">$sddcManagerPass</span><span class="s2">&#34;</span> <span class="p">|</span> jq -r <span class="s1">&#39;.accessToken&#39;</span><span class="k">)</span>
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s1">&#39;Content-Type:application/json&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    -d <span class="s2">&#34;{\&#34;username\&#34;:\&#34;</span><span class="nv">$sddcManagerUser</span><span class="s2">\&#34;, \&#34;password\&#34;:\&#34;</span><span class="nv">$sddcManagerPass</span><span class="s2">\&#34;}&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="p">|</span> jq -r <span class="s1">&#39;.accessToken&#39;</span><span class="k">)</span>
 </span></span></code></pre></div><ol start="4">
 <li>Verify you were able to successfully obtain an authentication token by running the following command:</li>
 </ol>
@@ -364,18 +365,18 @@
 <p>Replace the values in the sample code with values for your VCF Services Runtime instance and run the commands in the console.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcfServiceRuntimeFqdn</span><span class="o">=</span><span class="s1">$&#39;sfo-sr01.sfo.rainpole.io&#39;</span>
-</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nv">vcfServiceRuntimeUser</span><span class="o">=</span><span class="s1">$&#39;admin@vsp.local&#39;</span>
-</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nv">vcfServiceRuntimePass</span><span class="o">=</span><span class="s1">$&#39;VMw@re1!VMw@re1!&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">export</span> <span class="nv">vcfServiceRuntimeFqdn</span><span class="o">=</span><span class="s1">&#39;sfo-sr01.sfo.rainpole.io&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">export</span> <span class="nv">vcfServiceRuntimeUser</span><span class="o">=</span><span class="s1">&#39;admin@vsp.local&#39;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">export</span> <span class="nv">vcfServiceRuntimePass</span><span class="o">=</span><span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span>
 </span></span></code></pre></div><ol start="3">
 <li>Authenticate to VCF Services Runtime and obtain a token by running the following command:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcfServiceRuntimeToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST https://<span class="s2">&#34;</span><span class="nv">$vcfServiceRuntimeFqdn</span><span class="s2">&#34;</span>/api/v1/identity/token <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span>    -H <span class="s1">&#39;Content-Type: application/x-www-form-urlencoded&#39;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="se"></span>    --data <span class="s2">&#34;grant_type=password&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="se"></span>    --data <span class="s2">&#34;username=</span><span class="nv">$vcfServiceRuntimeUser</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="se"></span>    --data <span class="s2">&#34;password=</span><span class="nv">$vcfServiceRuntimePass</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="se"></span>    <span class="p">|</span> jq -r <span class="s1">&#39;.access_token&#39;</span><span class="k">)</span>
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    -H <span class="s1">&#39;Content-Type: application/x-www-form-urlencoded&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --data <span class="s2">&#34;grant_type=password&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    --data <span class="s2">&#34;username=</span><span class="nv">$vcfServiceRuntimeUser</span><span class="s2">&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl">    --data <span class="s2">&#34;password=</span><span class="nv">$vcfServiceRuntimePass</span><span class="s2">&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="p">|</span> jq -r <span class="s1">&#39;.access_token&#39;</span><span class="k">)</span>
 </span></span></code></pre></div><ol start="4">
 <li>Verify you were able to successfully obtain an authentication token by running the following command:</li>
 </ol>
@@ -1129,7 +1130,7 @@
 
 <script type="text/javascript" src="http://localhost:1313/en/js/bundle.4e04b93422786398f3502d560bd5acb3d3f99b2e942c8c11e0fd926ab6ec3ccbd020d4294d58c0825ecb606ef221b34edc81586f1832489816a57ae8f0276615.js" integrity="sha512-TgS5NCJ4Y5jzUC1WC9Wss9P5my6ULIwR4P2SarbsPMvQINQpTVjAgl7LYG7yIbNO3IFYbxgySJgWpXro8CdmFQ==" crossorigin="anonymous"></script>
 
-  <script src="http://localhost:1313/js/search.min.9ea58788be840a6ce7ec2eb779ecd7e38707ef0d0dd316a99e6142da906749f0ed4a9a166750087c59774c123eeba674fe5baa5a01bd7a95a672aa881be56734.js"></script>
+  <script src="http://localhost:1313/js/search.min.f4e28b70da38fe6e401bd075f13c0374cb6f7df63e010d764506233609bc4290637c8db82ca40b74bf12cbe7e58333dc8eba7703e5f6db3209a6b300c7e88840.js"></script>
 
   </body>
 </html>

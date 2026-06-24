@@ -21,15 +21,16 @@ series = [
     "VMware Cloud Foundation APIs"
 ]
 +++
+**Last Updated:** 24-Jun-2026
 
 Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.
 
 Whilst public API documentation is available across the VMware Cloud Foundation platform (see [developer.broadcom.com](https://developer.broadcom.com/xapis?tab=Cloud%2520Management&fireglass_rsn=true#fireglass_params&tabid=a9ffd1dabd48ea13&start_with_session_counter=3&application_server_address=isolation-2-europe-west2.prod.fire.glass)), concrete examples of how to consume the various APIs is either not consistent or lacking, for this reason I decided to pull together this post to help with the specifics, this post covers the following end-points:
 
-- [VCF Installer](#vcf-installer)
-- [VCF Operations](#vcf-operations)
-- [SDDC Manager](#sddc-manager)
-- [VCF Services Runtime](#vcf-runtime)
+- [VCF Installer {#vcf-installer}](#vcf-installer-vcf-installer)
+- [VCF Operations {#vcf-operations}](#vcf-operations-vcf-operations)
+- [SDDC Manager {#sddc-manager}](#sddc-manager-sddc-manager)
+- [VCF Services Runtime {#vcf-runtime}](#vcf-services-runtime-vcf-runtime)
 
 ### VCF Installer {#vcf-installer}
 
@@ -110,18 +111,18 @@ echo $vcfOperationsToken
 2. Replace the values in the sample code with values for your SDDC Manager instance and run the commands in the console.
 
 ``` bash
-sddcManagerFqdn=$'sfo-vcf01.sfo.rainpole.io'
-sddcManagerUser=$'administrator@vsphere.local'
-sddcManagerPass=$'VMw@re1!VMw@re1!'
+export sddcManagerFqdn='sfo-vcf01.sfo.rainpole.io'
+export sddcManagerUser='administrator@vsphere.local'
+export sddcManagerPass='VMw@re1!VMw@re1!'
 ```
 
 3. Authenticate to SDDC Manager and obtain a token by running the following command:
 
 ``` bash
 sddcManagerToken=$(curl -k -X POST https://$sddcManagerFqdn/v1/tokens \
-    -H 'Content-Type:application/json' \
-    --data "username=$sddcManagerUser" \
-    --data "password=$sddcManagerPass" | jq -r '.accessToken')
+    --header 'Content-Type:application/json' \
+    -d "{\"username\":\"$sddcManagerUser\", \"password\":\"$sddcManagerPass\"}" \
+    | jq -r '.accessToken')
 ```
 
 4. Verify you were able to successfully obtain an authentication token by running the following command:
@@ -143,9 +144,9 @@ echo $sddcManagerToken
 2. Replace the values in the sample code with values for your VCF Services Runtime instance and run the commands in the console.
 
 ``` bash
-vcfServiceRuntimeFqdn=$'sfo-sr01.sfo.rainpole.io'
-vcfServiceRuntimeUser=$'admin@vsp.local'
-vcfServiceRuntimePass=$'VMw@re1!VMw@re1!'
+export vcfServiceRuntimeFqdn='sfo-sr01.sfo.rainpole.io'
+export vcfServiceRuntimeUser='admin@vsp.local'
+export vcfServiceRuntimePass='VMw@re1!VMw@re1!'
 ```
 
 3. Authenticate to VCF Services Runtime and obtain a token by running the following command:
