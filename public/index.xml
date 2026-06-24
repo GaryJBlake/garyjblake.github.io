@@ -9,7 +9,39 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCF Installer APIs: Connect VCF Installer to the Broadcom Depot</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-depot/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-depot/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the &lt;a
+	
+		href = &#34;https://vcf.broadcom.com&#34;
+	
+
+	
+
+	
+		target = &#34;_blank&#34;
+		rel = &#34;nofollow noopener noreferrer&#34;
+	&gt;
+
+	&lt;span&gt;
+		VCF Business Services Console
+	&lt;/span&gt;
+&lt;/a&gt;, once you have your download token you can proceed with setting up the VCF Installer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VCF Installer APIs Used&lt;/strong&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VMware Cloud Foundation 9.1 Now Available: Key Links</title>
       <link>http://localhost:1313/post/vcf-91/vcf-91-vcf-release/</link>

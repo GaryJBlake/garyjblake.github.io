@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "VCF Installer APIs: Connect VCF Installer to the Broadcom Depot"
-date = "2026-12-19"
+date = "2026-05-21"
 description = "VCF Installer APIs: Connect VCF Installer to the Broadcom Depot"
 tags = [
     "VCF 9.1",
@@ -37,38 +37,56 @@ Before you can begin deploying VMware Cloud Foundation, you first configure the 
 2. Replace the values in the sample code with values for your VCF Installer instance and paste the commands in the console.
 
 ``` bash
-vcfInstallerFqdn=$'sfo-ins01.sfo.rainpole.io'
-vcfInstallerUser=$'admin@local'
-vcfInstallerPass=$'VMw@re1!VMw@re1!'
-broadcomDepotToken=$'<your-unique-token'
+export vcfInstallerFqdn='sfo-ins01.sfo.rainpole.io'
+export vcfInstallerUser='admin@local'
+export vcfInstallerPass='VMw@re1!VMw@re1!'
+export broadcomDepotToken='<your-unique-token'
 ```
 
 3. Authenticate to VCF Installer and obtain a token by running the following command:
 
 ``` bash
-vcfInstallerToken=$(curl -k -X POST https://$vcfInstallerFqdn/v1/tokens -H 'Content-Type:application/json' -d '{"username": "'$vcfInstallerUser'","password": "'$vcfInstallerPass'"}' | jq -r '.accessToken')
+vcfInstallerToken=$(curl -k -X POST https://$vcfInstallerFqdn/v1/tokens \
+    --header 'Content-Type:application/json' \
+    -d '{"username": "'$vcfInstallerUser'","password": "'$vcfInstallerPass'"}' \
+    | jq -r '.accessToken')
 ```
 
 4. Configure the VCF Installer depot settings by running the following command:
 
 ```bash
-curl -k -X PUT https://$vcfInstallerFqdn/v1/system/settings/depot -H "Authorization: Bearer $vcfInstallerToken" -H -H 'Content-Type:application/json' -d '{"vmwareAccount": {"downloadToken": "'$broadcomDepotToken'"}}'
+curl -k -X PUT https://$vcfInstallerFqdn/v1/system/settings/depot \
+    --header "Authorization: Bearer $vcfInstallerToken" \
+    --header 'Content-Type:application/json' \
+    -d '{"vmwareAccount": {"downloadToken": "'$broadcomDepotToken'"}}'
 ```
 
 5. Verify the status of the VCF Installer depot configuration by running the following command:
 
 ```bash
-curl -k -X GET https://$vcfInstallerFqdn/v1/system/settings/depot -H "Authorization: Bearer $vcfInstallerToken" -H 'Accept: application/json' -H "Content-Type:application/json" | json_pp
+curl -k -X GET https://$vcfInstallerFqdn/v1/system/settings/depot \
+    --header "Authorization: Bearer $vcfInstallerToken" 
+    --header 'Accept: application/json' \
+    --header "Content-Type:application/json" \
+    | json_pp
 ```
 
 6. Verify the synchronization status with the Broadcom Depot by running the following command:
 
 ```bash
-curl -k -X GET https://$vcfInstallerFqdn/v1/system/settings/depot/depot-sync-info -H "Authorization: Bearer $vcfInstallerToken" -H "Accept: application/json" -H "Content-Type:application/json" | json_pp
+curl -k -X GET https://$vcfInstallerFqdn/v1/system/settings/depot/depot-sync-info \
+    --header "Authorization: Bearer $vcfInstallerToken" \
+    --header "Accept: application/json" \
+    --header "Content-Type:application/json" \
+    | json_pp
 ```
 
 7. (Optional) Force a syncronization of the metadat from the Broadcom Depot by running the following command:
 
 ```bash
-curl -k -X PATCH https://$vcfInstallerFqdn/v1/system/settings/depot/depot-sync-info -H "Authorization: Bearer $vcfInstallerToken" -H "Accept: application/json" -H "Content-Type:application/json" | json_pp
+curl -k -X PATCH https://$vcfInstallerFqdn/v1/system/settings/depot/depot-sync-info \
+    -H "Authorization: Bearer $vcfInstallerToken" \
+    -H "Accept: application/json" \
+    -H "Content-Type:application/json" \
+    | json_pp
 ```
