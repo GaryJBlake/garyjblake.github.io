@@ -1,4 +1,180 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VMware Cloud Foundation on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation/</link><description>Recent content in VMware Cloud Foundation on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Thu, 18 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation/index.xml" rel="self" type="application/rss+xml"/><item><title>VMware Cloud Foundation 9.0: Setting Up Custom LDAP Service for an Organization in VCF Automation</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-automation-custom-ldap/</link><pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-automation-custom-ldap/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VMware Cloud Foundation on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation/</link><description>Recent content in VMware Cloud Foundation on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation/index.xml" rel="self" type="application/rss+xml"/><item><title>VMware Cloud Foundation 9.1 Now Available: Key Links</title><link>http://jadenetworksolutions.co.uk/post/vcf-91/vcf-91-vcf-release/</link><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91/vcf-91-vcf-release/</guid><description>
+&lt;p&gt;Excited to share that VMware Cloud Foundation and VMware vSphere Foundation 9.1 are now available for download, here are a number of useful links, if you have not already seen or read the news release please see &lt;a
+href = "https://news.broadcom.com/releases/broadcom-announces-vmware-cloud-foundation-9-1"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+News Release
+&lt;/span&gt;
+&lt;/a&gt; that was posted following last weeks launch event.&lt;/p&gt;
+&lt;h3 id="vmware-cloud-foundation"&gt;VMware Cloud Foundation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+href = "https://techdocs.broadcom.com/bin/gethidpage?ux-context-string=release_notes-9-1&amp;amp;appid=vcf-9-1&amp;amp;language=&amp;amp;format=rendered"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Release Notes
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1.html"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+All Documentation
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/design.html"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Design Guide
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/administration-sdks-cli-and-tools.html"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Administration SDKs, APIs, and CLI
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Cloud%20Foundation&amp;amp;displayGroup=VMware%20Cloud%20Foundation%209&amp;amp;release=9.1.0.0&amp;amp;os=&amp;amp;servicePk=540528&amp;amp;language=EN"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+VMware Cloud Foundation Download Site
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="tooling"&gt;Tooling&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+href = "https://vmware.github.io/vcf-upgrade-planner/index.html"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+VCF Upgrade Planner
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "https://vcf-tools-dev.broadcom.net/tools/pcsizer/"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Private Cloud Sizer
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "https://vropssizer.broadcom.com/#/sizing-wizard/choose-installation"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+VCF Operations Sizing Estimator
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="vmware-vsphere-foundation"&gt;VMware vSphere Foundation&lt;/h3&gt;
+&lt;p&gt;&lt;a
+href = "https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20vSphere%20Foundation&amp;amp;displayGroup=VMware%20vSphere%20Foundation%209&amp;amp;release=9.1.0.0&amp;amp;os=&amp;amp;servicePk=542815&amp;amp;language=EN"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+VMware vSphere Foundation Download Site
+&lt;/span&gt;
+&lt;/a&gt;&lt;/p&gt;</description></item><item><title>VMware Cloud Foundation 9.1: VCF Installer What's New</title><link>http://jadenetworksolutions.co.uk/post/vcf-91/vcf-91-vcf-installer-whats-new/</link><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91/vcf-91-vcf-installer-whats-new/</guid><description>
+&lt;p&gt;With the release of VMware Cloud Foundation 9.1, there comes a new version of the VCF Installer. This release introduces a lot of new capabilities so lets dig into the details of what's new. For the purpose of this post I've broken these down into the following key areas.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+href = "#progress-bar"
+&gt;
+&lt;span&gt;
+Progress Bar
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "#deployment-paths"
+&gt;
+&lt;span&gt;
+Deployment Paths
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "#plan-section"
+&gt;
+&lt;span&gt;
+Plan Section
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href = "#prepare-section"
+&gt;
+&lt;span&gt;
+Prepare Section
+&lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="progress-bar"&gt;Progress Bar&lt;/h3&gt;
+&lt;p&gt;The first big change involves an overhaul of the general workflow where a new progress bar has been added covering four key stages &lt;strong&gt;Introduction&lt;/strong&gt;, &lt;strong&gt;Plan&lt;/strong&gt;, &lt;strong&gt;Prepare&lt;/strong&gt; and &lt;strong&gt;Deploy&lt;/strong&gt;. Once a stage has been completed, you move into the next stage of the progress bar. These stage markers can also be used as navigation allowing you to return to a previous stage if needed, this reduces the number backward clicks required compared to the previous release.&lt;/p&gt;</description></item><item><title>VCF Installer APIs: Validating Your JSON Using VCF Installer</title><link>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-validate/</link><pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-validate/</guid><description>
+&lt;p&gt;The first step to automating the deployment of a new VMware Cloud Foundation platform is the creation and validation of your JSON specification file. This JSON specification file describes the environment to be configured.&lt;/p&gt;
+&lt;p&gt;There are a few ways in which you can build your JSON specification file, probably the easiest is through the use of the Planning and Preparation Workbook and a PowerShell utility my friend and colleague &lt;a
+href = "https://www.linkedin.com/in/gouldken/"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Ken Gould
+&lt;/span&gt;
+&lt;/a&gt; created called &lt;a
+href = "https://www.powershellgallery.com/packages/VCF.JSONGenerator"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+VCF.JSONGenerator
+&lt;/span&gt;
+&lt;/a&gt; (for a full rundown of the tool see Ken's blog post &lt;a
+href = "https://feardamhan.com/2025/08/14/introducing-the-vcf-jsongenerator-powershell-module-for-vmware-cloud-foundation/"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Introducing the VCF.JSONGenerator PowerShell Module for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;).&lt;/p&gt;</description></item><item><title>VCF Installer APIs: Download Binaries from Broadcom Depot</title><link>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</guid><description>
+&lt;p&gt;Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the &lt;a
+href = "https://vcf.broadcom.com"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+VCF Business Services Console
+&lt;/span&gt;
+&lt;/a&gt;, once you have your download token you can proceed with setting up the VCF Installer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VCF Installer APIs Used&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</title><link>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</link><pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</guid><description>
+&lt;p&gt;Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.&lt;/p&gt;
+&lt;p&gt;Whilst public API documentation is available across the VMware Cloud Foundation platform (see &lt;a
+href = "https://developer.broadcom.com/xapis?tab=Cloud%2520Management&amp;amp;fireglass_rsn=true#fireglass_params&amp;amp;tabid=a9ffd1dabd48ea13&amp;amp;start_with_session_counter=3&amp;amp;application_server_address=isolation-2-europe-west2.prod.fire.glass"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+developer.broadcom.com
+&lt;/span&gt;
+&lt;/a&gt;), concrete examples of how to consume the various APIs is either not consistent or lacking, for this reason I decided to pull together this post to help with the specifics, this post covers the following end-points:&lt;/p&gt;</description></item><item><title>VMware Cloud Foundation 9.0: Setting Up Custom LDAP Service for an Organization in VCF Automation</title><link>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-automation-custom-ldap/</link><pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-90/vcf-90-automation-custom-ldap/</guid><description>
 &lt;p&gt;If you have looked at VCF Automation in any detail you may be aware that you can configure one or more external identity providers (IdPs), and import users and groups to your organizations. This configuration can use an LDAP server connection which can be configured at either the system or the organization level, a SAML integration at the organization level, or an OpenID Connect (OIDC) integration at the organization level.&lt;/p&gt;</description></item><item><title>Viewing Service Details Using Curl with SDDC Manager</title><link>http://jadenetworksolutions.co.uk/post/vcf-5x/vcf-curl-sddcm-view-services/</link><pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-5x/vcf-curl-sddcm-view-services/</guid><description>
 &lt;p&gt;In this procedure, we will use the &lt;strong&gt;/v1/vcf-services&lt;/strong&gt; API to retrieve service details for a SDDC Manager instance.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;

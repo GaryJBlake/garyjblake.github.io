@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VCF Installer APIs on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/series/vcf-installer-apis/</link><description>Recent content in VCF Installer APIs on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/series/vcf-installer-apis/index.xml" rel="self" type="application/rss+xml"/><item><title>VCF Installer APIs: Validating Your JSON Using VCF Installer</title><link>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-validate/</link><pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-validate/</guid><description>
+&lt;p&gt;The first step to automating the deployment of a new VMware Cloud Foundation platform is the creation and validation of your JSON specification file. This JSON specification file describes the environment to be configured.&lt;/p&gt;
+&lt;p&gt;There are a few ways in which you can build your JSON specification file, probably the easiest is through the use of the Planning and Preparation Workbook and a PowerShell utility my friend and colleague &lt;a
+href = "https://www.linkedin.com/in/gouldken/"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Ken Gould
+&lt;/span&gt;
+&lt;/a&gt; created called &lt;a
+href = "https://www.powershellgallery.com/packages/VCF.JSONGenerator"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+VCF.JSONGenerator
+&lt;/span&gt;
+&lt;/a&gt; (for a full rundown of the tool see Ken's blog post &lt;a
+href = "https://feardamhan.com/2025/08/14/introducing-the-vcf-jsongenerator-powershell-module-for-vmware-cloud-foundation/"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+Introducing the VCF.JSONGenerator PowerShell Module for VMware Cloud Foundation
+&lt;/span&gt;
+&lt;/a&gt;).&lt;/p&gt;</description></item><item><title>VCF Installer APIs: Download Binaries from Broadcom Depot</title><link>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</guid><description>
+&lt;p&gt;Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the &lt;a
+href = "https://vcf.broadcom.com"
+target = "_blank"
+rel = "nofollow noopener noreferrer"
+&gt;
+&lt;span&gt;
+VCF Business Services Console
+&lt;/span&gt;
+&lt;/a&gt;, once you have your download token you can proceed with setting up the VCF Installer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VCF Installer APIs Used&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
