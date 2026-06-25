@@ -280,9 +280,9 @@
 <li>(Optional) Force a syncronization of the metadat from the Broadcom Depot by running the following command:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X PATCH https://<span class="nv">$vcfInstallerFqdn</span>/v1/system/settings/depot/depot-sync-info <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    -H <span class="s2">&#34;Authorization: Bearer </span><span class="nv">$vcfInstallerToken</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    -H <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    -H <span class="s2">&#34;Content-Type:application/json&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s2">&#34;Authorization: Bearer </span><span class="nv">$vcfInstallerToken</span><span class="s2">&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    --header <span class="s2">&#34;Content-Type:application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="p">|</span> json_pp
 </span></span></code></pre></div>
     </div>
@@ -339,6 +339,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/" class="nav-link" title="VCF Installer APIs: Download Binaries from Broadcom Depot">VCF Installer APIs: Download Binaries from Broadcom Depot</a>
+      </li>
+      <li>
         <a href="http://localhost:1313/post/vcf-91/vcf-91-vcf-release/" class="nav-link" title="VMware Cloud Foundation 9.1 Now Available: Key Links">VMware Cloud Foundation 9.1 Now Available: Key Links</a>
       </li>
       <li>
@@ -346,9 +349,6 @@
       </li>
       <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/" class="nav-link" title="VCF Installer APIs: Validating Your JSON Using VCF Installer">VCF Installer APIs: Validating Your JSON Using VCF Installer</a>
-      </li>
-      <li>
-        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/" class="nav-link" title="VCF Installer APIs: Download Binaries from Broadcom Depot">VCF Installer APIs: Download Binaries from Broadcom Depot</a>
       </li>
       <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/" class="nav-link" title="VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens">VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</a>

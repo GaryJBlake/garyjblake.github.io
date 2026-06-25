@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "VCF Installer APIs: Download Binaries from Broadcom Depot"
-date = "2026-04-03"
+date = "2026-06-25"
 description = "VCF Installer APIs: Download Binaries from Broadcom Depot"
 tags = [
     "VCF 9.1",
@@ -18,12 +18,30 @@ series = [
 ]
 +++
 
-Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the [VCF Business Services Console](https://vcf.broadcom.com), once you have your download token you can proceed with setting up the VCF Installer.
+After you have successfully configured the VCF Installer with a valid connection to the Broadcom Depot and synchronized the manifest, you can begin downloading the binaries required to implement VMware Cloud Foundation. Assuming your are deploying all components you will need to download 16 components as follows:
+
+- Cloud proxy
+- Fleet lifecycle
+- Identity broker
+- License server
+- Migration service engine
+- Salt master
+- Salt RaaS
+- SDDC lifecycle
+- SDDC Manager
+- Software depot
+- Telemetry
+- VCF Automation
+- VCF Operations
+- VCF services runtime
+- VMware NSX
+- VMware vCenter
 
 **VCF Installer APIs Used**
 
 * POST /v1/tokens
-* 
+* GET /v1/bundles
+* PATCH /v1/bundles/{id}
 
 [VCF Installer API Reference Guide](https://developer.broadcom.com/xapis/vcf-installer-api/latest/)
 
@@ -31,43 +49,77 @@ Before you can begin deploying VMware Cloud Foundation, you first configure the 
 
 1. Connect to a system that has access to the infrastructure and is capable of running CURL.
 
-2. Create your JSON specification file and ensure its available to your system. In my case the file is named `sfo-m01-domainSpec.json`.
-
-3. Replace the values in the sample code with values for your VCF Installer instance and paste the commands in the console.
+2. Replace the values in the sample code with values for your VCF Installer instance and paste the commands in the console.
 
 ``` bash
-vcfInstallerFqdn=$'sfo-ins01.sfo.rainpole.io'
-vcfInstallerUser=$'admin@local'
-vcfInstallerPass=$'VMw@re1!VMw@re1!'
-broadcomDepotToken=$'<your-unique-token'
+export vcfInstallerFqdn='sfo-ins01.sfo.rainpole.io'
+export vcfInstallerUser='admin@local'
+export vcfInstallerPass='VMw@re1!VMw@re1!'
 ```
 
-4. Authenticate to VCF Installer and obtain a token by running the following command:
+3. Authenticate to VCF Installer and obtain a token by running the following command:
 
 ``` bash
-vcfInstallerToken=$(curl -k -X POST https://$vcfInstallerFqdn/v1/tokens -H 'Content-Type:application/json' -d '{"username": "'$vcfInstallerUser'","password": "'$vcfInstallerPass'"}' | jq -r '.accessToken')
+vcfInstallerToken=$(curl -k -X POST https://$vcfInstallerFqdn/v1/tokens \
+    --header 'Content-Type:application/json' \
+    -d '{"username": "'$vcfInstallerUser'","password": "'$vcfInstallerPass'"}' \
+    | jq -r '.accessToken')
 ```
 
-5. Configure the VCF Installer depot settings by running the following command:
+4. View all of the install binaries based on a specific version by running the following command:
 
 ```bash
-curl -k -X PUT https://$vcfInstallerFqdn/v1/system/settings/depot -H "Authorization: Bearer $vcfInstallerToken" -H -H 'Content-Type:application/json' -d '{"vmwareAccount": {"downloadToken": "'$broadcomDepotToken'"}}'
+curl -k -X GET "https://$vcfInstallerFqdn/v1/bundles" \
+    --header "Authorization: Bearer $vcfInstallerToken" \
+    --header 'Accept: application/json' \
+    --header "Content-Type: application/json" \
+    | jq '.elements[] | select(.version | startswith("9.1.0")) | .components[] | select(.imageType == "INSTALL")'
 ```
 
-6. Verifiy the status of the VCF Installer depot configuration by running the following command:
+5. Trigger the download of the all required binaries to VCF Installer based on a specific version by running the following command:
 
 ```bash
-curl -k -X GET https://$vcfInstallerFqdn/v1/system/settings/depot -H "Authorization: Bearer $vcfInstallerToken" -H 'Accept: application/json' -H "Content-Type:application/json" | json_pp
+curl -k -X GET "https://$vcfInstallerFqdn/v1/bundles" \
+    --header "Authorization: Bearer $vcfInstallerToken" \
+    --header 'Accept: application/json' \
+    --header "Content-Type: application/json" \
+    | jq -r '.elements[] 
+        | select(.version | startswith("9.1.0")) 
+        | select(.downloadStatus != "SUCCESSFUL") 
+        | select(.components[].imageType == "INSTALL") 
+        | .id' \
+    | while read -r id; do
+        
+        echo "--------------------------------------------------"
+        echo "Starting download for ID: $id"
+        echo "--------------------------------------------------"
+        
+        curl -k -X PATCH "https://$vcfInstallerFqdn/v1/bundles/$id" \
+            --header "Authorization: Bearer $vcfInstallerToken" \
+            --header 'Accept: application/json' \
+            --header "Content-Type: application/json" \
+            --data '{
+                "bundleDownloadSpec": {
+                    "downloadNow": true
+                }
+            }'
+
+        echo "--------------------------------------------------"
+        echo -e "\nTriggered download for $id"
+        echo "--------------------------------------------------"
+    done
 ```
 
-7. Verify the syncronization staus with the Broadcom Depot by running the following command:
+6. Verify the binaries have been downloaded successfully by running the following command:
 
 ```bash
-curl -k -X GET https://$vcfInstallerFqdn/v1/system/settings/depot/depot-sync-info -H "Authorization: Bearer $vcfInstallerToken" -H "Accept: application/json" -H "Content-Type:application/json" | json_pp
-```
-
-8. (Optional) Force a syncronization of the metadat from the Broadcom Depot by running the following command:
-
-```bash
-curl -k -X PATCH https://$vcfInstallerFqdn/v1/system/settings/depot/depot-sync-info -H "Authorization: Bearer $vcfInstallerToken" -H "Accept: application/json" -H "Content-Type:application/json" | json_pp
+curl -k -X GET "https://$vcfInstallerFqdn/v1/bundles" \
+    --header "Authorization: Bearer $vcfInstallerToken" \
+    --header 'Accept: application/json' \
+    --header "Content-Type: application/json" \
+    | jq -r '["PARENT ID", "VERSION", "STATUS"], ["---------", "-------", "------"], (.elements[] 
+        | select(.version | startswith("9.1")) 
+        | select(.components[].imageType == "INSTALL") 
+        | [.id, .version, .downloadStatus, .description]) 
+        | @tsv'
 ```

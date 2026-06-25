@@ -85,8 +85,8 @@ curl -k -X GET https://$vcfInstallerFqdn/v1/system/settings/depot/depot-sync-inf
 
 ```bash
 curl -k -X PATCH https://$vcfInstallerFqdn/v1/system/settings/depot/depot-sync-info \
-    -H "Authorization: Bearer $vcfInstallerToken" \
-    -H "Accept: application/json" \
-    -H "Content-Type:application/json" \
+    --header "Authorization: Bearer $vcfInstallerToken" \
+    --header "Accept: application/json" \
+    --header "Content-Type:application/json" \
     | json_pp
 ```
