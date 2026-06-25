@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Cloudy World</title><link>http://jadenetworksolutions.co.uk/</link><description>Recent content on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/index.xml" rel="self" type="application/rss+xml"/><item><title>VCF Installer APIs: Connect VCF Installer to the Broadcom Depot</title><link>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-depot/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-depot/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Cloudy World</title><link>http://jadenetworksolutions.co.uk/</link><description>Recent content on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Thu, 25 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/index.xml" rel="self" type="application/rss+xml"/><item><title>VCF Installer APIs: Download Binaries from Broadcom Depot</title><link>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</guid><description>
+&lt;p&gt;After you have successfully configured the VCF Installer with a valid connection to the Broadcom Depot and synchronized the manifest, you can begin downloading the binaries required to implement VMware Cloud Foundation. Assuming your are deploying all components you will need to download 16 components as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cloud proxy&lt;/li&gt;
+&lt;li&gt;Fleet lifecycle&lt;/li&gt;
+&lt;li&gt;Identity broker&lt;/li&gt;
+&lt;li&gt;License server&lt;/li&gt;
+&lt;li&gt;Migration service engine&lt;/li&gt;
+&lt;li&gt;Salt master&lt;/li&gt;
+&lt;li&gt;Salt RaaS&lt;/li&gt;
+&lt;li&gt;SDDC lifecycle&lt;/li&gt;
+&lt;li&gt;SDDC Manager&lt;/li&gt;
+&lt;li&gt;Software depot&lt;/li&gt;
+&lt;li&gt;Telemetry&lt;/li&gt;
+&lt;li&gt;VCF Automation&lt;/li&gt;
+&lt;li&gt;VCF Operations&lt;/li&gt;
+&lt;li&gt;VCF services runtime&lt;/li&gt;
+&lt;li&gt;VMware NSX&lt;/li&gt;
+&lt;li&gt;VMware vCenter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;VCF Installer APIs Used&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>VCF Installer APIs: Connect VCF Installer to the Broadcom Depot</title><link>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-depot/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-depot/</guid><description>
 &lt;p&gt;Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the &lt;a
 href = "https://vcf.broadcom.com"
 target = "_blank"
@@ -164,17 +184,7 @@ rel = "nofollow noopener noreferrer"
 &lt;span&gt;
 Introducing the VCF.JSONGenerator PowerShell Module for VMware Cloud Foundation
 &lt;/span&gt;
-&lt;/a&gt;).&lt;/p&gt;</description></item><item><title>VCF Installer APIs: Download Binaries from Broadcom Depot</title><link>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</guid><description>
-&lt;p&gt;Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the &lt;a
-href = "https://vcf.broadcom.com"
-target = "_blank"
-rel = "nofollow noopener noreferrer"
-&gt;
-&lt;span&gt;
-VCF Business Services Console
-&lt;/span&gt;
-&lt;/a&gt;, once you have your download token you can proceed with setting up the VCF Installer.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;VCF Installer APIs Used&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</title><link>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</link><pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</guid><description>
+&lt;/a&gt;).&lt;/p&gt;</description></item><item><title>VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</title><link>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</link><pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</guid><description>
 &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 24-Jun-2026&lt;/p&gt;
 &lt;p&gt;Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.&lt;/p&gt;
 &lt;p&gt;Whilst public API documentation is available across the VMware Cloud Foundation platform (see &lt;a
