@@ -1,34 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VMware Cloud Foundation 9.1: What's New on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/series/vmware-cloud-foundation-9.1-whats-new/</link><description>Recent content in VMware Cloud Foundation 9.1: What's New on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright><lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/series/vmware-cloud-foundation-9.1-whats-new/index.xml" rel="self" type="application/rss+xml"/><item><title>VMware Cloud Foundation 9.1: VCF Installer What's New</title><link>http://jadenetworksolutions.co.uk/post/vcf-91/vcf-91-vcf-installer-whats-new/</link><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91/vcf-91-vcf-installer-whats-new/</guid><description>
-&lt;p&gt;With the release of VMware Cloud Foundation 9.1, there comes a new version of the VCF Installer. This release introduces a lot of new capabilities so lets dig into the details of what's new. For the purpose of this post I've broken these down into the following key areas.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a
-href = "#progress-bar"
-&gt;
-&lt;span&gt;
-Progress Bar
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-href = "#deployment-paths"
-&gt;
-&lt;span&gt;
-Deployment Paths
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-href = "#plan-section"
-&gt;
-&lt;span&gt;
-Plan Section
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-href = "#prepare-section"
-&gt;
-&lt;span&gt;
-Prepare Section
-&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="progress-bar"&gt;Progress Bar&lt;/h3&gt;
-&lt;p&gt;The first big change involves an overhaul of the general workflow where a new progress bar has been added covering four key stages &lt;strong&gt;Introduction&lt;/strong&gt;, &lt;strong&gt;Plan&lt;/strong&gt;, &lt;strong&gt;Prepare&lt;/strong&gt; and &lt;strong&gt;Deploy&lt;/strong&gt;. Once a stage has been completed, you move into the next stage of the progress bar. These stage markers can also be used as navigation allowing you to return to a previous stage if needed, this reduces the number backward clicks required compared to the previous release.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VMware Cloud Foundation 9.1: What's New on My Cloudy World</title><link>http://jadenetworksolutions.co.uk/series/vmware-cloud-foundation-9.1-whats-new/</link><description>Recent content in VMware Cloud Foundation 9.1: What's New on My Cloudy World</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor><webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster><copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright><lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://jadenetworksolutions.co.uk/series/vmware-cloud-foundation-9.1-whats-new/index.xml" rel="self" type="application/rss+xml"/><item><title>VMware Cloud Foundation 9.1: VCF Installer What's New</title><link>http://jadenetworksolutions.co.uk/post/vcf-91/vcf-91-vcf-installer-whats-new/</link><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate><author>gblake@jadenetworks.co.uk (Gary Blake)</author><guid>http://jadenetworksolutions.co.uk/post/vcf-91/vcf-91-vcf-installer-whats-new/</guid><description><p>With the release of VMware Cloud Foundation 9.1, there comes a new version of the VCF Installer. This release introduces a lot of new capabilities so lets dig into the details of what's new. For the purpose of this post I've broken these down into the following key areas.</p><ul><li><a href="#progress-bar"><span>
+Progress Bar</span></a></li><li><a href="#deployment-paths"><span>
+Deployment Paths</span></a></li><li><a href="#plan-section"><span>
+Plan Section</span></a></li><li><a href="#prepare-section"><span>
+Prepare Section</span></a></li></ul><h3 id="progress-bar">Progress Bar</h3><p>The first big change involves an overhaul of the general workflow where a new progress bar has been added covering four key stages<strong>Introduction</strong>,<strong>Plan</strong>,<strong>Prepare</strong> and<strong>Deploy</strong>. Once a stage has been completed, you move into the next stage of the progress bar. These stage markers can also be used as navigation allowing you to return to a previous stage if needed, this reduces the number backward clicks required compared to the previous release.</p></description></item></channel></rss>
