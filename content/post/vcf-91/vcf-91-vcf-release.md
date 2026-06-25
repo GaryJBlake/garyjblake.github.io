@@ -14,7 +14,7 @@ series = [
 ]
 +++
 
-Excited to share that VMware Cloud Foundation and VMware vSphere Foundation 9.1 are now available for download, here are a number of useful links, if you have not already seen or read the news release please see [News Release](https://news.broadcom.com/releases/broadcom-announces-vmware-cloud-foundation-9-1) that was posted following last weeks launch event.
+Excited to share that VMware Cloud Foundation and VMware vSphere Foundation 9.1 are now available for download, here are a number of useful links, if you have not already seen or read the news release please see <a href="https://news.broadcom.com/releases/broadcom-announces-vmware-cloud-foundation-9-1" style="color: #3677a9;">News Release</a> that was posted following last weeks launch event.
 
 ### VMware Cloud Foundation
 

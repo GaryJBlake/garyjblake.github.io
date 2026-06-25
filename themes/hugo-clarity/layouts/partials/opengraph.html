@@ -1,9 +1,9 @@
 {{- $relpath := .Page.RelPermalink -}}
-{{- $summary := truncate 160 .Summary }}
+{{- $summary := truncate 300 .Summary }}
 {{- $s := .Site.Params }}
 {{- $p := .Params }}
 {{- with $p.description }}
-  {{- $summary = truncate 160 . }}
+  {{- $summary = truncate 300 . }}
 {{- end }}
 {{- if .IsHome }}
   {{- $summary = $s.description }}

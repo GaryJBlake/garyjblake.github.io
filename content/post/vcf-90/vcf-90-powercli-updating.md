@@ -17,7 +17,7 @@ series = [
 ]
 +++
 
-The fastest and easiest way to start utilising [VCF PowerCLI 9.0](https://www.powershellgallery.com/packages/VCF.PowerCLI/9.0.0.24798382) is to first remove any old versions and then perform a fresh install.
+The fastest and easiest way to start utilising <a href="https://www.powershellgallery.com/packages/VCF.PowerCLI/9.0.0.24798382" style="color: #3677a9;">VCF PowerCLI 9.0</a> is to first remove any old versions and then perform a fresh install.
 
 ### Remove Existing VMware PowerCLI Modules
 

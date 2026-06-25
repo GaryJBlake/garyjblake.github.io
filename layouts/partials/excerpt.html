@@ -15,9 +15,9 @@
       <div class="excerpt_footer">
         {{- end }}
         <div class="pale">
-          {{- $summary := truncate 320 .Summary }}
+          {{- $summary := .Content | truncate 250 | safeHTML }}
           {{- if .Params.summary }}
-            {{- $summary = .Params.summary }}
+            {{- $summary = .Params.summary | safeHTML }}
           {{- else if .Params.abstract }}
             {{ $summary = .Params.abstract }}
           {{- end }}

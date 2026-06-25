@@ -18,7 +18,7 @@ series = [
 ]
 +++
 
-Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the [VCF Business Services Console](https://vcf.broadcom.com), once you have your download token you can proceed with setting up the VCF Installer.
+Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the <a href="https://vcf.broadcom.com" style="color: #3677a9;">VCF Business Services Console</a>, once you have your download token you can proceed with setting up the VCF Installer.
 
 **VCF Installer APIs Used**
 

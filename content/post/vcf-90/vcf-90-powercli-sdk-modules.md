@@ -17,7 +17,7 @@ series = [
 ]
 +++
 
-Along with the release of VMware Cloud Foundation 9.0 a new version of PowerCLI has also been shipped, for a full rundown of what's new I would suggest reading the official blog [Introducing VCF PowerCLI 9.0](https://blogs.vmware.com/cloud-foundation/2025/06/24/introducing-vcf-powercli-9-0), but here are the quick highlights:
+Along with the release of VMware Cloud Foundation 9.0 a new version of PowerCLI has also been shipped, for a full rundown of what's new I would suggest reading the official blog <a href="https://blogs.vmware.com/cloud-foundation/2025/06/24/introducing-vcf-powercli-9-0" style="color: #3677a9;">Introducing VCF PowerCLI 9.0</a>, but here are the quick highlights:
 
 * Name Change to VCF PowerCLI
 * Performance  Improvements
