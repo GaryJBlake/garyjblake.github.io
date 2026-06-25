@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "VCF Installer APIs: Validating Your JSON Using VCF Installer"
-date = "2026-04-04"
+date = "2026-12-04"
 description = "VCF Installer APIs: Validating Your JSON Using VCF Installer"
 tags = [
     "VCF 9.1",
