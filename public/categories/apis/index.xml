@@ -19,24 +19,24 @@
       <description>
         
           
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 24-Jun-2026&lt;/p&gt;
-&lt;p&gt;Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.&lt;/p&gt;
-&lt;p&gt;Whilst public API documentation is available across the VMware Cloud Foundation platform (see &lt;a
+            <p><strong>Last Updated:</strong> 24-Jun-2026</p>
+<p>Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.</p>
+<p>Whilst public API documentation is available across the VMware Cloud Foundation platform (see <a
 	
-		href = &#34;https://developer.broadcom.com/xapis?tab=Cloud%2520Management&amp;amp;fireglass_rsn=true#fireglass_params&amp;amp;tabid=a9ffd1dabd48ea13&amp;amp;start_with_session_counter=3&amp;amp;application_server_address=isolation-2-europe-west2.prod.fire.glass&#34;
-	
-
+		href = "https://developer.broadcom.com/xapis?tab=Cloud%2520Management&amp;fireglass_rsn=true#fireglass_params&amp;tabid=a9ffd1dabd48ea13&amp;start_with_session_counter=3&amp;application_server_address=isolation-2-europe-west2.prod.fire.glass"
 	
 
 	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
 
-	&lt;span&gt;
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
 		developer.broadcom.com
-	&lt;/span&gt;
-&lt;/a&gt;), concrete examples of how to consume the various APIs is either not consistent or lacking, for this reason I decided to pull together this post to help with the specifics, this post covers the following end-points:&lt;/p&gt;
+	</span>
+</a>), concrete examples of how to consume the various APIs is either not consistent or lacking, for this reason I decided to pull together this post to help with the specifics, this post covers the following end-points:</p>
           
           
         

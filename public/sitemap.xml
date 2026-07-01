@@ -35,7 +35,13 @@
     <loc>http://localhost:1313/series/vcf-installer-apis/</loc>
     <lastmod>2026-06-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</loc>
     <lastmod>2026-06-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/vmware-cloud-foundation/</loc>
@@ -55,9 +61,6 @@
   </url><url>
     <loc>http://localhost:1313/series/vmware-cloud-foundation-9.1-whats-new/</loc>
     <lastmod>2026-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/apis/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>

@@ -19,76 +19,76 @@
       <description>
         
           
-            &lt;p&gt;In this procedure, we will use the &lt;strong&gt;/v1/users&lt;/strong&gt; API exposed via the VCF.PowerCLI module &lt;code&gt;VMware.Sdk.Vcf.SddcManager&lt;/code&gt; to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.&lt;/p&gt;
-&lt;h3 id=&#34;procedures-covered&#34;&gt;Procedures Covered&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a
+            <p>In this procedure, we will use the <strong>/v1/users</strong> API exposed via the VCF.PowerCLI module <code>VMware.Sdk.Vcf.SddcManager</code> to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.</p>
+<h3 id="procedures-covered">Procedures Covered</h3>
+<ul>
+<li><a
 	
-		href = &#34;#assigning-an-sddc-manager-role-to-a-group&#34;
-	
-
+		href = "#assigning-an-sddc-manager-role-to-a-group"
 	
 
-	&gt;
+	
 
-	&lt;span&gt;
+	>
+
+	<span>
 		Assigning an SDDC Manager Role to a Group
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
+	</span>
+</a></li>
+<li><a
 	
-		href = &#34;#assigning-an-sddc-manager-role-to-a-user&#34;
-	
-
+		href = "#assigning-an-sddc-manager-role-to-a-user"
 	
 
-	&gt;
+	
 
-	&lt;span&gt;
+	>
+
+	<span>
 		Assigning an SDDC Manager Role to a User
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
+	</span>
+</a></li>
+<li><a
 	
-		href = &#34;#removing-a-user-or-group-from-an-sddc-manager-role&#34;
-	
-
+		href = "#removing-a-user-or-group-from-an-sddc-manager-role"
 	
 
-	&gt;
+	
 
-	&lt;span&gt;
+	>
+
+	<span>
 		Removing a User or Group from an SDDC Manager Role
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
+	</span>
+</a></li>
+<li><a
 	
-		href = &#34;#assigning-sddc-manager-roles-to-multiple-groups&#34;
-	
-
+		href = "#assigning-sddc-manager-roles-to-multiple-groups"
 	
 
-	&gt;
+	
 
-	&lt;span&gt;
+	>
+
+	<span>
 		Assigning SDDC Manager Roles to Multiple Groups
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
+	</span>
+</a></li>
+<li><a
 	
-		href = &#34;#removing-multiple-groups-from-sddc-manager-roles&#34;
-	
-
+		href = "#removing-multiple-groups-from-sddc-manager-roles"
 	
 
-	&gt;
+	
 
-	&lt;span&gt;
+	>
+
+	<span>
 		Removing Multiple Groups from SDDC Manager Roles
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
+	</span>
+</a></li>
+</ul>
+<p><strong>SDDC Manager APIs Used</strong></p>
           
           
         

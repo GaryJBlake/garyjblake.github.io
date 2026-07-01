@@ -11,6 +11,49 @@
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
     <lastBuildDate>Thu, 25 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/apis/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>VCF Installer APIs: Deploying VMware Cloud Foundation JSON Using VCF Installer</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/</link>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/</guid>
+      <description>
+        
+          
+            <p>Once you have validated your JSON specification file, along with the infrastructure validation you are ready to commence the deployment process. Once again we pass the JSON specification file as an input to the API request.</p>
+<p><strong>VCF Installer APIs Used</strong></p>
+<ul>
+<li>POST /v1/tokens</li>
+<li>GET /v1/sddcs</li>
+<li>GET /v1/sddcs/{id}</li>
+<li>POST /v1/sddcs</li>
+</ul>
+<p><a
+	
+		href = "https://developer.broadcom.com/xapis/vcf-installer-api/latest/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF Installer API Reference Guide
+	</span>
+</a></p>
+<p><strong>Procedure</strong></p>
+<ol>
+<li>
+<p>Connect to a system that has access to the infrastructure and is capable of running CURL.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>VCF Installer APIs: Download Binaries from Broadcom Depot</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</link>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
@@ -19,26 +62,88 @@
       <description>
         
           
-            &lt;p&gt;After you have successfully configured the VCF Installer with a valid connection to the Broadcom Depot and synchronized the manifest, you can begin downloading the binaries required to implement VMware Cloud Foundation. Assuming your are deploying all components you will need to download 16 components as follows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Cloud proxy&lt;/li&gt;
-&lt;li&gt;Fleet lifecycle&lt;/li&gt;
-&lt;li&gt;Identity broker&lt;/li&gt;
-&lt;li&gt;License server&lt;/li&gt;
-&lt;li&gt;Migration service engine&lt;/li&gt;
-&lt;li&gt;Salt master&lt;/li&gt;
-&lt;li&gt;Salt RaaS&lt;/li&gt;
-&lt;li&gt;SDDC lifecycle&lt;/li&gt;
-&lt;li&gt;SDDC Manager&lt;/li&gt;
-&lt;li&gt;Software depot&lt;/li&gt;
-&lt;li&gt;Telemetry&lt;/li&gt;
-&lt;li&gt;VCF Automation&lt;/li&gt;
-&lt;li&gt;VCF Operations&lt;/li&gt;
-&lt;li&gt;VCF services runtime&lt;/li&gt;
-&lt;li&gt;VMware NSX&lt;/li&gt;
-&lt;li&gt;VMware vCenter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;VCF Installer APIs Used&lt;/strong&gt;&lt;/p&gt;
+            <p>After you have successfully configured the VCF Installer with a valid connection to the Broadcom Depot and synchronized the manifest, you can begin downloading the binaries required to implement VMware Cloud Foundation. Assuming your are deploying all components you will need to download 16 components as follows:</p>
+<ul>
+<li>Cloud proxy</li>
+<li>Fleet lifecycle</li>
+<li>Identity broker</li>
+<li>License server</li>
+<li>Migration service engine</li>
+<li>Salt master</li>
+<li>Salt RaaS</li>
+<li>SDDC lifecycle</li>
+<li>SDDC Manager</li>
+<li>Software depot</li>
+<li>Telemetry</li>
+<li>VCF Automation</li>
+<li>VCF Operations</li>
+<li>VCF services runtime</li>
+<li>VMware NSX</li>
+<li>VMware vCenter</li>
+</ul>
+<p><strong>VCF Installer APIs Used</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Installer APIs: Validating Your JSON Using VCF Installer</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</link>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</guid>
+      <description>
+        
+          
+            <p>The first step to automating the deployment of a new VMware Cloud Foundation platform is the creation and validation of your JSON specification file. This JSON specification file describes the environment to be configured.</p>
+<p>There are a few ways in which you can build your JSON specification file, probably the easiest is through the use of the Planning and Preparation Workbook and a PowerShell utility my friend and colleague <a
+	
+		href = "https://www.linkedin.com/in/gouldken/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Ken Gould
+	</span>
+</a> created called <a
+	
+		href = "https://www.powershellgallery.com/packages/VCF.JSONGenerator"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF.JSONGenerator
+	</span>
+</a> (for a full rundown of the tool see Ken's blog post <a
+	
+		href = "https://feardamhan.com/2025/08/14/introducing-the-vcf-jsongenerator-powershell-module-for-vmware-cloud-foundation/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Introducing the VCF.JSONGenerator PowerShell Module for VMware Cloud Foundation
+	</span>
+</a>).</p>
           
           
         
@@ -54,85 +159,31 @@
       <description>
         
           
-            &lt;p&gt;Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the &lt;a
+            <p>Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the <a href="https://vcf.broadcom.com" style="color: #3677a9;">VCF Business Services Console</a>, once you have your download token you can proceed with setting up the VCF Installer.</p>
+<p><strong>VCF Installer APIs Used</strong></p>
+<ul>
+<li>POST /v1/tokens</li>
+<li>PUT /v1/system/settings/depot</li>
+<li>GET /v1/system/settings/depot</li>
+<li>GET /v1/system/settings/depot/depot-sync-info</li>
+<li>PATCH /v1/system/settings/depot/depot-sync-info</li>
+</ul>
+<p><a
 	
-		href = &#34;https://vcf.broadcom.com&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		VCF Business Services Console
-	&lt;/span&gt;
-&lt;/a&gt;, once you have your download token you can proceed with setting up the VCF Installer.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;VCF Installer APIs Used&lt;/strong&gt;&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>VCF Installer APIs: Validating Your JSON Using VCF Installer</title>
-      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</link>
-      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
-      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
-      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</guid>
-      <description>
-        
-          
-            &lt;p&gt;The first step to automating the deployment of a new VMware Cloud Foundation platform is the creation and validation of your JSON specification file. This JSON specification file describes the environment to be configured.&lt;/p&gt;
-&lt;p&gt;There are a few ways in which you can build your JSON specification file, probably the easiest is through the use of the Planning and Preparation Workbook and a PowerShell utility my friend and colleague &lt;a
-	
-		href = &#34;https://www.linkedin.com/in/gouldken/&#34;
+		href = "https://developer.broadcom.com/xapis/vcf-installer-api/latest/"
 	
 
 	
 
 	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
 
-	&lt;span&gt;
-		Ken Gould
-	&lt;/span&gt;
-&lt;/a&gt; created called &lt;a
-	
-		href = &#34;https://www.powershellgallery.com/packages/VCF.JSONGenerator&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		VCF.JSONGenerator
-	&lt;/span&gt;
-&lt;/a&gt; (for a full rundown of the tool see Ken&#39;s blog post &lt;a
-	
-		href = &#34;https://feardamhan.com/2025/08/14/introducing-the-vcf-jsongenerator-powershell-module-for-vmware-cloud-foundation/&#34;
-	
-
-	
-
-	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
-
-	&lt;span&gt;
-		Introducing the VCF.JSONGenerator PowerShell Module for VMware Cloud Foundation
-	&lt;/span&gt;
-&lt;/a&gt;).&lt;/p&gt;
+	<span>
+		VCF Installer API Reference Guide
+	</span>
+</a></p>
           
           
         
@@ -148,24 +199,24 @@
       <description>
         
           
-            &lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; 24-Jun-2026&lt;/p&gt;
-&lt;p&gt;Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.&lt;/p&gt;
-&lt;p&gt;Whilst public API documentation is available across the VMware Cloud Foundation platform (see &lt;a
+            <p><strong>Last Updated:</strong> 24-Jun-2026</p>
+<p>Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.</p>
+<p>Whilst public API documentation is available across the VMware Cloud Foundation platform (see <a
 	
-		href = &#34;https://developer.broadcom.com/xapis?tab=Cloud%2520Management&amp;amp;fireglass_rsn=true#fireglass_params&amp;amp;tabid=a9ffd1dabd48ea13&amp;amp;start_with_session_counter=3&amp;amp;application_server_address=isolation-2-europe-west2.prod.fire.glass&#34;
-	
-
+		href = "https://developer.broadcom.com/xapis?tab=Cloud%2520Management&amp;fireglass_rsn=true#fireglass_params&amp;tabid=a9ffd1dabd48ea13&amp;start_with_session_counter=3&amp;application_server_address=isolation-2-europe-west2.prod.fire.glass"
 	
 
 	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
 
-	&lt;span&gt;
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
 		developer.broadcom.com
-	&lt;/span&gt;
-&lt;/a&gt;), concrete examples of how to consume the various APIs is either not consistent or lacking, for this reason I decided to pull together this post to help with the specifics, this post covers the following end-points:&lt;/p&gt;
+	</span>
+</a>), concrete examples of how to consume the various APIs is either not consistent or lacking, for this reason I decided to pull together this post to help with the specifics, this post covers the following end-points:</p>
           
           
         

@@ -19,23 +19,23 @@
       <description>
         
           
-            &lt;p&gt;Since the initial release of VMware Cloud Foundation 9.0, a significant proportion of conversations with customers have revolved around the topic of latency between components of a VCF fleet. Finally, I&#39;m delighted to be able to share v1 of the newly published VMware Cloud Foundation 9.0 Fleet Latency v1 diagram which can be found &lt;a
+            <p>Since the initial release of VMware Cloud Foundation 9.0, a significant proportion of conversations with customers have revolved around the topic of latency between components of a VCF fleet. Finally, I'm delighted to be able to share v1 of the newly published VMware Cloud Foundation 9.0 Fleet Latency v1 diagram which can be found <a
 	
-		href = &#34;https://ports.broadcom.com/network-diagrams/VMware-Cloud-Foundation&#34;
-	
-
+		href = "https://ports.broadcom.com/network-diagrams/VMware-Cloud-Foundation"
 	
 
 	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
 
-	&lt;span&gt;
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
 		here
-	&lt;/span&gt;
-&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The intent of this diagram is to help better define the latency limitations across a VCF fleet as it brings all of the latency numbers into a single location.&lt;/p&gt;
+	</span>
+</a>.</p>
+<p>The intent of this diagram is to help better define the latency limitations across a VCF fleet as it brings all of the latency numbers into a single location.</p>
           
           
         

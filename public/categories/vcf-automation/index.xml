@@ -19,7 +19,7 @@
       <description>
         
           
-            &lt;p&gt;If you have looked at VCF Automation in any detail you may be aware that you can configure one or more external identity providers (IdPs), and import users and groups to your organizations. This configuration can use an LDAP server connection which can be configured at either the system or the organization level, a SAML integration at the organization level, or an OpenID Connect (OIDC) integration at the organization level.&lt;/p&gt;
+            <p>If you have looked at VCF Automation in any detail you may be aware that you can configure one or more external identity providers (IdPs), and import users and groups to your organizations. This configuration can use an LDAP server connection which can be configured at either the system or the organization level, a SAML integration at the organization level, or an OpenID Connect (OIDC) integration at the organization level.</p>
           
           
         

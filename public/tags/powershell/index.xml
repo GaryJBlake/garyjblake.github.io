@@ -19,8 +19,8 @@
       <description>
         
           
-            &lt;p&gt;When the auto-generate passwords options is selected within the VCF Installer UI, there maybe a scenario where you need to perform troubleshooting and a need to login to one of the underlying component appliances. Of course this is only possible if you know the passwords that were auto-generated, its relatively simple to retrieve the JSON specification used to perform the implementation from the VCF Installer appliance itself.&lt;/p&gt;
-&lt;p&gt;The following procedure demonstrates how you can retrieve a specific section of the JSON specification.&lt;/p&gt;
+            <p>When the auto-generate passwords options is selected within the VCF Installer UI, there maybe a scenario where you need to perform troubleshooting and a need to login to one of the underlying component appliances. Of course this is only possible if you know the passwords that were auto-generated, its relatively simple to retrieve the JSON specification used to perform the implementation from the VCF Installer appliance itself.</p>
+<p>The following procedure demonstrates how you can retrieve a specific section of the JSON specification.</p>
           
           
         

@@ -19,24 +19,24 @@
       <description>
         
           
-            &lt;p&gt;Since the acquisition of VMware by Broadcom there has been a significant amount of effort behind the scenes to consolidate systems, processes and portals, as a result of this work a couple of key areas have been affected that impact VMware Validated Solutions. If as a result you have been struggling to find the content then read on!&lt;/p&gt;
-&lt;h3 id=&#34;vmware-validated-solutions-landing-page&#34;&gt;VMware Validated Solutions Landing Page&lt;/h3&gt;
-&lt;p&gt;When we first launched VMware Validated Solutions back in October 2021 we decided to utilize one of the Technical Marketing portals known as TechZone and in particular the core.vmware.com TechZone portal, this provided more flexibility in how we could lay out the content helping direct customers to the relevant content based on their task at hand. The TechZone portal was shutdown in November 2024, and so we looked at how we could provide a similar experience. If your familiar with VMware Validated Solutions you will be aware of the automation we have delivered across solutions and no doubt be aware of a couple of GitHub repositories that exist to support this effort and so we have created a documentation landing page within the companion GitHub repository &lt;a
+            <p>Since the acquisition of VMware by Broadcom there has been a significant amount of effort behind the scenes to consolidate systems, processes and portals, as a result of this work a couple of key areas have been affected that impact VMware Validated Solutions. If as a result you have been struggling to find the content then read on!</p>
+<h3 id="vmware-validated-solutions-landing-page">VMware Validated Solutions Landing Page</h3>
+<p>When we first launched VMware Validated Solutions back in October 2021 we decided to utilize one of the Technical Marketing portals known as TechZone and in particular the core.vmware.com TechZone portal, this provided more flexibility in how we could lay out the content helping direct customers to the relevant content based on their task at hand. The TechZone portal was shutdown in November 2024, and so we looked at how we could provide a similar experience. If your familiar with VMware Validated Solutions you will be aware of the automation we have delivered across solutions and no doubt be aware of a couple of GitHub repositories that exist to support this effort and so we have created a documentation landing page within the companion GitHub repository <a
 	
-		href = &#34;https://vmware.github.io/validated-solutions-for-cloud-foundation/&#34;
-	
-
+		href = "https://vmware.github.io/validated-solutions-for-cloud-foundation/"
 	
 
 	
-		target = &#34;_blank&#34;
-		rel = &#34;nofollow noopener noreferrer&#34;
-	&gt;
 
-	&lt;span&gt;
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
 		VMware Validated Solutions
-	&lt;/span&gt;
-&lt;/a&gt;.&lt;/p&gt;
+	</span>
+</a>.</p>
           
           
         

@@ -1,8 +1,8 @@
 +++
 author = "GaryJBlake"
-title = "VCF Installer APIs: Deploying VMware Cloud Foundation JSON Using VCF Installer"
-date = "2026-12-05"
-description = "VCF Installer APIs: Deploying VMware Cloud Foundation JSON Using VCF Installer"
+title = "VCF Installer APIs: Deploying VMware Cloud Foundation Using VCF Installer with a JSON"
+date = "2026-07-02"
+description = "VCF Installer APIs: Deploying VMware Cloud Foundation Using VCF Installer with a JSON"
 tags = [
     "VCF 9.1",
     "VCF Installer",
@@ -18,7 +18,7 @@ series = [
 ]
 +++
 
-Once you have validated your JSON specification file, along with the infrastructure validation you can commence the deployment process.
+Once you have validated your JSON specification file, along with the infrastructure validation you are ready to commence the deployment process. Once again we pass the JSON specification file as an input to the API request.
 
 **VCF Installer APIs Used**
 
@@ -33,30 +33,54 @@ Once you have validated your JSON specification file, along with the infrastruct
 
 1. Connect to a system that has access to the infrastructure and is capable of running CURL.
 
-2. Create your JSON specification file and ensure its available to your system. In my case the file is named `sfo-m01-domainSpec.json`.
+2. Ensure your JSON specification file is available to your system. In my case the file is named `sfo-m01-domainSpec.json`.
 
 3. Replace the values in the sample code with values for your VCF Installer instance and paste the commands in the console.
 
 ``` bash
-vcfInstallerFqdn=$'sfo-ins01.sfo.rainpole.io'
-vcfInstallerUser=$'admin@local'
-vcfInstallerPass=$'VMw@re1!VMw@re1!'
+export vcfInstallerFqdn='sfo-ins01.sfo.rainpole.io'
+export vcfInstallerUser='admin@local'
+export vcfInstallerPass='VMw@re1!VMw@re1!'
 ```
 
 4. Authenticate to VCF Installer and obtain a token by running the following command:
 
 ``` bash
-vcfInstallerToken=$(curl -k -X POST https://$vcfInstallerFqdn/v1/tokens -H 'Content-Type:application/json' -d '{"username": "'$vcfInstallerUser'","password": "'$vcfInstallerPass'"}' | jq -r '.accessToken')
+vcfInstallerToken=$(curl -k -X POST https://$vcfInstallerFqdn/v1/tokens \
+    --header "Content-Type:application/json" \
+    -d '{"username": "'$vcfInstallerUser'","password": "'$vcfInstallerPass'"}' \
+    | jq -r '.accessToken')
 ```
 
 5. If your validation completed without any issues you can start the deployment by running the following command:
 
 ```bash
-deploymentId=$(curl -k -X POST https://$vcfInstallerFqdn/v1/sddcs -H "Authorization: Bearer $vcfInstallerToken" -H 'Content-Type:application/json' -d @'sfo-m01-domainSpec.json' | jq -r ".id")
+deploymentId=$(curl -k -X POST https://$vcfInstallerFqdn/v1/sddcs \
+    --header "Authorization: Bearer $vcfInstallerToken" \
+    --header "Accept: application/json" \
+    --header "Content-Type: application/json" \
+    -d @'sfo-m01-domainSpec.json' | jq -r ".id")
 ```
 
 6. Monitor the status of the deployment by running the following command:
 
 ```bash
-curl -k -X GET "https://$vcfInstallerFqdn/v1/sddcs/$deploymentId" -H "Authorization: Bearer $vcfInstallerToken" -H "Accept: application/json" -H "Content-Type: application/json" | jq -r ".status"
+curl -k -X GET "https://$vcfInstallerFqdn/v1/sddcs/$deploymentId" \
+    --header "Authorization: Bearer $vcfInstallerToken" \
+    --header "Accept: application/json" \
+    --header "Content-Type: application/json" \
+    | jq -r ".status"
+```
+
+7. The command in step 6 would need to be run multiple times, alternatively you can run the command over and over by running the following command:
+
+``` bash
+while curl -k -X GET "https://$vcfInstallerFqdn/v1/sddcs/$deploymentId" \
+    --header "Authorization: Bearer $vcfInstallerToken" \
+    --header "Accept: application/json" \
+    --header "Content-Type: application/json" \
+    | grep -q "IN_PROGRESS"; do
+    echo "Still in 'IN_PROGRESS' state... waiting 60 seconds."
+    sleep 60
+done
 ```
