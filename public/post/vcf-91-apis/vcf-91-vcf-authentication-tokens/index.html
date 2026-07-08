@@ -317,8 +317,9 @@
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcfOperationsToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST https://<span class="nv">$vcfOperationsFqdn</span>/suite-api/api/auth/token/acquire <span class="se">\
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s1">&#39;Content-Type:application/json&#39;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    -d <span class="s2">&#34;{\&#34;username\&#34;:\&#34;</span><span class="nv">$vcfOperationsUser</span><span class="s2">\&#34;, \&#34;password\&#34;:\&#34;</span><span class="nv">$vcfOperationsPass</span><span class="s2">\&#34;, \&#34;authSource\&#34;:\&#34;LOCAL\&#34;}&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="p">|</span> jq -r <span class="s1">&#39;.token&#39;</span><span class="k">)</span>
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    -d <span class="s2">&#34;{\&#34;username\&#34;:\&#34;</span><span class="nv">$vcfOperationsUser</span><span class="s2">\&#34;, \&#34;password\&#34;:\&#34;</span><span class="nv">$vcfOperationsPass</span><span class="s2">\&#34;}&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="p">|</span> jq -r <span class="s1">&#39;.token&#39;</span><span class="k">)</span>
 </span></span></code></pre></div><ol start="4">
 <li>Verify you were able to successfully obtain an authentication token by running the following command:</li>
 </ol>
@@ -436,6 +437,12 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-api-endpoints/" class="nav-link" title="VMware Cloud Foundation APIs: API Documentation">VMware Cloud Foundation APIs: API Documentation</a>
+      </li>
+      <li>
+        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/" class="nav-link" title="VCF Installer APIs: Deploying VMware Cloud Foundation Using VCF Installer with a JSON">VCF Installer APIs: Deploying VMware Cloud Foundation Using VCF Installer with a JSON</a>
+      </li>
+      <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/" class="nav-link" title="VCF Installer APIs: Validating Your JSON Using VCF Installer">VCF Installer APIs: Validating Your JSON Using VCF Installer</a>
       </li>
       <li>
@@ -444,19 +451,13 @@
       <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-depot/" class="nav-link" title="VCF Installer APIs: Connect VCF Installer to the Broadcom Depot">VCF Installer APIs: Connect VCF Installer to the Broadcom Depot</a>
       </li>
-      <li>
-        <a href="http://localhost:1313/post/vcf-91/vcf-91-vcf-release/" class="nav-link" title="VMware Cloud Foundation 9.1 Now Available: Key Links">VMware Cloud Foundation 9.1 Now Available: Key Links</a>
-      </li>
-      <li>
-        <a href="http://localhost:1313/post/vcf-91/vcf-91-vcf-installer-whats-new/" class="nav-link" title="VMware Cloud Foundation 9.1: VCF Installer What&#39;s New">VMware Cloud Foundation 9.1: VCF Installer What's New</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class="post_tag button button_translucent" title="vmware cloud foundation">
           VMWARE CLOUD FOUNDATION
-          <span class="button_tally">62</span>
+          <span class="button_tally">64</span>
         </a>
         
         <a href='http://localhost:1313/categories/vmware-validated-solutions/' class="post_tag button button_translucent" title="vmware validated solutions">
@@ -481,7 +482,7 @@
         
         <a href='http://localhost:1313/categories/vcf-installer/' class="post_tag button button_translucent" title="vcf installer">
           VCF INSTALLER
-          <span class="button_tally">8</span>
+          <span class="button_tally">9</span>
         </a>
         
         <a href='http://localhost:1313/categories/vcf-powercli/' class="post_tag button button_translucent" title="vcf powercli">
@@ -519,9 +520,9 @@
           <span class="button_tally">4</span>
         </a>
         
-        <a href='http://localhost:1313/categories/nsx-t-data-center/' class="post_tag button button_translucent" title="nsx-t data center">
-          NSX-T DATA CENTER
-          <span class="button_tally">2</span>
+        <a href='http://localhost:1313/categories/vcf-operations/' class="post_tag button button_translucent" title="vcf operations">
+          VCF OPERATIONS
+          <span class="button_tally">3</span>
         </a>
         
         
@@ -582,11 +583,11 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vcf-installer/' class=" post_tag button button_translucent" data-position=8 title="vcf installer">VCF INSTALLER<span class="button_tally">8</span>
+            <a href='http://localhost:1313/categories/vcf-installer/' class=" post_tag button button_translucent" data-position=9 title="vcf installer">VCF INSTALLER<span class="button_tally">9</span>
             </a>
             
             
-            <a href='http://localhost:1313/categories/vcf-operations/' class=" post_tag button button_translucent" data-position=2 title="vcf operations">VCF OPERATIONS<span class="button_tally">2</span>
+            <a href='http://localhost:1313/categories/vcf-operations/' class=" post_tag button button_translucent" data-position=3 title="vcf operations">VCF OPERATIONS<span class="button_tally">3</span>
             </a>
             
             
@@ -630,7 +631,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class=" post_tag button button_translucent" data-position=62 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class="button_tally">62</span>
+            <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class=" post_tag button button_translucent" data-position=64 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class="button_tally">64</span>
             </a>
             
             
@@ -709,23 +710,23 @@
           <span class="button_tally">7</span>
         </a>
         
+        <a href='http://localhost:1313/series/vmware-cloud-foundation-apis/' class="post_tag button button_translucent" title="vmware cloud foundation apis">
+          VMWARE CLOUD FOUNDATION APIS
+          <span class="button_tally">6</span>
+        </a>
+        
         <a href='http://localhost:1313/series/vcf-upgrade-automation/' class="post_tag button button_translucent" title="vcf upgrade automation">
           VCF UPGRADE AUTOMATION
           <span class="button_tally">5</span>
         </a>
         
-        <a href='http://localhost:1313/series/vmware-cloud-foundation-apis/' class="post_tag button button_translucent" title="vmware cloud foundation apis">
-          VMWARE CLOUD FOUNDATION APIS
+        <a href='http://localhost:1313/series/vcf-installer-apis/' class="post_tag button button_translucent" title="vcf installer apis">
+          VCF INSTALLER APIS
           <span class="button_tally">4</span>
         </a>
         
         <a href='http://localhost:1313/series/vcf-backup/restore/' class="post_tag button button_translucent" title="vcf backup/restore">
           VCF BACKUP/RESTORE
-          <span class="button_tally">3</span>
-        </a>
-        
-        <a href='http://localhost:1313/series/vcf-installer-apis/' class="post_tag button button_translucent" title="vcf installer apis">
-          VCF INSTALLER APIS
           <span class="button_tally">3</span>
         </a>
         
@@ -741,6 +742,11 @@
         
         <a href='http://localhost:1313/series/powercli-module-for-vmware-cloud-foundation/' class="post_tag button button_translucent" title="powercli module for vmware cloud foundation">
           POWERCLI MODULE FOR VMWARE CLOUD FOUNDATION
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='http://localhost:1313/series/vcf-operations-apis/' class="post_tag button button_translucent" title="vcf operations apis">
+          VCF OPERATIONS APIS
           <span class="button_tally">1</span>
         </a>
         
@@ -785,6 +791,11 @@
           <span class="button_tally">9</span>
         </a>
         
+        <a href='http://localhost:1313/tags/vcf-installer/' class="post_tag button button_translucent" title="vcf installer">
+          VCF INSTALLER
+          <span class="button_tally">9</span>
+        </a>
+        
         <a href='http://localhost:1313/tags/public-apis/' class="post_tag button button_translucent" title="public apis">
           PUBLIC APIS
           <span class="button_tally">8</span>
@@ -795,8 +806,8 @@
           <span class="button_tally">8</span>
         </a>
         
-        <a href='http://localhost:1313/tags/vcf-installer/' class="post_tag button button_translucent" title="vcf installer">
-          VCF INSTALLER
+        <a href='http://localhost:1313/tags/vcf-9.1/' class="post_tag button button_translucent" title="vcf 9.1">
+          VCF 9.1
           <span class="button_tally">8</span>
         </a>
         
@@ -810,19 +821,14 @@
           <span class="button_tally">7</span>
         </a>
         
-        <a href='http://localhost:1313/tags/vcf-9.1/' class="post_tag button button_translucent" title="vcf 9.1">
-          VCF 9.1
+        <a href='http://localhost:1313/tags/apis/' class="post_tag button button_translucent" title="apis">
+          APIS
           <span class="button_tally">6</span>
         </a>
         
         <a href='http://localhost:1313/tags/cloudclient/' class="post_tag button button_translucent" title="cloudclient">
           CLOUDCLIENT
           <span class="button_tally">5</span>
-        </a>
-        
-        <a href='http://localhost:1313/tags/apis/' class="post_tag button button_translucent" title="apis">
-          APIS
-          <span class="button_tally">4</span>
         </a>
         
         
@@ -835,7 +841,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/tags/apis/' class=" post_tag button button_translucent" data-position=4 title="apis">APIS<span class="button_tally">4</span>
+            <a href='http://localhost:1313/tags/apis/' class=" post_tag button button_translucent" data-position=6 title="apis">APIS<span class="button_tally">6</span>
             </a>
             
             
@@ -975,15 +981,15 @@
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf-9.1/' class=" post_tag button button_translucent" data-position=6 title="vcf 9.1">VCF 9.1<span class="button_tally">6</span>
+            <a href='http://localhost:1313/tags/vcf-9.1/' class=" post_tag button button_translucent" data-position=8 title="vcf 9.1">VCF 9.1<span class="button_tally">8</span>
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf-installer/' class=" post_tag button button_translucent" data-position=8 title="vcf installer">VCF INSTALLER<span class="button_tally">8</span>
+            <a href='http://localhost:1313/tags/vcf-installer/' class=" post_tag button button_translucent" data-position=9 title="vcf installer">VCF INSTALLER<span class="button_tally">9</span>
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf-operations/' class=" post_tag button button_translucent" data-position=2 title="vcf operations">VCF OPERATIONS<span class="button_tally">2</span>
+            <a href='http://localhost:1313/tags/vcf-operations/' class=" post_tag button button_translucent" data-position=3 title="vcf operations">VCF OPERATIONS<span class="button_tally">3</span>
             </a>
             
             

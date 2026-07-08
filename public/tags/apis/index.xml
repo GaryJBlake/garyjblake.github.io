@@ -9,11 +9,28 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 25 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/apis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/apis/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>VCF Installer APIs: Deploying VMware Cloud Foundation JSON Using VCF Installer</title>
+      <title>VMware Cloud Foundation APIs: Deploying Log Management</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-deploy-log-management/</link>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-deploy-log-management/</guid>
+      <description>
+        
+          
+            <p>Once your VCF fleet has successfully been deployed and is up and running you can configure or add additional capabilities to the VMware Cloud Foundation platform. The first capability we will look at is Log Management. It is no longer installed as a standalone, heavy virtual appliance. Instead, it is deployed as a native containerized service running inside the consolidated VCF Management Services framework.</p>
+<p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Installer APIs: Deploying VMware Cloud Foundation Using VCF Installer with a JSON</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/</link>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
       <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/</guid>
       <description>
@@ -54,44 +71,9 @@
     </item>
     
     <item>
-      <title>VCF Installer APIs: Download Binaries from Broadcom Depot</title>
-      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</link>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
-      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</guid>
-      <description>
-        
-          
-            <p>After you have successfully configured the VCF Installer with a valid connection to the Broadcom Depot and synchronized the manifest, you can begin downloading the binaries required to implement VMware Cloud Foundation. Assuming your are deploying all components you will need to download 16 components as follows:</p>
-<ul>
-<li>Cloud proxy</li>
-<li>Fleet lifecycle</li>
-<li>Identity broker</li>
-<li>License server</li>
-<li>Migration service engine</li>
-<li>Salt master</li>
-<li>Salt RaaS</li>
-<li>SDDC lifecycle</li>
-<li>SDDC Manager</li>
-<li>Software depot</li>
-<li>Telemetry</li>
-<li>VCF Automation</li>
-<li>VCF Operations</li>
-<li>VCF services runtime</li>
-<li>VMware NSX</li>
-<li>VMware vCenter</li>
-</ul>
-<p><strong>VCF Installer APIs Used</strong></p>
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>VCF Installer APIs: Validating Your JSON Using VCF Installer</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</link>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
       <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
       <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</guid>
       <description>
@@ -144,6 +126,41 @@
 		Introducing the VCF.JSONGenerator PowerShell Module for VMware Cloud Foundation
 	</span>
 </a>).</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Installer APIs: Download Binaries from Broadcom Depot</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</link>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</guid>
+      <description>
+        
+          
+            <p>After you have successfully configured the VCF Installer with a valid connection to the Broadcom Depot and synchronized the manifest, you can begin downloading the binaries required to implement VMware Cloud Foundation. Assuming your are deploying all components you will need to download 16 components as follows:</p>
+<ul>
+<li>Cloud proxy</li>
+<li>Fleet lifecycle</li>
+<li>Identity broker</li>
+<li>License server</li>
+<li>Migration service engine</li>
+<li>Salt master</li>
+<li>Salt RaaS</li>
+<li>SDDC lifecycle</li>
+<li>SDDC Manager</li>
+<li>Software depot</li>
+<li>Telemetry</li>
+<li>VCF Automation</li>
+<li>VCF Operations</li>
+<li>VCF services runtime</li>
+<li>VMware NSX</li>
+<li>VMware vCenter</li>
+</ul>
+<p><strong>VCF Installer APIs Used</strong></p>
           
           
         

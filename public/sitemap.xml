@@ -3,51 +3,69 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/apis/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/index/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/series/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/vcf-9.1/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/vcf-installer/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/vcf-fleet-lifecycle-service/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vcf-installer/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/series/vcf-fleet-lifecycle-service-apis/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/vcf-installer-apis/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/vcf-operations/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/vcf-operations/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/series/vcf-operations-apis/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/vmware-cloud-foundation/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/series/vmware-cloud-foundation-apis/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-deploy-log-management/</loc>
+    <lastmod>2026-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vcf-installer/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vcf-installer/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/vcf-installer-apis/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/</loc>
+    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</loc>
+    <lastmod>2026-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</loc>
     <lastmod>2026-06-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-depot/</loc>
@@ -69,12 +87,6 @@
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/sddc-manager/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/vcf-operations/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vcf-operations/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</loc>

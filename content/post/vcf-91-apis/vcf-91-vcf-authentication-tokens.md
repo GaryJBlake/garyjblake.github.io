@@ -88,7 +88,8 @@ export vcfOperationsPass='VMw@re1!VMw@re1!'
 ``` bash
 vcfOperationsToken=$(curl -k -X POST https://$vcfOperationsFqdn/suite-api/api/auth/token/acquire \
     --header 'Content-Type:application/json' \
-    -d "{\"username\":\"$vcfOperationsUser\", \"password\":\"$vcfOperationsPass\", \"authSource\":\"LOCAL\"}" \
+    --header "Accept: application/json" \
+    -d "{\"username\":\"$vcfOperationsUser\", \"password\":\"$vcfOperationsPass\"}" \
     | jq -r '.token')
 ```
 

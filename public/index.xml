@@ -9,7 +9,66 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: API Documentation</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-api-endpoints/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-api-endpoints/</guid>
+      <description>
+        
+          
+            <p>This week I've been looking into a number of automation scenarios using the VMware Cloud Foundation public APIs, whilst working through this it became clear that there are many endpoints across the VMware Cloud Foundation platform that you may need to interact with and therefore different bits of API documentation that must be consulted. I also found locating the correct API documentation on the Broadcom not as straightforward as it perhaps should be. You can use this blog as a quick reference for your own automation development.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Installer APIs: Deploying VMware Cloud Foundation Using VCF Installer with a JSON</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/</link>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/</guid>
+      <description>
+        
+          
+            <p>Once you have validated your JSON specification file, along with the infrastructure validation you are ready to commence the deployment process. Once again we pass the JSON specification file as an input to the API request.</p>
+<p><strong>VCF Installer APIs Used</strong></p>
+<ul>
+<li>POST /v1/tokens</li>
+<li>GET /v1/sddcs</li>
+<li>GET /v1/sddcs/{id}</li>
+<li>POST /v1/sddcs</li>
+</ul>
+<p><a
+	
+		href = "https://developer.broadcom.com/xapis/vcf-installer-api/latest/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF Installer API Reference Guide
+	</span>
+</a></p>
+<p><strong>Procedure</strong></p>
+<ol>
+<li>
+<p>Connect to a system that has access to the infrastructure and is capable of running CURL.</p>
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VCF Installer APIs: Validating Your JSON Using VCF Installer</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</link>
