@@ -4,13 +4,14 @@ title = "Generating Password Policy Reports for VMware Cloud Foundation"
 date = "2023-02-23"
 description = "Generating Password Policy Reports for VMware Cloud Foundation"
 tags = [
-    "API",
-    "PowerShell",
-	  "VVS"
+      "API",
+      "PowerVCF",
+	   "VVS"
 ]
 categories = [
-    "VMware Validated Solutions",
-	  "PowerVCF"
+      "VMware Validated Solutions",
+      "VMware Cloud Foundation Password Management",
+	   "PowerShell"
 ]
 series = [
 

@@ -5,13 +5,12 @@ date = "2021-12-09"
 description = "VVS-Tip - Unlocking Automation Capabilities with PowerValidatedSolutions"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
+    "PowerCLI"
 ]
 categories = [
     "VMware Validated Solutions",
-    "PowerVCF",
-    "PowerCLI"
-
+    "PowerShell"
 ]
 series = [
     "VVS-Tip",

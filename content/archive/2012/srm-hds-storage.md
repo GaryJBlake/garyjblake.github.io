@@ -4,11 +4,11 @@ title = "Installing SRM with HDS Storage"
 date = "2012-05-01"
 description = "Installing SRM with HDS Storage"
 tags = [
-    "SRM",
-    "HDS Storage"
+    "SRM"
 ]
 categories = [
-    "Site Recovery Manager"
+    "Site Recovery Manager",
+    "HDS Storage"
 ]
 series = [
 

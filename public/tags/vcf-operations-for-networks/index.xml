@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VCF Operations for Networks on My Cloudy World</title>
+    <link>http://localhost:1313/tags/vcf-operations-for-networks/</link>
+    <description>Recent content in VCF Operations for Networks on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
+    <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
+    <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-operations-for-networks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Deploying VCF Operations for Networks</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-ops-networks-deploy/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-ops-networks-deploy/</guid>
+      <description>
+        
+          
+            <p>??????</p>
+<p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
+<p><a
+	
+		href = "https://developer.broadcom.com/xapis/vcf-fleet-lcm-service-apis/latest/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF Fleet LCM Service APIs
+	</span>
+</a></p>
+<ul>
+<li>POST /api/v1/identity/token</li>
+<li>POST /fleet-lcm/v1/components/validations</li>
+<li>POST /fleet-lcm/v1/components</li>
+<li>GET /fleet-lcm/v1/tasks/{taskId}</li>
+</ul>
+<p><strong>Procedure</strong></p>
+<ol>
+<li>
+<p>Connect to a system that has access to the infrastructure and is capable of running CURL.</p>
+</li>
+<li>
+<p>Replace the values in the sample code with values for your VCF Fleet Lifecycle Service and paste the commands in the console. If your not sure which endpoint this FQDN should be log into VCF Operations, go to <em><strong>Build &gt; Lifecycle &gt; VCF Management</strong></em> and select the <em><strong>Components</strong></em> tab and locate the component named <em><strong>Fleet lifecycle</strong></em> the FQDN is shown in the FQDN column.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

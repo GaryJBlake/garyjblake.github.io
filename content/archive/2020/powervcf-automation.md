@@ -5,12 +5,12 @@ date = "2020-05-09"
 description = "Automating VMware Cloud Foundation with APIs/PowerVCF/PowerShell"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
     "VCF"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
     "VCF Automation"

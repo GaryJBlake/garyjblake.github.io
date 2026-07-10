@@ -5,12 +5,12 @@ date = "2020-05-09"
 description = "Automating VCF – Deploy Management Domain"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
     "VCF"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
     "VCF Automation"

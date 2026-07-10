@@ -4,11 +4,11 @@ title = "Automating VCF Upgrade - Download Release Bundles"
 date = "2023-08-24"
 description = "Automating VCF Upgrade - Download Release Bundles"
 tags = [
-    "VCF"
+    "VCF",
+    "PowerVCF",
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF",
     "PowerShell"
 ]
 series = [

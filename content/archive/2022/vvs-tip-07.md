@@ -5,12 +5,12 @@ date = "2022-01-13"
 description = "VVS-Tip - Contributing to PowerValidatedSolutions Source Code"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
+    "PowerCLI"
 ]
 categories = [
     "VMware Validated Solutions",
-    "PowerVCF",
-    "PowerCLI"
+    "PowerShell"
 
 ]
 series = [

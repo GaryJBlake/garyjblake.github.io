@@ -4,7 +4,8 @@ title = "VMware Cloud Builder - PlatformAudit Series"
 date = "2019-09-30"
 description = "VMware Cloud Builder - PlatformAudit Series"
 tags = [
-    "Cloud Builder"
+    "Cloud Builder",
+    "VCF"
 ]
 categories = [
     "VMware Cloud Foundation",

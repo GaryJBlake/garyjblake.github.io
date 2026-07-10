@@ -5,11 +5,12 @@ date = "2023-04-25"
 description = "Introducing a PowerShell Module for VMware Cloud Foundation Password Management"
 tags = [
     "API",
-    "PowerShell",
     "VCF"
 ]
 categories = [
-    "VMware Cloud Foundation"
+    "VMware Cloud Foundation",
+    "VMware Cloud Foundation Password Management",
+    "PowerShell"
 ]
 series = [
 

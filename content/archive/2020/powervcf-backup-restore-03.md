@@ -5,17 +5,15 @@ date = "2020-05-07"
 description = "PowerVCF v2.0 - Backup and Restore of SDDC Manager - Restore (Part 3)"
 tags = [
     "API",
-    "PowerShell",
-    "VCF",
-	"Backup",
-	"Restore"
+    "PowerVCF",
+    "VCF"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
-    "VCF Backup/Restore"
+    "VCF Backup and Restore"
 ]
 +++
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Log Management on My Cloudy World</title>
+    <link>http://localhost:1313/series/log-management/</link>
+    <description>Recent content in Log Management on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
+    <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
+    <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/log-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Deploying Log Management</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-log-management-deploy/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-log-management-deploy/</guid>
+      <description>
+        
+          
+            <p>Once your VCF fleet has successfully been deployed and is up and running you can configure or add additional capabilities to the VMware Cloud Foundation platform. The first capability we will look at is Log Management. It is no longer installed as a standalone, heavy virtual appliance. Instead, it is deployed as a native containerized service running inside the consolidated VCF Management Services framework.</p>
+<p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

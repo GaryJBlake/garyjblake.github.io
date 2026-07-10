@@ -4,7 +4,7 @@ title = "Replacing the SSL Certificate for Microsoft CA Signed on vCenter Log In
 date = "2014-02-28"
 description = "Replacing the SSL Certificate for Microsoft CA Signed on vCenter Log Insight 1.5 Virtual Appliance"
 tags = [
-    "SSL Certificates"
+    "Certificates"
 ]
 categories = [
     "VMware Log Insight"

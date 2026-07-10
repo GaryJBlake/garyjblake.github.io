@@ -5,12 +5,12 @@ date = "2020-08-11"
 description = "Automating VCF – Deploy vRealize Suite Lifecycle Manager"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
     "VCF"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
     "VCF Automation"

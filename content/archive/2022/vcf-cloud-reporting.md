@@ -8,7 +8,8 @@ tags = [
     "PowerShell"
 ]
 categories = [
-    "VMware Cloud Foundation"
+    "VMware Cloud Foundation",
+    "VMware Cloud Foundation Reporting"
 ]
 series = [
 

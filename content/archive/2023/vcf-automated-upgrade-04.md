@@ -4,11 +4,12 @@ title = "Automating VCF Upgrade - Workload Domains"
 date = "2023-10-18"
 description = "Automating VCF Upgrade - Workload Domains"
 tags = [
-    "VCF"
+    "VCF",
+    "PowerVCF",
+
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF",
     "PowerShell"
 ]
 series = [

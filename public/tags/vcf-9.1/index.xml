@@ -9,18 +9,114 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-9.1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-9.1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Deploying VCF Automation</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-automation-deploy/</link>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-automation-deploy/</guid>
+      <description>
+        
+          
+            <p>Whilst VCF Automation is typically deployed during the initial VMware Cloud Foundation deployment phase via VCF Installer it is possible to skip the deployment initially for various reasons such as may you don't have a use case  initially or you want to deploy to a different network that is not available at the time. Under such scenarios you can easily deploy as a Day N task.</p>
+<p>In this post we will look at how the VCF Automation component can be deployed using the public APIs, this is achieved via the VCF Fleet Lifecycle Service which is tightly integrated into VCF Operations.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation APIs: Checking VMware Cloud Foundation Platform Health</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-lifecycle-health/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-lifecycle-health/</guid>
+      <description>
+        
+          
+            <p><strong>Public APIs Used</strong></p>
+<p><a
+	
+		href = "https://developer.broadcom.com/xapis/vcf-fleet-lcm-service-apis/latest/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF Fleet LCM Service APIs
+	</span>
+</a>
+<a
+	
+		href = "https://developer.broadcom.com/xapis/vcf-sddc-lcm-service-apis/latest/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF SDDC LCM Service APIs
+	</span>
+</a></p>
+<ul>
+<li>POST /api/v1/identity/token</li>
+<li>GET /fleet-lcm/v1/health</li>
+</ul>
+<p><strong>VCF SDDC Lifecycle Service APIs Used</strong></p>
+<p>[</p>
+<ul>
+<li>GET /sddc-lcm/v1/health</li>
+</ul>
+<ol>
+<li>
+<p>Connect to a system that has access to your infrastructure and is capable of running CURL.</p>
+</li>
+<li>
+<p>Replace the values in the sample code with values for your VCF Services Runtime instance and run the commands in the console.</p>
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VMware Cloud Foundation APIs: Deploying Log Management</title>
-      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-deploy-log-management/</link>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-log-management-deploy/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
       <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
-      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-deploy-log-management/</guid>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-log-management-deploy/</guid>
       <description>
         
           
             <p>Once your VCF fleet has successfully been deployed and is up and running you can configure or add additional capabilities to the VMware Cloud Foundation platform. The first capability we will look at is Log Management. It is no longer installed as a standalone, heavy virtual appliance. Instead, it is deployed as a native containerized service running inside the consolidated VCF Management Services framework.</p>
 <p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation APIs: API Documentation</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-api-endpoints/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-api-endpoints/</guid>
+      <description>
+        
+          
+            <p>This week I've been looking into a number of automation scenarios using the VMware Cloud Foundation public APIs, whilst working through this it became clear that there are many endpoints across the VMware Cloud Foundation platform that you may need to interact with and therefore different bits of API documentation that must be consulted. I also found locating the correct API documentation on the Broadcom not as straightforward as it perhaps should be. You can use this blog as a quick reference for your own automation development.</p>
           
           
         

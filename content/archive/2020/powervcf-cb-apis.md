@@ -5,13 +5,14 @@ date = "2020-04-29"
 description = "PowerVCF v2.0 - Using VMware Cloud Builder with Public APIs"
 tags = [
     "API",
-    "PowerShell",
-    "VCF"
+    "PowerVCF",
+    "VCF",
+	"APIs"
 ]
 categories = [
     "VMware Cloud Foundation",
     "VMware Cloud Builder",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
     

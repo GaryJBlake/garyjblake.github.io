@@ -4,10 +4,11 @@ title = "Installing PowerCLI 6.5.1"
 date = "2017-09-02"
 description = "Installing PowerCLI 6.5.1"
 tags = [
-    "PowerShell"
+    "API",
+    "PowerCLI"
 ]
 categories = [
-    "PowerCLI"
+    "PowerShell"
 ]
 series = [
 

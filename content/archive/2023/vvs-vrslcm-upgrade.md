@@ -4,13 +4,13 @@ title = "Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation
 date = "2023-07-27"
 description = "Upgrading vRealize Suite Lifecycle Manager with VMware Cloud Foundation"
 tags = [
-    "Aria Suite Lifecycle",
-    "vRealize Suite Lifecycle Manager",
-	"VVS"
+    "vRSLCM",
+	  "VVS"
 ]
 categories = [
-    "VMware Validated Solutions"
-
+    "VMware Validated Solutions",
+    "Aria Suite Lifecycle",
+    "vRealize Suite Lifecycle Manager",
 ]
 series = [
 

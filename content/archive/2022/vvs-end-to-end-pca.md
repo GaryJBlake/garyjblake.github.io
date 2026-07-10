@@ -5,13 +5,13 @@ date = "2022-10-24"
 description = "End-to-End Automation of Private Cloud Automation Validated Solution"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
 	"VVS",
     "PCA"
 ]
 categories = [
     "VMware Validated Solutions",
-	"PowerVCF"
+	"PowerShell"
 ]
 series = [
 

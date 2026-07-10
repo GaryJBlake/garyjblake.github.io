@@ -4,13 +4,14 @@ title = "Creating a Service Account for Certificate Management with VMware Cloud
 date = "2020-02-10"
 description = "Creating a Service Account for Certificate Management with VMware Cloud Foundation"
 tags = [
-    "VCF"
+    "VCF",
+    "Certificates"
 ]
 categories = [
     "VMware Cloud Foundation"
 ]
 series = [
-    "VCF Certificate Management"
+    "Certificate Management"
 ]
 +++
 
@@ -20,6 +21,7 @@ What I found is that it is indeed possible but it has to be done in two specific
 
 - [Configure Microsoft Certificate Authority Server](#configure-microsoft-certificate-authority-server)
 - [Configure Microsoft Certificate Authority Template](#configure-microsoft-certificate-authority-template)
+- [Useful Links](#useful-links)
 
 Let's now take a look at what you need to do. In this example I'm using a dedicated service account called ***svc-mgr-ca*** which is just a Domain User.
 

@@ -6,16 +6,15 @@ description = "Configure VMware Cloud Builder as a Backup Target for SDDC Manage
 tags = [
     "API",
     "VCF",
-    "PowerShell",
-    "Backup"
+    "PowerVCF"
 ]
 categories = [
     "VMware Cloud Foundation",
     "VMware Cloud Builder",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
-
+    "VCF Backup and Restore"
 ]
 +++
 

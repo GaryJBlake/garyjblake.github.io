@@ -5,15 +5,16 @@ date = "2020-01-29"
 description = "PowerVCF - Request Signed Certificates from Microsoft Certificate Authority (Part 4)"
 tags = [
     "API",
-    "PowerShell",
-    "VCF"
+    "PowerVCF",
+    "VCF",
+    "Certificates"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
-    "VCF Certificate Management"
+    "Certificate Management"
 ]
 +++
 <img align="left" width="200" height="200" src="/images/powervcf-color-transparent.webp" style="float:left; padding-right:20px" >
@@ -24,6 +25,7 @@ In this post we will look at the process of requesting the signed certificates f
 
 - [Generate Signed Certificates using the User Interface](#generate-signed-certificates-using-the-user-interface)
 - [Generate Signed Certificates using using PowerVCF](#generate-signed-certificates-using-using-powervcf)
+- [Useful Links](#useful-links)
 
 ### Generate Signed Certificates using the User Interface
 

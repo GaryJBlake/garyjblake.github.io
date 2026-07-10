@@ -5,7 +5,8 @@ date = "2023-08-22"
 description = "Cleaning Up VCF-password* Accounts from vRealize Suite Lifecycle Manager"
 tags = [
     "VCF",
-    "WSA"
+    "WSA",
+	"vRSLCM"
 ]
 categories = [
     "VMware Cloud Foundation",

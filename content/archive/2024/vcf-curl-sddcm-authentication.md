@@ -5,7 +5,7 @@ date = "2024-11-28"
 description = "Obtaining a Token Using Curl with SDDC Manager"
 tags = [
     "VCF 5.x",
-    "Public APIs"
+    "API"
 ]
 categories = [
     "SDDC Manager",

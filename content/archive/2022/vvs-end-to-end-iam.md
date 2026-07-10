@@ -5,13 +5,13 @@ date = "2022-01-13"
 description = "End-to-End Automation of Identity and Access Management Validated Solution"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
 	"VVS",
 	"IAM"
 ]
 categories = [
     "VMware Validated Solutions",
-	"PowerVCF"
+	"PowerShell"
 ]
 series = [
 

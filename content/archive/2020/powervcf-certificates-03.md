@@ -5,15 +5,16 @@ date = "2020-01-24"
 description = "PowerVCF - Generate Certificate Signing Request (CSR) Files for Each Component Managed by SDDC Manager (Part 3)"
 tags = [
     "API",
-    "PowerShell",
-    "VCF"
+    "PowerVCF",
+    "VCF",
+    "Certificates"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
-    "VCF Certificate Management"
+    "Certificate Management"
 ]
 +++
 

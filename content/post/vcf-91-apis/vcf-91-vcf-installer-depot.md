@@ -5,8 +5,7 @@ date = "2026-05-21"
 description = "VCF Installer APIs: Connect VCF Installer to the Broadcom Depot"
 tags = [
     "VCF 9.1",
-    "VCF Installer",
-    "APIs"
+    "API"
 ]
 categories = [
     "VMware Cloud Foundation",

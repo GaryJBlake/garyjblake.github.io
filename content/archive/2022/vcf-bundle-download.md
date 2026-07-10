@@ -6,11 +6,11 @@ description = "Automating the Download of VCF Bundles for a Release"
 tags = [
     "API",
     "VCF",
-    "PowerShell"
+    "PowerVCF"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
 

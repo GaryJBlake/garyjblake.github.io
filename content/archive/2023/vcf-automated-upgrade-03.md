@@ -4,11 +4,11 @@ title = "Automating VCF Upgrade - SDDC Manager"
 date = "2023-09-12"
 description = "Automating VCF Upgrade - SDDC Manager"
 tags = [
-    "VCF"
+    "VCF",
+    "PowerVCF",
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF",
     "PowerShell"
 ]
 series = [

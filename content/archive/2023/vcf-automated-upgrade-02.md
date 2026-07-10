@@ -4,11 +4,11 @@ title = "Automating VCF Upgrade - Perform Health Checks"
 date = "2023-09-05"
 description = "Automating VCF Upgrade - Perform Health Checks"
 tags = [
-    "VCF"
+    "VCF",
+    "PowerVCF",
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF",
     "PowerShell"
 ]
 series = [

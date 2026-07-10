@@ -5,12 +5,12 @@ date = "2020-05-16"
 description = "Automating VCF – Commission Hosts"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
     "VCF"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
     "VCF Automation"

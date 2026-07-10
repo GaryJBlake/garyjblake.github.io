@@ -5,13 +5,13 @@ date = "2022-10-06"
 description = "End-to-End Automation of Developer Ready Infrastructure Validated Solution"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
 	"VVS",
     "DRI"
 ]
 categories = [
     "VMware Validated Solutions",
-	"PowerVCF"
+	"PowerShell"
 ]
 series = [
 

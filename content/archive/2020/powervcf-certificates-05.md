@@ -5,15 +5,16 @@ date = "2020-02-06"
 description = "PowerVCF - Install Signed Certificates on Each Component Managed by SDDC Manager (Part 5)"
 tags = [
     "API",
-    "PowerShell",
-    "VCF"
+    "PowerVCF",
+    "VCF",
+    "Certificates"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
-    "VCF Certificate Management"
+    "Certificate Management"
 ]
 +++
 

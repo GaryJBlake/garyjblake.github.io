@@ -5,12 +5,12 @@ date = "2020-07-23"
 description = "PowerVCF v2.1.0 - General Availability"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
     "VCF"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
 

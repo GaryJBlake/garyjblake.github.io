@@ -4,11 +4,11 @@ title = "Creating and Deleting a Tenant with CloudClient - Part 2"
 date = "2015-02-03"
 description = "Creating and Deleting a Tenant with CloudClient - Part 2"
 tags = [
-    "vCAC",
-    "CloudClient"
+    "vCAC"
 ]
 categories = [
-    "vCloud Automation Center"
+    "vCloud Automation Center",
+    "CloudClient"
 ]
 series = [
 

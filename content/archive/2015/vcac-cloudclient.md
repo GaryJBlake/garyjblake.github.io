@@ -4,11 +4,11 @@ title = "What is the vRealize CloudClient"
 date = "2015-01-27"
 description = "What is the vRealize CloudClient"
 tags = [
-    "vCAC",
-    "CloudClient"
+    "vCAC"
 ]
 categories = [
-    "vCloud Automation Center"
+    "vCloud Automation Center",
+    "CloudClient"
 ]
 series = [
 

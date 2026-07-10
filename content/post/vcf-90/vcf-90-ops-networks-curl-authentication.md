@@ -5,7 +5,7 @@ date = "2025-01-14"
 description = "Obtaining a Token Using Curl for VCF Operations for Networks"
 tags = [
     "VCF",
-    "Public APIs",
+    "API",
     "operations-networks"
 ]
 categories = [

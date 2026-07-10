@@ -9,7 +9,24 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Deploying Log Management</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-log-management-deploy/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-log-management-deploy/</guid>
+      <description>
+        
+          
+            <p>Once your VCF fleet has successfully been deployed and is up and running you can configure or add additional capabilities to the VMware Cloud Foundation platform. The first capability we will look at is Log Management. It is no longer installed as a standalone, heavy virtual appliance. Instead, it is deployed as a native containerized service running inside the consolidated VCF Management Services framework.</p>
+<p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VMware Cloud Foundation APIs: API Documentation</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-api-endpoints/</link>
@@ -538,6 +555,19 @@
             <p>In this procedure, we will use the <strong>/v1/users</strong> API exposed via the VCF.PowerCLI module <code>VMware.Sdk.Vcf.SddcManager</code> to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.</p>
 <h3 id="procedures-covered">Procedures Covered</h3>
 <ul>
+<li><a
+	
+		href = "#procedures-covered"
+	
+
+	
+
+	>
+
+	<span>
+		Procedures Covered
+	</span>
+</a></li>
 <li><a
 	
 		href = "#assigning-an-sddc-manager-role-to-a-group"

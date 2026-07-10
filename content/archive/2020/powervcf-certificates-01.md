@@ -5,15 +5,16 @@ date = "2020-01-22"
 description = "PowerVCF - Configure the Microsoft Certificate Authority for VMware Cloud Foundation Integration (Part 1)"
 tags = [
     "API",
-    "PowerShell",
-    "VCF"
+    "PowerVCF",
+    "VCF",
+    "Certificates"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
-    "VCF Certificate Management"
+    "Certificate Management"
 ]
 +++
 

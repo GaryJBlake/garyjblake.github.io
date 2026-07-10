@@ -5,12 +5,11 @@ date = "2025-08-28"
 description = "VCF Installer: Retrieve Component Passwords from VCF Installer"
 tags = [
     "VCF",
-    "VCF Installer",
-    "PowerShell",
-    "Public APIs"
+    "API"
 ]
 categories = [
     "VMware Cloud Foundation 9.0",
+    "PowerShell",
     "VCF Installer"
 ]
 series = [

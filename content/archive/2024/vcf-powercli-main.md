@@ -4,15 +4,17 @@ title = "Native PowerCLI Modules for VMware Cloud Foundation"
 date = "2024-05-21"
 description = "Native PowerCLI Modules for VMware Cloud Foundation"
 tags = [
-    "VCF 5.x"
+    "VCF 5.x",
+    "API",
+    "PowerCLI",
+    "PowerVCF"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerCLI",
     "PowerShell"
 ]
 series = [
-    "PowerCLI Module for VMware Cloud Foundation"
+    
 ]
 +++
 

@@ -5,12 +5,12 @@ date = "2020-05-30"
 description = "Automating VCF – Deploy NSX-T Edge Cluster"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
     "VCF"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
     "VCF Automation"

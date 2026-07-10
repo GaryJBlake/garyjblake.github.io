@@ -5,13 +5,14 @@ date = "2025-09-12"
 description = "VCF Automation: ?"
 tags = [
     "VCF",
-    "Public APIs",
-    "VCF.PowerCLI"
+    "API",
+    "PowerCLI"
 ]
 categories = [
     "VMware Cloud Foundation 9.0",
     "SDDC Manager",
-    "VCF.PowerCLI"
+    "VCF.PowerCLI",
+    "PowerShell"
 ]
 series = [
 
@@ -22,11 +23,12 @@ In this procedure, we will use the **/v1/users** API exposed via the VCF.PowerCL
 
 ### Procedures Covered
 
-* [Assigning an SDDC Manager Role to a Group](#assigning-an-sddc-manager-role-to-a-group)
-* [Assigning an SDDC Manager Role to a User](#assigning-an-sddc-manager-role-to-a-user)
-* [Removing a User or Group from an SDDC Manager Role](#removing-a-user-or-group-from-an-sddc-manager-role)
-* [Assigning SDDC Manager Roles to Multiple Groups](#assigning-sddc-manager-roles-to-multiple-groups)
-* [Removing Multiple Groups from SDDC Manager Roles](#removing-multiple-groups-from-sddc-manager-roles)
+- [Procedures Covered](#procedures-covered)
+- [Assigning an SDDC Manager Role to a Group](#assigning-an-sddc-manager-role-to-a-group)
+- [Assigning an SDDC Manager Role to a User](#assigning-an-sddc-manager-role-to-a-user)
+- [Removing a User or Group from an SDDC Manager Role](#removing-a-user-or-group-from-an-sddc-manager-role)
+- [Assigning SDDC Manager Roles to Multiple Groups](#assigning-sddc-manager-roles-to-multiple-groups)
+- [Removing Multiple Groups from SDDC Manager Roles](#removing-multiple-groups-from-sddc-manager-roles)
 
 **SDDC Manager APIs Used**
 

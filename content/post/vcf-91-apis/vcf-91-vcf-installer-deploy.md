@@ -5,8 +5,7 @@ date = "2026-07-02"
 description = "VCF Installer APIs: Deploying VMware Cloud Foundation Using VCF Installer with a JSON"
 tags = [
     "VCF 9.1",
-    "VCF Installer",
-    "APIs"
+    "API"
 ]
 categories = [
     "VMware Cloud Foundation",

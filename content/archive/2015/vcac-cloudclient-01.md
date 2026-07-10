@@ -4,11 +4,11 @@ title = "Launching CloudClient and Authenticating to vRealize Automation - Part 
 date = "2015-01-28"
 description = "Launching CloudClient and Authenticating to vRealize Automation - Part 1"
 tags = [
-    "vCAC",
-    "CloudClient"
+    "vCAC"
 ]
 categories = [
-    "vCloud Automation Center"
+    "vCloud Automation Center",
+    "CloudClient"
 ]
 series = [
 

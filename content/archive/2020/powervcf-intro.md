@@ -5,12 +5,12 @@ date = "2020-01-14"
 description = "Introducing PowerVCF - Power to VI Admins"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
     "VCF"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
 

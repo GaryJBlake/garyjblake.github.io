@@ -5,13 +5,13 @@ date = "2022-10-12"
 description = "End-to-End Automation of Intelligent Operations Management Validated Solution"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
 	"VVS",
     "IOM"
 ]
 categories = [
     "VMware Validated Solutions",
-	"PowerVCF"
+	"PowerShell"
 ]
 series = [
 

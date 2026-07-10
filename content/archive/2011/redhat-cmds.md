@@ -7,7 +7,7 @@ tags = [
     "Linux"
 ]
 categories = [
-    
+    "Red Hat"
 ]
 series = [
 

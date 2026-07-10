@@ -4,10 +4,10 @@ title = "Pet Clinic Application - vCloud PoC"
 date = "2011-12-13"
 description = "Pet Clinic Application - vCloud PoC"
 tags = [
-    "vCloud Director"
+    "vCD"
 ]
 categories = [
-    
+    "vCloud Director"
 ]
 series = [
 

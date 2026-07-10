@@ -5,7 +5,7 @@ date = "2025-01-28"
 description = "Authentication Using Curl for VCF Operations Fleet Management"
 tags = [
     "VCF",
-    "Public APIs"
+    "API"
 ]
 categories = [
     "VCF Operations Fleet Management"

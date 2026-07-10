@@ -7,7 +7,7 @@ tags = [
     "VCF",
     "VCF 9.0",
     "VCF PowerCLI",
-    "VMware Live Site Recovery"
+    "VLR"
 ]
 categories = [
     "VMware Cloud Foundation 9.0",

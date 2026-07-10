@@ -4,7 +4,7 @@ title = "Quick Fix - VMware Client Integration Plugin Stops Working (vSphere 6 U
 date = "2015-09-18"
 description = "Quick Fix - VMware Client Integration Plugin Stops Working (vSphere 6 U1)"
 tags = [
-    "Plugin"
+    "vCenter"
 ]
 categories = [
     "vCenter Server"

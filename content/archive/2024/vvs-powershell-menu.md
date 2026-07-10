@@ -4,13 +4,13 @@ title = "Simplified Consumption of PowerShell Automation with VMware Validated S
 date = "2024-06-13"
 description = "Simplified Consumption of PowerShell Automation with VMware Validated Solutions"
 tags = [
-    "PowerShell",
-    "PowerValidatedSolutions",
+    "PowerCLI",
 	"VVS"
 ]
 categories = [
-    "VMware Validated Solutions"
-
+    "VMware Validated Solutions",
+    "PowerShell",
+    "PowerValidatedSolutions"
 ]
 series = [
 

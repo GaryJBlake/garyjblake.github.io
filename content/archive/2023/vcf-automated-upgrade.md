@@ -4,11 +4,11 @@ title = "Automating the Upgrade of VMware Cloud Foundation with APIs/PowerVCF/Po
 date = "2023-08-24"
 description = "Automating the Upgrade of VMware Cloud Foundation with APIs/PowerVCF/PowerShell"
 tags = [
-    "VCF"
+    "VCF",
+    "PowerVCF"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF",
     "PowerShell"
 ]
 series = [

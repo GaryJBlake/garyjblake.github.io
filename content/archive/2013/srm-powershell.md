@@ -5,10 +5,12 @@ date = "2013-11-12"
 description = " Enabling PowerShell Functions with SRM - DR of the Cloud"
 tags = [
     "SRM",
-    "PowerShell"
+    "PowerCLI",
+    "API"
 ]
 categories = [
-    "Site Recovery Manager"
+    "Site Recovery Manager",
+    "PowerShell"
 ]
 series = [
 

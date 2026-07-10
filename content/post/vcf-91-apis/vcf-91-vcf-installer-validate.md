@@ -5,8 +5,7 @@ date = "2026-07-01"
 description = "VCF Installer APIs: Validating Your JSON Using VCF Installer"
 tags = [
     "VCF 9.1",
-    "VCF Installer",
-    "APIs"
+    "API"
 ]
 categories = [
     "VMware Cloud Foundation",
@@ -26,12 +25,12 @@ Once you have your JSON specification file created, its critical that you perfor
 
 **VCF Installer APIs Used**
 
+[VCF Installer API Reference Guide](https://developer.broadcom.com/xapis/vcf-installer-api/latest/)
+
 * POST /v1/tokens
 * GET /v1/sddcs/validations
 * GET /v1/sddcs/validations/{id}
 * POST /v1/sddcs/validations
-
-[VCF Installer API Reference Guide](https://developer.broadcom.com/xapis/vcf-installer-api/latest/)
 
 **Procedure**
 

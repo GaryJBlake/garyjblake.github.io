@@ -4,7 +4,8 @@ title = "Part 1 - What is PlatformAudit?"
 date = "2019-09-30"
 description = "Part 1 - What is PlatformAudit?"
 tags = [
-    "Cloud Builder"
+    "Cloud Builder",
+    "VCF"
 ]
 categories = [
     "VMware Validated Design",

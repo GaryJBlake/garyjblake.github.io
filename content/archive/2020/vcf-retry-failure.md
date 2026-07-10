@@ -4,6 +4,7 @@ title = "VMware Cloud Foundation - Retrying a Failed Workflow"
 date = "2020-12-04"
 description = "VMware Cloud Foundation - Retrying a Failed Workflow"
 tags = [
+    "API",
     "VCF"
 ]
 categories = [

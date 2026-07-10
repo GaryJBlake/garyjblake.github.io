@@ -5,17 +5,13 @@ date = "2026-04-01"
 description = "VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens"
 tags = [
     "VCF 9.1",
-    "VCF Installer",
-    "VCF Operations",
-    "SDDC Manager",
-    "APIs"
+    "API"
 ]
 categories = [
     "VMware Cloud Foundation",
     "VCF Installer",
     "VCF Operations",
     "SDDC Manager",
-    "APIs"
 ]
 series = [
     "VMware Cloud Foundation APIs"

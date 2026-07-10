@@ -5,7 +5,7 @@ date = "2024-12-03"
 description = "Viewing Network Pool Details Using Curl with SDDC Manager"
 tags = [
     "VCF 5.x",
-    "Public APIs"
+    "API"
 ]
 categories = [
     "SDDC Manager",

@@ -4,11 +4,11 @@ title = "Creating a Fabric Group and Assigning a Compute Resource - Part 4"
 date = "2015-02-12"
 description = "Creating a Fabric Group and Assigning a Compute Resource - Part 4"
 tags = [
-    "vCAC",
-    "CloudClient"
+    "vCAC"
 ]
 categories = [
-    "vCloud Automation Center"
+    "vCloud Automation Center",
+    "CloudClient"
 ]
 series = [
 

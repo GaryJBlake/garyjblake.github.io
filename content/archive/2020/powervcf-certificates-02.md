@@ -5,15 +5,16 @@ date = "2020-01-23"
 description = "PowerVCF - Connect SDDC Manager to the Microsoft Certificate Authority (Part 2)"
 tags = [
     "API",
-    "PowerShell",
-    "VCF"
+    "PowerVCF",
+    "VCF",
+    "Certificates"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "PowerVCF"
+    "PowerShell"
 ]
 series = [
-    "VCF Certificate Management"
+    "Certificate Management"
 ]
 +++
 

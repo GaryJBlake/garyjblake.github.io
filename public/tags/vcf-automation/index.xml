@@ -6,66 +6,21 @@
     <description>Recent content in VCF Automation on My Cloudy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copyright © 2019–2025, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-automation/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
+    <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
+    <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 10 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>VCF Automation: ?</title>
-      <link>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</link>
-      <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</guid>
+      <title>VMware Cloud Foundation APIs: Deploying VCF Automation</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-automation-deploy/</link>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-automation-deploy/</guid>
       <description>
         
           
-            &lt;p&gt;In this procedure, we will use the &lt;strong&gt;/v1/users&lt;/strong&gt; API exposed via the VCF.PowerCLI module &lt;code&gt;VMware.Sdk.Vcf.SddcManager&lt;/code&gt; to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;SDDC Manager APIs Used&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;POST /v1/tokens&lt;/li&gt;
-&lt;li&gt;GET /v1/users&lt;/li&gt;
-&lt;li&gt;POST /v1/users&lt;/li&gt;
-&lt;li&gt;DELETE /v1/users&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;procedures-documented&#34;&gt;Procedures Documented&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a
-	
-		href = &#34;#assigning-an-sddc-manager-role-to-a-group&#34;
-	
-
-	
-
-	&gt;
-
-	&lt;span&gt;
-		Assigning an SDDC Manager Role to a Group
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-	
-
-	
-
-	&gt;
-
-	&lt;span&gt;
-		
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-	
-
-	
-
-	&gt;
-
-	&lt;span&gt;
-		
-	&lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;assigning-an-sddc-manager-role-to-a-group&#34;&gt;Assigning an SDDC Manager Role to a Group&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt;&lt;/p&gt;
+            <p>Whilst VCF Automation is typically deployed during the initial VMware Cloud Foundation deployment phase via VCF Installer it is possible to skip the deployment initially for various reasons such as may you don't have a use case  initially or you want to deploy to a different network that is not available at the time. Under such scenarios you can easily deploy as a Day N task.</p>
+<p>In this post we will look at how the VCF Automation component can be deployed using the public APIs, this is achieved via the VCF Fleet Lifecycle Service which is tightly integrated into VCF Operations.</p>
           
           
         

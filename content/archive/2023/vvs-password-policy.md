@@ -5,12 +5,13 @@ date = "2023-02-16"
 description = "Password Policy Configuration for VMware Cloud Foundation Overview"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
 	"VVS"
 ]
 categories = [
     "VMware Validated Solutions",
-	"PowerVCF"
+    "VMware Cloud Foundation Password Management",
+	"PowerShell"
 ]
 series = [
 

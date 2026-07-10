@@ -4,11 +4,11 @@ title = "SRM 5 & Dell Compellent Best Practice Procedures"
 date = "2012-06-07"
 description = "SRM 5 & Dell Compellent Best Practice Procedures"
 tags = [
-    "SRM",
-    "Dell Compellent"
+    "SRM"
 ]
 categories = [
-    "Site Recovery Manager"
+    "Site Recovery Manager",
+    "Dell Compellent"
 ]
 series = [
 

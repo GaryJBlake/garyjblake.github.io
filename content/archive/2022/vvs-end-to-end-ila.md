@@ -5,13 +5,13 @@ date = "2022-10-11"
 description = "End-to-End Automation of Intelligent Logging and Analytics Validated Solution"
 tags = [
     "API",
-    "PowerShell",
+    "PowerVCF",
 	"VVS",
     "ILA"
 ]
 categories = [
     "VMware Validated Solutions",
-	"PowerVCF"
+	"PowerShell"
 ]
 series = [
 

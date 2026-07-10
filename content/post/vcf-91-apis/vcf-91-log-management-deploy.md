@@ -5,18 +5,16 @@ date = "2026-07-09"
 description = "VMware Cloud Foundation APIs: Deploying Log Management"
 tags = [
     "VCF 9.1",
-    "VCF Operations",
-    "APIs"
+    "API"
 ]
 categories = [
     "VMware Cloud Foundation",
     "VCF Operations",
-    "VCF Fleet Lifecycle Service"
+    "Log Management"
 ]
 series = [
     "VMware Cloud Foundation APIs",
-    "VCF Operations APIs",
-    "VCF Fleet Lifecycle Service APIs"
+    "VCF Operations APIs"
 ]
 +++
 
@@ -27,6 +25,7 @@ Once your VCF fleet has successfully been deployed and is up and running you can
 [VCF Fleet LCM Service APIs](https://developer.broadcom.com/xapis/vcf-fleet-lcm-service-apis/latest/)
 
 * POST /api/v1/identity/token
+* GET /fleet-lcm/v1/sddc-lcms
 * POST /fleet-lcm/v1/components/validations
 * POST /fleet-lcm/v1/components
 * GET /fleet-lcm/v1/tasks/{taskId}

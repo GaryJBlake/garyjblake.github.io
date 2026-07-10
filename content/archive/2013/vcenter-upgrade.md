@@ -4,7 +4,7 @@ title = "vCenter Upgrade to v5.x Failed - Useful Tips"
 date = "2013-11-22"
 description = "vCenter Upgrade to v5.x Failed - Useful Tips"
 tags = [
-
+    "vCenter"
 ]
 categories = [
     "vCenter Server"

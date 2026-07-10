@@ -5,8 +5,7 @@ date = "2026-07-08"
 description = "VMware Cloud Foundation APIs: API Documentation"
 tags = [
     "VCF 9.1",
-    "VCF Operations",
-    "APIs"
+    "API"
 ]
 categories = [
     "VMware Cloud Foundation",

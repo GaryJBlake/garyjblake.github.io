@@ -4,10 +4,10 @@ title = "Joining a VM to a Domain with vCloud Director"
 date = "2012-06-12"
 description = "Joining a VM to a Domain with vCloud Director"
 tags = [
-    "vCloud Director"
+    "vCD"
 ]
 categories = [
-    
+    "vCloud Director"
 ]
 series = [
 

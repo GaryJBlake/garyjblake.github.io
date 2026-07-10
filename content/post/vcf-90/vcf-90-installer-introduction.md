@@ -4,11 +4,11 @@ title = "VCF Installer: Streamlining VMware Cloud Foundation Deployments"
 date = "2025-06-18"
 description = "VCF Installer: Streamlining VMware Cloud Foundation Deployments"
 tags = [
-    "VCF",
-    "VCF Installer"
+    "VCF"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0"
+    "VMware Cloud Foundation 9.0",
+    "VCF Installer"
 ]
 series = [
 

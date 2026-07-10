@@ -4,11 +4,11 @@ title = "Adding an Identity Store and Assigning Access to a Tenant - Part 3"
 date = "2015-02-06"
 description = "Adding an Identity Store and Assigning Access to a Tenant - Part 3"
 tags = [
-    "vCAC",
-    "CloudClient"
+    "vCAC"
 ]
 categories = [
-    "vCloud Automation Center"
+    "vCloud Automation Center",
+    "CloudClient"
 ]
 series = [
 
