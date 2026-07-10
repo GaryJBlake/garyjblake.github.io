@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Real-Time Metrics on My Cloudy World</title>
+    <link>http://localhost:1313/categories/real-time-metrics/</link>
+    <description>Recent content in Real-Time Metrics on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
+    <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
+    <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/real-time-metrics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Deploying Real-Time Metrics</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-real-time-metrics-deploy/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-real-time-metrics-deploy/</guid>
+      <description>
+        
+          
+            <p>Following the release of VMware Cloud Foundation 9.1, Real-time metrics capabilities were added to collect the real-time, granular data from core VCF infrastructure. The real-time metrics component collects performance data directly from vCenter, ESX, NSX, and vSAN. This outbound connection originates from the real-time metrics component that operates within VCF management services (see the <a
+	
+		href = "https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/deployment/deploying-a-new-vmware-cloud-foundation-or-vmware-vsphere-foundation-private-cloud-/manual-deployment-of-components-to-complete-your-vcf-platform/deploying-vcf-operations-for-real-time-data-service.html"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Deploy Real-Time Metrics
+	</span>
+</a> section of the product documentation).</p>
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

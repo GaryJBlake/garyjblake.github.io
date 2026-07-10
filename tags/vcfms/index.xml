@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VCFMS on My Cloudy World</title>
+    <link>http://localhost:1313/tags/vcfms/</link>
+    <description>Recent content in VCFMS on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
+    <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
+    <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcfms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Checking VMware Cloud Foundation Platform Health</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-lifecycle-health/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-lifecycle-health/</guid>
+      <description>
+        
+          
+            <p><strong>Public APIs Used</strong></p>
+<p><a
+	
+		href = "https://developer.broadcom.com/xapis/vcf-fleet-lcm-service-apis/latest/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF Fleet LCM Service APIs
+	</span>
+</a>
+<a
+	
+		href = "https://developer.broadcom.com/xapis/vcf-sddc-lcm-service-apis/latest/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF SDDC LCM Service APIs
+	</span>
+</a></p>
+<ul>
+<li>POST /api/v1/identity/token</li>
+<li>GET /fleet-lcm/v1/health</li>
+</ul>
+<p><strong>VCF SDDC Lifecycle Service APIs Used</strong></p>
+<p>[</p>
+<ul>
+<li>GET /sddc-lcm/v1/health</li>
+</ul>
+<ol>
+<li>
+<p>Connect to a system that has access to your infrastructure and is capable of running CURL.</p>
+</li>
+<li>
+<p>Replace the values in the sample code with values for your VCF Services Runtime instance and run the commands in the console.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
