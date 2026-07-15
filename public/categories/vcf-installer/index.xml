@@ -391,5 +391,23 @@
       </description>
     </item>
     
+    <item>
+      <title>VCF Installer: Streamlining VMware Cloud Foundation Deployments</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-installer-introduction/</link>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-installer-introduction/</guid>
+      <description>
+        
+          
+            <h3 id="what-is-the-vcf-installer-appliance">What is the VCF Installer Appliance?</h3>
+<p>The VCF Installer is a new unified appliance for VMware Cloud Foundation 9.0 which is a direct replacement for VMware Cloud Builder used in previous versions. Developed and delivered as part of the same OVA as SDDC Manager the bring-up capabilities of VMware Cloud Builder have been ported over.</p>
+<p>In addition the Deployment Parameter Workbook has been completely deprecated and replaced with a new VCF Installer User Interface.</p>
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>

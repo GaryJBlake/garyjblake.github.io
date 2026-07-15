@@ -22,7 +22,7 @@ This week I've been looking into a number of automation scenarios using the VMwa
 | Component                     | API Documentation Link                                                                                                |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | VCF Operations                | [VMware Cloud Foundation Operations API](https://developer.broadcom.com/xapis/vcf-operations-api/latest/)             |
-| Fleet Lifecycle               | [VCF Fleet LCM Service APIs](https://developer.broadcom.com/xapis/vcf-fleet-lcm-service-apis/latest/)                 | 
+| Fleet Lifecycle               | [VCF Fleet LCM Service APIs](https://developer.broadcom.com/xapis/vcf-fleet-lcm-service-apis/latest/)                 |
 | Log Management                | [Log Management API](https://developer.broadcom.com/xapis/log-management-api/latest/)                                 |
 | Salt RaaS                     | [VMware Salt Raas](https://developer.broadcom.com/xapis/vmware-salt-raas/latest/)                                     |
 | SDDC Lifecycle                | [VCF SDDC LCM Service APIs](https://developer.broadcom.com/xapis/vcf-sddc-lcm-service-apis/latest/)                   |

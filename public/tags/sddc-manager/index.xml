@@ -9,40 +9,7 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sddc-manager/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</title>
-      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</link>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
-      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</guid>
-      <description>
-        
-          
-            <p><strong>Last Updated:</strong> 24-Jun-2026</p>
-<p>Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.</p>
-<p>Whilst public API documentation is available across the VMware Cloud Foundation platform (see <a
-	
-		href = "https://developer.broadcom.com/xapis?tab=Cloud%2520Management&amp;fireglass_rsn=true#fireglass_params&amp;tabid=a9ffd1dabd48ea13&amp;start_with_session_counter=3&amp;application_server_address=isolation-2-europe-west2.prod.fire.glass"
-	
-
-	
-
-	
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-	>
-
-	<span>
-		developer.broadcom.com
-	</span>
-</a>), concrete examples of how to consume the various APIs is either not consistent or lacking, for this reason I decided to pull together this post to help with the specifics, this post covers the following end-points:</p>
-          
-          
-        
-      </description>
-    </item>
-    
+    <lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sddc-manager/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using VMware.Sdk.Vcf.SddcManager: Commands for SDDC Manager in PowerCLI</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</link>

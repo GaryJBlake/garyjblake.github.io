@@ -9,6 +9,521 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 25 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Create a Cloud Proxy Group</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</guid>
+      <description>
+        
+          
+            <p>Once your VCF fleet has successfully been deployed and is up and running you can configure or add additional capabilities to the VMware Cloud Foundation platform. The first capability we will look at is Log Management. It is no longer installed as a standalone, heavy virtual appliance. Instead, it is deployed as a native containerized service running inside the consolidated VCF Management Services framework.</p>
+<p><strong>VCF Operations APIs Used</strong></p>
+<ul>
+<li>POST /suite-api/api/auth/token/acquire</li>
+</ul>
+<p><strong>Procedure</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation APIs: Deploying Log Management</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-log-management-deploy/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-log-management-deploy/</guid>
+      <description>
+        
+          
+            <p>Once your VCF fleet has successfully been deployed and is up and running you can configure or add additional capabilities to the VMware Cloud Foundation platform. The first capability we will look at is Log Management. It is no longer installed as a standalone, heavy virtual appliance. Instead, it is deployed as a native containerized service running inside the consolidated VCF Management Services framework.</p>
+<p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation APIs: API Documentation</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-api-endpoints/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-api-endpoints/</guid>
+      <description>
+        
+          
+            <p>This week I've been looking into a number of automation scenarios using the VMware Cloud Foundation public APIs, whilst working through this it became clear that there are many endpoints across the VMware Cloud Foundation platform that you may need to interact with and therefore different bits of API documentation that must be consulted. I also found locating the correct API documentation on the Broadcom not as straightforward as it perhaps should be. You can use this blog as a quick reference for your own automation development.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Installer APIs: Deploying VMware Cloud Foundation Using VCF Installer with a JSON</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/</link>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-deploy/</guid>
+      <description>
+        
+          
+            <p>Once you have validated your JSON specification file, along with the infrastructure validation you are ready to commence the deployment process. Once again we pass the JSON specification file as an input to the API request.</p>
+<p><strong>VCF Installer APIs Used</strong></p>
+<ul>
+<li>POST /v1/tokens</li>
+<li>GET /v1/sddcs</li>
+<li>GET /v1/sddcs/{id}</li>
+<li>POST /v1/sddcs</li>
+</ul>
+<p><a
+	
+		href = "https://developer.broadcom.com/xapis/vcf-installer-api/latest/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF Installer API Reference Guide
+	</span>
+</a></p>
+<p><strong>Procedure</strong></p>
+<ol>
+<li>
+<p>Connect to a system that has access to the infrastructure and is capable of running CURL.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Installer APIs: Validating Your JSON Using VCF Installer</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-validate/</guid>
+      <description>
+        
+          
+            <p>The first step to automating the deployment of a new VMware Cloud Foundation platform is the creation and validation of your JSON specification file. This JSON specification file describes the environment to be configured.</p>
+<p>There are a few ways in which you can build your JSON specification file, probably the easiest is through the use of the Planning and Preparation Workbook and a PowerShell utility my friend and colleague <a
+	
+		href = "https://www.linkedin.com/in/gouldken/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Ken Gould
+	</span>
+</a> created called <a
+	
+		href = "https://www.powershellgallery.com/packages/VCF.JSONGenerator"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF.JSONGenerator
+	</span>
+</a> (for a full rundown of the tool see Ken's blog post <a
+	
+		href = "https://feardamhan.com/2025/08/14/introducing-the-vcf-jsongenerator-powershell-module-for-vmware-cloud-foundation/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Introducing the VCF.JSONGenerator PowerShell Module for VMware Cloud Foundation
+	</span>
+</a>).</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Installer APIs: Download Binaries from Broadcom Depot</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</link>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-bundles/</guid>
+      <description>
+        
+          
+            <p>After you have successfully configured the VCF Installer with a valid connection to the Broadcom Depot and synchronized the manifest, you can begin downloading the binaries required to implement VMware Cloud Foundation. Assuming your are deploying all components you will need to download 16 components as follows:</p>
+<ul>
+<li>Cloud proxy</li>
+<li>Fleet lifecycle</li>
+<li>Identity broker</li>
+<li>License server</li>
+<li>Migration service engine</li>
+<li>Salt master</li>
+<li>Salt RaaS</li>
+<li>SDDC lifecycle</li>
+<li>SDDC Manager</li>
+<li>Software depot</li>
+<li>Telemetry</li>
+<li>VCF Automation</li>
+<li>VCF Operations</li>
+<li>VCF services runtime</li>
+<li>VMware NSX</li>
+<li>VMware vCenter</li>
+</ul>
+<p><strong>VCF Installer APIs Used</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Installer APIs: Connect VCF Installer to the Broadcom Depot</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-depot/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-depot/</guid>
+      <description>
+        
+          
+            <p>Before you can begin deploying VMware Cloud Foundation, you first configure the VCF Installer to connect to the Broadcom Depot. In order to do this you must first obtain your unique download token from the <a href="https://vcf.broadcom.com" style="color: #3677a9;">VCF Business Services Console</a>, once you have your download token you can proceed with setting up the VCF Installer.</p>
+<p><strong>VCF Installer APIs Used</strong></p>
+<ul>
+<li>POST /v1/tokens</li>
+<li>PUT /v1/system/settings/depot</li>
+<li>GET /v1/system/settings/depot</li>
+<li>GET /v1/system/settings/depot/depot-sync-info</li>
+<li>PATCH /v1/system/settings/depot/depot-sync-info</li>
+</ul>
+<p><a
+	
+		href = "https://developer.broadcom.com/xapis/vcf-installer-api/latest/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF Installer API Reference Guide
+	</span>
+</a></p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</guid>
+      <description>
+        
+          
+            <p><strong>Last Updated:</strong> 24-Jun-2026</p>
+<p>Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.</p>
+<p>Whilst public API documentation is available across the VMware Cloud Foundation platform (see <a
+	
+		href = "https://developer.broadcom.com/xapis?tab=Cloud%2520Management&amp;fireglass_rsn=true#fireglass_params&amp;tabid=a9ffd1dabd48ea13&amp;start_with_session_counter=3&amp;application_server_address=isolation-2-europe-west2.prod.fire.glass"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		developer.broadcom.com
+	</span>
+</a>), concrete examples of how to consume the various APIs is either not consistent or lacking, for this reason I decided to pull together this post to help with the specifics, this post covers the following end-points:</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Automation: ?</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</guid>
+      <description>
+        
+          
+            <p>In this procedure, we will use the <strong>/v1/users</strong> API exposed via the VCF.PowerCLI module <code>VMware.Sdk.Vcf.SddcManager</code> to assign/delete roles to users or groups in SDDC Manager based on the identity provider defined within the VCF Single Sign-On domain.</p>
+<h3 id="procedures-covered">Procedures Covered</h3>
+<ul>
+<li><a
+	
+		href = "#procedures-covered"
+	
+
+	
+
+	>
+
+	<span>
+		Procedures Covered
+	</span>
+</a></li>
+<li><a
+	
+		href = "#assigning-an-sddc-manager-role-to-a-group"
+	
+
+	
+
+	>
+
+	<span>
+		Assigning an SDDC Manager Role to a Group
+	</span>
+</a></li>
+<li><a
+	
+		href = "#assigning-an-sddc-manager-role-to-a-user"
+	
+
+	
+
+	>
+
+	<span>
+		Assigning an SDDC Manager Role to a User
+	</span>
+</a></li>
+<li><a
+	
+		href = "#removing-a-user-or-group-from-an-sddc-manager-role"
+	
+
+	
+
+	>
+
+	<span>
+		Removing a User or Group from an SDDC Manager Role
+	</span>
+</a></li>
+<li><a
+	
+		href = "#assigning-sddc-manager-roles-to-multiple-groups"
+	
+
+	
+
+	>
+
+	<span>
+		Assigning SDDC Manager Roles to Multiple Groups
+	</span>
+</a></li>
+<li><a
+	
+		href = "#removing-multiple-groups-from-sddc-manager-roles"
+	
+
+	
+
+	>
+
+	<span>
+		Removing Multiple Groups from SDDC Manager Roles
+	</span>
+</a></li>
+</ul>
+<p><strong>SDDC Manager APIs Used</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Automate VMware Cloud Foundation 9.0 with OpenAPI</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</guid>
+      <description>
+        
+          
+            <p>If like me you're always looking for opportunities to replace manual repetitive steps with automation then this post is for you! Here I've documented the location of various OpenAPI specification files for components of VMware Cloud Foundation 9.0 which can be downloaded directly from their appliances and imported into your favorite REST API tool such as Postman. Alternatively, you can also obtain the JSON files conforming to the OpenAPI 3.0.1 standard for VMware Cloud Foundation directly from the following GitHub <a
+	
+		href = "https://github.com/vmware/vcf-api-specs"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		github.com/vmware/vcf-api-specs
+	</span>
+</a> repository.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Installer: Retrieve Component Passwords from VCF Installer</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-installer-retrieve-passwords/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-installer-retrieve-passwords/</guid>
+      <description>
+        
+          
+            <p>When the auto-generate passwords options is selected within the VCF Installer UI, there maybe a scenario where you need to perform troubleshooting and a need to login to one of the underlying component appliances. Of course this is only possible if you know the passwords that were auto-generated, its relatively simple to retrieve the JSON specification used to perform the implementation from the VCF Installer appliance itself.</p>
+<p>The following procedure demonstrates how you can retrieve a specific section of the JSON specification.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Authentication Using Curl for VCF Operations Fleet Management</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-ops-fleet-mgmt-curl-authentication/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-ops-fleet-mgmt-curl-authentication/</guid>
+      <description>
+        
+          
+            <p>In this post we will look at the process of authenticating to VCF Operations Fleet Management.</p>
+<p><strong>VCF Operations Fleet Management APIs Used</strong></p>
+<ul>
+<li>GET /lcmversion</li>
+</ul>
+<h3 id="authenticating-to-vcf-operations-fleet-management-using-curl">Authenticating to VCF Operations Fleet Management Using Curl</h3>
+<p><strong>Procedure</strong></p>
+<ol>
+<li>
+<p>Connect to a Linux based operating system over SSH.</p>
+</li>
+<li>
+<p>Replace the values in the sample code with values for your VCF Operations Fleet Management and run the commands SSH session.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">ariaSuiteLifecycleFqdn</span><span class="o">=</span><span class="s1">$&#39;flt-fm01.rainpole.io&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nv">ariaSuiteLifecycleUser</span><span class="o">=</span><span class="s1">$&#39;admin@local&#39;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nv">ariaSuiteLifecyclePass</span><span class="o">=</span><span class="s1">$&#39;VMw@re1!VMw@re1!&#39;</span>
+</span></span></code></pre></div><ol start="3">
+<li>Connect to VCF Operations Fleet Management with the provided credentials and check the health by running the following command:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$ariaSuiteLifecycleFqdn</span><span class="s2">/lcm/health/api/v2/status&#34;</span> -u <span class="s2">&#34;</span><span class="nv">$ariaSuiteLifecycleUser</span><span class="s2">:</span><span class="nv">$ariaSuiteLifecyclePass</span><span class="s2">&#34;</span> -H <span class="s2">&#34;accept: application/json&#34;</span> -H <span class="s2">&#34;Content-Type: application/json&#34;</span>  <span class="p">|</span> json_pp
+</span></span></code></pre></div>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Obtaining a Token Using Curl for VCF Operations for Networks</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-ops-networks-curl-authentication/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-ops-networks-curl-authentication/</guid>
+      <description>
+        
+          
+            <p>In this post we will look at the process of obtaining an authentication token from VCF Operations for networks which we can then use in subsequent API requests.</p>
+<p><strong>VCF Operations for Networks APIs Used</strong></p>
+<ul>
+<li>POST /api/ni/auth/token</li>
+<li>DELETE /api/ni/auth/token</li>
+<li>GET /api/ni/info/version</li>
+</ul>
+<h3 id="obtaining-an-authentication-token-from-vcf-operations-for-networks">Obtaining an Authentication Token From VCF Operations for Networks</h3>
+<p>In this procedure, we will use the <strong>/api/ni/auth/token</strong> API passing valid credentials to perform the authentication process and obtain an authentication token for the session. Then reading the response from the curl request we will extract the <em>token</em> portion placing it into a variable named <em>TOKEN</em>. Once we have done this we will have a valid authentication token which can be used within future curl requests.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Viewing Service Details Using Curl with SDDC Manager</title>
+      <link>http://localhost:1313/post/vcf-5x/vcf-curl-sddcm-view-services/</link>
+      <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-5x/vcf-curl-sddcm-view-services/</guid>
+      <description>
+        
+          
+            <p>In this procedure, we will use the <strong>/v1/vcf-services</strong> API to retrieve service details for a SDDC Manager instance.</p>
+<p><strong>SDDC Manager APIs Used</strong></p>
+<ul>
+<li>POST /v1/tokens</li>
+<li>GET /v1/vcf-services</li>
+</ul>
+<h3 id="obtaining-service-details-for-all-services-from-sddc-manager">Obtaining Service Details for all Services from SDDC Manager</h3>
+<p><strong>Procedure</strong></p>
+<ol>
+<li>Connect to the SDDC Manager appliance over SSH.</li>
+<li>Replace the values in the sample code with values for your SDDC Manager instance and run the commands SSH session.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">sddcManagerFqdn</span><span class="o">=</span><span class="s1">$&#39;sfo-vcf01.sfo.rainpole.io&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nv">sddcManagerUser</span><span class="o">=</span><span class="s1">$&#39;admin@local&#39;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nv">sddcManagerPass</span><span class="o">=</span><span class="s1">$&#39;VMw@re1!VMw@re1!&#39;</span>
+</span></span></code></pre></div><ol start="3">
+<li>Authenticate to SDDC Manager and obtain a token by running the following command:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">TOKEN</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST https://<span class="nv">$sddcManagerFqdn</span>/v1/tokens -H <span class="s1">&#39;Content-Type:application/json&#39;</span> -d <span class="s1">&#39;{&#34;username&#34;: &#34;&#39;</span><span class="nv">$sddcManagerUser</span><span class="s1">&#39;&#34;,&#34;password&#34;: &#34;&#39;</span><span class="nv">$sddcManagerPass</span><span class="s1">&#39;&#34;}&#39;</span> <span class="p">|</span> jq -r <span class="s1">&#39;.accessToken&#39;</span><span class="k">)</span>
+</span></span></code></pre></div><ol start="4">
+<li>Retrieve all service details from the SDDC Manager instance by running the following command:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$sddcManagerFqdn</span><span class="s2">/v1/vcf-services&#34;</span> -H <span class="s2">&#34;Authorization: Bearer </span><span class="nv">$TOKEN</span><span class="s2">&#34;</span> -H <span class="s2">&#34;Accept: application/json&#34;</span> -H <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="p">|</span> jq <span class="s1">&#39;.elements[]&#39;</span>
+</span></span></code></pre></div><h3 id="obtaining-service-details-for-a-specific-service-from-sddc-manager">Obtaining Service Details for a Specific Service from SDDC Manager</h3>
+<p><strong>Procedure</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>

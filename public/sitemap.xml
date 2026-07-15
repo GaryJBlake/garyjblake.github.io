@@ -3,66 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/apis/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/api/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/index/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/series/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vcf-9.1/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/vcf-automation/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vcf-automation/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/vcf-operations/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vcf-operations/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/series/vcf-operations-apis/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/vmware-cloud-foundation/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/series/vmware-cloud-foundation-apis/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-automation-deploy/</loc>
-    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/log-management/</loc>
     <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/log-management/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/vcf-management-services/</loc>
+    <loc>http://localhost:1313/series/</loc>
     <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vcf-management-services/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-lifecycle-health/</loc>
+    <loc>http://localhost:1313/tags/vcf-9.1/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vcf-operations/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/vcf-operations-apis/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vmware-cloud-foundation/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/vmware-cloud-foundation-apis/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</loc>
     <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-log-management-deploy/</loc>
@@ -72,9 +51,6 @@
     <lastmod>2026-07-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/vcf-installer/</loc>
-    <lastmod>2026-07-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vcf-installer/</loc>
     <lastmod>2026-07-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/series/vcf-installer-apis/</loc>
@@ -92,6 +68,9 @@
     <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-installer-depot/</loc>
     <lastmod>2026-05-21T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/vcf-installer/</loc>
+    <lastmod>2026-05-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/post/vcf-91/vcf-91-vcf-release/</loc>
     <lastmod>2026-05-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -101,13 +80,7 @@
     <loc>http://localhost:1313/series/vmware-cloud-foundation-9.1-whats-new/</loc>
     <lastmod>2026-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/apis/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/sddc-manager/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sddc-manager/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</loc>
@@ -134,19 +107,22 @@
     <loc>http://localhost:1313/tags/vcf-9.0/</loc>
     <lastmod>2025-09-18T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/vcf-automation/</loc>
+    <lastmod>2025-09-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/post/vcf-90/vcf-90-automation-custom-ldap/</loc>
     <lastmod>2025-09-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/public-apis/</loc>
+    <loc>http://localhost:1313/tags/powercli/</loc>
+    <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/powershell/</loc>
     <lastmod>2025-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vcf-90/vcf-90-sddc-user-management/</loc>
     <lastmod>2025-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/vcf.powercli/</loc>
-    <lastmod>2025-09-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vcf.powercli/</loc>
     <lastmod>2025-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/vcf-identity-broker/</loc>
@@ -160,9 +136,6 @@
   </url><url>
     <loc>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</loc>
     <lastmod>2025-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/powershell/</loc>
-    <lastmod>2025-08-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vcf-90/vcf-90-installer-retrieve-passwords/</loc>
     <lastmod>2025-08-28T00:00:00+00:00</lastmod>
@@ -185,10 +158,10 @@
     <loc>http://localhost:1313/tags/vcf-powercli/</loc>
     <lastmod>2025-07-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/vmware-live-site-recovery/</loc>
+    <loc>http://localhost:1313/tags/vlr/</loc>
     <lastmod>2025-07-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vmware-live-site-recovery/</loc>
+    <loc>http://localhost:1313/categories/vmware-live-site-recovery/</loc>
     <lastmod>2025-07-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vcf-90/vcf-90-powercli-vsphere-cmdlets/</loc>
@@ -200,8 +173,14 @@
     <loc>http://localhost:1313/tags/vsphere-9.0/</loc>
     <lastmod>2025-07-22T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/vcf-operations/</loc>
+    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/post/vcf-90/vcf-90-ops-supress-compliance-alerts/</loc>
     <lastmod>2025-07-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sddc-manager/</loc>
+    <lastmod>2025-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vcf-90/vcf-90-powercli-sddcm-cmdlets/</loc>
     <lastmod>2025-07-17T00:00:00+00:00</lastmod>
@@ -296,7 +275,7 @@
     <loc>http://localhost:1313/archive/2024/edition-25/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/powervalidatedsolutions/</loc>
+    <loc>http://localhost:1313/categories/powervalidatedsolutions/</loc>
     <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2024/vvs-powershell-menu/</loc>
@@ -308,13 +287,7 @@
     <loc>http://localhost:1313/archive/2024/vcf-powercli-main/</loc>
     <lastmod>2024-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/powercli/</loc>
-    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/powershell/</loc>
-    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/series/powervcf/</loc>
+    <loc>http://localhost:1313/tags/powervcf/</loc>
     <lastmod>2024-05-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2024/edition-23/</loc>
@@ -330,9 +303,6 @@
     <lastmod>2023-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2023/vcf-automated-upgrade-04/</loc>
-    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/powervcf/</loc>
     <lastmod>2023-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/series/vcf-upgrade-automation/</loc>
@@ -365,16 +335,13 @@
     <loc>http://localhost:1313/categories/vrealize-suite-lifecycle-manager/</loc>
     <lastmod>2023-08-22T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/vrslcm/</loc>
+    <lastmod>2023-08-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/wsa/</loc>
     <lastmod>2023-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/aria-suite-lifecycle/</loc>
-    <lastmod>2023-07-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/archive/2023/vvs-vrslcm-upgrade/</loc>
-    <lastmod>2023-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vrealize-suite-lifecycle-manager/</loc>
     <lastmod>2023-07-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2023/edition-18/</loc>
@@ -398,13 +365,13 @@
     <loc>http://localhost:1313/archive/2023/edition-16/</loc>
     <lastmod>2023-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/api/</loc>
-    <lastmod>2023-04-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/archive/2023/vcf-password-management/</loc>
     <lastmod>2023-04-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2023/powervcf-ga-230/</loc>
+    <lastmod>2023-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vmware-cloud-foundation-password-management/</loc>
     <lastmod>2023-04-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2023/edition-15/</loc>
@@ -435,6 +402,12 @@
     <lastmod>2022-12-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2022/</loc>
+    <lastmod>2022-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/powershell/</loc>
+    <lastmod>2022-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vmware-cloud-foundation-reporting/</loc>
     <lastmod>2022-12-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2022/edition-11/</loc>
@@ -554,10 +527,10 @@
     <loc>http://localhost:1313/archive/2021/vvs-tip-05/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/backup/</loc>
+    <loc>http://localhost:1313/archive/2021/vcf-cb-backup/</loc>
     <lastmod>2021-11-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archive/2021/vcf-cb-backup/</loc>
+    <loc>http://localhost:1313/series/vcf-backup-and-restore/</loc>
     <lastmod>2021-11-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/vmware-cloud-builder/</loc>
@@ -599,9 +572,6 @@
     <loc>http://localhost:1313/archive/2020/vcf-retry-failure/</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/powervcf/</loc>
-    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/archive/2020/powervcf-ga-211/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -626,6 +596,9 @@
     <loc>http://localhost:1313/archive/2020/powervcf-automation-02/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/powervcf/</loc>
+    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/archive/2020/powervcf-automation-01/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -635,14 +608,14 @@
     <loc>http://localhost:1313/archive/2020/powervcf-backup-restore-03/</loc>
     <lastmod>2020-05-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/vcf-backup-and-restore/</loc>
-    <lastmod>2020-05-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/archive/2020/powervcf-backup-restore-02/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2020/powervcf-backup-restore-01/</loc>
     <lastmod>2020-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/apis/</loc>
+    <lastmod>2020-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2020/powervcf-cb-apis/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
@@ -729,9 +702,6 @@
     <lastmod>2017-09-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2017/</loc>
-    <lastmod>2017-09-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/powercli/</loc>
     <lastmod>2017-09-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2016/</loc>
