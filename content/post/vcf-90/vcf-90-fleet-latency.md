@@ -5,10 +5,11 @@ date = "2025-12-12"
 description = "Latency Requirements for VMware Cloud Foundation 9.0"
 tags = [
     "VCF",
+    "VCF 9.0",
     "Architecture"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0"
+    "VMware Cloud Foundation"
 ]
 series = [
 

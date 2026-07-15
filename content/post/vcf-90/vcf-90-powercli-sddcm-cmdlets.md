@@ -6,12 +6,12 @@ description = "Using VMware.Sdk.Vcf.SddcManager: Commands for SDDC Manager in Po
 tags = [
     "VCF",
     "VCF 9.0",
-    "VCF PowerCLI",
+    "VCF.PowerCLI",
     "SDDC Manager"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
-    "VCF PowerCLI",
+    "VMware Cloud Foundation",
+    "PowerShell",
     "SDDC Manager"
 ]
 series = [

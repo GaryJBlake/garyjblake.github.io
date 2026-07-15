@@ -9,7 +9,7 @@ tags = [
 ]
 categories = [
     "VMware Cloud Foundation",
-    "VMware Cloud Foundation Password Management",
+    "Password Management",
     "PowerShell"
 ]
 series = [

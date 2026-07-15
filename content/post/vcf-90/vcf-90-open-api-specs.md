@@ -5,10 +5,11 @@ date = "2025-09-04"
 description = "Automate VMware Cloud Foundation 9.0 with OpenAPI"
 tags = [
     "VCF",
+    "VCF 9.1",
     "API"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
+    "VMware Cloud Foundation",
     "VCF Installer",
     "SDDC Manager"
 ]

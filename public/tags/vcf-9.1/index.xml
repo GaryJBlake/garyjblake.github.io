@@ -9,22 +9,32 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-9.1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-9.1/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>VMware Cloud Foundation APIs: Create a Cloud Proxy Group</title>
-      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <title>VMware Cloud Foundation APIs: Deploying Real-Time Metrics</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-real-time-metrics-deploy/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
       <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
-      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</guid>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-real-time-metrics-deploy/</guid>
       <description>
         
           
-            <p>Once your VCF fleet has successfully been deployed and is up and running you can configure or add additional capabilities to the VMware Cloud Foundation platform. The first capability we will look at is Log Management. It is no longer installed as a standalone, heavy virtual appliance. Instead, it is deployed as a native containerized service running inside the consolidated VCF Management Services framework.</p>
-<p><strong>VCF Operations APIs Used</strong></p>
-<ul>
-<li>POST /suite-api/api/auth/token/acquire</li>
-</ul>
-<p><strong>Procedure</strong></p>
+            <p>Following the release of VMware Cloud Foundation 9.1, Real-time metrics capabilities were added to collect real-time, granular data from core VMware Cloud Foundation infrastructure. The real-time metrics component collects performance data directly from vCenter, ESX, NSX, and vSAN and stores the data in a dedicated Real-Time Metrics Store which is then displayed on-demand within the Observability Workbench in VCF Operations. This outbound connection originates from the real-time metrics component that operates within VCF management services (see the <a
+	
+		href = "https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/deployment/deploying-a-new-vmware-cloud-foundation-or-vmware-vsphere-foundation-private-cloud-/manual-deployment-of-components-to-complete-your-vcf-platform/deploying-vcf-operations-for-real-time-data-service.html"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Deploy Real-Time Metrics
+	</span>
+</a> section of the product documentation to deploy using the VCF Operations UI).</p>
           
           
         
@@ -460,7 +470,75 @@
 	<span>
 		Plan Section
 	</span>
+</a>
+<ul>
+<li><a
+	
+		href = "#existing-components"
+	
+
+	
+
+	>
+
+	<span>
+		Existing Components
+	</span>
 </a></li>
+<li><a
+	
+		href = "#size-options"
+	
+
+	
+
+	>
+
+	<span>
+		Size Options
+	</span>
+</a></li>
+<li><a
+	
+		href = "#network-options"
+	
+
+	
+
+	>
+
+	<span>
+		Network Options
+	</span>
+</a></li>
+<li><a
+	
+		href = "#storage-options"
+	
+
+	
+
+	>
+
+	<span>
+		Storage Options
+	</span>
+</a></li>
+<li><a
+	
+		href = "#review-prerequisites"
+	
+
+	
+
+	>
+
+	<span>
+		Review Prerequisites
+	</span>
+</a></li>
+</ul>
+</li>
 <li><a
 	
 		href = "#prepare-section"
@@ -484,7 +562,7 @@
     </item>
     
     <item>
-      <title>VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</title>
+      <title>VMware Cloud Foundation APIs: Obtaining Authentication Tokens</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
       <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
@@ -510,6 +588,95 @@
 		developer.broadcom.com
 	</span>
 </a>), concrete examples of how to consume the various APIs is either not consistent or lacking, for this reason I decided to pull together this post to help with the specifics, this post covers the following end-points:</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Automate VMware Cloud Foundation 9.0 with OpenAPI</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-open-api-specs/</guid>
+      <description>
+        
+          
+            <p>If like me you're always looking for opportunities to replace manual repetitive steps with automation then this post is for you! Here I've documented the location of various OpenAPI specification files for components of VMware Cloud Foundation 9.0 which can be downloaded directly from their appliances and imported into your favorite REST API tool such as Postman. Alternatively, you can also obtain the JSON files conforming to the OpenAPI 3.0.1 standard for VMware Cloud Foundation directly from the following GitHub <a
+	
+		href = "https://github.com/vmware/vcf-api-specs"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		github.com/vmware/vcf-api-specs
+	</span>
+</a> repository.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VCF Operations 9.0: Managing Alert Definitions</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-ops-supress-compliance-alerts/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-ops-supress-compliance-alerts/</guid>
+      <description>
+        
+          
+            <h3 id="excluding-triggered-alerts-from-a-policy">Excluding Triggered Alerts from a Policy</h3>
+<ol>
+<li>
+<p>Log in to the VCF Operations interface at <em>https://&lt;vcf_operations_fqdn&gt;</em> with a user assigned the <code>Administrator</code> role.</p>
+</li>
+<li>
+<p>In the navigation pane, click <strong>Infrastructure Operations &gt; Configurations</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Configurations</strong> page, under <strong>Alerts</strong>, click <strong>Alert Definitions</strong>.</p>
+</li>
+<li>
+<p>Use the filters to locate the alert definition you want exclude from the default policy.</p>
+</li>
+<li>
+<p>Click the ellipses next to the alert definition and click <strong>Edit</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Edit Alert Definition</strong> page, click <strong>4 - Policies</strong>.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Obtaining a Token Using Curl for VCF Operations for Networks</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-ops-networks-curl-authentication/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-ops-networks-curl-authentication/</guid>
+      <description>
+        
+          
+            <p>In this post we will look at the process of obtaining an authentication token from VCF Operations for networks which we can then use in subsequent API requests.</p>
+<p><strong>VCF Operations for Networks APIs Used</strong></p>
+<ul>
+<li>POST /api/ni/auth/token</li>
+<li>DELETE /api/ni/auth/token</li>
+<li>GET /api/ni/info/version</li>
+</ul>
+<h3 id="obtaining-an-authentication-token-from-vcf-operations-for-networks">Obtaining an Authentication Token From VCF Operations for Networks</h3>
+<p>In this procedure, we will use the <strong>/api/ni/auth/token</strong> API passing valid credentials to perform the authentication process and obtain an authentication token for the session. Then reading the response from the curl request we will extract the <em>token</em> portion placing it into a variable named <em>TOKEN</em>. Once we have done this we will have a valid authentication token which can be used within future curl requests.</p>
           
           
         

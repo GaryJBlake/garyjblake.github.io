@@ -12,16 +12,21 @@ categories = [
     "VCF Installer"
 ]
 series = [
-    "VMware Cloud Foundation 9.1: What's New"
+
 ]
 +++
 
 With the release of VMware Cloud Foundation 9.1, there comes a new version of the VCF Installer. This release introduces a lot of new capabilities so lets dig into the details of what's new. For the purpose of this post I've broken these down into the following key areas.
 
-* [Progress Bar](#progress-bar)
-* [Deployment Paths](#deployment-paths)
-* [Plan Section](#plan-section)
-* [Prepare Section](#prepare-section)
+- [Progress Bar](#progress-bar)
+- [Deployment Paths](#deployment-paths)
+- [Plan Section](#plan-section)
+  - [Existing Components](#existing-components)
+  - [Size Options](#size-options)
+  - [Network Options](#network-options)
+  - [Storage Options](#storage-options)
+  - [Review Prerequisites](#review-prerequisites)
+- [Prepare Section](#prepare-section)
 
 ### Progress Bar
 
@@ -57,11 +62,15 @@ With these new options, the VCF Installer becomes even more a multi-purpose tool
 
 For VCF Installer 9.1 a new **Plan** section within the deployment wizard has been introduced, the idea here is to present you with key planning decisions earlier in the process. Another aspect has been the consolidation of various questions into a single place. Let's take a look at each of the following sections:
 
-* [Existing Components](#existing-components)
-* [Size Options](#size-options)
-* [Network Options](#network-options)
-* [Storage Options](#storage-options)
-* [Review Prerequisites](#review-prerequisites)
+- [Progress Bar](#progress-bar)
+- [Deployment Paths](#deployment-paths)
+- [Plan Section](#plan-section)
+  - [Existing Components](#existing-components)
+  - [Size Options](#size-options)
+  - [Network Options](#network-options)
+  - [Storage Options](#storage-options)
+  - [Review Prerequisites](#review-prerequisites)
+- [Prepare Section](#prepare-section)
 
 #### Existing Components
 

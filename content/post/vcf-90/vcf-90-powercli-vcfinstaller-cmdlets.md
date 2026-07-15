@@ -6,11 +6,11 @@ description = "Using VMware.Sdk.Vcf.Installer: Commands for VCF Installer in Pow
 tags = [
     "VCF",
     "VCF 9.0",
-    "PowerCLI"
+    "VCF.PowerCLI"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
-    "VCF PowerCLI",
+    "VMware Cloud Foundation",
+    "PowerShell",
     "VCF Installer"
 ]
 series = [

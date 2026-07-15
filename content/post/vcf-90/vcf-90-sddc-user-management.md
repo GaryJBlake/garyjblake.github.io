@@ -5,13 +5,13 @@ date = "2025-09-12"
 description = "VCF Automation: ?"
 tags = [
     "VCF",
+    "VCF 9.0",
     "API",
-    "PowerCLI"
+    "VCF.PowerCLI"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
+    "VMware Cloud Foundation",
     "SDDC Manager",
-    "VCF.PowerCLI",
     "PowerShell"
 ]
 series = [

@@ -9,22 +9,32 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/api/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>VMware Cloud Foundation APIs: Create a Cloud Proxy Group</title>
-      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <title>VMware Cloud Foundation APIs: Deploying Real-Time Metrics</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-real-time-metrics-deploy/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
       <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
-      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</guid>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-real-time-metrics-deploy/</guid>
       <description>
         
           
-            <p>Once your VCF fleet has successfully been deployed and is up and running you can configure or add additional capabilities to the VMware Cloud Foundation platform. The first capability we will look at is Log Management. It is no longer installed as a standalone, heavy virtual appliance. Instead, it is deployed as a native containerized service running inside the consolidated VCF Management Services framework.</p>
-<p><strong>VCF Operations APIs Used</strong></p>
-<ul>
-<li>POST /suite-api/api/auth/token/acquire</li>
-</ul>
-<p><strong>Procedure</strong></p>
+            <p>Following the release of VMware Cloud Foundation 9.1, Real-time metrics capabilities were added to collect real-time, granular data from core VMware Cloud Foundation infrastructure. The real-time metrics component collects performance data directly from vCenter, ESX, NSX, and vSAN and stores the data in a dedicated Real-Time Metrics Store which is then displayed on-demand within the Observability Workbench in VCF Operations. This outbound connection originates from the real-time metrics component that operates within VCF management services (see the <a
+	
+		href = "https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/deployment/deploying-a-new-vmware-cloud-foundation-or-vmware-vsphere-foundation-private-cloud-/manual-deployment-of-components-to-complete-your-vcf-platform/deploying-vcf-operations-for-real-time-data-service.html"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Deploy Real-Time Metrics
+	</span>
+</a> section of the product documentation to deploy using the VCF Operations UI).</p>
           
           
         
@@ -245,7 +255,7 @@
     </item>
     
     <item>
-      <title>VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</title>
+      <title>VMware Cloud Foundation APIs: Obtaining Authentication Tokens</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
       <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
@@ -435,7 +445,7 @@
             <p>In this post we will look at the process of authenticating to VCF Operations Fleet Management.</p>
 <p><strong>VCF Operations Fleet Management APIs Used</strong></p>
 <ul>
-<li>GET /lcmversion</li>
+<li>GET /lcm/health/api/v2/status</li>
 </ul>
 <h3 id="authenticating-to-vcf-operations-fleet-management-using-curl">Authenticating to VCF Operations Fleet Management Using Curl</h3>
 <p><strong>Procedure</strong></p>
@@ -447,13 +457,13 @@
 <p>Replace the values in the sample code with values for your VCF Operations Fleet Management and run the commands SSH session.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">ariaSuiteLifecycleFqdn</span><span class="o">=</span><span class="s1">$&#39;flt-fm01.rainpole.io&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">ariaSuiteLifecycleFqdn</span><span class="o">=</span><span class="s1">$&#39;flt-fm01.rainpole.io&#39;</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nv">ariaSuiteLifecycleUser</span><span class="o">=</span><span class="s1">$&#39;admin@local&#39;</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nv">ariaSuiteLifecyclePass</span><span class="o">=</span><span class="s1">$&#39;VMw@re1!VMw@re1!&#39;</span>
 </span></span></code></pre></div><ol start="3">
 <li>Connect to VCF Operations Fleet Management with the provided credentials and check the health by running the following command:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$ariaSuiteLifecycleFqdn</span><span class="s2">/lcm/health/api/v2/status&#34;</span> -u <span class="s2">&#34;</span><span class="nv">$ariaSuiteLifecycleUser</span><span class="s2">:</span><span class="nv">$ariaSuiteLifecyclePass</span><span class="s2">&#34;</span> -H <span class="s2">&#34;accept: application/json&#34;</span> -H <span class="s2">&#34;Content-Type: application/json&#34;</span>  <span class="p">|</span> json_pp
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$ariaSuiteLifecycleFqdn</span><span class="s2">/lcm/health/api/v2/status&#34;</span> -u <span class="s2">&#34;</span><span class="nv">$ariaSuiteLifecycleUser</span><span class="s2">:</span><span class="nv">$ariaSuiteLifecyclePass</span><span class="s2">&#34;</span> -H <span class="s2">&#34;accept: application/json&#34;</span> -H <span class="s2">&#34;Content-Type: application/json&#34;</span>  <span class="p">|</span> json_pp
 </span></span></code></pre></div>
           
           

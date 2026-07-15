@@ -12,7 +12,6 @@ categories = [
     "VCF Installer"
 ]
 series = [
-    "VMware Cloud Foundation APIs",
     "VCF Installer APIs"
 ]
 +++

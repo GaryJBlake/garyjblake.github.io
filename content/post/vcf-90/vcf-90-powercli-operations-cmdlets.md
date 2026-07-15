@@ -6,16 +6,16 @@ description = "Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations"
 tags = [
     "VCF",
     "VCF 9.0",
-    "VCF PowerCLI",
+    "VCF.PowerCLI",
     "VCF Operations 9.0"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
-    "VCF PowerCLI",
-    "VCF Operations 9.0"
+    "VMware Cloud Foundation",
+    "Powershell",
+    "VCF Operations"
 ]
 series = [
-
+    
 ]
 +++
 

@@ -9,22 +9,32 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vcf-operations/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vcf-operations/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>VMware Cloud Foundation APIs: Create a Cloud Proxy Group</title>
-      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <title>VMware Cloud Foundation APIs: Deploying Real-Time Metrics</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-real-time-metrics-deploy/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
       <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
-      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</guid>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-real-time-metrics-deploy/</guid>
       <description>
         
           
-            <p>Once your VCF fleet has successfully been deployed and is up and running you can configure or add additional capabilities to the VMware Cloud Foundation platform. The first capability we will look at is Log Management. It is no longer installed as a standalone, heavy virtual appliance. Instead, it is deployed as a native containerized service running inside the consolidated VCF Management Services framework.</p>
-<p><strong>VCF Operations APIs Used</strong></p>
-<ul>
-<li>POST /suite-api/api/auth/token/acquire</li>
-</ul>
-<p><strong>Procedure</strong></p>
+            <p>Following the release of VMware Cloud Foundation 9.1, Real-time metrics capabilities were added to collect real-time, granular data from core VMware Cloud Foundation infrastructure. The real-time metrics component collects performance data directly from vCenter, ESX, NSX, and vSAN and stores the data in a dedicated Real-Time Metrics Store which is then displayed on-demand within the Observability Workbench in VCF Operations. This outbound connection originates from the real-time metrics component that operates within VCF management services (see the <a
+	
+		href = "https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/deployment/deploying-a-new-vmware-cloud-foundation-or-vmware-vsphere-foundation-private-cloud-/manual-deployment-of-components-to-complete-your-vcf-platform/deploying-vcf-operations-for-real-time-data-service.html"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		Deploy Real-Time Metrics
+	</span>
+</a> section of the product documentation to deploy using the VCF Operations UI).</p>
           
           
         
@@ -65,7 +75,7 @@
     </item>
     
     <item>
-      <title>VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</title>
+      <title>VMware Cloud Foundation APIs: Obtaining Authentication Tokens</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
       <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
@@ -125,6 +135,54 @@
 </li>
 <li>
 <p>On the <strong>Edit Alert Definition</strong> page, click <strong>4 - Policies</strong>.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using VMware.Sdk.Vcf.Ops: Commands for VCF Operations</title>
+      <link>http://localhost:1313/post/vcf-90/vcf-90-powercli-operations-cmdlets/</link>
+      <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-90/vcf-90-powercli-operations-cmdlets/</guid>
+      <description>
+        
+          
+            <p>VCF PowerCLI 9.0 now includes a module called <code>VMware.Sdk.Vcf.Ops</code>, this modules contains auto-generated cmdlets to support VCF Operations Public APIs. Use can use this post as a quick reference guide.</p>
+<h3 id="connecting-to-a-vcf-operations-instance-with-local-credentials">Connecting to a VCF Operations Instance with Local Credentials</h3>
+<ol>
+<li>
+<p>Start a PowerShell session.</p>
+</li>
+<li>
+<p>Connect to a VCF Operations instance using local credentials by running the following command:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Connect-VcfOpsServer</span> <span class="n">-Server</span> <span class="nb">flt-ops01a</span><span class="p">.</span><span class="py">rainpole</span><span class="p">.</span><span class="py">io</span> <span class="n">-User</span> <span class="n">admin</span> <span class="n">-Password</span> <span class="n">VMw</span><span class="nv">@re1</span><span class="p">!</span><span class="n">VMw</span><span class="nv">@re1</span><span class="p">!</span>
+</span></span></code></pre></div><ol start="3">
+<li>Once connected the following information is stored in <code>$defaultOpsConnections</code>.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln"> 1</span><span class="cl">ServiceUri     : https://flt-ops01a.rainpole.io/
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">SessionSecret  : 54aa4efb-3acd-4a14-ad75-10e66742a96d::c38a1c14-0ea4-4f3f-abe8-40afc55bae6d
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">User           : admin
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">IsConnected    : True
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">Id             : /VcfOpsServer<span class="o">=</span>admin@flt-ops01a.rainpole.io:443/
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">Name           : flt-ops01a.rainpole.io
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">Uid            : /VcfOpsServer<span class="o">=</span>admin@flt-ops01a.rainpole.io:443/
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">ProductVersion : VCF Operations 9.0.0.0
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">ServerUri      : https://flt-ops01a.rainpole.io/
+</span></span><span class="line"><span class="ln">10</span><span class="cl">UUID           : /VcfOpsServer<span class="o">=</span>admin@flt-ops01a.rainpole.io:443/
+</span></span><span class="line"><span class="ln">11</span><span class="cl">Port           : <span class="m">443</span>
+</span></span></code></pre></div><ol start="4">
+<li>Disconnect from a VCF Operations instance by running the following command:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Disconnect-VcfOpsServer</span> <span class="n">-Server</span> <span class="nb">flt-ops01a</span><span class="p">.</span><span class="py">rainpole</span><span class="p">.</span><span class="py">io</span>
+</span></span></code></pre></div><h3 id="display-all-vcf-operations-get-command-details">Display All VCF Operations GET Command Details</h3>
+<ol>
+<li>
+<p>Start a PowerShell session.</p>
           
           
         

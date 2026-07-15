@@ -5,7 +5,9 @@ date = "2025-01-28"
 description = "Authentication Using Curl for VCF Operations Fleet Management"
 tags = [
     "VCF",
-    "API"
+    "VCF 9.0",
+    "API",
+    "BASH"
 ]
 categories = [
     "VCF Operations Fleet Management"
@@ -19,7 +21,7 @@ In this post we will look at the process of authenticating to VCF Operations Fle
 
 **VCF Operations Fleet Management APIs Used**
 
-* GET /lcmversion
+* GET /lcm/health/api/v2/status
 
 ### Authenticating to VCF Operations Fleet Management Using Curl
 
@@ -29,7 +31,7 @@ In this post we will look at the process of authenticating to VCF Operations Fle
 
 2. Replace the values in the sample code with values for your VCF Operations Fleet Management and run the commands SSH session.
 
-``` Bash
+```bash
 ariaSuiteLifecycleFqdn=$'flt-fm01.rainpole.io'
 ariaSuiteLifecycleUser=$'admin@local'
 ariaSuiteLifecyclePass=$'VMw@re1!VMw@re1!'
@@ -37,6 +39,6 @@ ariaSuiteLifecyclePass=$'VMw@re1!VMw@re1!'
 
 3. Connect to VCF Operations Fleet Management with the provided credentials and check the health by running the following command:
 
-``` Bash
+```bash
 curl -k -X GET "https://$ariaSuiteLifecycleFqdn/lcm/health/api/v2/status" -u "$ariaSuiteLifecycleUser:$ariaSuiteLifecyclePass" -H "accept: application/json" -H "Content-Type: application/json"  | json_pp
 ```

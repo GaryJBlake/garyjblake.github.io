@@ -5,11 +5,12 @@ date = "2025-09-11"
 description = "VMware Cloud Foundation 9.0: Setting Up VCF Single Sign-On with OpenLDAP"
 tags = [
     "VCF",
+    "VCF 9.0",
     "SSO",
     "LDAP"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
+    "VMware Cloud Foundation",
     "VCF Identity Broker",
     "VCF Single Sign-On"
 ]

@@ -1,8 +1,8 @@
 +++
 author = "GaryJBlake"
-title = "VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens"
+title = "VMware Cloud Foundation APIs: Obtaining Authentication Tokens"
 date = "2026-04-01"
-description = "VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens"
+description = "VMware Cloud Foundation APIs: Obtaining Authentication Tokens"
 tags = [
     "VCF 9.1",
     "API"
@@ -14,7 +14,7 @@ categories = [
     "SDDC Manager",
 ]
 series = [
-    "VMware Cloud Foundation APIs"
+    "VMware Cloud Foundation 9.1 APIs"
 ]
 +++
 **Last Updated:** 24-Jun-2026

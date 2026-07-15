@@ -6,11 +6,11 @@ description = "How to Install VCF PowerCLI 9.0: Step-by-Step Guide"
 tags = [
     "VCF",
     "VCF 9.0",
-    "PowerCLI"
+    "VCF.PowerCLI"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
-    "VCF PowerCLI"
+    "VMware Cloud Foundation",
+    "PowerShell"
 ]
 series = [
 

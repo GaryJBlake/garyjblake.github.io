@@ -6,12 +6,12 @@ description = "Using VMware.Sdk.Nsx.Policy: Commands for NSX"
 tags = [
     "VCF",
     "VCF 9.0",
-    "VCF PowerCLI",
+    "VCF.PowerCLI",
     "NSX 9.0"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
-    "VCF PowerCLI",
+    "VMware Cloud Foundation",
+    "PowerShell",
     "NSX 9.0"
 ]
 series = [

@@ -11,7 +11,8 @@ tags = [
 categories = [
     "VMware Cloud Foundation",
     "vRealize Suite Lifecycle Manager",
-    "Aria Suite Lifecycle"
+    "Aria Suite Lifecycle",
+	"Password Management"
 ]
 series = [
 

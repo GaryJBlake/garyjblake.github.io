@@ -59,7 +59,75 @@
 	<span>
 		Plan Section
 	</span>
+</a>
+<ul>
+<li><a
+	
+		href = "#existing-components"
+	
+
+	
+
+	>
+
+	<span>
+		Existing Components
+	</span>
 </a></li>
+<li><a
+	
+		href = "#size-options"
+	
+
+	
+
+	>
+
+	<span>
+		Size Options
+	</span>
+</a></li>
+<li><a
+	
+		href = "#network-options"
+	
+
+	
+
+	>
+
+	<span>
+		Network Options
+	</span>
+</a></li>
+<li><a
+	
+		href = "#storage-options"
+	
+
+	
+
+	>
+
+	<span>
+		Storage Options
+	</span>
+</a></li>
+<li><a
+	
+		href = "#review-prerequisites"
+	
+
+	
+
+	>
+
+	<span>
+		Review Prerequisites
+	</span>
+</a></li>
+</ul>
+</li>
 <li><a
 	
 		href = "#prepare-section"

@@ -6,14 +6,14 @@ description = "VCF PowerCLI 9.0: Understanding PowerCLI SDK Cmdlets"
 tags = [
     "VCF",
     "VCF 9.0",
-    "VCF PowerCLI"
+    "VCF.PowerCLI"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
-    "VCF PowerCLI"
+    "VMware Cloud Foundation",
+    "PowerShell"
 ]
 series = [
-
+    
 ]
 +++
 

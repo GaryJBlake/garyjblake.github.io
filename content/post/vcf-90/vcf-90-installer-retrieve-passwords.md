@@ -5,10 +5,13 @@ date = "2025-08-28"
 description = "VCF Installer: Retrieve Component Passwords from VCF Installer"
 tags = [
     "VCF",
-    "API"
+    "VCF 9.0",
+    "API",
+    "VCF.PowerCLI",
+    "BASH"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
+    "VMware Cloud Foundation",
     "PowerShell",
     "VCF Installer"
 ]
@@ -44,7 +47,7 @@ This PowerShell procedure assumes that you have VCF.PowerCLI 9.0 installed.
 
 2. Replace the values in the sample code with values for your VCF Operations instance and run the commands in the SSH session.
 
-``` bash
+```bash
 vcfInstallerFqdn=$'sfo-ins01.sfo.rainpole.io'
 vcfInstallerUser=$'admin@local'
 vcfInstallerPass=$'VMw@re1!VMw@re1!'
@@ -53,25 +56,25 @@ vcfComponentSpec=$'vcfOperationsSpec'
 
 3. Authenticate to VCF Installer and obtain a token by running the following command:
 
-``` bash
+```bash
 TOKEN=$(curl -k -X POST https://$vcfInstallerFqdn/v1/tokens -H 'Content-Type:application/json' -d '{"username": "'$vcfInstallerUser'","password": "'$vcfInstallerPass'"}' | jq -r '.accessToken')
 ```
 
 4. Retrieve the ID of the latest deployment into the `$sddcId` variable by running the following command:
 
-``` bash
+```bash
 sddcId=$(curl -k -X GET "https://$vcfInstallerFqdn/v1/sddcs/latest" -H "Authorization: Bearer $TOKEN" -H "Accept: application/json" -H "Content-Type: application/json" | jq -r '.id')
 ```
 
 5. Retrieve the VCF Operations Deployment Specification by running the following command:
 
-``` bash
+```bash
 curl -k -X GET "https://$vcfInstallerFqdn/v1/sddcs/$sddcId/spec" -H "Authorization: Bearer $TOKEN" -H "Accept: application/json" -H "Content-Type: application/json" | jq -r '.'$vcfComponentSpec''
 ```
 
 6. Review the output, which will look something like below:
 
-``` json
+```json
 {
   "nodes": [
     {
@@ -114,19 +117,19 @@ $vcfComponentSpec = "vcfOperationsSpec"
 
 3. Authenticate to the VCF Installer appliance by running the following command:
 
-``` powershell
+```powershell
 Connect-VcfInstallerServer -Server $vcfInstallerFqdn -User $vcfInstallerUser -Password $vcfInstallerPass | Select-Object Name, Version, IsConnected
 ```
 
 4. Retrieve the VCF Operations Deployment Specification by running the following command:
 
-``` powershell
+```powershell
 Invoke-VcfInstallerGetSddcSpecByID -Id (Invoke-VcfInstallerGetLatestSddcTask).Id | Select-Object $vcfComponentSpec | ConvertTo-Json -Depth 10
 ```
 
 5. Review the output, which will look something like below:
 
-``` json
+```json
 {
   "VcfOperationsSpec": {
     "Nodes": [

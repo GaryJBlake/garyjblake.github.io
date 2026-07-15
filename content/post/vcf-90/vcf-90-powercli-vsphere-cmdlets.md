@@ -6,14 +6,13 @@ description = "Using VMware.Sdk.Vsphere: Commands for vSphere"
 tags = [
     "VCF",
     "VCF 9.0",
-    "PowerCLI",
+    "VCF.PowerCLI",
     "vSphere 9.0"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
-    "VCF PowerCLI",
+    "VMware Cloud Foundation",
     "PowerShell",
-    "vSphere 9.0"
+    "vSphere"
 ]
 series = [
 

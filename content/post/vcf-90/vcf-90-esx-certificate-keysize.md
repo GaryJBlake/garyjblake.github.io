@@ -5,10 +5,11 @@ date = "2025-08-26"
 description = "Adjusting ESX Certificate Key Size in VMware Cloud Foundation"
 tags = [
     "VCF",
+    "VCF 9.0",
     "Certificates"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
+    "VMware Cloud Foundation",
     "ESX"
 ]
 series = [

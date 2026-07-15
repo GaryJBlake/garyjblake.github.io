@@ -13,8 +13,7 @@ categories = [
     "VCF Automation"
 ]
 series = [
-    "VMware Cloud Foundation APIs",
-    "VCF Operations APIs"
+    "VMware Cloud Foundation 9.1 APIs"
 ]
 +++
 

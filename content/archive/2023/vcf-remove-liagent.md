@@ -5,12 +5,13 @@ date = "2023-07-18"
 description = "Remove vRealize Log Insight Agent from SDDC Manager"
 tags = [
     "VCF",
+    "VCF 5.x",
     "vRLI"
 ]
 categories = [
     "VMware Cloud Foundation",
-    "VMware vRealize Log Insight",
-    "VMware Aria Operations for Logs"
+    "vRealize Log Insight",
+    "Aria Operations for Logs"
 ]
 series = [
 

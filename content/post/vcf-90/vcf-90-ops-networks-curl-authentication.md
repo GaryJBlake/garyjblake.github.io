@@ -5,14 +5,16 @@ date = "2025-01-14"
 description = "Obtaining a Token Using Curl for VCF Operations for Networks"
 tags = [
     "VCF",
+    "VCF 9.1",
     "API",
-    "operations-networks"
+    "operations-networks",
+    "BASH"
 ]
 categories = [
     "VCF Operations for Networks"
 ]
 series = [
-
+    
 ]
 +++
 

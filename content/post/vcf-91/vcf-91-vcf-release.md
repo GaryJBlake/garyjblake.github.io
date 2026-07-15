@@ -10,7 +10,7 @@ categories = [
     "VMware Cloud Foundation"
 ]
 series = [
-  
+    
 ]
 +++
 

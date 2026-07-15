@@ -154,7 +154,9 @@
     <span class="post_date">
       Jan 28, 2025</span>
     <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/vcf' title="VCF" class="post_tag button button_translucent">VCF
+        </a><a href='http://localhost:1313/tags/vcf-9.0' title="VCF 9.0" class="post_tag button button_translucent">VCF 9.0
         </a><a href='http://localhost:1313/tags/api' title="API" class="post_tag button button_translucent">API
+        </a><a href='http://localhost:1313/tags/bash' title="BASH" class="post_tag button button_translucent">BASH
         </a>
     </span>
     <span class="page_only">&nbsp;·
@@ -195,7 +197,7 @@
     <div class="post_body"><p>In this post we will look at the process of authenticating to VCF Operations Fleet Management.</p>
 <p><strong>VCF Operations Fleet Management APIs Used</strong></p>
 <ul>
-<li>GET /lcmversion</li>
+<li>GET /lcm/health/api/v2/status</li>
 </ul>
 <h3 id="authenticating-to-vcf-operations-fleet-management-using-curl">Authenticating to VCF Operations Fleet Management Using Curl</h3>
 <p><strong>Procedure</strong></p>
@@ -207,13 +209,13 @@
 <p>Replace the values in the sample code with values for your VCF Operations Fleet Management and run the commands SSH session.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">ariaSuiteLifecycleFqdn</span><span class="o">=</span><span class="s1">$&#39;flt-fm01.rainpole.io&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">ariaSuiteLifecycleFqdn</span><span class="o">=</span><span class="s1">$&#39;flt-fm01.rainpole.io&#39;</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nv">ariaSuiteLifecycleUser</span><span class="o">=</span><span class="s1">$&#39;admin@local&#39;</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nv">ariaSuiteLifecyclePass</span><span class="o">=</span><span class="s1">$&#39;VMw@re1!VMw@re1!&#39;</span>
 </span></span></code></pre></div><ol start="3">
 <li>Connect to VCF Operations Fleet Management with the provided credentials and check the health by running the following command:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$ariaSuiteLifecycleFqdn</span><span class="s2">/lcm/health/api/v2/status&#34;</span> -u <span class="s2">&#34;</span><span class="nv">$ariaSuiteLifecycleUser</span><span class="s2">:</span><span class="nv">$ariaSuiteLifecyclePass</span><span class="s2">&#34;</span> -H <span class="s2">&#34;accept: application/json&#34;</span> -H <span class="s2">&#34;Content-Type: application/json&#34;</span>  <span class="p">|</span> json_pp
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$ariaSuiteLifecycleFqdn</span><span class="s2">/lcm/health/api/v2/status&#34;</span> -u <span class="s2">&#34;</span><span class="nv">$ariaSuiteLifecycleUser</span><span class="s2">:</span><span class="nv">$ariaSuiteLifecyclePass</span><span class="s2">&#34;</span> -H <span class="s2">&#34;accept: application/json&#34;</span> -H <span class="s2">&#34;Content-Type: application/json&#34;</span>  <span class="p">|</span> json_pp
 </span></span></code></pre></div>
     </div>
 
@@ -269,7 +271,7 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/" class="nav-link" title="VMware Cloud Foundation APIs: Create a Cloud Proxy Group">VMware Cloud Foundation APIs: Create a Cloud Proxy Group</a>
+        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-real-time-metrics-deploy/" class="nav-link" title="VMware Cloud Foundation APIs: Deploying Real-Time Metrics">VMware Cloud Foundation APIs: Deploying Real-Time Metrics</a>
       </li>
       <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-log-management-deploy/" class="nav-link" title="VMware Cloud Foundation APIs: Deploying Log Management">VMware Cloud Foundation APIs: Deploying Log Management</a>
@@ -289,22 +291,17 @@
       <nav class="tags_nav">
         <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class="post_tag button button_translucent" title="vmware cloud foundation">
           VMWARE CLOUD FOUNDATION
-          <span class="button_tally">66</span>
+          <span class="button_tally">83</span>
         </a>
         
         <a href='http://localhost:1313/categories/powershell/' class="post_tag button button_translucent" title="powershell">
           POWERSHELL
-          <span class="button_tally">51</span>
+          <span class="button_tally">58</span>
         </a>
         
         <a href='http://localhost:1313/categories/vmware-validated-solutions/' class="post_tag button button_translucent" title="vmware validated solutions">
           VMWARE VALIDATED SOLUTIONS
           <span class="button_tally">46</span>
-        </a>
-        
-        <a href='http://localhost:1313/categories/vmware-cloud-foundation-9.0/' class="post_tag button button_translucent" title="vmware cloud foundation 9.0">
-          VMWARE CLOUD FOUNDATION 9.0
-          <span class="button_tally">17</span>
         </a>
         
         <a href='http://localhost:1313/categories/vmware-cloud-builder/' class="post_tag button button_translucent" title="vmware cloud builder">
@@ -317,11 +314,6 @@
           <span class="button_tally">10</span>
         </a>
         
-        <a href='http://localhost:1313/categories/vcf-powercli/' class="post_tag button button_translucent" title="vcf powercli">
-          VCF POWERCLI
-          <span class="button_tally">8</span>
-        </a>
-        
         <a href='http://localhost:1313/categories/vcloud-automation-center/' class="post_tag button button_translucent" title="vcloud automation center">
           VCLOUD AUTOMATION CENTER
           <span class="button_tally">8</span>
@@ -332,13 +324,13 @@
           <span class="button_tally">7</span>
         </a>
         
-        <a href='http://localhost:1313/categories/cloudclient/' class="post_tag button button_translucent" title="cloudclient">
-          CLOUDCLIENT
-          <span class="button_tally">5</span>
-        </a>
-        
         <a href='http://localhost:1313/categories/vcf-operations/' class="post_tag button button_translucent" title="vcf operations">
           VCF OPERATIONS
+          <span class="button_tally">6</span>
+        </a>
+        
+        <a href='http://localhost:1313/categories/cloudclient/' class="post_tag button button_translucent" title="cloudclient">
+          CLOUDCLIENT
           <span class="button_tally">5</span>
         </a>
         
@@ -355,6 +347,16 @@
         <a href='http://localhost:1313/categories/vmware-cloud-foundation-password-management/' class="post_tag button button_translucent" title="vmware cloud foundation password management">
           VMWARE CLOUD FOUNDATION PASSWORD MANAGEMENT
           <span class="button_tally">4</span>
+        </a>
+        
+        <a href='http://localhost:1313/categories/vcloud-director/' class="post_tag button button_translucent" title="vcloud director">
+          VCLOUD DIRECTOR
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='http://localhost:1313/categories/aria-suite-lifecycle/' class="post_tag button button_translucent" title="aria suite lifecycle">
+          ARIA SUITE LIFECYCLE
+          <span class="button_tally">2</span>
         </a>
         
         
@@ -395,7 +397,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/powershell/' class=" post_tag button button_translucent" data-position=51 title="powershell">POWERSHELL<span class="button_tally">51</span>
+            <a href='http://localhost:1313/categories/powershell/' class=" post_tag button button_translucent" data-position=58 title="powershell">POWERSHELL<span class="button_tally">58</span>
             </a>
             
             
@@ -404,6 +406,10 @@
             
             
             <a href='http://localhost:1313/categories/powervcf/' class=" post_tag button button_translucent" data-position=1 title="powervcf">POWERVCF<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/categories/real-time-metrics/' class=" post_tag button button_translucent" data-position=1 title="real-time metrics">REAL-TIME METRICS<span class="button_tally">1</span>
             </a>
             
             
@@ -435,11 +441,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vcf-operations/' class=" post_tag button button_translucent" data-position=5 title="vcf operations">VCF OPERATIONS<span class="button_tally">5</span>
-            </a>
-            
-            
-            <a href='http://localhost:1313/categories/vcf-operations-9.0/' class=" post_tag button button_translucent" data-position=1 title="vcf operations 9.0">VCF OPERATIONS 9.0<span class="button_tally">1</span>
+            <a href='http://localhost:1313/categories/vcf-operations/' class=" post_tag button button_translucent" data-position=6 title="vcf operations">VCF OPERATIONS<span class="button_tally">6</span>
             </a>
             
             
@@ -451,15 +453,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vcf-powercli/' class=" post_tag button button_translucent" data-position=8 title="vcf powercli">VCF POWERCLI<span class="button_tally">8</span>
-            </a>
-            
-            
             <a href='http://localhost:1313/categories/vcf-single-sign-on/' class=" post_tag button button_translucent" data-position=1 title="vcf single sign-on">VCF SINGLE SIGN-ON<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='http://localhost:1313/categories/vcf.powercli/' class=" post_tag button button_translucent" data-position=1 title="vcf.powercli">VCF.POWERCLI<span class="button_tally">1</span>
             </a>
             
             
@@ -479,11 +473,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class=" post_tag button button_translucent" data-position=66 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class="button_tally">66</span>
-            </a>
-            
-            
-            <a href='http://localhost:1313/categories/vmware-cloud-foundation-9.0/' class=" post_tag button button_translucent" data-position=17 title="vmware cloud foundation 9.0">VMWARE CLOUD FOUNDATION 9.0<span class="button_tally">17</span>
+            <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class=" post_tag button button_translucent" data-position=83 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class="button_tally">83</span>
             </a>
             
             
@@ -523,7 +513,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vsphere-9.0/' class=" post_tag button button_translucent" data-position=1 title="vsphere 9.0">VSPHERE 9.0<span class="button_tally">1</span>
+            <a href='http://localhost:1313/categories/vsphere/' class=" post_tag button button_translucent" data-position=1 title="vsphere">VSPHERE<span class="button_tally">1</span>
             </a>
             
             
@@ -549,11 +539,6 @@
         <a href='http://localhost:1313/series/vvs-whats-new/' class="post_tag button button_translucent" title="vvs whats new">
           VVS WHATS NEW
           <span class="button_tally">27</span>
-        </a>
-        
-        <a href='http://localhost:1313/series/vmware-cloud-foundation-apis/' class="post_tag button button_translucent" title="vmware cloud foundation apis">
-          VMWARE CLOUD FOUNDATION APIS
-          <span class="button_tally">8</span>
         </a>
         
         <a href='http://localhost:1313/series/vvs-tip/' class="post_tag button button_translucent" title="vvs-tip">
@@ -586,9 +571,9 @@
           <span class="button_tally">4</span>
         </a>
         
-        <a href='http://localhost:1313/series/vcf-operations-apis/' class="post_tag button button_translucent" title="vcf operations apis">
-          VCF OPERATIONS APIS
-          <span class="button_tally">3</span>
+        <a href='http://localhost:1313/series/vmware-cloud-foundation-9.1-apis/' class="post_tag button button_translucent" title="vmware cloud foundation 9.1 apis">
+          VMWARE CLOUD FOUNDATION 9.1 APIS
+          <span class="button_tally">4</span>
         </a>
         
         <a href='http://localhost:1313/series/powervalidatedsolutions/' class="post_tag button button_translucent" title="powervalidatedsolutions">
@@ -601,11 +586,6 @@
           <span class="button_tally">1</span>
         </a>
         
-        <a href='http://localhost:1313/series/vmware-cloud-foundation-9.1-whats-new/' class="post_tag button button_translucent" title="vmware cloud foundation 9.1: what&#39;s new">
-          VMWARE CLOUD FOUNDATION 9.1: WHAT&#39;S NEW
-          <span class="button_tally">1</span>
-        </a>
-        
         
       </nav>
     </div>
@@ -614,7 +594,7 @@
       <nav class="tags_nav">
         <a href='http://localhost:1313/tags/vcf/' class="post_tag button button_translucent" title="vcf">
           VCF
-          <span class="button_tally">72</span>
+          <span class="button_tally">73</span>
         </a>
         
         <a href='http://localhost:1313/tags/api/' class="post_tag button button_translucent" title="api">
@@ -632,9 +612,19 @@
           <span class="button_tally">44</span>
         </a>
         
+        <a href='http://localhost:1313/tags/vcf-9.0/' class="post_tag button button_translucent" title="vcf 9.0">
+          VCF 9.0
+          <span class="button_tally">18</span>
+        </a>
+        
         <a href='http://localhost:1313/tags/index/' class="post_tag button button_translucent" title="index">
           INDEX
           <span class="button_tally">14</span>
+        </a>
+        
+        <a href='http://localhost:1313/tags/vcf-9.1/' class="post_tag button button_translucent" title="vcf 9.1">
+          VCF 9.1
+          <span class="button_tally">13</span>
         </a>
         
         <a href='http://localhost:1313/tags/certificates/' class="post_tag button button_translucent" title="certificates">
@@ -642,19 +632,9 @@
           <span class="button_tally">10</span>
         </a>
         
-        <a href='http://localhost:1313/tags/powercli/' class="post_tag button button_translucent" title="powercli">
-          POWERCLI
+        <a href='http://localhost:1313/tags/vcf.powercli/' class="post_tag button button_translucent" title="vcf.powercli">
+          VCF.POWERCLI
           <span class="button_tally">10</span>
-        </a>
-        
-        <a href='http://localhost:1313/tags/vcf-9.1/' class="post_tag button button_translucent" title="vcf 9.1">
-          VCF 9.1
-          <span class="button_tally">10</span>
-        </a>
-        
-        <a href='http://localhost:1313/tags/vcf-9.0/' class="post_tag button button_translucent" title="vcf 9.0">
-          VCF 9.0
-          <span class="button_tally">9</span>
         </a>
         
         <a href='http://localhost:1313/tags/vcac/' class="post_tag button button_translucent" title="vcac">
@@ -667,9 +647,9 @@
           <span class="button_tally">7</span>
         </a>
         
-        <a href='http://localhost:1313/tags/vcf-powercli/' class="post_tag button button_translucent" title="vcf powercli">
-          VCF POWERCLI
-          <span class="button_tally">5</span>
+        <a href='http://localhost:1313/tags/powercli/' class="post_tag button button_translucent" title="powercli">
+          POWERCLI
+          <span class="button_tally">6</span>
         </a>
         
         <a href='http://localhost:1313/tags/srm/' class="post_tag button button_translucent" title="srm">
@@ -697,6 +677,10 @@
             
             
             <a href='http://localhost:1313/tags/architecture/' class=" post_tag button button_translucent" data-position=1 title="architecture">ARCHITECTURE<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/bash/' class=" post_tag button button_translucent" data-position=3 title="bash">BASH<span class="button_tally">3</span>
             </a>
             
             
@@ -752,7 +736,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/tags/powercli/' class=" post_tag button button_translucent" data-position=10 title="powercli">POWERCLI<span class="button_tally">10</span>
+            <a href='http://localhost:1313/tags/powercli/' class=" post_tag button button_translucent" data-position=6 title="powercli">POWERCLI<span class="button_tally">6</span>
             </a>
             
             
@@ -792,7 +776,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf/' class=" post_tag button button_translucent" data-position=72 title="vcf">VCF<span class="button_tally">72</span>
+            <a href='http://localhost:1313/tags/vcf/' class=" post_tag button button_translucent" data-position=73 title="vcf">VCF<span class="button_tally">73</span>
             </a>
             
             
@@ -800,11 +784,11 @@
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf-9.0/' class=" post_tag button button_translucent" data-position=9 title="vcf 9.0">VCF 9.0<span class="button_tally">9</span>
+            <a href='http://localhost:1313/tags/vcf-9.0/' class=" post_tag button button_translucent" data-position=18 title="vcf 9.0">VCF 9.0<span class="button_tally">18</span>
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf-9.1/' class=" post_tag button button_translucent" data-position=10 title="vcf 9.1">VCF 9.1<span class="button_tally">10</span>
+            <a href='http://localhost:1313/tags/vcf-9.1/' class=" post_tag button button_translucent" data-position=13 title="vcf 9.1">VCF 9.1<span class="button_tally">13</span>
             </a>
             
             
@@ -820,7 +804,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf-powercli/' class=" post_tag button button_translucent" data-position=5 title="vcf powercli">VCF POWERCLI<span class="button_tally">5</span>
+            <a href='http://localhost:1313/tags/vcf.powercli/' class=" post_tag button button_translucent" data-position=10 title="vcf.powercli">VCF.POWERCLI<span class="button_tally">10</span>
             </a>
             
             

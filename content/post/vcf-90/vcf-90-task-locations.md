@@ -4,13 +4,14 @@ title = "VMware Cloud Foundation 9.0: Transitioning from SDDC Manager to VCF Ope
 date = "2025-07-03"
 description = "VMware Cloud Foundation 9.0: Transitioning from SDDC Manager to VCF Operations"
 tags = [
-    "VCF"
+  "VCF",
+  "VCF 9.0"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0"
+  "VMware Cloud Foundation"
 ]
 series = [
-
+  
 ]
 +++
 

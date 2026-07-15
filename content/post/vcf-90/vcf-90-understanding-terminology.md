@@ -4,10 +4,11 @@ title = "Understanding VMware Cloud Foundation 9.0: Key Terminology Explained"
 date = "2025-06-17"
 description = "Understanding VMware Cloud Foundation 9.0: Key Terminology Explained"
 tags = [
-    "VCF"
+    "VCF",
+    "VCF 9.0"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0"
+    "VMware Cloud Foundation"
 ]
 series = [
 

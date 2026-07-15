@@ -6,12 +6,12 @@ description = "Using VMware.Sdk.Vcf.Installer: Commands for VMware Live Site Rec
 tags = [
     "VCF",
     "VCF 9.0",
-    "VCF PowerCLI",
+    "VCF.PowerCLI",
     "VLR"
 ]
 categories = [
-    "VMware Cloud Foundation 9.0",
-    "VCF PowerCLI",
+    "VMware Cloud Foundation",
+    "PowerShell",
     "VMware Live Site Recovery"
 ]
 series = [

@@ -239,7 +239,75 @@
 	<span>
 		Plan Section
 	</span>
+</a>
+<ul>
+<li><a
+	
+		href = "#existing-components"
+	
+
+	
+
+	>
+
+	<span>
+		Existing Components
+	</span>
 </a></li>
+<li><a
+	
+		href = "#size-options"
+	
+
+	
+
+	>
+
+	<span>
+		Size Options
+	</span>
+</a></li>
+<li><a
+	
+		href = "#network-options"
+	
+
+	
+
+	>
+
+	<span>
+		Network Options
+	</span>
+</a></li>
+<li><a
+	
+		href = "#storage-options"
+	
+
+	
+
+	>
+
+	<span>
+		Storage Options
+	</span>
+</a></li>
+<li><a
+	
+		href = "#review-prerequisites"
+	
+
+	
+
+	>
+
+	<span>
+		Review Prerequisites
+	</span>
+</a></li>
+</ul>
+</li>
 <li><a
 	
 		href = "#prepare-section"
@@ -263,7 +331,7 @@
     </item>
     
     <item>
-      <title>VMware Cloud Foundation 9.1 APIs: Obtaining Authentication Tokens</title>
+      <title>VMware Cloud Foundation APIs: Obtaining Authentication Tokens</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-authentication-tokens/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
       <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
