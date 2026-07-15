@@ -20,7 +20,7 @@
 </span><span class=post_date>Jul 29, 2025</span>
 <span class=post_time>· 4 min read</span><span>&nbsp;· <a href=http://jadenetworksolutions.co.uk/tags/vcf title=VCF class="post_tag button button_translucent">VCF
 </a><a href=http://jadenetworksolutions.co.uk/tags/vcf-9.0 title="VCF 9.0" class="post_tag button button_translucent">VCF 9.0
-</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-powercli title="VCF PowerCLI" class="post_tag button button_translucent">VCF PowerCLI
+</a><a href=http://jadenetworksolutions.co.uk/tags/vcf.powercli title=VCF.PowerCLI class="post_tag button button_translucent">VCF.PowerCLI
 </a><a href=http://jadenetworksolutions.co.uk/tags/vlr title=VLR class="post_tag button button_translucent">VLR
 </a></span><span class=page_only>&nbsp;·<div class=post_share>Share on:
 <a href="https://twitter.com/intent/tweet?text=Using%20VMware.Sdk.Srm%3a%20Commands%20for%20VMware%20Live%20Site%20Recovery%20in%20PowerCLI&url=http%3a%2f%2fjadenetworksolutions.co.uk%2fpost%2fvcf-90%2fvcf-90-powercli-srm-cmdlets%2f&tw_p=tweetbutton" class=twitter title="Share on Twitter" target=_blank rel=nofollow><svg class="icon"><title>twitter</title><use xlink:href="#twitter"/></svg>
@@ -33,33 +33,34 @@
 </span></span></code></pre></div><ol start=3><li>Output for all PATCH cmdlets in <code>VMware.Sdk.Srm</code>.</li></ol><table><thead><tr><th>Command Info</th><th>Path</th><th>Method</th></tr></thead><tbody><tr><td>Invoke-SrmSetExportSettings</td><td>/server/configuration/backup/settings</td><td>PATCH</td></tr></tbody></table><h3 id=display-all-vmware-live-recovery-delete-command-details>Display All VMware Live Recovery DELETE Command Details</h3><ol><li><p>Start a PowerShell session.</p></li><li><p>Display all DELETE cmdlets supported in <code>VMware.Sdk.Srm</code> by running the following command:</p></li></ol><div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=line><span class=ln>1</span><span class=cl><span class=nb>Get-SrmOperation</span> <span class=n>-Method</span> <span class=n>Delete</span> <span class=p>|</span> <span class=nb>Select-Object</span> <span class=n>CommandInfo</span><span class=p>,</span> <span class=n>Path</span><span class=p>,</span> <span class=n>Method</span>
 </span></span></code></pre></div><ol start=3><li>Output for all DELETE cmdlets in <code>VMware.Sdk.Srm</code>.</li></ol><table><thead><tr><th>Command Info</th><th>Path</th><th>Method</th></tr></thead><tbody><tr><td>Invoke-SrmDeleteFolderMapping</td><td>/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/folders/{mapping_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteNetworkMapping</td><td>/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/networks/{mapping_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeletePlaceholderDatastore</td><td>/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/placeholder-datastores/{datastore_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteResourceMapping</td><td>/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/resources/{mapping_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteStoragePolicyMapping</td><td>/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/storage-policies/{mapping_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteTestNetworkMapping</td><td>/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/test-networks/{mapping_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmRemoveNetworkIpSubnetMapping</td><td>/pairings/{pairing_id}/srms/{srm_id}/inventory-mappings/networks/{mapping_id}/ip-subnet-mapping</td><td>DELETE</td></tr><tr><td>Invoke-SrmRemoveOfflineLicenseKey</td><td>/pairings/{pairing_id}/srms/{srm_id}/licensing/offline-key</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeletePairing</td><td>/pairings/{pairing_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmRemoveSrmPermissions</td><td>/pairings/{pairing_id}/srms/{srm_id}/permissions</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteGroup</td><td>/pairings/{pairing_id}/protection-management/groups/{group_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteProtectionGroupFolder</td><td>/pairings/{pairing_id}/protection-management/inventory/{folder_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmRemoveDatastoreGroup</td><td>/pairings/{pairing_id}/protection-management/groups/{group_id}/datastore-groups/{datastore_group_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteRecoveryPlan</td><td>/pairings/{pairing_id}/recovery-management/plans/{plan_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteRecoveryPlanFolder</td><td>/pairings/{pairing_id}/recovery-management/inventory/{folder_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteRecoveryStep</td><td>/pairings/{pairing_id}/recovery-management/plans/{plan_id}/recovery-steps/{view_mode}/{recovery_step_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteArrayManager</td><td>/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-managers/{array_manager_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteReplicatedArrayPair</td><td>/pairings/{pairing_id}/srms/{srm_id}/replication-management/abr/array-pairs/{array_pair_id}</td><td>DELETE</td></tr><tr><td>Invoke-SrmDeleteExportFiles</td><td>/server/configuration/backup/files</td><td>DELETE</td></tr></tbody></table></div><h2 class=post_related>Posts in this Series</h2><ul></ul><div class=post_comments></div></article><aside class=sidebar><section class=sidebar_inner><br><div class=search><input type=search class="search_field form_field" placeholder=Search... id=find autocomplete=off data-scope=post>
 <label for=find class=search_label><svg class="icon"><title>search</title><use xlink:href="#search"/></svg></label><div class="search_results results"></div></div><div class=author_header><img src=http://jadenetworksolutions.co.uk/images/gary-blake.png alt="Gary Blake photo"><h2>Gary Blake</h2></div><div class=author_bio>Technologist working with Cloud technologies.</div><a href=http://jadenetworksolutions.co.uk/about/ class="button mt-1" role=button title='Read More'>Read More</a><h2 class=mt-4>Posts in this series</h2><ul></ul><h2 class=mt-4>Recent Posts</h2><ul class=flex-column><li><a href=http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-real-time-metrics-deploy/ class=nav-link title="VMware Cloud Foundation APIs: Deploying Real-Time Metrics">VMware Cloud Foundation APIs: Deploying Real-Time Metrics</a></li><li><a href=http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-log-management-deploy/ class=nav-link title="VMware Cloud Foundation APIs: Deploying Log Management">VMware Cloud Foundation APIs: Deploying Log Management</a></li><li><a href=http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-api-endpoints/ class=nav-link title="VMware Cloud Foundation APIs: API Documentation">VMware Cloud Foundation APIs: API Documentation</a></li><li><a href=http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-deploy/ class=nav-link title="VCF Installer APIs: Deploying VMware Cloud Foundation Using VCF Installer with a JSON">VCF Installer APIs: Deploying VMware Cloud Foundation Using VCF Installer with a JSON</a></li><li><a href=http://jadenetworksolutions.co.uk/post/vcf-91-apis/vcf-91-vcf-installer-validate/ class=nav-link title="VCF Installer APIs: Validating Your JSON Using VCF Installer">VCF Installer APIs: Validating Your JSON Using VCF Installer</a></li></ul><div><h2 class="mt-4 taxonomy" id=categories-section>Categories</h2><nav class=tags_nav><a href=http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation/ class="post_tag button button_translucent" title="vmware cloud foundation">VMWARE CLOUD FOUNDATION
-<span class=button_tally>66</span>
+<span class=button_tally>83</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/powershell/ class="post_tag button button_translucent" title=powershell>POWERSHELL
-<span class=button_tally>51</span>
+<span class=button_tally>58</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vmware-validated-solutions/ class="post_tag button button_translucent" title="vmware validated solutions">VMWARE VALIDATED SOLUTIONS
 <span class=button_tally>46</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation-9.0/ class="post_tag button button_translucent" title="vmware cloud foundation 9.0">VMWARE CLOUD FOUNDATION 9.0
-<span class=button_tally>17</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vmware-cloud-builder/ class="post_tag button button_translucent" title="vmware cloud builder">VMWARE CLOUD BUILDER
 <span class=button_tally>11</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vcf-installer/ class="post_tag button button_translucent" title="vcf installer">VCF INSTALLER
 <span class=button_tally>10</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vcf-powercli/ class="post_tag button button_translucent" title="vcf powercli">VCF POWERCLI
-<span class=button_tally>8</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vcloud-automation-center/ class="post_tag button button_translucent" title="vcloud automation center">VCLOUD AUTOMATION CENTER
 <span class=button_tally>8</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/sddc-manager/ class="post_tag button button_translucent" title="sddc manager">SDDC MANAGER
 <span class=button_tally>7</span>
+</a><a href=http://jadenetworksolutions.co.uk/categories/vcf-operations/ class="post_tag button button_translucent" title="vcf operations">VCF OPERATIONS
+<span class=button_tally>6</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/cloudclient/ class="post_tag button button_translucent" title=cloudclient>CLOUDCLIENT
 <span class=button_tally>5</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vcf-operations/ class="post_tag button button_translucent" title="vcf operations">VCF OPERATIONS
+</a><a href=http://jadenetworksolutions.co.uk/categories/password-management/ class="post_tag button button_translucent" title="password management">PASSWORD MANAGEMENT
 <span class=button_tally>5</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vmware-validated-design/ class="post_tag button button_translucent" title="vmware validated design">VMWARE VALIDATED DESIGN
 <span class=button_tally>5</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/site-recovery-manager/ class="post_tag button button_translucent" title="site recovery manager">SITE RECOVERY MANAGER
 <span class=button_tally>4</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation-password-management/ class="post_tag button button_translucent" title="vmware cloud foundation password management">VMWARE CLOUD FOUNDATION PASSWORD MANAGEMENT
-<span class=button_tally>4</span></a><br><div class="post_tags_toggle button">All Categories</div><div class=post_tags><div class=tags_list><a href=http://jadenetworksolutions.co.uk/categories/aria-suite-lifecycle/ class="post_tag button button_translucent" data-position=2 title="aria suite lifecycle">ARIA SUITE LIFECYCLE<span class=button_tally>2</span>
+</a><a href=http://jadenetworksolutions.co.uk/categories/vcloud-director/ class="post_tag button button_translucent" title="vcloud director">VCLOUD DIRECTOR
+<span class=button_tally>3</span>
+</a><a href=http://jadenetworksolutions.co.uk/categories/aria-suite-lifecycle/ class="post_tag button button_translucent" title="aria suite lifecycle">ARIA SUITE LIFECYCLE
+<span class=button_tally>2</span></a><br><div class="post_tags_toggle button">All Categories</div><div class=post_tags><div class=tags_list><a href=http://jadenetworksolutions.co.uk/categories/aria-operations-for-logs/ class="post_tag button button_translucent" data-position=1 title="aria operations for logs">ARIA OPERATIONS FOR LOGS<span class=button_tally>1</span>
+</a><a href=http://jadenetworksolutions.co.uk/categories/aria-suite-lifecycle/ class="post_tag button button_translucent" data-position=2 title="aria suite lifecycle">ARIA SUITE LIFECYCLE<span class=button_tally>2</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/cloudclient/ class="post_tag button button_translucent" data-position=5 title=cloudclient>CLOUDCLIENT<span class=button_tally>5</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/dell-compellent/ class="post_tag button button_translucent" data-position=1 title="dell compellent">DELL COMPELLENT<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/esx/ class="post_tag button button_translucent" data-position=1 title=esx>ESX<span class=button_tally>1</span>
@@ -67,7 +68,8 @@
 </a><a href=http://jadenetworksolutions.co.uk/categories/log-management/ class="post_tag button button_translucent" data-position=1 title="log management">LOG MANAGEMENT<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/nsx-9.0/ class="post_tag button button_translucent" data-position=1 title="nsx 9.0">NSX 9.0<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/nsx-t-data-center/ class="post_tag button button_translucent" data-position=2 title="nsx-t data center">NSX-T DATA CENTER<span class=button_tally>2</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/powershell/ class="post_tag button button_translucent" data-position=51 title=powershell>POWERSHELL<span class=button_tally>51</span>
+</a><a href=http://jadenetworksolutions.co.uk/categories/password-management/ class="post_tag button button_translucent" data-position=5 title="password management">PASSWORD MANAGEMENT<span class=button_tally>5</span>
+</a><a href=http://jadenetworksolutions.co.uk/categories/powershell/ class="post_tag button button_translucent" data-position=58 title=powershell>POWERSHELL<span class=button_tally>58</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/powervalidatedsolutions/ class="post_tag button button_translucent" data-position=1 title=powervalidatedsolutions>POWERVALIDATEDSOLUTIONS<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/powervcf/ class="post_tag button button_translucent" data-position=1 title=powervcf>POWERVCF<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/real-time-metrics/ class="post_tag button button_translucent" data-position=1 title="real-time metrics">REAL-TIME METRICS<span class=button_tally>1</span>
@@ -78,34 +80,26 @@
 </a><a href=http://jadenetworksolutions.co.uk/categories/vcf-automation/ class="post_tag button button_translucent" data-position=1 title="vcf automation">VCF AUTOMATION<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vcf-identity-broker/ class="post_tag button button_translucent" data-position=1 title="vcf identity broker">VCF IDENTITY BROKER<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vcf-installer/ class="post_tag button button_translucent" data-position=10 title="vcf installer">VCF INSTALLER<span class=button_tally>10</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vcf-operations/ class="post_tag button button_translucent" data-position=5 title="vcf operations">VCF OPERATIONS<span class=button_tally>5</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vcf-operations-9.0/ class="post_tag button button_translucent" data-position=1 title="vcf operations 9.0">VCF OPERATIONS 9.0<span class=button_tally>1</span>
+</a><a href=http://jadenetworksolutions.co.uk/categories/vcf-operations/ class="post_tag button button_translucent" data-position=6 title="vcf operations">VCF OPERATIONS<span class=button_tally>6</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vcf-operations-fleet-management/ class="post_tag button button_translucent" data-position=1 title="vcf operations fleet management">VCF OPERATIONS FLEET MANAGEMENT<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vcf-operations-for-networks/ class="post_tag button button_translucent" data-position=1 title="vcf operations for networks">VCF OPERATIONS FOR NETWORKS<span class=button_tally>1</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vcf-powercli/ class="post_tag button button_translucent" data-position=8 title="vcf powercli">VCF POWERCLI<span class=button_tally>8</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vcf-single-sign-on/ class="post_tag button button_translucent" data-position=1 title="vcf single sign-on">VCF SINGLE SIGN-ON<span class=button_tally>1</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vcf.powercli/ class="post_tag button button_translucent" data-position=1 title=vcf.powercli>VCF.POWERCLI<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vcloud-automation-center/ class="post_tag button button_translucent" data-position=8 title="vcloud automation center">VCLOUD AUTOMATION CENTER<span class=button_tally>8</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vcloud-director/ class="post_tag button button_translucent" data-position=3 title="vcloud director">VCLOUD DIRECTOR<span class=button_tally>3</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vmware-aria-operations-for-logs/ class="post_tag button button_translucent" data-position=1 title="vmware aria operations for logs">VMWARE ARIA OPERATIONS FOR LOGS<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vmware-cloud-builder/ class="post_tag button button_translucent" data-position=11 title="vmware cloud builder">VMWARE CLOUD BUILDER<span class=button_tally>11</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation/ class="post_tag button button_translucent" data-position=66 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class=button_tally>66</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation-9.0/ class="post_tag button button_translucent" data-position=17 title="vmware cloud foundation 9.0">VMWARE CLOUD FOUNDATION 9.0<span class=button_tally>17</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation-password-management/ class="post_tag button button_translucent" data-position=4 title="vmware cloud foundation password management">VMWARE CLOUD FOUNDATION PASSWORD MANAGEMENT<span class=button_tally>4</span>
+</a><a href=http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation/ class="post_tag button button_translucent" data-position=83 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class=button_tally>83</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vmware-cloud-foundation-reporting/ class="post_tag button button_translucent" data-position=1 title="vmware cloud foundation reporting">VMWARE CLOUD FOUNDATION REPORTING<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vmware-live-site-recovery/ class="post_tag button button_translucent" data-position=1 title="vmware live site recovery">VMWARE LIVE SITE RECOVERY<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vmware-log-insight/ class="post_tag button button_translucent" data-position=1 title="vmware log insight">VMWARE LOG INSIGHT<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vmware-validated-design/ class="post_tag button button_translucent" data-position=5 title="vmware validated design">VMWARE VALIDATED DESIGN<span class=button_tally>5</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vmware-validated-solutions/ class="post_tag button button_translucent" data-position=46 title="vmware validated solutions">VMWARE VALIDATED SOLUTIONS<span class=button_tally>46</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vmware-vrealize-log-insight/ class="post_tag button button_translucent" data-position=1 title="vmware vrealize log insight">VMWARE VREALIZE LOG INSIGHT<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vrealize-automation/ class="post_tag button button_translucent" data-position=1 title="vrealize automation">VREALIZE AUTOMATION<span class=button_tally>1</span>
+</a><a href=http://jadenetworksolutions.co.uk/categories/vrealize-log-insight/ class="post_tag button button_translucent" data-position=1 title="vrealize log insight">VREALIZE LOG INSIGHT<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vrealize-suite-lifecycle-manager/ class="post_tag button button_translucent" data-position=2 title="vrealize suite lifecycle manager">VREALIZE SUITE LIFECYCLE MANAGER<span class=button_tally>2</span>
-</a><a href=http://jadenetworksolutions.co.uk/categories/vsphere-9.0/ class="post_tag button button_translucent" data-position=1 title="vsphere 9.0">VSPHERE 9.0<span class=button_tally>1</span>
+</a><a href=http://jadenetworksolutions.co.uk/categories/vsphere/ class="post_tag button button_translucent" data-position=1 title=vsphere>VSPHERE<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/vxrail/ class="post_tag button button_translucent" data-position=1 title=vxrail>VXRAIL<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/categories/workspace-one-access/ class="post_tag button button_translucent" data-position=1 title="workspace one access">WORKSPACE ONE ACCESS<span class=button_tally>1</span></a><div class=tags_sort><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span></div><span class=tags_hide><svg class="icon"><use xlink:href="#closeme"/></svg></span></div></div></nav></div><div><h2 class="mt-4 taxonomy" id=series-section>Series</h2><nav class=tags_nav><a href=http://jadenetworksolutions.co.uk/series/vvs-whats-new/ class="post_tag button button_translucent" title="vvs whats new">VVS WHATS NEW
 <span class=button_tally>27</span>
-</a><a href=http://jadenetworksolutions.co.uk/series/vmware-cloud-foundation-apis/ class="post_tag button button_translucent" title="vmware cloud foundation apis">VMWARE CLOUD FOUNDATION APIS
-<span class=button_tally>8</span>
 </a><a href=http://jadenetworksolutions.co.uk/series/vvs-tip/ class="post_tag button button_translucent" title=vvs-tip>VVS-TIP
 <span class=button_tally>8</span>
 </a><a href=http://jadenetworksolutions.co.uk/series/certificate-management/ class="post_tag button button_translucent" title="certificate management">CERTIFICATE MANAGEMENT
@@ -118,43 +112,42 @@
 <span class=button_tally>4</span>
 </a><a href=http://jadenetworksolutions.co.uk/series/vcf-installer-apis/ class="post_tag button button_translucent" title="vcf installer apis">VCF INSTALLER APIS
 <span class=button_tally>4</span>
-</a><a href=http://jadenetworksolutions.co.uk/series/vcf-operations-apis/ class="post_tag button button_translucent" title="vcf operations apis">VCF OPERATIONS APIS
-<span class=button_tally>3</span>
+</a><a href=http://jadenetworksolutions.co.uk/series/vmware-cloud-foundation-9.1-apis/ class="post_tag button button_translucent" title="vmware cloud foundation 9.1 apis">VMWARE CLOUD FOUNDATION 9.1 APIS
+<span class=button_tally>4</span>
 </a><a href=http://jadenetworksolutions.co.uk/series/powervalidatedsolutions/ class="post_tag button button_translucent" title=powervalidatedsolutions>POWERVALIDATEDSOLUTIONS
 <span class=button_tally>2</span>
 </a><a href=http://jadenetworksolutions.co.uk/series/platformaudit/ class="post_tag button button_translucent" title=platformaudit>PLATFORMAUDIT
-<span class=button_tally>1</span>
-</a><a href=http://jadenetworksolutions.co.uk/series/vmware-cloud-foundation-9.1-whats-new/ class="post_tag button button_translucent" title="vmware cloud foundation 9.1: what's new">VMWARE CLOUD FOUNDATION 9.1: WHAT'S NEW
 <span class=button_tally>1</span></a></nav></div><div><h2 class="mt-4 taxonomy" id=tags-section>Tags</h2><nav class=tags_nav><a href=http://jadenetworksolutions.co.uk/tags/vcf/ class="post_tag button button_translucent" title=vcf>VCF
-<span class=button_tally>72</span>
+<span class=button_tally>73</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/api/ class="post_tag button button_translucent" title=api>API
 <span class=button_tally>60</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/powervcf/ class="post_tag button button_translucent" title=powervcf>POWERVCF
 <span class=button_tally>44</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/vvs/ class="post_tag button button_translucent" title=vvs>VVS
 <span class=button_tally>44</span>
+</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-9.0/ class="post_tag button button_translucent" title="vcf 9.0">VCF 9.0
+<span class=button_tally>18</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/index/ class="post_tag button button_translucent" title=index>INDEX
 <span class=button_tally>14</span>
+</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-9.1/ class="post_tag button button_translucent" title="vcf 9.1">VCF 9.1
+<span class=button_tally>13</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/certificates/ class="post_tag button button_translucent" title=certificates>CERTIFICATES
 <span class=button_tally>10</span>
-</a><a href=http://jadenetworksolutions.co.uk/tags/powercli/ class="post_tag button button_translucent" title=powercli>POWERCLI
+</a><a href=http://jadenetworksolutions.co.uk/tags/vcf.powercli/ class="post_tag button button_translucent" title=vcf.powercli>VCF.POWERCLI
 <span class=button_tally>10</span>
-</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-9.1/ class="post_tag button button_translucent" title="vcf 9.1">VCF 9.1
-<span class=button_tally>10</span>
-</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-9.0/ class="post_tag button button_translucent" title="vcf 9.0">VCF 9.0
-<span class=button_tally>9</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/vcac/ class="post_tag button button_translucent" title=vcac>VCAC
 <span class=button_tally>8</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/cloud-builder/ class="post_tag button button_translucent" title="cloud builder">CLOUD BUILDER
 <span class=button_tally>7</span>
-</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-powercli/ class="post_tag button button_translucent" title="vcf powercli">VCF POWERCLI
+</a><a href=http://jadenetworksolutions.co.uk/tags/powercli/ class="post_tag button button_translucent" title=powercli>POWERCLI
+<span class=button_tally>6</span>
+</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-5.x/ class="post_tag button button_translucent" title="vcf 5.x">VCF 5.X
 <span class=button_tally>5</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/srm/ class="post_tag button button_translucent" title=srm>SRM
-<span class=button_tally>4</span>
-</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-5.x/ class="post_tag button button_translucent" title="vcf 5.x">VCF 5.X
 <span class=button_tally>4</span></a><br><div class="post_tags_toggle button">All Tags</div><div class=post_tags><div class=tags_list><a href=http://jadenetworksolutions.co.uk/tags/api/ class="post_tag button button_translucent" data-position=60 title=api>API<span class=button_tally>60</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/apis/ class="post_tag button button_translucent" data-position=1 title=apis>APIS<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/architecture/ class="post_tag button button_translucent" data-position=1 title=architecture>ARCHITECTURE<span class=button_tally>1</span>
+</a><a href=http://jadenetworksolutions.co.uk/tags/bash/ class="post_tag button button_translucent" data-position=3 title=bash>BASH<span class=button_tally>3</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/certificates/ class="post_tag button button_translucent" data-position=10 title=certificates>CERTIFICATES<span class=button_tally>10</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/cloud-builder/ class="post_tag button button_translucent" data-position=7 title="cloud builder">CLOUD BUILDER<span class=button_tally>7</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/dri/ class="post_tag button button_translucent" data-position=1 title=dri>DRI<span class=button_tally>1</span>
@@ -168,7 +161,7 @@
 </a><a href=http://jadenetworksolutions.co.uk/tags/nsx-9.0/ class="post_tag button button_translucent" data-position=1 title="nsx 9.0">NSX 9.0<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/operations-networks/ class="post_tag button button_translucent" data-position=1 title=operations-networks>OPERATIONS-NETWORKS<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/pca/ class="post_tag button button_translucent" data-position=1 title=pca>PCA<span class=button_tally>1</span>
-</a><a href=http://jadenetworksolutions.co.uk/tags/powercli/ class="post_tag button button_translucent" data-position=10 title=powercli>POWERCLI<span class=button_tally>10</span>
+</a><a href=http://jadenetworksolutions.co.uk/tags/powercli/ class="post_tag button button_translucent" data-position=6 title=powercli>POWERCLI<span class=button_tally>6</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/powershell/ class="post_tag button button_translucent" data-position=2 title=powershell>POWERSHELL<span class=button_tally>2</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/powervcf/ class="post_tag button button_translucent" data-position=44 title=powervcf>POWERVCF<span class=button_tally>44</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/sddc-manager/ class="post_tag button button_translucent" data-position=1 title="sddc manager">SDDC MANAGER<span class=button_tally>1</span>
@@ -178,14 +171,14 @@
 </a><a href=http://jadenetworksolutions.co.uk/tags/vcac/ class="post_tag button button_translucent" data-position=8 title=vcac>VCAC<span class=button_tally>8</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/vcd/ class="post_tag button button_translucent" data-position=3 title=vcd>VCD<span class=button_tally>3</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/vcenter/ class="post_tag button button_translucent" data-position=2 title=vcenter>VCENTER<span class=button_tally>2</span>
-</a><a href=http://jadenetworksolutions.co.uk/tags/vcf/ class="post_tag button button_translucent" data-position=72 title=vcf>VCF<span class=button_tally>72</span>
-</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-5.x/ class="post_tag button button_translucent" data-position=4 title="vcf 5.x">VCF 5.X<span class=button_tally>4</span>
-</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-9.0/ class="post_tag button button_translucent" data-position=9 title="vcf 9.0">VCF 9.0<span class=button_tally>9</span>
-</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-9.1/ class="post_tag button button_translucent" data-position=10 title="vcf 9.1">VCF 9.1<span class=button_tally>10</span>
+</a><a href=http://jadenetworksolutions.co.uk/tags/vcf/ class="post_tag button button_translucent" data-position=73 title=vcf>VCF<span class=button_tally>73</span>
+</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-5.x/ class="post_tag button button_translucent" data-position=5 title="vcf 5.x">VCF 5.X<span class=button_tally>5</span>
+</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-9.0/ class="post_tag button button_translucent" data-position=18 title="vcf 9.0">VCF 9.0<span class=button_tally>18</span>
+</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-9.1/ class="post_tag button button_translucent" data-position=13 title="vcf 9.1">VCF 9.1<span class=button_tally>13</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/vcf-installer/ class="post_tag button button_translucent" data-position=1 title="vcf installer">VCF INSTALLER<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/vcf-operations/ class="post_tag button button_translucent" data-position=1 title="vcf operations">VCF OPERATIONS<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/vcf-operations-9.0/ class="post_tag button button_translucent" data-position=1 title="vcf operations 9.0">VCF OPERATIONS 9.0<span class=button_tally>1</span>
-</a><a href=http://jadenetworksolutions.co.uk/tags/vcf-powercli/ class="post_tag button button_translucent" data-position=5 title="vcf powercli">VCF POWERCLI<span class=button_tally>5</span>
+</a><a href=http://jadenetworksolutions.co.uk/tags/vcf.powercli/ class="post_tag button button_translucent" data-position=10 title=vcf.powercli>VCF.POWERCLI<span class=button_tally>10</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/vlr/ class="post_tag button button_translucent" data-position=1 title=vlr>VLR<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/vra/ class="post_tag button button_translucent" data-position=1 title=vra>VRA<span class=button_tally>1</span>
 </a><a href=http://jadenetworksolutions.co.uk/tags/vrli/ class="post_tag button button_translucent" data-position=1 title=vrli>VRLI<span class=button_tally>1</span>
