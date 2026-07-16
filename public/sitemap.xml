@@ -320,6 +320,9 @@
     <loc>http://localhost:1313/archive/2023/vcf-vrslcm-vcf-password/</loc>
     <lastmod>2023-08-22T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/password-management/</loc>
+    <lastmod>2023-08-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/vrealize-suite-lifecycle-manager/</loc>
     <lastmod>2023-08-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -335,13 +338,13 @@
     <loc>http://localhost:1313/archive/2023/edition-18/</loc>
     <lastmod>2023-07-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/aria-operations-for-logs/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/archive/2023/vcf-remove-liagent/</loc>
     <lastmod>2023-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/vmware-aria-operations-for-logs/</loc>
-    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/vmware-vrealize-log-insight/</loc>
+    <loc>http://localhost:1313/categories/vrealize-log-insight/</loc>
     <lastmod>2023-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/vrli/</loc>
@@ -357,9 +360,6 @@
     <lastmod>2023-04-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2023/powervcf-ga-230/</loc>
-    <lastmod>2023-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/vmware-cloud-foundation-password-management/</loc>
     <lastmod>2023-04-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/2023/edition-15/</loc>

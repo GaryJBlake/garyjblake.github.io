@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certificate Management on My Cloudy World</title>
+    <link>http://localhost:1313/categories/certificate-management/</link>
+    <description>Recent content in Certificate Management on My Cloudy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
+    <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
+    <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/certificate-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Certificate Management</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-management/</link>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-management/</guid>
+      <description>
+        
+          
+            <p><strong>VCF Operations APIs Used</strong></p>
+<p><a
+	
+		href = "https://developer.broadcom.com/xapis/vcf-operations-api/latest/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VMware Cloud Foundation Operations API
+	</span>
+</a></p>
+<ul>
+<li>POST /suite-api/api/auth/token/acquire</li>
+<li>GET /suite-api/api/fleet-management/certificate-management/certificate-authorities</li>
+</ul>
+<h2></h2>
+<p><strong>Procedure</strong></p>
+<ol>
+<li>
+<p>Connect to a system that has access to your infrastructure and is capable of running CURL.</p>
+</li>
+<li>
+<p>Replace the values in the sample code with values for your VCF Operations instance and run the commands in the console.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">export</span> <span class="nv">vcfOperationsFqdn</span><span class="o">=</span><span class="s1">&#39;flt-ops01a.rainpole.io&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">export</span> <span class="nv">vcfOperationsUser</span><span class="o">=</span><span class="s1">&#39;admin&#39;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">export</span> <span class="nv">vcfOperationsPass</span><span class="o">=</span><span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span>
+</span></span></code></pre></div><ol start="3">
+<li>Authenticate to VCF Operations and obtain a token by running the following command:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcfOperationsToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST https://<span class="si">${</span><span class="nv">vcfOperationsFqdn</span><span class="si">}</span>/suite-api/api/auth/token/acquire <span class="se">\
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s2">&#34;Content-Type:application/json&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    -d <span class="s2">&#34;{\&#34;username\&#34;:\&#34;</span><span class="nv">$vcfOperationsUser</span><span class="s2">\&#34;, \&#34;password\&#34;:\&#34;</span><span class="nv">$vcfOperationsPass</span><span class="s2">\&#34;}&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="p">|</span> jq -r <span class="s1">&#39;.token&#39;</span><span class="k">)</span>
+</span></span></code></pre></div><ol start="4">
+<li>Verify you were able to successfully obtain an authentication token by running the following command:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">echo</span> <span class="nv">$vcfOperationsToken</span>
+</span></span></code></pre></div><p>Example Output:</p>
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
