@@ -31,7 +31,6 @@ In this post we will look at how an additional Cloud Proxy can be deployed using
 * GET /fleet-lcm/v1/tasks/{taskId}
 * PATCH /fleet-lcm/v1/components/{componentId}
 
-
 **Procedure**
 
 1. Connect to a system that has access to the infrastructure and is capable of running CURL.

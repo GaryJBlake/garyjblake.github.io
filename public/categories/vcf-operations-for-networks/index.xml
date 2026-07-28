@@ -9,7 +9,24 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vcf-operations-for-networks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vcf-operations-for-networks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Deploying VCF Operations for Networks</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-ops-networks-deploy/</link>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-ops-networks-deploy/</guid>
+      <description>
+        
+          
+            <p>Your VMware Cloud Foundation platforms capabilities can be further enhanced with the deployment of VCF Operations for Networks which can be utilized to provides a comprehensive overview of the platforms network health and issues. Using VCF Operations for Networks you can analyzes you current vSphere network traffic and configurations, map out dependencies to transition workloads smoothly and continuously monitors the health, logs, and metrics.</p>
+<p>In this post we will look at how the VCF Operations for Networks component can be deployed using the public APIs, this is achieved via the VCF Fleet Lifecycle Service which is tightly integrated into VCF Operations.</p>
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Obtaining a Token Using Curl for VCF Operations for Networks</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-ops-networks-curl-authentication/</link>

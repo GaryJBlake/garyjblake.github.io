@@ -9,7 +9,74 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vmware-cloud-foundation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vmware-cloud-foundation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Create a Cloud Proxy Group</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</link>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</guid>
+      <description>
+        
+          
+            <p>Creating a <em><strong>cloud proxy group</strong></em>, allows you to group multiple <em><strong>cloud proxies</strong></em>. This ensures that if a <em><strong>cloud proxy</strong></em> goes offline, VCF Operations will automatically reassign the adapters with a <em><strong>cloud proxy</strong></em> that remains online ensuring data can still be collected in the event of failures, thus providing a level of high availability. Once a <em><strong>cloud proxy group</strong></em> has been created and the <em><strong>cloud proxies</strong></em> have been assigned you must then also reconfigure each adapter to point to the newly created <em><strong>cloud proxy group</strong></em> rather than directly to a <em><strong>cloud proxy</strong></em>.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation APIs: Deploy an Additional Cloud Proxy</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-deploy/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-deploy/</guid>
+      <description>
+        
+          
+            <p>During the initial deployment of your VMware Cloud Foundation platform, the VCF Installer deploys VCF Operations with a single Cloud Proxy. If you want to increase availability if metric and log collection you can deploy additional Cloud Proxies and then create a Cloud Proxy Group, this way if a Cloud Proxy goes offline the adapters will reconnect to the remaining Cloud Proxy and continue to collect data.</p>
+<p>In this post we will look at how an additional Cloud Proxy can be deployed using the public APIs, this is achieved via the VCF Fleet Lifecycle Service which is tightly integrated into VCF Operations.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation APIs: Deploying VCF Automation</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-automation-deploy/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-automation-deploy/</guid>
+      <description>
+        
+          
+            <p>Whilst VCF Automation is typically deployed during the initial VMware Cloud Foundation deployment phase via VCF Installer it is possible to skip the deployment initially for various reasons such as may you don't have a use case  initially or you want to deploy to a different network that is not available at the time. Under such scenarios you can easily deploy as a Day N task.</p>
+<p>In this post we will look at how the VCF Automation component can be deployed using the public APIs, this is achieved via the VCF Fleet Lifecycle Service which is tightly integrated into VCF Operations.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation APIs: Deploying VCF Operations for Networks</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-ops-networks-deploy/</link>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-ops-networks-deploy/</guid>
+      <description>
+        
+          
+            <p>Your VMware Cloud Foundation platforms capabilities can be further enhanced with the deployment of VCF Operations for Networks which can be utilized to provides a comprehensive overview of the platforms network health and issues. Using VCF Operations for Networks you can analyzes you current vSphere network traffic and configurations, map out dependencies to transition workloads smoothly and continuously monitors the health, logs, and metrics.</p>
+<p>In this post we will look at how the VCF Operations for Networks component can be deployed using the public APIs, this is achieved via the VCF Fleet Lifecycle Service which is tightly integrated into VCF Operations.</p>
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VMware Cloud Foundation APIs: Deploying Real-Time Metrics</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-real-time-metrics-deploy/</link>
