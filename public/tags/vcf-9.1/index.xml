@@ -27,6 +27,136 @@
     </item>
     
     <item>
+      <title>VMware Cloud Foundation APIs: Upgrading VCF Management</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-management-upgrade/</link>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-management-upgrade/</guid>
+      <description>
+        
+          
+            <p>Performing an upgrade of your VMware Cloud Foundation platform involves multiple steps which include running a precheck of the component before commencing the upgrade itself. I've broken these steps down into sections as you have some optionality.</p>
+<ul>
+<li><a
+	
+		href = "#authenticating-to-the-vcf-fleet-lifcycle-service"
+	
+
+	
+
+	>
+
+	<span>
+		Authenticating to the VCF Fleet Lifcycle Service
+	</span>
+</a></li>
+<li><a
+	
+		href = "#configure-the-upgrade-plan"
+	
+
+	
+
+	>
+
+	<span>
+		Configure the Upgrade Plan
+	</span>
+</a></li>
+<li><a
+	
+		href = "#perform-prechecks-before-upgrading"
+	
+
+	
+
+	>
+
+	<span>
+		Perform Prechecks Before Upgrading
+	</span>
+</a>
+<ul>
+<li><a
+	
+		href = "#perform-prechecks-for-all-components"
+	
+
+	
+
+	>
+
+	<span>
+		Perform Prechecks For All Components
+	</span>
+</a></li>
+<li><a
+	
+		href = "#perform-prechecks-for-a-single-component"
+	
+
+	
+
+	>
+
+	<span>
+		Perform Prechecks for a Single Component
+	</span>
+</a></li>
+</ul>
+</li>
+<li><a
+	
+		href = "#perform-component-upgrades"
+	
+
+	
+
+	>
+
+	<span>
+		Perform Component Upgrades
+	</span>
+</a>
+<ul>
+<li><a
+	
+		href = "#perform-an-upgrade-of-all-components"
+	
+
+	
+
+	>
+
+	<span>
+		Perform an Upgrade of All Components
+	</span>
+</a></li>
+<li><a
+	
+		href = "#perform-upgrade-of-a-single-component"
+	
+
+	
+
+	>
+
+	<span>
+		Perform Upgrade of a Single Component
+	</span>
+</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="authenticating-to-the-vcf-fleet-lifcycle-service">Authenticating to the VCF Fleet Lifcycle Service</h3>
+<p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>VMware Cloud Foundation APIs: Deploy an Additional Cloud Proxy</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-deploy/</link>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>

@@ -27,6 +27,136 @@
     </item>
     
     <item>
+      <title>VMware Cloud Foundation APIs: Upgrading VCF Management</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-management-upgrade/</link>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-management-upgrade/</guid>
+      <description>
+        
+          
+            <p>Performing an upgrade of your VMware Cloud Foundation platform involves multiple steps which include running a precheck of the component before commencing the upgrade itself. I've broken these steps down into sections as you have some optionality.</p>
+<ul>
+<li><a
+	
+		href = "#authenticating-to-the-vcf-fleet-lifcycle-service"
+	
+
+	
+
+	>
+
+	<span>
+		Authenticating to the VCF Fleet Lifcycle Service
+	</span>
+</a></li>
+<li><a
+	
+		href = "#configure-the-upgrade-plan"
+	
+
+	
+
+	>
+
+	<span>
+		Configure the Upgrade Plan
+	</span>
+</a></li>
+<li><a
+	
+		href = "#perform-prechecks-before-upgrading"
+	
+
+	
+
+	>
+
+	<span>
+		Perform Prechecks Before Upgrading
+	</span>
+</a>
+<ul>
+<li><a
+	
+		href = "#perform-prechecks-for-all-components"
+	
+
+	
+
+	>
+
+	<span>
+		Perform Prechecks For All Components
+	</span>
+</a></li>
+<li><a
+	
+		href = "#perform-prechecks-for-a-single-component"
+	
+
+	
+
+	>
+
+	<span>
+		Perform Prechecks for a Single Component
+	</span>
+</a></li>
+</ul>
+</li>
+<li><a
+	
+		href = "#perform-component-upgrades"
+	
+
+	
+
+	>
+
+	<span>
+		Perform Component Upgrades
+	</span>
+</a>
+<ul>
+<li><a
+	
+		href = "#perform-an-upgrade-of-all-components"
+	
+
+	
+
+	>
+
+	<span>
+		Perform an Upgrade of All Components
+	</span>
+</a></li>
+<li><a
+	
+		href = "#perform-upgrade-of-a-single-component"
+	
+
+	
+
+	>
+
+	<span>
+		Perform Upgrade of a Single Component
+	</span>
+</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="authenticating-to-the-vcf-fleet-lifcycle-service">Authenticating to the VCF Fleet Lifcycle Service</h3>
+<p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>VMware Cloud Foundation APIs: Deploy an Additional Cloud Proxy</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-deploy/</link>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
@@ -1898,28 +2028,6 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$sddcManagerFqdn</span><span class="s2">/v1/vcf-services&#34;</span> -H <span class="s2">&#34;Authorization: Bearer </span><span class="nv">$TOKEN</span><span class="s2">&#34;</span> -H <span class="s2">&#34;Accept: application/json&#34;</span> -H <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="p">|</span> jq <span class="s1">&#39;.elements[]&#39;</span>
 </span></span></code></pre></div><h3 id="obtaining-service-details-for-a-specific-service-from-sddc-manager">Obtaining Service Details for a Specific Service from SDDC Manager</h3>
 <p><strong>Procedure</strong></p>
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-upgrade/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
-      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-upgrade/</guid>
-      <description>
-        
-          
-            <h4 id="perform-an-upgrade-of-the-vcf-fleet-lifecycle-service">Perform an Upgrade of the VCF Fleet Lifecycle Service</h4>
-<ol>
-<li>
-<p>Connect to a system that has access to the infrastructure and is capable of running CURL.</p>
-</li>
-<li>
-<p>Replace the values in the sample code with values for your VCF Fleet Lifecycle Service and paste the commands in the console. If your not sure which endpoint this FQDN should be log into VCF Operations, go to <em><strong>Build &gt; Lifecycle &gt; VCF Management</strong></em> and select the <em><strong>Components</strong></em> tab and locate the component named <em><strong>Fleet lifecycle</strong></em> the FQDN is shown in the FQDN column.</p>
           
           
         

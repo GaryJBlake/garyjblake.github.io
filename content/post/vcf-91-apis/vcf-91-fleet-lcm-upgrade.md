@@ -2,7 +2,7 @@
 author = "GaryJBlake"
 title = "VMware Cloud Foundation APIs: Upgrading the VCF Fleet Lifecycle Service"
 date = "2026-08-04"
-description = "VMware Cloud Foundation APIs: AUpgrading the VCF Fleet Lifecycle Service"
+description = "VMware Cloud Foundation APIs: Upgrading the VCF Fleet Lifecycle Service"
 tags = [
     "VCF 9.1",
     "API"
@@ -27,7 +27,7 @@ In this post we will look at how to upgrade the ***Fleet Lifecycle***, this is a
 * POST /api/v1/identity/token
 * GET /fleet-lcm/v1/system
 * POST /fleet-lcm/v1/system
-* GET /v1/tasks/<taskId>
+* GET /fleet-lcm/v1/tasks/<taskId>
 * POST /fleet-lcm/v1/system?action=apply
 
 **Procedure**

@@ -38,6 +38,9 @@
     <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</loc>
     <lastmod>2026-07-28T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-management-upgrade/</loc>
+    <lastmod>2026-07-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-deploy/</loc>
     <lastmod>2026-07-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -829,8 +832,6 @@
   </url><url>
     <loc>http://localhost:1313/categories/red-hat/</loc>
     <lastmod>2011-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-upgrade/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url>
