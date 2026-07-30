@@ -9,7 +9,7 @@
   
   >
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-<title>VMware Cloud Foundation APIs: Deploying VCF Operations for Networks | My Cloudy World</title>
+<title>VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task | My Cloudy World</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,13 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="VMware Cloud Foundation APIs: Deploying VCF Operations for Networks" />
+<meta name="description" content="VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@garyjblake">
-<meta name="twitter:title" content="VMware Cloud Foundation APIs: Deploying VCF Operations for Networks" />
-<meta property="og:url" content="http://localhost:1313/post/vcf-91-apis/vcf-91-ops-networks-deploy/" />
-<meta property="og:title" content="VMware Cloud Foundation APIs: Deploying VCF Operations for Networks" />
-<meta property="og:description" content="VMware Cloud Foundation APIs: Deploying VCF Operations for Networks" />
+<meta name="twitter:title" content="VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task" />
+<meta property="og:url" content="http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-cancel-task/" />
+<meta property="og:title" content="VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task" />
+<meta property="og:description" content="VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task" />
 <meta property="og:image" content="http://localhost:1313/images/thumbnail.png" />
   <meta name="keywords" content="VMware,cloud,virtualization,vcf,cloud foundation" />
 
@@ -31,7 +31,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/favicon-32x32.png">
 <link rel="manifest" href="http://localhost:1313/icons/site.webmanifest">
 
-<link rel="canonical" href="http://localhost:1313/post/vcf-91-apis/vcf-91-ops-networks-deploy/">
+<link rel="canonical" href="http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-cancel-task/">
 
 
 
@@ -144,7 +144,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">VMware Cloud Foundation APIs: Deploying VCF Operations for Networks</h1>
+    <h1 class="post_title">VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -152,22 +152,22 @@
 </svg>
 </span>
     <span class="post_date">
-      Jul 16, 2026</span>
-    <span class="post_time"> · 5 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/vcf-9.1' title="VCF 9.1" class="post_tag button button_translucent">VCF 9.1
+      Jul 30, 2026</span>
+    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/vcf-9.1' title="VCF 9.1" class="post_tag button button_translucent">VCF 9.1
         </a><a href='http://localhost:1313/tags/api' title="API" class="post_tag button button_translucent">API
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=VMware%20Cloud%20Foundation%20APIs%3a%20Deploying%20VCF%20Operations%20for%20Networks&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fvcf-91-apis%2fvcf-91-ops-networks-deploy%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=VMware%20Cloud%20Foundation%20APIs%3a%20Cancelling%20a%20VCF%20Fleet%20Lifecycle%20Task&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fvcf-91-apis%2fvcf-91-fleet-lcm-cancel-task%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fvcf-91-apis%2fvcf-91-ops-networks-deploy%2f&t=VMware%20Cloud%20Foundation%20APIs%3a%20Deploying%20VCF%20Operations%20for%20Networks" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fvcf-91-apis%2fvcf-91-fleet-lcm-cancel-task%2f&t=VMware%20Cloud%20Foundation%20APIs%3a%20Cancelling%20a%20VCF%20Fleet%20Lifecycle%20Task" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -181,7 +181,7 @@
 </svg>
 
     </a>
-    <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-ops-networks-deploy/" title="Copy Link" class="link link_yank">
+    <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-cancel-task/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -192,8 +192,7 @@
   </span>
   </div>
 
-    <div class="post_body"><p>Your VMware Cloud Foundation platforms capabilities can be further enhanced with the deployment of VCF Operations for Networks which can be utilized to provides a comprehensive overview of the platforms network health and issues. Using VCF Operations for Networks you can analyzes you current vSphere network traffic and configurations, map out dependencies to transition workloads smoothly and continuously monitors the health, logs, and metrics.</p>
-<p>In this post we will look at how the VCF Operations for Networks component can be deployed using the public APIs, this is achieved via the VCF Fleet Lifecycle Service which is tightly integrated into VCF Operations.</p>
+    <div class="post_body"><p>There maybe a number scenarios where you find yourself needing to cancel a running task, this is possible using the <em><strong>VCF Fleet Lifecycle Service</strong></em> APIs. It's important to note that the running stage will continue until it reaches a terminal state, and only then subsequent steps will not be executed.</p>
 <p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
 <p><a
 	
@@ -213,10 +212,8 @@
 </a></p>
 <ul>
 <li>POST /api/v1/identity/token</li>
-<li>GET /fleet-lcm/v1/sddc-lcms</li>
-<li>POST /fleet-lcm/v1/components/validations</li>
-<li>POST /fleet-lcm/v1/components</li>
-<li>GET /fleet-lcm/v1/tasks/{taskId}</li>
+<li>GET /fleet-lcm/v1/tasks</li>
+<li>POST /fleet-lcm/v1/tasks/<taskId>?action=cancel</li>
 </ul>
 <p><strong>Procedure</strong></p>
 <ol>
@@ -231,7 +228,7 @@
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">export</span> <span class="nv">vcfFleetLifecycleUser</span><span class="o">=</span><span class="s1">&#39;admin@vsp.local&#39;</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">export</span> <span class="nv">vcfFleetLifecyclePass</span><span class="o">=</span><span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span>
 </span></span></code></pre></div><ol start="3">
-<li>Authenticate to the VCF Fleet Lifecycle Service and obtain a token by running the following command:</li>
+<li>Authenticate to the VCF Fleet Lifecycle service and obtain a token by running the following command:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcfFleetLifecycleToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST <span class="s2">&#34;https://</span><span class="nv">$vcfFleetLifecycleFqdn</span><span class="s2">/api/v1/identity/token&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl">    -H <span class="s1">&#39;Content-Type: application/x-www-form-urlencoded&#39;</span> <span class="se">\
@@ -244,175 +241,28 @@
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">echo</span> <span class="nv">$vcfFleetLifecycleToken</span>
 </span></span></code></pre></div><p>Example Output:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">eyJhbGciOiJFZERTQSIsImtpZCI6Ilg4Mk5veGNJRlVCVEFiY0xPM1NUdU12UTF6Qlo4d01xeUxDTGNuOGZYdFUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2ZsdC1mYzAxLnJhaW5wb2xlLmlvIiwic3ViIjoiYWRtaW5AdnNwLmxvY2FsIiwiYXVkIjpbInZzcCJdLCJleHAiOjE3ODM0MzU1NTIsImlhdCI6MTc4MzQyMTE1MiwianRpIjoiMjA3OTg0MDgtZGE3OC00N2UzLTgxMDctNDAyMThkNjM1ZThmIiwiYXpwIjoicGFzc3dvcmRfZ3JhbnRfY2xpZW50IiwiYWNjdCI6ImFkbWluQHZzcC5sb2NhbCIsImF1dGhvcml6YXRpb25fZGV0YWlscyI6bnVsbH0.OsXjW3cgwZaEMXwZC6MOqOped5MX1wdf3wpUmjZLaRiXeug4rtm9dnWHvPrp5pM74MNsVEjhbeT3u0TJjgIIBQ
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">eyJhbGciOiJFZERTQSIsImtpZCI6Ilg4Mk5veGNJRlVCVEFiY0xPM1NUdU12UTF6Qlo4d01xeUxDTGNuOGZYdFUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2ZsdC1mYzAxLnJhaW5wb2xlLmlvIiwic3ViIjoiYWRtaW5AdnNwLmxvY2FsIiwiYXVkIjpbInZzcCJdLCJleHAiOjE3ODUyNDk1MzIsImlhdCI6MTc4NTIzNTEzMiwianRpIjoiOThkMjE2NzYtZGRhYy00NmU2LWEyZWItMzdjNDYzNmI1NjQwIiwiYXpwIjoicGFzc3dvcmRfZ3JhbnRfY2xpZW50IiwiYWNjdCI6ImFkbWluQHZzcC5sb2NhbCIsImF1dGhvcml6YXRpb25fZGV0YWlscyI6bnVsbH0.CjyGod2F17Wz0Y4TmggHZieByeE80a6Uqe2S7trD1ycaPupzqZ19d_qLbiHjrMviV-ADDKc7RkGc27DoaChNBA
 </span></span></code></pre></div><ol start="5">
-<li>First we retrieve the unique ID of the SDDC instance by running the following command:</li>
+<li>Retrieve the task ID of the running task by running the following command:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">primarySddcLcms</span><span class="o">=</span><span class="k">$(</span>curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$vcfFleetLifecycleFqdn</span><span class="s2">/fleet-lcm/v1/sddc-lcms&#34;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">taskId</span><span class="o">=</span><span class="k">$(</span>curl -ks -X GET <span class="s2">&#34;https://</span><span class="nv">$vcfFleetLifecycleFqdn</span><span class="s2">/fleet-lcm/v1/tasks&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl">  --header <span class="s2">&#34;Authorization: Bearer </span><span class="si">${</span><span class="nv">vcfFleetLifecycleToken</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl">  --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">4</span><span class="cl">  --header <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl">  <span class="p">|</span> jq -r <span class="s1">&#39;.sddcLcms[] | select(.isPrimary == true) | .id&#39;</span><span class="k">)</span>
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl">  <span class="p">|</span> jq -r <span class="s1">&#39;.elements[] | select(.status == &#34;RUNNING&#34;) | .id&#39;</span><span class="k">)</span>
 </span></span></code></pre></div><ol start="6">
-<li>Verify you successfully obtained the SDDC instance by running the following command:</li>
+<li>Verify you successfully obtained the task ID by running the following command:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">echo</span> <span class="nv">$primarySddcLcms</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">echo</span> <span class="nv">$taskId</span>
 </span></span></code></pre></div><p>Example Output:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">3e8d0034-906b-49cb-9c47-3afa8d919192
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">019fa881-3b1f-7934-86d3-dd617eab2976
 </span></span></code></pre></div><ol start="7">
-<li>Replace the values in the sample code with values for the deployment of your VCF Operations for Networks instance and paste the commands in the console.</li>
+<li>Cancel the task by running the following command:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">export</span> <span class="nv">opsNetworksPlatformFqdn</span><span class="o">=</span><span class="s1">&#39;flt-net01a.rainpole.io&#39;</span>
-</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">export</span> <span class="nv">opsNetworksPlatformIp</span><span class="o">=</span><span class="s1">&#39;10.11.10.62&#39;</span>
-</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">export</span> <span class="nv">opsNetworksPlatformSize</span><span class="o">=</span><span class="s1">&#39;medium&#39;</span>
-</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="nb">export</span> <span class="nv">opsNetworksPlatformPass</span><span class="o">=</span><span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span>
-</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="nb">export</span> <span class="nv">opsNetworksControllerFqdn</span><span class="o">=</span><span class="s1">&#39;sfo-netc01.sfo.rainpole.io&#39;</span>
-</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="nb">export</span> <span class="nv">opsNetworksControllerIp</span><span class="o">=</span><span class="s1">&#39;10.11.10.14&#39;</span>
-</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="nb">export</span> <span class="nv">opsNetworksControllerSize</span><span class="o">=</span><span class="s1">&#39;medium&#39;</span>
-</span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="nb">export</span> <span class="nv">opsNetworksControllerPass</span><span class="o">=</span><span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span>
-</span></span><span class="line"><span class="ln">9</span><span class="cl"><span class="nb">export</span> <span class="nv">opsNetworksAdminPassword</span><span class="o">=</span><span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span>
-</span></span></code></pre></div><ol start="8">
-<li>Create the JSON payload for the VCF Operations for Networks instance deployment by running the following command:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln"> 1</span><span class="cl">cat <span class="s">&lt;&lt; EOF &gt; ops-networks-deploy.json
-</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="s">{
-</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="s">  &#34;componentSpecs&#34;: [
-</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="s">    {
-</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="s">      &#34;sddcLcmId&#34;: &#34;${primarySddcLcms}&#34;,
-</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="s">      &#34;componentType&#34;: &#34;OPS_NETWORKS&#34;,
-</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="s">      &#34;deploymentType&#34;: &#34;OvaComponentSpec&#34;,
-</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="s">      &#34;nodeSpecs&#34;: [
-</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="s">        {
-</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="s">          &#34;nodeType&#34;: &#34;PLATFORM&#34;,
-</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="s">          &#34;version&#34;: &#34;9.1.0.0&#34;,
-</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="s">          &#34;deploymentSpec&#34;: {
-</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="s">            &#34;fqdn&#34;: &#34;${opsNetworksPlatformFqdn}&#34;,
-</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="s">            &#34;deploymentOption&#34;: &#34;${opsNetworksPlatformSize}&#34;,
-</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="s">            &#34;password&#34;: &#34;${opsNetworksPlatformPass}&#34;,
-</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="s">            &#34;ipv4Settings&#34;: {
-</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="s">              &#34;address&#34;: &#34;${opsNetworksPlatformIp}&#34;
-</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="s">            }
-</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="s">          }
-</span></span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="s">        },
-</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="s">        {
-</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="s">          &#34;nodeType&#34;: &#34;COLLECTOR&#34;,
-</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="s">          &#34;version&#34;: &#34;9.1.0.0&#34;,
-</span></span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="s">          &#34;deploymentSpec&#34;: {
-</span></span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="s">            &#34;fqdn&#34;: &#34;${opsNetworksControllerFqdn}&#34;,
-</span></span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="s">            &#34;deploymentOption&#34;: &#34;${opsNetworksControllerSize}&#34;,
-</span></span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="s">            &#34;password&#34;: &#34;${opsNetworksControllerPass}&#34;,
-</span></span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="s">            &#34;ipv4Settings&#34;: {
-</span></span></span><span class="line"><span class="ln">29</span><span class="cl"><span class="s">              &#34;address&#34;: &#34;${opsNetworksControllerIp}&#34;
-</span></span></span><span class="line"><span class="ln">30</span><span class="cl"><span class="s">            }
-</span></span></span><span class="line"><span class="ln">31</span><span class="cl"><span class="s">          }
-</span></span></span><span class="line"><span class="ln">32</span><span class="cl"><span class="s">        }
-</span></span></span><span class="line"><span class="ln">33</span><span class="cl"><span class="s">      ],
-</span></span></span><span class="line"><span class="ln">34</span><span class="cl"><span class="s">      &#34;configSpec&#34;: {
-</span></span></span><span class="line"><span class="ln">35</span><span class="cl"><span class="s">        &#34;adminPassword&#34;: &#34;${opsNetworksAdminPassword}&#34;
-</span></span></span><span class="line"><span class="ln">36</span><span class="cl"><span class="s">      }
-</span></span></span><span class="line"><span class="ln">37</span><span class="cl"><span class="s">    }
-</span></span></span><span class="line"><span class="ln">38</span><span class="cl"><span class="s">  ]
-</span></span></span><span class="line"><span class="ln">39</span><span class="cl"><span class="s">}
-</span></span></span><span class="line"><span class="ln">40</span><span class="cl"><span class="s">EOF</span>
-</span></span></code></pre></div><ol start="9">
-<li>Verify the JSON payload has been populated correctly by running the following command:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">cat ops-networks-deploy.json
-</span></span></code></pre></div><p>Example Output:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">  <span class="nt">&#34;componentSpecs&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">      <span class="nt">&#34;sddcLcmId&#34;</span><span class="p">:</span> <span class="s2">&#34;e35632dc-2777-432e-8985-7e1f0a32acf3&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">      <span class="nt">&#34;componentType&#34;</span><span class="p">:</span> <span class="s2">&#34;OPS_NETWORKS&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">      <span class="nt">&#34;deploymentType&#34;</span><span class="p">:</span> <span class="s2">&#34;OvaComponentSpec&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">      <span class="nt">&#34;nodeSpecs&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">          <span class="nt">&#34;nodeType&#34;</span><span class="p">:</span> <span class="s2">&#34;PLATFORM&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln">10</span><span class="cl">          <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;9.1.0.0&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln">11</span><span class="cl">          <span class="nt">&#34;deploymentSpec&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl">            <span class="nt">&#34;fqdn&#34;</span><span class="p">:</span> <span class="s2">&#34;flt-net01a.rainpole.io&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln">13</span><span class="cl">            <span class="nt">&#34;deploymentOption&#34;</span><span class="p">:</span> <span class="s2">&#34;medium&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln">14</span><span class="cl">            <span class="nt">&#34;password&#34;</span><span class="p">:</span> <span class="s2">&#34;VMw@re1!VMw@re1!&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln">15</span><span class="cl">            <span class="nt">&#34;ipv4Settings&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln">16</span><span class="cl">              <span class="nt">&#34;address&#34;</span><span class="p">:</span> <span class="s2">&#34;10.11.10.62&#34;</span>
-</span></span><span class="line"><span class="ln">17</span><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="ln">18</span><span class="cl">          <span class="p">}</span>
-</span></span><span class="line"><span class="ln">19</span><span class="cl">        <span class="p">},</span>
-</span></span><span class="line"><span class="ln">20</span><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="ln">21</span><span class="cl">          <span class="nt">&#34;nodeType&#34;</span><span class="p">:</span> <span class="s2">&#34;COLLECTOR&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln">22</span><span class="cl">          <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;9.1.0.0&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln">23</span><span class="cl">          <span class="nt">&#34;deploymentSpec&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln">24</span><span class="cl">            <span class="nt">&#34;fqdn&#34;</span><span class="p">:</span> <span class="s2">&#34;sfo-netc01.sfo.rainpole.io&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln">25</span><span class="cl">            <span class="nt">&#34;deploymentOption&#34;</span><span class="p">:</span> <span class="s2">&#34;medium&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln">26</span><span class="cl">            <span class="nt">&#34;password&#34;</span><span class="p">:</span> <span class="s2">&#34;VMw@re1!VMw@re1!&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln">27</span><span class="cl">            <span class="nt">&#34;ipv4Settings&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln">28</span><span class="cl">              <span class="nt">&#34;address&#34;</span><span class="p">:</span> <span class="s2">&#34;10.11.10.14&#34;</span>
-</span></span><span class="line"><span class="ln">29</span><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="ln">30</span><span class="cl">          <span class="p">}</span>
-</span></span><span class="line"><span class="ln">31</span><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="ln">32</span><span class="cl">      <span class="p">],</span>
-</span></span><span class="line"><span class="ln">33</span><span class="cl">      <span class="nt">&#34;configSpec&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln">34</span><span class="cl">        <span class="nt">&#34;adminPassword&#34;</span><span class="p">:</span> <span class="s2">&#34;VMw@re1!VMw@re1!&#34;</span>
-</span></span><span class="line"><span class="ln">35</span><span class="cl">      <span class="p">}</span>
-</span></span><span class="line"><span class="ln">36</span><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="ln">37</span><span class="cl">  <span class="p">]</span>
-</span></span><span class="line"><span class="ln">38</span><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><ol start="10">
-<li>Validate the JSON payload by running the following command:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">validationId</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST <span class="s2">&#34;https://</span><span class="nv">$vcfFleetLifecycleFqdn</span><span class="s2">/fleet-lcm/v1/components/validations&#34;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -ks -X POST <span class="s2">&#34;https://</span><span class="nv">$vcfFleetLifecycleFqdn</span><span class="s2">/fleet-lcm/v1/tasks/</span><span class="si">${</span><span class="nv">taskId</span><span class="si">}</span><span class="s2">?action=cancel&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl">  --header <span class="s2">&#34;Authorization: Bearer </span><span class="si">${</span><span class="nv">vcfFleetLifecycleToken</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl">  --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl">  --header <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl">   -d @ops-networks-deploy.json <span class="p">|</span> jq -r <span class="s2">&#34;.id&#34;</span><span class="k">)</span>
-</span></span></code></pre></div><ol start="11">
-<li>Check the status of the validation by running the following command:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$vcfFleetLifecycleFqdn</span><span class="s2">/fleet-lcm/v1/tasks/</span><span class="nv">$validationId</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s2">&#34;Authorization: Bearer </span><span class="si">${</span><span class="nv">vcfFleetLifecycleToken</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    --header <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="p">|</span> jq
-</span></span></code></pre></div><ol start="12">
-<li>The command in step 11 may need to be run multiple times, alternatively you can run the command over and over by running the following command:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">while</span> curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$vcfFleetLifecycleFqdn</span><span class="s2">/fleet-lcm/v1/tasks/</span><span class="nv">$validationId</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s2">&#34;Authorization: Bearer </span><span class="si">${</span><span class="nv">vcfFleetLifecycleToken</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    --header <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="p">|</span> jq <span class="s1">&#39;{status: .status}&#39;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="p">|</span> grep -q <span class="s2">&#34;RUNNING&#34;</span><span class="p">;</span> <span class="k">do</span>
-</span></span><span class="line"><span class="ln">7</span><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;Still in &#39;RUNNING&#39; state... waiting 2 seconds.&#34;</span>
-</span></span><span class="line"><span class="ln">8</span><span class="cl">    sleep <span class="m">2</span>
-</span></span><span class="line"><span class="ln">9</span><span class="cl"><span class="k">done</span>
-</span></span></code></pre></div><ol start="13">
-<li>Start the deployment by running the following command:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">deploymentId</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST <span class="s2">&#34;https://</span><span class="nv">$vcfFleetLifecycleFqdn</span><span class="s2">/fleet-lcm/v1/components&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl">  --header <span class="s2">&#34;Authorization: Bearer </span><span class="si">${</span><span class="nv">vcfFleetLifecycleToken</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl">  --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl">  --header <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl">  -d @ops-networks-deploy.json <span class="p">|</span> jq -r <span class="s2">&#34;.id&#34;</span><span class="k">)</span>
-</span></span></code></pre></div><ol start="14">
-<li>Check the status of the deployment by running the following command:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$vcfFleetLifecycleFqdn</span><span class="s2">/fleet-lcm/v1/tasks/</span><span class="nv">$deploymentId</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s2">&#34;Authorization: Bearer </span><span class="si">${</span><span class="nv">vcfFleetLifecycleToken</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    --header <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="p">|</span> jq
-</span></span></code></pre></div><ol start="15">
-<li>The command in step 11 would need to be run multiple times, alternatively you can run the command over and over by running the following command:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">while</span> curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$vcfFleetLifecycleFqdn</span><span class="s2">/fleet-lcm/v1/tasks/</span><span class="nv">$deploymentId</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s2">&#34;Authorization: Bearer </span><span class="si">${</span><span class="nv">vcfFleetLifecycleToken</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    --header <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="p">|</span> jq <span class="s1">&#39;{status: .status}&#39;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="p">|</span> grep -q <span class="s2">&#34;RUNNING&#34;</span><span class="p">;</span> <span class="k">do</span>
-</span></span><span class="line"><span class="ln">7</span><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;Still in &#39;RUNNING&#39; state... waiting 60 seconds.&#34;</span>
-</span></span><span class="line"><span class="ln">8</span><span class="cl">    sleep <span class="m">60</span>
-</span></span><span class="line"><span class="ln">9</span><span class="cl"><span class="k">done</span>
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl">  --header <span class="s2">&#34;Content-Type: application/json&#34;</span>
 </span></span></code></pre></div>
     </div>
 
@@ -468,9 +318,6 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-cancel-task/" class="nav-link" title="VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task">VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task</a>
-      </li>
-      <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-management/" class="nav-link" title="VMware Cloud Foundation APIs: Configure Certificate Authorities">VMware Cloud Foundation APIs: Configure Certificate Authorities</a>
       </li>
       <li>
@@ -481,6 +328,9 @@
       </li>
       <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-automation-deploy/" class="nav-link" title="VMware Cloud Foundation APIs: Deploying VCF Automation">VMware Cloud Foundation APIs: Deploying VCF Automation</a>
+      </li>
+      <li>
+        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-ops-networks-deploy/" class="nav-link" title="VMware Cloud Foundation APIs: Deploying VCF Operations for Networks">VMware Cloud Foundation APIs: Deploying VCF Operations for Networks</a>
       </li>
     </ul>
     <div>
