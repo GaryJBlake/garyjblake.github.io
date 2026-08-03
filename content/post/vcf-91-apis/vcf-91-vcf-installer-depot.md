@@ -43,8 +43,8 @@ export broadcomDepotToken='<your-unique-token'
 
 3. Authenticate to VCF Installer and obtain a token by running the following command:
 
-``` bash
-vcfInstallerToken=$(curl -k -X POST https://$vcfInstallerFqdn/v1/tokens \
+```bash
+vcfInstallerToken=$(curl -k -X POST https://${vcfInstallerFqdn}/v1/tokens \
     --header 'Content-Type:application/json' \
     -d '{"username": "'$vcfInstallerUser'","password": "'$vcfInstallerPass'"}' \
     | jq -r '.accessToken')

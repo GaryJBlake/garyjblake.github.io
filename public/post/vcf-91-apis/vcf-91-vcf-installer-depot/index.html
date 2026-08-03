@@ -8,7 +8,7 @@
   
   
   >
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="https://cloudflare.com">
 <title>VCF Installer APIs: Connect VCF Installer to the Broadcom Depot | My Cloudy World</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -44,6 +44,8 @@
 
 
 <link rel="stylesheet" type="text/css" href="http://localhost:1313/css/styles.367129801480fead578d7a356a98fcb3bce794981ff18cee55868d198d0d2bf1eb4feac97319d0871c6255183b9fd27a7059e4632c785951f4c4f6953559c4d0.css" integrity="sha512-NnEpgBSA/q1XjXo1apj8s7znlJgf8YzuVYaNGY0NK/HrT&#43;rJcxnQhxxiVRg7n9J6cFnkYyx4WVH0xPaVNVnE0A==" crossorigin="anonymous">
+
+
 
 
   </head>
@@ -233,7 +235,7 @@
 </span></span></code></pre></div><ol start="3">
 <li>Authenticate to VCF Installer and obtain a token by running the following command:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcfInstallerToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST https://<span class="nv">$vcfInstallerFqdn</span>/v1/tokens <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcfInstallerToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST https://<span class="si">${</span><span class="nv">vcfInstallerFqdn</span><span class="si">}</span>/v1/tokens <span class="se">\
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s1">&#39;Content-Type:application/json&#39;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl">    -d <span class="s1">&#39;{&#34;username&#34;: &#34;&#39;</span><span class="nv">$vcfInstallerUser</span><span class="s1">&#39;&#34;,&#34;password&#34;: &#34;&#39;</span><span class="nv">$vcfInstallerPass</span><span class="s1">&#39;&#34;}&#39;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="p">|</span> jq -r <span class="s1">&#39;.accessToken&#39;</span><span class="k">)</span>
@@ -323,6 +325,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="http://localhost:1313/post/vcf-91/vcf-91-vcf-installer-change-dns-ntp/" class="nav-link" title="VCF Installer: Changing DNS/NTP Settings">VCF Installer: Changing DNS/NTP Settings</a>
+      </li>
+      <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-cancel-task/" class="nav-link" title="VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task">VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task</a>
       </li>
       <li>
@@ -334,16 +339,13 @@
       <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-deploy/" class="nav-link" title="VMware Cloud Foundation APIs: Deploy an Additional Cloud Proxy">VMware Cloud Foundation APIs: Deploy an Additional Cloud Proxy</a>
       </li>
-      <li>
-        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-automation-deploy/" class="nav-link" title="VMware Cloud Foundation APIs: Deploying VCF Automation">VMware Cloud Foundation APIs: Deploying VCF Automation</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class="post_tag button button_translucent" title="vmware cloud foundation">
           VMWARE CLOUD FOUNDATION
-          <span class="button_tally">89</span>
+          <span class="button_tally">90</span>
         </a>
         
         <a href='http://localhost:1313/categories/powershell/' class="post_tag button button_translucent" title="powershell">
@@ -361,14 +363,14 @@
           <span class="button_tally">12</span>
         </a>
         
-        <a href='http://localhost:1313/categories/vmware-cloud-builder/' class="post_tag button button_translucent" title="vmware cloud builder">
-          VMWARE CLOUD BUILDER
+        <a href='http://localhost:1313/categories/vcf-installer/' class="post_tag button button_translucent" title="vcf installer">
+          VCF INSTALLER
           <span class="button_tally">11</span>
         </a>
         
-        <a href='http://localhost:1313/categories/vcf-installer/' class="post_tag button button_translucent" title="vcf installer">
-          VCF INSTALLER
-          <span class="button_tally">10</span>
+        <a href='http://localhost:1313/categories/vmware-cloud-builder/' class="post_tag button button_translucent" title="vmware cloud builder">
+          VMWARE CLOUD BUILDER
+          <span class="button_tally">11</span>
         </a>
         
         <a href='http://localhost:1313/categories/vcloud-automation-center/' class="post_tag button button_translucent" title="vcloud automation center">
@@ -501,7 +503,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vcf-installer/' class=" post_tag button button_translucent" data-position=10 title="vcf installer">VCF INSTALLER<span class="button_tally">10</span>
+            <a href='http://localhost:1313/categories/vcf-installer/' class=" post_tag button button_translucent" data-position=11 title="vcf installer">VCF INSTALLER<span class="button_tally">11</span>
             </a>
             
             
@@ -533,7 +535,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class=" post_tag button button_translucent" data-position=89 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class="button_tally">89</span>
+            <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class=" post_tag button button_translucent" data-position=90 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class="button_tally">90</span>
             </a>
             
             
@@ -670,7 +672,7 @@
         
         <a href='http://localhost:1313/tags/vcf-9.1/' class="post_tag button button_translucent" title="vcf 9.1">
           VCF 9.1
-          <span class="button_tally">19</span>
+          <span class="button_tally">20</span>
         </a>
         
         <a href='http://localhost:1313/tags/vcf-9.0/' class="post_tag button button_translucent" title="vcf 9.0">
@@ -844,11 +846,11 @@
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf-9.1/' class=" post_tag button button_translucent" data-position=19 title="vcf 9.1">VCF 9.1<span class="button_tally">19</span>
+            <a href='http://localhost:1313/tags/vcf-9.1/' class=" post_tag button button_translucent" data-position=20 title="vcf 9.1">VCF 9.1<span class="button_tally">20</span>
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf-installer/' class=" post_tag button button_translucent" data-position=1 title="vcf installer">VCF INSTALLER<span class="button_tally">1</span>
+            <a href='http://localhost:1313/tags/vcf-installer/' class=" post_tag button button_translucent" data-position=2 title="vcf installer">VCF INSTALLER<span class="button_tally">2</span>
             </a>
             
             

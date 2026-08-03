@@ -8,7 +8,7 @@
   
   
   >
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="https://cloudflare.com">
 <title>VCF Installer APIs: Download Binaries from Broadcom Depot | My Cloudy World</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -44,6 +44,8 @@
 
 
 <link rel="stylesheet" type="text/css" href="http://localhost:1313/css/styles.367129801480fead578d7a356a98fcb3bce794981ff18cee55868d198d0d2bf1eb4feac97319d0871c6255183b9fd27a7059e4632c785951f4c4f6953559c4d0.css" integrity="sha512-NnEpgBSA/q1XjXo1apj8s7znlJgf8YzuVYaNGY0NK/HrT&#43;rJcxnQhxxiVRg7n9J6cFnkYyx4WVH0xPaVNVnE0A==" crossorigin="anonymous">
+
+
 
 
   </head>
@@ -248,24 +250,30 @@
 </span></span></code></pre></div><ol start="3">
 <li>Authenticate to VCF Installer and obtain a token by running the following command:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcfInstallerToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST https://<span class="nv">$vcfInstallerFqdn</span>/v1/tokens <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s1">&#39;Content-Type:application/json&#39;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcfInstallerToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST <span class="s2">&#34;https://</span><span class="si">${</span><span class="nv">vcfInstallerFqdn</span><span class="si">}</span><span class="s2">/v1/tokens&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s2">&#34;Content-Type:application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl">    -d <span class="s1">&#39;{&#34;username&#34;: &#34;&#39;</span><span class="nv">$vcfInstallerUser</span><span class="s1">&#39;&#34;,&#34;password&#34;: &#34;&#39;</span><span class="nv">$vcfInstallerPass</span><span class="s1">&#39;&#34;}&#39;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="p">|</span> jq -r <span class="s1">&#39;.accessToken&#39;</span><span class="k">)</span>
 </span></span></code></pre></div><ol start="4">
+<li>Verify you were able to successfully obtain an authentication token by running the following command:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">echo</span> <span class="nv">$vcfInstallerToken</span>
+</span></span></code></pre></div><p>Example Output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">V1JJVEUiLCJMSUNFTlNFX0tFWV9SRUFEIiwiTElDRU5TRV9LRVlfV1JJVEUiLCJDRVJUX1JFQUQiLCJDRVJUX1dSSVRFIiwiQ0FfUkVBRCIsIkNBX1dSSVRFIiwiTkVUV09SS19QT09MX1JFQUQiLCJORVRXT1JLX1BPT0xfV1JJVEUiLCJWUlNMQ01fUkVBRCIsIlZSU0xDTV9XUklURSIsIkNFSVBfUkVBRCIsIkNFSVBfV1JJVEUiLCJCQUNLVVBfUkVTVE9SRV9SRUFEIiwiQkFDS1VQX1JFU1RPUkVfV1JJVEUiLCJETlNfUkVBRCIsIkROU19XUklURSIsIk5UUF9SRUFEIiwiTlRQX1dSSVRFIiwiRURHRV9DTFVTVEVSX1JFQUQiLCJFREdFX0NMVVNURVJfV1JJVEUiLCJTRERDX0ZFREVSQVRJT05fUkVBRCIsIlNERENfRkVERVJBVElPTl9XUklURSIsIldDUF9SRUFEIiwiV0NQX1dSSVRFIiwiRE9NQUlOX1JFQUQiLCJET01BSU5fV1JJVEUiLCJTRERDX01BTkFHRVJfUkVBRCIsIlNERENfTUFOQUdFUl9XUklURSIsIkhPU1RfUkVBRCIsIkhPU1RfV1JJVEUiLCJDTFVTVEVSX1JFQUQiLCJDTFVTVEVSX1dSSVRFIiwiVVBHUkFERV9SRUFEIiwiVVBHUkFERV9XUklURSIsIkRFUE9UX0NPTkZJR19SRUFEIiwiREVQT1RfQ09ORklHX1dSSVRFIiwiVkFTQV9QUk9WSURFUl9SRUFEIiwiVkFTQV9QUk9WSURFUl9XUklURSIsIlNFUlZJQ0VfQUNDT1VOVF9SRUFEIiwiU0VSVklDRV9BQ0NPVU5UX1dSSVRFIiwiQVZOX1dSSVRFIiwiQVZOX1JFQUQiLCJTT1NfUkVBRCIsIlNPU19XUklURSIsIlNFQ1VSSVRZX0NPTkZJR19SRUFEIiwiUkVTT1VSQ0VfRlVOQ1RJT05BTElUWV9SRUFEIiwiUkVTT1VSQ0VfRlVOQ1RJT05BTElUWV9XUklURSIsIlRBR19SRUFEIiwiVEFHX1dSSVRFIiwiUkVTT1VSQ0VfTE9DS19SRUFEIiwiUkVTT1VSQ0VfTE9DS19XUklURSIsIkxJQ0VOU0lOR19JTkZPX1JFQUQiLCJMSUNFTlNJTkdfSU5GT19XUklURSIsIlNZU1RFTV9XUklURSIsIlNZU1RFTV9SRUFEIiwiTElDRU5TSU5HX1JFQUQiLCJMSUNFTlNJTkdfV1JJVEUiLCJFVkVOVF9SRUFEIiwiRVZFTlRfV1JJVEUiLCJBTEJfQ0xVU1RFUl9SRUFEIiwiQUxCX0NMVVNURVJfV1JJVEUiLCJDT01QTElBTkNFX1JFQUQiLCJDT01QTElBTkNFX1dSSVRFIiwiVkVSU0lPTl9TWU5DX1dSSVRFIiwiUkFfUkVBRCIsIlBPTElDWV9SRUFEIiwiUE9MSUNZX1dSSVRFIiwiTk9USUZJQ0FUSU9OX1JFQUQiLCJOT1RJRklDQVRJT05fV1JJVEUiLCJUT0tFTl9TSUdOSU5HX0tFWV9SRUFEIiwiVE9LRU5fU0lHTklOR19LRVlfV1JJVEUiLCJWU1BfQ0xVU1RFUl9SRUFEIiwiVlNQX0NMVVNURVJfV1JJVEUiXSwiaXNzIjoidmNmLWF1dGgiLCJuYW1lIjoiYWRtaW5AbG9jYWwiLCJleHAiOjE3ODU3NTc3MjEsImlhdCI6MTc4NTc1NDEyMSwidXNlciI6ImFkbWluQGxvY2FsIiwianRpIjoiYzEzMmZiMjEtYjZiNi00ZThmLTk5MDYtNTc2YTQxMWY4NmRjIn0.IsLPDYML0r79fqEVW51KOwyAKABrkohV21v9k1fBjpo
+</span></span></code></pre></div><ol start="5">
 <li>View all of the install binaries based on a specific version by running the following command:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$vcfInstallerFqdn</span><span class="s2">/v1/bundles&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s2">&#34;Authorization: Bearer </span><span class="nv">$vcfInstallerToken</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --header <span class="s1">&#39;Accept: application/json&#39;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="si">${</span><span class="nv">vcfInstallerFqdn</span><span class="si">}</span><span class="s2">/v1/bundles&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s2">&#34;Authorization: Bearer </span><span class="si">${</span><span class="nv">vcfInstallerToken</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">4</span><span class="cl">    --header <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="p">|</span> jq <span class="s1">&#39;.elements[] | select(.version | startswith(&#34;9.1.0&#34;)) | .components[] | select(.imageType == &#34;INSTALL&#34;)&#39;</span>
-</span></span></code></pre></div><ol start="5">
+</span></span></code></pre></div><ol start="6">
 <li>Trigger the download of the all required binaries to VCF Installer based on a specific version by running the following command:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln"> 1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$vcfInstallerFqdn</span><span class="s2">/v1/bundles&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl">    --header <span class="s2">&#34;Authorization: Bearer </span><span class="nv">$vcfInstallerToken</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl">    --header <span class="s1">&#39;Accept: application/json&#39;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln"> 1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="si">${</span><span class="nv">vcfInstallerFqdn</span><span class="si">}</span><span class="s2">/v1/bundles&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl">    --header <span class="s2">&#34;Authorization: Bearer </span><span class="si">${</span><span class="nv">vcfInstallerToken</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl">    --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln"> 4</span><span class="cl">    --header <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln"> 5</span><span class="cl">    <span class="p">|</span> jq -r <span class="s1">&#39;.elements[] 
 </span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="s1">        | select(.version | startswith(&#34;9.1.0&#34;)) 
@@ -278,9 +286,9 @@
 </span></span><span class="line"><span class="ln">13</span><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Starting download for ID: </span><span class="nv">$id</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="ln">14</span><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;--------------------------------------------------&#34;</span>
 </span></span><span class="line"><span class="ln">15</span><span class="cl">        
-</span></span><span class="line"><span class="ln">16</span><span class="cl">        curl -k -X PATCH <span class="s2">&#34;https://</span><span class="nv">$vcfInstallerFqdn</span><span class="s2">/v1/bundles/</span><span class="nv">$id</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">17</span><span class="cl">            --header <span class="s2">&#34;Authorization: Bearer </span><span class="nv">$vcfInstallerToken</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">18</span><span class="cl">            --header <span class="s1">&#39;Accept: application/json&#39;</span> <span class="se">\
+</span></span><span class="line"><span class="ln">16</span><span class="cl">        curl -k -X PATCH <span class="s2">&#34;https://</span><span class="si">${</span><span class="nv">vcfInstallerFqdn</span><span class="si">}</span><span class="s2">/v1/bundles/</span><span class="si">${</span><span class="nv">id</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl">            --header <span class="s2">&#34;Authorization: Bearer </span><span class="si">${</span><span class="nv">vcfInstallerToken</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl">            --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">19</span><span class="cl">            --header <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">20</span><span class="cl">            --data <span class="s1">&#39;{
 </span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="s1">                &#34;bundleDownloadSpec&#34;: {
@@ -292,12 +300,12 @@
 </span></span><span class="line"><span class="ln">27</span><span class="cl">        <span class="nb">echo</span> -e <span class="s2">&#34;\nTriggered download for </span><span class="nv">$id</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="ln">28</span><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;--------------------------------------------------&#34;</span>
 </span></span><span class="line"><span class="ln">29</span><span class="cl">    <span class="k">done</span>
-</span></span></code></pre></div><ol start="6">
+</span></span></code></pre></div><ol start="7">
 <li>Verify the binaries have been downloaded successfully by running the following command:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="nv">$vcfInstallerFqdn</span><span class="s2">/v1/bundles&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s2">&#34;Authorization: Bearer </span><span class="nv">$vcfInstallerToken</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --header <span class="s1">&#39;Accept: application/json&#39;</span> <span class="se">\
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl -k -X GET <span class="s2">&#34;https://</span><span class="si">${</span><span class="nv">vcfInstallerFqdn</span><span class="si">}</span><span class="s2">/v1/bundles&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    --header <span class="s2">&#34;Authorization: Bearer </span><span class="si">${</span><span class="nv">vcfInstallerToken</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    --header <span class="s2">&#34;Accept: application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">4</span><span class="cl">    --header <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="p">|</span> jq -r <span class="s1">&#39;[&#34;PARENT ID&#34;, &#34;VERSION&#34;, &#34;STATUS&#34;], [&#34;---------&#34;, &#34;-------&#34;, &#34;------&#34;], (.elements[] 
 </span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="s1">        | select(.version | startswith(&#34;9.1&#34;)) 
@@ -359,6 +367,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="http://localhost:1313/post/vcf-91/vcf-91-vcf-installer-change-dns-ntp/" class="nav-link" title="VCF Installer: Changing DNS/NTP Settings">VCF Installer: Changing DNS/NTP Settings</a>
+      </li>
+      <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-cancel-task/" class="nav-link" title="VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task">VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task</a>
       </li>
       <li>
@@ -370,16 +381,13 @@
       <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-deploy/" class="nav-link" title="VMware Cloud Foundation APIs: Deploy an Additional Cloud Proxy">VMware Cloud Foundation APIs: Deploy an Additional Cloud Proxy</a>
       </li>
-      <li>
-        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-vcf-automation-deploy/" class="nav-link" title="VMware Cloud Foundation APIs: Deploying VCF Automation">VMware Cloud Foundation APIs: Deploying VCF Automation</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class="post_tag button button_translucent" title="vmware cloud foundation">
           VMWARE CLOUD FOUNDATION
-          <span class="button_tally">89</span>
+          <span class="button_tally">90</span>
         </a>
         
         <a href='http://localhost:1313/categories/powershell/' class="post_tag button button_translucent" title="powershell">
@@ -397,14 +405,14 @@
           <span class="button_tally">12</span>
         </a>
         
-        <a href='http://localhost:1313/categories/vmware-cloud-builder/' class="post_tag button button_translucent" title="vmware cloud builder">
-          VMWARE CLOUD BUILDER
+        <a href='http://localhost:1313/categories/vcf-installer/' class="post_tag button button_translucent" title="vcf installer">
+          VCF INSTALLER
           <span class="button_tally">11</span>
         </a>
         
-        <a href='http://localhost:1313/categories/vcf-installer/' class="post_tag button button_translucent" title="vcf installer">
-          VCF INSTALLER
-          <span class="button_tally">10</span>
+        <a href='http://localhost:1313/categories/vmware-cloud-builder/' class="post_tag button button_translucent" title="vmware cloud builder">
+          VMWARE CLOUD BUILDER
+          <span class="button_tally">11</span>
         </a>
         
         <a href='http://localhost:1313/categories/vcloud-automation-center/' class="post_tag button button_translucent" title="vcloud automation center">
@@ -537,7 +545,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vcf-installer/' class=" post_tag button button_translucent" data-position=10 title="vcf installer">VCF INSTALLER<span class="button_tally">10</span>
+            <a href='http://localhost:1313/categories/vcf-installer/' class=" post_tag button button_translucent" data-position=11 title="vcf installer">VCF INSTALLER<span class="button_tally">11</span>
             </a>
             
             
@@ -569,7 +577,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class=" post_tag button button_translucent" data-position=89 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class="button_tally">89</span>
+            <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class=" post_tag button button_translucent" data-position=90 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class="button_tally">90</span>
             </a>
             
             
@@ -706,7 +714,7 @@
         
         <a href='http://localhost:1313/tags/vcf-9.1/' class="post_tag button button_translucent" title="vcf 9.1">
           VCF 9.1
-          <span class="button_tally">19</span>
+          <span class="button_tally">20</span>
         </a>
         
         <a href='http://localhost:1313/tags/vcf-9.0/' class="post_tag button button_translucent" title="vcf 9.0">
@@ -880,11 +888,11 @@
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf-9.1/' class=" post_tag button button_translucent" data-position=19 title="vcf 9.1">VCF 9.1<span class="button_tally">19</span>
+            <a href='http://localhost:1313/tags/vcf-9.1/' class=" post_tag button button_translucent" data-position=20 title="vcf 9.1">VCF 9.1<span class="button_tally">20</span>
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf-installer/' class=" post_tag button button_translucent" data-position=1 title="vcf installer">VCF INSTALLER<span class="button_tally">1</span>
+            <a href='http://localhost:1313/tags/vcf-installer/' class=" post_tag button button_translucent" data-position=2 title="vcf installer">VCF INSTALLER<span class="button_tally">2</span>
             </a>
             
             

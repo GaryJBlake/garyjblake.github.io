@@ -9,7 +9,23 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCF Installer: Changing DNS/NTP Settings</title>
+      <link>http://localhost:1313/post/vcf-91/vcf-91-vcf-installer-change-dns-ntp/</link>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91/vcf-91-vcf-installer-change-dns-ntp/</guid>
+      <description>
+        
+          
+            <p>One of my customers reached out to me today to ask for help on how to change the DNS / NTP settings of their already deployed VCF Installer appliance. Specifically they were trying to alter the initial value used for NTP, after making the change via the linux console they were observing that when you walk-through the VCF Installer UI deployment wizard it was always displaying the original details and because of this the new value did not match throwing a validation in the UI and therefore they were blocked from moving forward.</p>
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-cancel-task/</link>
@@ -686,7 +702,7 @@
       <description>
         
           
-            <p><strong>Last Updated:</strong> 24-Jun-2026</p>
+            <p><strong>Last Updated:</strong> 03-Aug-2026</p>
 <p>Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.</p>
 <p>Whilst public API documentation is available across the VMware Cloud Foundation platform (see <a
 	

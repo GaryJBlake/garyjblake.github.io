@@ -39,7 +39,7 @@ Once you have your JSON specification file created, its critical that you perfor
 
 3. Replace the values in the sample code with values for your VCF Installer instance and paste the commands in the console.
 
-``` bash
+```bash
 export vcfInstallerFqdn='sfo-ins01.sfo.rainpole.io'
 export vcfInstallerUser='admin@local'
 export vcfInstallerPass='VMw@re1!VMw@re1!'
@@ -47,7 +47,7 @@ export vcfInstallerPass='VMw@re1!VMw@re1!'
 
 4. Authenticate to VCF Installer and obtain a token by running the following command:
 
-``` bash
+```bash
 vcfInstallerToken=$(curl -k -X POST https://$vcfInstallerFqdn/v1/tokens \
     --header "Content-Type:application/json" \
     -d '{"username": "'$vcfInstallerUser'","password": "'$vcfInstallerPass'"}' \
@@ -56,7 +56,7 @@ vcfInstallerToken=$(curl -k -X POST https://$vcfInstallerFqdn/v1/tokens \
 
 5. Start a validation task using your JSON specification file by running the following command:
 
-``` bash
+```bash
 validationId=$(curl -k -X POST https://$vcfInstallerFqdn/v1/sddcs/validations \
     --header "Authorization: Bearer $vcfInstallerToken" \
     --header "Accept: application/json" \
@@ -66,7 +66,7 @@ validationId=$(curl -k -X POST https://$vcfInstallerFqdn/v1/sddcs/validations \
 
 6. The validation will take some time but you can check its progress by running the following command:
 
-``` bash
+```bash
 curl -sk -X GET "https://$vcfInstallerFqdn/v1/sddcs/validations/$validationId" \
     --header "Authorization: Bearer $vcfInstallerToken" \
     --header "Accept: application/json" \
@@ -76,7 +76,7 @@ curl -sk -X GET "https://$vcfInstallerFqdn/v1/sddcs/validations/$validationId" \
 
 7. The command in step 6 would need to be run multiple times, alternatively you can run the command over and over by running the following command:
 
-``` bash
+```bash
 while curl -sk -X GET "https://$vcfInstallerFqdn/v1/sddcs/validations/$validationId" \
     --header "Authorization: Bearer $vcfInstallerToken" \
     --header "Accept: application/json" \

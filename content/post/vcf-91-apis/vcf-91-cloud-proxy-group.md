@@ -49,7 +49,7 @@ export vcfOperationsPass='VMw@re1!VMw@re1!'
 3. Authenticate to VCF Operations and obtain a token by running the following command:
 
 ```bash
-vcfOperationsToken=$(curl -k -X POST https://${vcfOperationsFqdn}/suite-api/api/auth/token/acquire \
+vcfOperationsToken=$(curl -k -X POST "https://${vcfOperationsFqdn}/suite-api/api/auth/token/acquire" \
     --header "Content-Type:application/json" \
     --header "Accept: application/json" \
     -d "{\"username\":\"$vcfOperationsUser\", \"password\":\"$vcfOperationsPass\"}" \

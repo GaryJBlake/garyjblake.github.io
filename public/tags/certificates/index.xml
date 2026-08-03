@@ -9,7 +9,23 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 26 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/certificates/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/certificates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Configure Certificate Authorities</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-management/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-management/</guid>
+      <description>
+        
+          
+            <p>A key fleet management capability delivered by VMware Cloud Foundation is the ability to centrally manage certificates across all the components of your platform, the process involves first configuring VCF Operations to interact with either a Microsoft or an OpenSSL Certificate Authority. The process is very similar to the way in which this was done with SDDC Manager prior to the release of VMware Cloud Foundation 9.x, the main difference being that VCF Operations is now the endpoint you interact with and as a result there are some minor changes to the JSON payload.</p>
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Adjusting ESX Certificate Key Size in VMware Cloud Foundation</title>
       <link>http://localhost:1313/post/vcf-90/vcf-90-esx-certificate-keysize/</link>

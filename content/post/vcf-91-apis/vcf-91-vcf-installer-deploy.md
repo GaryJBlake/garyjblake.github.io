@@ -35,7 +35,7 @@ Once you have validated your JSON specification file, along with the infrastruct
 
 3. Replace the values in the sample code with values for your VCF Installer instance and paste the commands in the console.
 
-``` bash
+```bash
 export vcfInstallerFqdn='sfo-ins01.sfo.rainpole.io'
 export vcfInstallerUser='admin@local'
 export vcfInstallerPass='VMw@re1!VMw@re1!'
@@ -43,7 +43,7 @@ export vcfInstallerPass='VMw@re1!VMw@re1!'
 
 4. Authenticate to VCF Installer and obtain a token by running the following command:
 
-``` bash
+```bash
 vcfInstallerToken=$(curl -k -X POST https://$vcfInstallerFqdn/v1/tokens \
     --header "Content-Type:application/json" \
     -d '{"username": "'$vcfInstallerUser'","password": "'$vcfInstallerPass'"}' \
@@ -72,7 +72,7 @@ curl -k -X GET "https://$vcfInstallerFqdn/v1/sddcs/$deploymentId" \
 
 7. The command in step 6 would need to be run multiple times, alternatively you can run the command over and over by running the following command:
 
-``` bash
+```bash
 while curl -k -X GET "https://$vcfInstallerFqdn/v1/sddcs/$deploymentId" \
     --header "Authorization: Bearer $vcfInstallerToken" \
     --header "Accept: application/json" \

@@ -9,7 +9,72 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 28 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-9.1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vcf-9.1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCF Installer: Changing DNS/NTP Settings</title>
+      <link>http://localhost:1313/post/vcf-91/vcf-91-vcf-installer-change-dns-ntp/</link>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91/vcf-91-vcf-installer-change-dns-ntp/</guid>
+      <description>
+        
+          
+            <p>One of my customers reached out to me today to ask for help on how to change the DNS / NTP settings of their already deployed VCF Installer appliance. Specifically they were trying to alter the initial value used for NTP, after making the change via the linux console they were observing that when you walk-through the VCF Installer UI deployment wizard it was always displaying the original details and because of this the new value did not match throwing a validation in the UI and therefore they were blocked from moving forward.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-cancel-task/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-cancel-task/</guid>
+      <description>
+        
+          
+            <p>There maybe a number scenarios where you find yourself needing to cancel a running task, this is possible using the <em><strong>VCF Fleet Lifecycle Service</strong></em> APIs. It's important to note that the running stage will continue until it reaches a terminal state, and only then subsequent steps will not be executed.</p>
+<p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
+<p><a
+	
+		href = "https://developer.broadcom.com/xapis/vcf-fleet-lcm-service-apis/latest/"
+	
+
+	
+
+	
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+	>
+
+	<span>
+		VCF Fleet LCM Service APIs
+	</span>
+</a></p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation APIs: Configure Certificate Authorities</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-management/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-management/</guid>
+      <description>
+        
+          
+            <p>A key fleet management capability delivered by VMware Cloud Foundation is the ability to centrally manage certificates across all the components of your platform, the process involves first configuring VCF Operations to interact with either a Microsoft or an OpenSSL Certificate Authority. The process is very similar to the way in which this was done with SDDC Manager prior to the release of VMware Cloud Foundation 9.x, the main difference being that VCF Operations is now the endpoint you interact with and as a result there are some minor changes to the JSON payload.</p>
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VMware Cloud Foundation APIs: Create a Cloud Proxy Group</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/</link>
@@ -20,136 +85,6 @@
         
           
             <p>Creating a <em><strong>cloud proxy group</strong></em>, allows you to group multiple <em><strong>cloud proxies</strong></em>. This ensures that if a <em><strong>cloud proxy</strong></em> goes offline, VCF Operations will automatically reassign the adapters with a <em><strong>cloud proxy</strong></em> that remains online ensuring data can still be collected in the event of failures, thus providing a level of high availability. Once a <em><strong>cloud proxy group</strong></em> has been created and the <em><strong>cloud proxies</strong></em> have been assigned you must then also reconfigure each adapter to point to the newly created <em><strong>cloud proxy group</strong></em> rather than directly to a <em><strong>cloud proxy</strong></em>.</p>
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>VMware Cloud Foundation APIs: Upgrading VCF Management</title>
-      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-management-upgrade/</link>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
-      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
-      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-management-upgrade/</guid>
-      <description>
-        
-          
-            <p>Performing an upgrade of your VMware Cloud Foundation platform involves multiple steps which include running a precheck of the component before commencing the upgrade itself. I've broken these steps down into sections as you have some optionality.</p>
-<ul>
-<li><a
-	
-		href = "#authenticating-to-the-vcf-fleet-lifcycle-service"
-	
-
-	
-
-	>
-
-	<span>
-		Authenticating to the VCF Fleet Lifcycle Service
-	</span>
-</a></li>
-<li><a
-	
-		href = "#configure-the-upgrade-plan"
-	
-
-	
-
-	>
-
-	<span>
-		Configure the Upgrade Plan
-	</span>
-</a></li>
-<li><a
-	
-		href = "#perform-prechecks-before-upgrading"
-	
-
-	
-
-	>
-
-	<span>
-		Perform Prechecks Before Upgrading
-	</span>
-</a>
-<ul>
-<li><a
-	
-		href = "#perform-prechecks-for-all-components"
-	
-
-	
-
-	>
-
-	<span>
-		Perform Prechecks For All Components
-	</span>
-</a></li>
-<li><a
-	
-		href = "#perform-prechecks-for-a-single-component"
-	
-
-	
-
-	>
-
-	<span>
-		Perform Prechecks for a Single Component
-	</span>
-</a></li>
-</ul>
-</li>
-<li><a
-	
-		href = "#perform-component-upgrades"
-	
-
-	
-
-	>
-
-	<span>
-		Perform Component Upgrades
-	</span>
-</a>
-<ul>
-<li><a
-	
-		href = "#perform-an-upgrade-of-all-components"
-	
-
-	
-
-	>
-
-	<span>
-		Perform an Upgrade of All Components
-	</span>
-</a></li>
-<li><a
-	
-		href = "#perform-upgrade-of-a-single-component"
-	
-
-	
-
-	>
-
-	<span>
-		Perform Upgrade of a Single Component
-	</span>
-</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="authenticating-to-the-vcf-fleet-lifcycle-service">Authenticating to the VCF Fleet Lifcycle Service</h3>
-<p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
           
           
         
@@ -767,7 +702,7 @@
       <description>
         
           
-            <p><strong>Last Updated:</strong> 24-Jun-2026</p>
+            <p><strong>Last Updated:</strong> 03-Aug-2026</p>
 <p>Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.</p>
 <p>Whilst public API documentation is available across the VMware Cloud Foundation platform (see <a
 	

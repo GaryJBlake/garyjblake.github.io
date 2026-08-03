@@ -37,7 +37,7 @@ In this post we will look at how the Real-time metrics component can be deployed
 
 2. Replace the values in the sample code with values for your VCF Fleet Lifecycle Service and paste the commands in the console. If your not sure which endpoint this FQDN should be log into VCF Operations, go to ***Build > Lifecycle > VCF Management*** and select the ***Components*** tab and locate the component named ***Fleet lifecycle*** the FQDN is shown in the FQDN column.
 
-``` bash
+```bash
 export vcfFleetLifecycleFqdn='flt-fc01.rainpole.io'
 export vcfFleetLifecycleUser='admin@vsp.local'
 export vcfFleetLifecyclePass='VMw@re1!VMw@re1!'
@@ -45,9 +45,9 @@ export vcfFleetLifecyclePass='VMw@re1!VMw@re1!'
 
 3. Authenticate to the VCF Fleet Lifecycle Service and obtain a token by running the following command:
 
-``` bash
-vcfFleetLifecycleToken=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/api/v1/identity/token" \
-    -H 'Content-Type: application/x-www-form-urlencoded' \
+```bash
+vcfFleetLifecycleToken=$(curl -k -X POST "https://${vcfFleetLifecycleFqdn}/api/v1/identity/token" \
+    --header "Content-Type: application/x-www-form-urlencoded" \
     --data "grant_type=password" \
     --data "username=$vcfFleetLifecycleUser" \
     --data "password=$vcfFleetLifecyclePass" \
@@ -56,21 +56,20 @@ vcfFleetLifecycleToken=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/api/v1/
 
 4. Verify you successfully obtained an authentication token by running the following command:
 
-``` bash
+```bash
 echo $vcfFleetLifecycleToken
 ```
 
 Example Output:
 
-``` bash
+```bash
 eyJhbGciOiJFZERTQSIsImtpZCI6Ilg4Mk5veGNJRlVCVEFiY0xPM1NUdU12UTF6Qlo4d01xeUxDTGNuOGZYdFUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2ZsdC1mYzAxLnJhaW5wb2xlLmlvIiwic3ViIjoiYWRtaW5AdnNwLmxvY2FsIiwiYXVkIjpbInZzcCJdLCJleHAiOjE3ODM0MzU1NTIsImlhdCI6MTc4MzQyMTE1MiwianRpIjoiMjA3OTg0MDgtZGE3OC00N2UzLTgxMDctNDAyMThkNjM1ZThmIiwiYXpwIjoicGFzc3dvcmRfZ3JhbnRfY2xpZW50IiwiYWNjdCI6ImFkbWluQHZzcC5sb2NhbCIsImF1dGhvcml6YXRpb25fZGV0YWlscyI6bnVsbH0.OsXjW3cgwZaEMXwZC6MOqOped5MX1wdf3wpUmjZLaRiXeug4rtm9dnWHvPrp5pM74MNsVEjhbeT3u0TJjgIIBQ
-
 ```
 
 5. First we retrieve the unique ID of the SDDC instance by running the following command:
 
-``` bash
-primarySddcLcms=$(curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/sddc-lcms" \
+```bash
+primarySddcLcms=$(curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/sddc-lcms" \
   --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
@@ -79,19 +78,19 @@ primarySddcLcms=$(curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/sd
 
 6. Verify you successfully obtained the SDDC instance by running the following command:
 
-``` bash
+```bash
 echo $primarySddcLcms
 ```
 
 Example Output:
 
-``` bash
+```bash
 3e8d0034-906b-49cb-9c47-3afa8d919192
 ```
 
 7. Create the JSON payload for the Real-Time Metrics instance deployment by running the following command:
 
-``` bash
+```bash
 cat << EOF > real-time-metrics-deploy.json
 {
   "componentSpecs": [
@@ -108,13 +107,13 @@ EOF
 
 8. Verify the JSON payload has been populated correctly by running the following command:
 
-``` bash
+```bash
  cat real-time-metrics-deploy.json
 ```
 
 Example Output:
 
-``` json
+```json
 {
   "componentSpecs": [
     {
@@ -127,10 +126,10 @@ Example Output:
 }
 ```
 
-9.  Validate the JSON payload by running the following command:
+9. Validate the JSON payload by running the following command:
 
 ```bash
-validationId=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/components/validations" \
+validationId=$(curl -k -X POST "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/components/validations" \
   --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
@@ -139,8 +138,8 @@ validationId=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/comp
 
 10. Check the status of the validation by running the following command:
 
-``` bash
-curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/$validationId" \
+```bash
+curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${validationId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \
@@ -149,8 +148,8 @@ curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/$validationId"
 
 11. The command in step 11 may need to be run multiple times, alternatively you can run the command over and over by running the following command:
 
-``` bash
-while curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/$validationId" \
+```bash
+while curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${validationId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \
@@ -164,7 +163,7 @@ done
 12. Start the deployment by running the following command:
 
 ```bash
-deploymentId=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/components" \
+deploymentId=$(curl -k -X POST "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/components" \
   --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
@@ -173,8 +172,8 @@ deploymentId=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/comp
 
 13. Check the status of the deployment by running the following command:
 
-``` bash
-curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/$deploymentId" \
+```bash
+curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${deploymentId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \
@@ -183,8 +182,8 @@ curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/$deploymentId"
 
 14. The command in step 11 would need to be run multiple times, alternatively you can run the command over and over by running the following command:
 
-``` bash
-while curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/$deploymentId" \
+```bash
+while curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${deploymentId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \

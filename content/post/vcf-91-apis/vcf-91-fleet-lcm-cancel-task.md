@@ -41,8 +41,8 @@ export vcfFleetLifecyclePass='VMw@re1!VMw@re1!'
 3. Authenticate to the VCF Fleet Lifecycle service and obtain a token by running the following command:
 
 ```bash
-vcfFleetLifecycleToken=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/api/v1/identity/token" \
-    -H 'Content-Type: application/x-www-form-urlencoded' \
+vcfFleetLifecycleToken=$(curl -k -X POST "https://${vcfFleetLifecycleFqdn}/api/v1/identity/token" \
+    --header "Content-Type: application/x-www-form-urlencoded" \
     --data "grant_type=password" \
     --data "username=$vcfFleetLifecycleUser" \
     --data "password=$vcfFleetLifecyclePass" \
@@ -64,7 +64,7 @@ eyJhbGciOiJFZERTQSIsImtpZCI6Ilg4Mk5veGNJRlVCVEFiY0xPM1NUdU12UTF6Qlo4d01xeUxDTGNu
 5. Retrieve the task ID of the running task by running the following command:
 
 ```bash
-taskId=$(curl -ks -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks" \
+taskId=$(curl -ks -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks" \
   --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
@@ -86,7 +86,7 @@ Example Output:
 7. Cancel the task by running the following command:
 
 ```bash
-curl -ks -X POST "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/${taskId}?action=cancel" \
+curl -ks -X POST "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${taskId}?action=cancel" \
   --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
   --header "Accept: application/json" \
   --header "Content-Type: application/json"

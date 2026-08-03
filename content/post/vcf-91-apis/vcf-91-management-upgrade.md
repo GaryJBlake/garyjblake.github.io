@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "VMware Cloud Foundation APIs: Upgrading VCF Management"
-date = "2026-08-06"
+date = "2026-08-11"
 description = "VMware Cloud Foundation APIs: Upgrading VCF Management"
 tags = [
     "VCF 9.1",
@@ -49,7 +49,7 @@ export vcfFleetLifecyclePass='VMw@re1!VMw@re1!'
 
 ```bash
 vcfFleetLifecycleToken=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/api/v1/identity/token" \
-    -H 'Content-Type: application/x-www-form-urlencoded' \
+    --header 'Content-Type: application/x-www-form-urlencoded' \
     --data "grant_type=password" \
     --data "username=$vcfFleetLifecycleUser" \
     --data "password=$vcfFleetLifecyclePass" \

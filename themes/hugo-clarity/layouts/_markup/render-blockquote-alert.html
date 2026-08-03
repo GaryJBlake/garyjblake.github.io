@@ -1,0 +1,17 @@
+{{ $alerts := dict 
+  "note" (dict "color" "#0969da" "bg" "#f6fafe" "path" "M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm.75 8a.75.75 0 0 1-1.5 0V7a.75.75 0 0 1 1.5 0v5z")
+  "tip" (dict "color" "#1a7f37" "bg" "#f6fbf7" "path" "M8 1.5c-2.364 0-4 1.636-4 4 0 1.09.364 2.091 1.001 2.854.545.636.999 1.455.999 2.146v1.5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-1.5c0-.691.454-1.51 1-2.146C11.636 7.591 12 6.59 12 5.5c0-2.364-1.636-4-4-4Zm-1 11.5v-.5h2v.5a1 1 0 0 1-1 1h-0a1 1 0 0 1-1-1Z")
+}}
+{{ $currentAlert := index $alerts .AlertType }}
+
+<div style="padding: 0.75rem 1rem; margin: 1.5rem 0; border-left: 0.25rem solid {{ $currentAlert.color }}; background-color: {{ $currentAlert.bg }}; border-radius: 0 0.375rem 0.375rem 0;">
+  <p style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: {{ $currentAlert.color }}; margin: 0 0 0.5rem 0;">
+    <svg style="fill: currentColor; width: 16px; height: 16px; display: inline-block; vertical-align: middle;" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="{{ $currentAlert.path }}"></path>
+    </svg>
+    <span>{{ .AlertTitle | default (title .AlertType) }}</span>
+  </p>
+  <div style="margin: 0;">
+    {{ .Text }}
+  </div>
+</div>

@@ -1,7 +1,7 @@
 +++
 author = "GaryJBlake"
 title = "VMware Cloud Foundation APIs: Upgrading the VCF Fleet Lifecycle Service"
-date = "2026-08-04"
+date = "2026-08-06"
 description = "VMware Cloud Foundation APIs: Upgrading the VCF Fleet Lifecycle Service"
 tags = [
     "VCF 9.1",
@@ -45,8 +45,8 @@ export vcfFleetLifecyclePass='VMw@re1!VMw@re1!'
 3. Authenticate to the VCF Fleet Lifecycle service and obtain a token by running the following command:
 
 ```bash
-vcfFleetLifecycleToken=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/api/v1/identity/token" \
-    -H 'Content-Type: application/x-www-form-urlencoded' \
+vcfFleetLifecycleToken=$(curl -k -X POST "https://${vcfFleetLifecycleFqdn}/api/v1/identity/token" \
+    --header 'Content-Type: application/x-www-form-urlencoded' \
     --data "grant_type=password" \
     --data "username=$vcfFleetLifecycleUser" \
     --data "password=$vcfFleetLifecyclePass" \
@@ -121,7 +121,7 @@ upgradeTaskId=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/sys
 | jq -r '.id')
 ```
 
-10.  Verify the status of the task for performing the upgrade by running the following command:
+10. Verify the status of the task for performing the upgrade by running the following command:
 
 ```bash
 curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/$upgradeTaskId" \
