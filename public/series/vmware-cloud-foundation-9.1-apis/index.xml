@@ -9,7 +9,82 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/vmware-cloud-foundation-9.1-apis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/vmware-cloud-foundation-9.1-apis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Replacing VCF Operations Certificate</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-replacement/</link>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-replacement/</guid>
+      <description>
+        
+          
+            <p>A core fleet management capability provided by VMware Cloud Foundation is the ability to replace component certificates across the entire platform from a central location. VMware Cloud Foundation provides direct integration for OpenSSL and Microsoft Certificate Authorities, using this integration you first create a Certificate Signing Request before then replacing the component certificate during which VCF Operations will contact the Certificate Authority request a new signed certificate and then replace the component certificate.</p>
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VMware Cloud Foundation APIs: Configure SFTP Backup Location</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-configure-sftp-locatiom/</link>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-configure-sftp-locatiom/</guid>
+      <description>
+        
+          
+            <p>One of the first tasks you should perform following the initial deployment of your VMware Cloud Foundation platform is to configure a backup location for your VCF Instance. Regularly backing up the management components ensures that in the event of data loss or system failure, you can efficiently restore critical services, minimizing downtime and maintaining operational integrity.</p>
+<ul>
+<li><a
+	
+		href = "#configure-the-sftp-backup-location-for-vcf-management-services"
+	
+
+	
+
+	>
+
+	<span>
+		Configure the SFTP Backup Location for VCF Management Services
+	</span>
+</a></li>
+<li><a
+	
+		href = "#configure-sftp-backup-location-for-sddc-manager-and-nsx-manager"
+	
+
+	
+
+	>
+
+	<span>
+		Configure SFTP Backup Location for SDDC Manager and NSX Manager
+	</span>
+</a></li>
+<li><a
+	
+		href = "#configure-sftp-backup-location-for-vcenter"
+	
+
+	
+
+	>
+
+	<span>
+		Configure SFTP Backup Location for vCenter
+	</span>
+</a></li>
+</ul>
+<h3 id="configure-the-sftp-backup-location-for-vcf-management-services">Configure the SFTP Backup Location for VCF Management Services</h3>
+<p><strong>VCF Fleet Lifecycle Service APIs Used</strong></p>
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VMware Cloud Foundation APIs: Cancelling a VCF Fleet Lifecycle Task</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-cancel-task/</link>
@@ -199,7 +274,7 @@
       <description>
         
           
-            <p><strong>Last Updated:</strong> 03-Aug-2026</p>
+            <p><strong>Last Updated:</strong> 04-Aug-2026</p>
 <p>Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.</p>
 <p>Whilst public API documentation is available across the VMware Cloud Foundation platform (see <a
 	

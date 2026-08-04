@@ -194,7 +194,7 @@
   </span>
   </div>
 
-    <div class="post_body"><p><strong>Last Updated:</strong> 03-Aug-2026</p>
+    <div class="post_body"><p><strong>Last Updated:</strong> 04-Aug-2026</p>
 <p>Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.</p>
 <p>Whilst public API documentation is available across the VMware Cloud Foundation platform (see <a
 	
@@ -215,7 +215,7 @@
 <ul>
 <li><a
 	
-		href = "#vcf-installer-vcf-installer"
+		href = "#vcf-installer"
 	
 
 	
@@ -223,12 +223,12 @@
 	>
 
 	<span>
-		VCF Installer {#vcf-installer}
+		VCF Installer
 	</span>
 </a></li>
 <li><a
 	
-		href = "#vcf-operations-vcf-operations"
+		href = "#vcf-operations"
 	
 
 	
@@ -236,12 +236,12 @@
 	>
 
 	<span>
-		VCF Operations {#vcf-operations}
+		VCF Operations
 	</span>
 </a></li>
 <li><a
 	
-		href = "#sddc-manager-sddc-manager"
+		href = "#sddc-manager"
 	
 
 	
@@ -249,12 +249,12 @@
 	>
 
 	<span>
-		SDDC Manager {#sddc-manager}
+		SDDC Manager
 	</span>
 </a></li>
 <li><a
 	
-		href = "#vcf-services-runtime-vcf-runtime"
+		href = "#vcf-services-runtime"
 	
 
 	
@@ -262,12 +262,12 @@
 	>
 
 	<span>
-		VCF Services Runtime {#vcf-runtime}
+		VCF Services Runtime
 	</span>
 </a></li>
 <li><a
 	
-		href = "#vcf-fleet-lifecycle-service-vcf-fleet-lifecycle-service"
+		href = "#vcf-fleet-lifecycle-service"
 	
 
 	
@@ -275,7 +275,20 @@
 	>
 
 	<span>
-		VCF Fleet Lifecycle Service {#vcf-fleet-lifecycle-service}
+		VCF Fleet Lifecycle Service
+	</span>
+</a></li>
+<li><a
+	
+		href = "#vcenter"
+	
+
+	
+
+	>
+
+	<span>
+		vCenter
 	</span>
 </a></li>
 </ul>
@@ -370,7 +383,7 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">echo</span> <span class="nv">$sddcManagerToken</span>
 </span></span></code></pre></div><p>Example Output:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbmlzdHJhdG9yQHZzcGhlcmUubG9jYWwiLCJhdWQiOiJzZGRjLXNlcnZpY2VzIiwibmJmIjoxNzg1NzQ1MzgwLCJyb2xlIjpbIkFETUlOIl0sImlzSXNzdWVkRm9ySnd0IjpmYWxzZSwic2NvcGUiOlsiUkVTT1VSQ0VfRlVOQ1RJT05BTElUWV9XUklURSIsIkxJQ0VOU0lOR19JTkZPX1JFQUQiLCJTRERDX0ZFREVSQVRJT05fV1JJVEUiLCJBVk5fV1JJVEUiLCJTRERDX01BTkFHRVJfUkVBRCIsIkNFUlRfV1JJVEUiLCJBTEJfQ0xVU1RFUl9SRUFEIiwiTElDRU5TRV9LRVlfUkVBRCIsIkVER0VfQ0xVU1RFUl9XUklURSIsIlVTRVJfUkVBRCIsIkNPTVBMSUFOQ0VfV1JJVEUiLCJQT0xJQ1lfV1JJVEUiLCJDUkVERU5USUFMX1dSSVRFIiwiQkFDS1VQX0NPTkZJR19SRUFEIiwiVlNQX0NMVVNURVJfUkVBRCIsIkNMVVNURVJfV1JJVEUiLCJBVk5fUkVBRCIsIlZBU0FfUFJPVklERVJfUkVBRCIsIkRPTUFJTl9XUklURSIsIkNFSVBfUkVBRCIsIlNPU19XUklURSIsIlBPTElDWV9SRUFEIiwiU0REQ19NQU5BR0VSX1dSSVRFIiwiUkFfUkVBRCIsIk5UUF9XUklURSIsIlRBR19XUklURSIsIkRFUE9UX0NPTkZJR19XUklURSIsIlNZU1RFTV9SRUFEIiwiREVQT1RfQ09ORklHX1JFQUQiLCJIT1NUX1dSSVRFIiwiUkVTT1VSQ0VfTE9DS19XUklURSIsIkJBQ0tVUF9SRVNUT1JFX1JFQUQiLCJDRVJUX1JFQUQiLCJOT1RJRklDQVRJT05fV1JJVEUiLCJVU0VSX1dSSVRFIiwiVE9LRU5fU0lHTklOR19LRVlfUkVBRCIsIkNPTVBMSUFOQ0VfUkVBRCIsIlVQR1JBREVfUkVBRCIsIk9USEVSX1JFQUQiLCJMSUNFTlNJTkdfV1JJVEUiLCJTT1NfUkVBRCIsIkVWRU5UX1dSSVRFIiwiU0VDVVJJVFlfQ09ORklHX1JFQUQiLCJDUkVERU5USUFMX1JFQUQiLCJIT1NUX1JFQUQiLCJBTEJfQ0xVU1RFUl9XUklURSIsIlZFUlNJT05fU1lOQ19XUklURSIsIkNFSVBfV1JJVEUiLCJSRVNPVVJDRV9MT0NLX1JFQUQiLCJPVEhFUl9XUklURSIsIkxJQ0VOU0VfS0VZX1dSSVRFIiwiUkVTT1VSQ0VfRlVOQ1RJT05BTElUWV9SRUFEIiwiQ0FfUkVBRCIsIk5PVElGSUNBVElPTl9SRUFEIiwiVEFHX1JFQUQiLCJMSUNFTlNJTkdfUkVBRCIsIk5FVFdPUktfUE9PTF9XUklURSIsIldDUF9SRUFEIiwiTElDRU5TSU5HX0lORk9fV1JJVEUiLCJCQUNLVVBfUkVTVE9SRV9XUklURSIsIlRPS0VOX1NJR05JTkdfS0VZX1dSSVRFIiwiTlRQX1JFQUQiLCJFREdFX0NMVVNURVJfUkVBRCIsIkVWRU5UX1JFQUQiLCJCQUNLVVBfQ09ORklHX1dSSVRFIiwiV0NQX1dSSVRFIiwiU0VSVklDRV9BQ0NPVU5UX1dSSVRFIiwiTkVUV09SS19QT09MX1JFQUQiLCJDQV9XUklURSIsIkNMVVNURVJfUkVBRCIsIlZBU0FfUFJPVklERVJfV1JJVEUiLCJETlNfV1JJVEUiLCJTWVNURU1fV1JJVEUiLCJWUlNMQ01fV1JJVEUiLCJETlNfUkVBRCIsIlNFUlZJQ0VfQUNDT1VOVF9SRUFEIiwiU0REQ19GRURFUkFUSU9OX1JFQUQiLCJET01BSU5fUkVBRCIsIlZTUF9DTFVTVEVSX1dSSVRFIiwiVlJTTENNX1JFQUQiLCJVUEdSQURFX1dSSVRFIl0sImlzcyI6InZjZi1hdXRoIiwibmFtZSI6ImFkbWluaXN0cmF0b3JAdnNwaGVyZS5sb2NhbCIsImV4cCI6MTc4NTc0ODk4MCwiaWF0IjoxNzg1NzQ1MzgwLCJ1c2VyIjoiYWRtaW5pc3RyYXRvckB2c3BoZXJlLmxvY2FsIiwianRpIjoiYzYzZDA3NmEtOGE5Ny00OThhLWJkMjItZDQ4NTA4NDU4Y2FiIn0.fs7aQ-utsHQ_fA8oGbFLIEJFYjxjtdm8QEheHFJrBJA
-</span></span></code></pre></div><h3 id="vcf-runtime">VCF Services Runtime</h3>
+</span></span></code></pre></div><h3 id="vcf-services-runtime">VCF Services Runtime</h3>
 <p><strong>VCF Services Runtim APIs Used</strong></p>
 <ul>
 <li>POST /v1/identity/token</li>
@@ -434,6 +447,35 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">echo</span> <span class="nv">$vcfFleetLifecycleToken</span>
 </span></span></code></pre></div><p>Example Output:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">eyJhbGciOiJFZERTQSIsImtpZCI6ImNsM3VfVHdaQ3JkTDVoOWctVkpzYklpREItMW1faUE5YjZTZTBfbTllejQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2ZsdC1mYzAxLnJhaW5wb2xlLmlvIiwic3ViIjoiYWRtaW5AdnNwLmxvY2FsIiwiYXVkIjpbInZzcCJdLCJleHAiOjE3ODU3NjAwNjAsImlhdCI6MTc4NTc0NTY2MCwianRpIjoiZDEwODNhYjctNmZjZC00YWZmLWE3YjItMTI3NGNiOTY5MmEzIiwiYXpwIjoicGFzc3dvcmRfZ3JhbnRfY2xpZW50IiwiYWNjdCI6ImFkbWluQHZzcC5sb2NhbCIsImF1dGhvcml6YXRpb25fZGV0YWlscyI6bnVsbH0.TE6WkRRGf8lmoKHAXgBPoECkScdwrS0GxWR6ur6rz-FLYUBAcrzwqQX3g0BjMw0t4FUOQnM6sngUlA6je6jQCQ
+</span></span></code></pre></div><h3 id="vcenter">vCenter</h3>
+<p><strong>vCenter APIs Used</strong></p>
+<ul>
+<li>POST /api/v1/identity/token</li>
+</ul>
+<p><strong>Procedure</strong></p>
+<ol>
+<li>
+<p>Connect to a system that has access to the infrastructure and is capable of running CURL.</p>
+</li>
+<li>
+<p>Replace the values in the sample code with values for your vCenter instance and paste the commands in the console.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">export</span> <span class="nv">vcenterFqdn</span><span class="o">=</span><span class="s1">&#39;sfo-m01-vc01.sfo.rainpole.io&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">export</span> <span class="nv">vcenterUser</span><span class="o">=</span><span class="s1">&#39;administrator@vsphere.local&#39;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">export</span> <span class="nv">vcenterPass</span><span class="o">=</span><span class="s1">&#39;VMw@re1!VMw@re1!&#39;</span>
+</span></span></code></pre></div><ol start="3">
+<li>Authenticate to the vCenter intance and obtain a token by running the following command:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">vcenterToken</span><span class="o">=</span><span class="k">$(</span>curl -k -X POST <span class="s2">&#34;https://</span><span class="si">${</span><span class="nv">vcenterFqdn</span><span class="si">}</span><span class="s2">/api/session&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl">    -u <span class="s2">&#34;</span><span class="nv">$vcenterUser</span><span class="s2">:</span><span class="nv">$vcenterPass</span><span class="s2">&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="p">|</span> tr -d <span class="s1">&#39;&#34;&#39;</span><span class="k">)</span>
+</span></span></code></pre></div><ol start="4">
+<li>Verify you successfully obtained an authentication token by running the following command:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">echo</span> <span class="nv">$vcenterToken</span>
+</span></span></code></pre></div><p>Example Output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">32118bd49ebe6cdebbd5e8d06b7fcfa0
 </span></span></code></pre></div>
     </div>
 
@@ -489,6 +531,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-replacement/" class="nav-link" title="VMware Cloud Foundation APIs: Replacing VCF Operations Certificate">VMware Cloud Foundation APIs: Replacing VCF Operations Certificate</a>
+      </li>
+      <li>
         <a href="http://localhost:1313/post/vcf-91/vcf-91-vcf-installer-change-dns-ntp/" class="nav-link" title="VCF Installer: Changing DNS/NTP Settings">VCF Installer: Changing DNS/NTP Settings</a>
       </li>
       <li>
@@ -500,16 +545,13 @@
       <li>
         <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-group/" class="nav-link" title="VMware Cloud Foundation APIs: Create a Cloud Proxy Group">VMware Cloud Foundation APIs: Create a Cloud Proxy Group</a>
       </li>
-      <li>
-        <a href="http://localhost:1313/post/vcf-91-apis/vcf-91-cloud-proxy-deploy/" class="nav-link" title="VMware Cloud Foundation APIs: Deploy an Additional Cloud Proxy">VMware Cloud Foundation APIs: Deploy an Additional Cloud Proxy</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class="post_tag button button_translucent" title="vmware cloud foundation">
           VMWARE CLOUD FOUNDATION
-          <span class="button_tally">90</span>
+          <span class="button_tally">91</span>
         </a>
         
         <a href='http://localhost:1313/categories/powershell/' class="post_tag button button_translucent" title="powershell">
@@ -524,7 +566,7 @@
         
         <a href='http://localhost:1313/categories/vcf-operations/' class="post_tag button button_translucent" title="vcf operations">
           VCF OPERATIONS
-          <span class="button_tally">12</span>
+          <span class="button_tally">13</span>
         </a>
         
         <a href='http://localhost:1313/categories/vcf-installer/' class="post_tag button button_translucent" title="vcf installer">
@@ -591,7 +633,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/certificate-management/' class=" post_tag button button_translucent" data-position=1 title="certificate management">CERTIFICATE MANAGEMENT<span class="button_tally">1</span>
+            <a href='http://localhost:1313/categories/certificate-management/' class=" post_tag button button_translucent" data-position=2 title="certificate management">CERTIFICATE MANAGEMENT<span class="button_tally">2</span>
             </a>
             
             
@@ -671,7 +713,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vcf-operations/' class=" post_tag button button_translucent" data-position=12 title="vcf operations">VCF OPERATIONS<span class="button_tally">12</span>
+            <a href='http://localhost:1313/categories/vcf-operations/' class=" post_tag button button_translucent" data-position=13 title="vcf operations">VCF OPERATIONS<span class="button_tally">13</span>
             </a>
             
             
@@ -699,7 +741,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class=" post_tag button button_translucent" data-position=90 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class="button_tally">90</span>
+            <a href='http://localhost:1313/categories/vmware-cloud-foundation/' class=" post_tag button button_translucent" data-position=91 title="vmware cloud foundation">VMWARE CLOUD FOUNDATION<span class="button_tally">91</span>
             </a>
             
             
@@ -765,7 +807,7 @@
         
         <a href='http://localhost:1313/series/vmware-cloud-foundation-9.1-apis/' class="post_tag button button_translucent" title="vmware cloud foundation 9.1 apis">
           VMWARE CLOUD FOUNDATION 9.1 APIS
-          <span class="button_tally">10</span>
+          <span class="button_tally">11</span>
         </a>
         
         <a href='http://localhost:1313/series/vvs-tip/' class="post_tag button button_translucent" title="vvs-tip">
@@ -816,12 +858,12 @@
       <nav class="tags_nav">
         <a href='http://localhost:1313/tags/vcf/' class="post_tag button button_translucent" title="vcf">
           VCF
-          <span class="button_tally">74</span>
+          <span class="button_tally">75</span>
         </a>
         
         <a href='http://localhost:1313/tags/api/' class="post_tag button button_translucent" title="api">
           API
-          <span class="button_tally">66</span>
+          <span class="button_tally">67</span>
         </a>
         
         <a href='http://localhost:1313/tags/powervcf/' class="post_tag button button_translucent" title="powervcf">
@@ -836,7 +878,7 @@
         
         <a href='http://localhost:1313/tags/vcf-9.1/' class="post_tag button button_translucent" title="vcf 9.1">
           VCF 9.1
-          <span class="button_tally">20</span>
+          <span class="button_tally">21</span>
         </a>
         
         <a href='http://localhost:1313/tags/vcf-9.0/' class="post_tag button button_translucent" title="vcf 9.0">
@@ -851,7 +893,7 @@
         
         <a href='http://localhost:1313/tags/certificates/' class="post_tag button button_translucent" title="certificates">
           CERTIFICATES
-          <span class="button_tally">11</span>
+          <span class="button_tally">12</span>
         </a>
         
         <a href='http://localhost:1313/tags/vcf.powercli/' class="post_tag button button_translucent" title="vcf.powercli">
@@ -890,7 +932,7 @@
         <div class="post_tags">
           <div class="tags_list">
             
-            <a href='http://localhost:1313/tags/api/' class=" post_tag button button_translucent" data-position=66 title="api">API<span class="button_tally">66</span>
+            <a href='http://localhost:1313/tags/api/' class=" post_tag button button_translucent" data-position=67 title="api">API<span class="button_tally">67</span>
             </a>
             
             
@@ -906,7 +948,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/tags/certificates/' class=" post_tag button button_translucent" data-position=11 title="certificates">CERTIFICATES<span class="button_tally">11</span>
+            <a href='http://localhost:1313/tags/certificates/' class=" post_tag button button_translucent" data-position=12 title="certificates">CERTIFICATES<span class="button_tally">12</span>
             </a>
             
             
@@ -998,7 +1040,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf/' class=" post_tag button button_translucent" data-position=74 title="vcf">VCF<span class="button_tally">74</span>
+            <a href='http://localhost:1313/tags/vcf/' class=" post_tag button button_translucent" data-position=75 title="vcf">VCF<span class="button_tally">75</span>
             </a>
             
             
@@ -1010,7 +1052,7 @@
             </a>
             
             
-            <a href='http://localhost:1313/tags/vcf-9.1/' class=" post_tag button button_translucent" data-position=20 title="vcf 9.1">VCF 9.1<span class="button_tally">20</span>
+            <a href='http://localhost:1313/tags/vcf-9.1/' class=" post_tag button button_translucent" data-position=21 title="vcf 9.1">VCF 9.1<span class="button_tally">21</span>
             </a>
             
             

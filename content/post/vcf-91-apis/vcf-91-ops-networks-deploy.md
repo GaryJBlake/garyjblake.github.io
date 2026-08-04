@@ -64,7 +64,6 @@ Example Output:
 
 ``` bash
 eyJhbGciOiJFZERTQSIsImtpZCI6Ilg4Mk5veGNJRlVCVEFiY0xPM1NUdU12UTF6Qlo4d01xeUxDTGNuOGZYdFUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2ZsdC1mYzAxLnJhaW5wb2xlLmlvIiwic3ViIjoiYWRtaW5AdnNwLmxvY2FsIiwiYXVkIjpbInZzcCJdLCJleHAiOjE3ODM0MzU1NTIsImlhdCI6MTc4MzQyMTE1MiwianRpIjoiMjA3OTg0MDgtZGE3OC00N2UzLTgxMDctNDAyMThkNjM1ZThmIiwiYXpwIjoicGFzc3dvcmRfZ3JhbnRfY2xpZW50IiwiYWNjdCI6ImFkbWluQHZzcC5sb2NhbCIsImF1dGhvcml6YXRpb25fZGV0YWlscyI6bnVsbH0.OsXjW3cgwZaEMXwZC6MOqOped5MX1wdf3wpUmjZLaRiXeug4rtm9dnWHvPrp5pM74MNsVEjhbeT3u0TJjgIIBQ
-
 ```
 
 5. First we retrieve the unique ID of the SDDC instance by running the following command:
@@ -197,7 +196,7 @@ Example Output:
 }
 ```
 
-10.  Validate the JSON payload by running the following command:
+10. Validate the JSON payload by running the following command:
 
 ```bash
 validationId=$(curl -k -X POST "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/components/validations" \
@@ -220,7 +219,7 @@ curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${validation
 12. The command in step 11 may need to be run multiple times, alternatively you can run the command over and over by running the following command:
 
 ```bash
-while curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${validationId}" \
+while curl -s -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${validationId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \
@@ -254,7 +253,7 @@ curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${deployment
 15. The command in step 11 would need to be run multiple times, alternatively you can run the command over and over by running the following command:
 
 ```bash
-while curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${deploymentId}" \
+while curl -s -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${deploymentId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \

@@ -89,7 +89,7 @@ curl -k -X GET "https://${vcfInstallerFqdn}/v1/bundles" \
 6. Trigger the download of the all required binaries to VCF Installer based on a specific version by running the following command:
 
 ```bash
-curl -k -X GET "https://${vcfInstallerFqdn}/v1/bundles" \
+curl -s -k -X GET "https://${vcfInstallerFqdn}/v1/bundles" \
     --header "Authorization: Bearer ${vcfInstallerToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \
@@ -104,7 +104,7 @@ curl -k -X GET "https://${vcfInstallerFqdn}/v1/bundles" \
         echo "Starting download for ID: $id"
         echo "--------------------------------------------------"
         
-        curl -k -X PATCH "https://${vcfInstallerFqdn}/v1/bundles/${id}" \
+        curl -s -k -X PATCH "https://${vcfInstallerFqdn}/v1/bundles/${id}" \
             --header "Authorization: Bearer ${vcfInstallerToken}" \
             --header "Accept: application/json" \
             --header "Content-Type: application/json" \

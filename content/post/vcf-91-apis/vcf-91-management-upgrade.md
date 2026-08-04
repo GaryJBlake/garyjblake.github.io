@@ -398,7 +398,7 @@ curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/$taskId" \
 3. The command in previous step will need to be run multiple times, you can run the command over and over by running the following command:
 
 ```bash
-while curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/${taskId}" \
+while curl -s -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/${taskId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \
@@ -460,7 +460,7 @@ curl -g -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/${taskId}" 
 5. The command in previous step will need to be run multiple times, you can run the command over and over by running the following command:
 
 ```bash
-while curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/${taskId}" \
+while curl -s -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/${taskId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \
@@ -503,7 +503,7 @@ curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/$taskId" \
 3. The command in previous step will need to be run multiple times, you can run the command over and over by running the following command:
 
 ```bash
-while curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/${taskId}" \
+while curl -s -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/${taskId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \
@@ -563,7 +563,7 @@ curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/$taskId" \
 5. The command in previous step will need to be run multiple times, you can run the command over and over by running the following command:
 
 ```bash
-while curl -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/${taskId}" \
+while curl -s -k -X GET "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/tasks/${taskId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \

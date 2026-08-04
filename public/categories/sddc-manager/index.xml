@@ -19,7 +19,7 @@
       <description>
         
           
-            <p><strong>Last Updated:</strong> 03-Aug-2026</p>
+            <p><strong>Last Updated:</strong> 04-Aug-2026</p>
 <p>Interacting with the public APIs of a VMware Cloud Foundation platform enables organizations to build custom end-to-end automation for their needs. The first step in the process involves obtaining an authentication token. A VMware Cloud Foundation platform consists of a number of core end points, each requiring slightly different parameters to carry out the interaction.</p>
 <p>Whilst public API documentation is available across the VMware Cloud Foundation platform (see <a
 	

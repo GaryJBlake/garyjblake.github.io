@@ -3,22 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/api/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/certificate-management/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/certificates/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/index/</loc>
-    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vcf/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/vcf-9.1/</loc>
-    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vcf-operations/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/vmware-cloud-foundation/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/vmware-cloud-foundation-9.1-apis/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-replacement/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/backup/</loc>
+    <lastmod>2026-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/backup-and-restore/</loc>
+    <lastmod>2026-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-configure-sftp-locatiom/</loc>
+    <lastmod>2026-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/vcf-installer/</loc>
     <lastmod>2026-07-31T00:00:00+00:00</lastmod>
@@ -28,30 +64,6 @@
   </url><url>
     <loc>http://localhost:1313/post/vcf-91/vcf-91-vcf-installer-change-dns-ntp/</loc>
     <lastmod>2026-07-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/vmware-cloud-foundation/</loc>
-    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/api/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/certificate-management/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/certificates/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/series/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vcf/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/vcf-operations/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/series/vmware-cloud-foundation-9.1-apis/</loc>
-    <lastmod>2026-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/vcf-91-apis/vcf-91-fleet-lcm-cancel-task/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>

@@ -165,7 +165,7 @@ curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${validation
 12. The command in step 11 may need to be run multiple times, alternatively you can run the command over and over by running the following command:
 
 ```bash
-while curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${validationId}" \
+while curl -s -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${validationId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \
@@ -199,7 +199,7 @@ curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${deployment
 15. The command in step 11 would need to be run multiple times, alternatively you can run the command over and over by running the following command:
 
 ```bash
-while curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${deploymentId}" \
+while curl -s -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${deploymentId}" \
     --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
     --header "Accept: application/json" \
     --header "Content-Type: application/json" \

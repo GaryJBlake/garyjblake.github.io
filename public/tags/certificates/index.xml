@@ -9,7 +9,23 @@
     <managingEditor>gblake@jadenetworks.co.uk (Gary Blake)</managingEditor>
     <webMaster>gblake@jadenetworks.co.uk (Gary Blake)</webMaster>
     <copyright>Copyright © 2019–2026, Gary Blake; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/certificates/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/certificates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Cloud Foundation APIs: Replacing VCF Operations Certificate</title>
+      <link>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-replacement/</link>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <author>gblake@jadenetworks.co.uk (Gary Blake)</author>
+      <guid>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-replacement/</guid>
+      <description>
+        
+          
+            <p>A core fleet management capability provided by VMware Cloud Foundation is the ability to replace component certificates across the entire platform from a central location. VMware Cloud Foundation provides direct integration for OpenSSL and Microsoft Certificate Authorities, using this integration you first create a Certificate Signing Request before then replacing the component certificate during which VCF Operations will contact the Certificate Authority request a new signed certificate and then replace the component certificate.</p>
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VMware Cloud Foundation APIs: Configure Certificate Authorities</title>
       <link>http://localhost:1313/post/vcf-91-apis/vcf-91-certificate-management/</link>
