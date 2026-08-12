@@ -27,9 +27,9 @@ In this blog we will walk through the process of configuring both a Microsoft Ce
 
 [VMware Cloud Foundation Operations API](https://developer.broadcom.com/xapis/vcf-operations-api/latest/)
 
-* POST /suite-api/api/auth/token/acquire
-* GET /suite-api/api/fleet-management/certificate-management/certificate-authorities
-* PUT /suite-api/api/fleet-management/certificate-management/certificate-authorities
+- POST /suite-api/api/auth/token/acquire
+- GET /suite-api/api/fleet-management/certificate-management/certificate-authorities
+- PUT /suite-api/api/fleet-management/certificate-management/certificate-authorities
 
 #### Configure a Microsoft Certificate Authority
 

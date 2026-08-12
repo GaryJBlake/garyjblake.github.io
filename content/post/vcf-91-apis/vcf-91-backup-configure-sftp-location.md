@@ -51,11 +51,11 @@ export vcfFleetLifecyclePass='VMw@re1!VMw@re1!'
 
 ```bash
 vcfFleetLifecycleToken=$(curl -k -X POST "https://${vcfFleetLifecycleFqdn}/api/v1/identity/token" \
-    --header "Content-Type: application/x-www-form-urlencoded" \
-    --data "grant_type=password" \
-    --data "username=$vcfFleetLifecycleUser" \
-    --data "password=$vcfFleetLifecyclePass" \
-    | jq -r '.access_token')
+  --header "Content-Type: application/x-www-form-urlencoded" \
+  --data "grant_type=password" \
+  --data "username=$vcfFleetLifecycleUser" \
+  --data "password=$vcfFleetLifecyclePass" \
+| jq -r '.access_token')
 ```
 
 4. Verify you successfully obtained an authentication token by running the following command:
@@ -77,7 +77,7 @@ primarySddcLcms=$(curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/
   --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
-  | jq -r '.sddcLcms[] | select(.isPrimary == true) | .id')
+| jq -r '.sddcLcms[] | select(.isPrimary == true) | .id')
 ```
 
 6. Verify you successfully obtained the SDDC instance by running the following command:
@@ -110,7 +110,7 @@ sftpFingerprint=$(curl -k -X POST "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   --data '[{"address":"10.167.173.55","port":22}]' \
-  | jq -r '.[].value')
+| jq -r '.[].value')
 ```
 
 > [!TIP]
@@ -184,30 +184,30 @@ taskId=$(curl -k -X PATCH "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/sddc-lc
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
   -d @sftp-backup-location.json \
-  | jq -r '.id')
+| jq -r '.id')
 ```
 
 13. Check the status of the task by running the following command:
 
 ```bash
 curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${taskId}" \
-    --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
-    --header "Accept: application/json" \
-    --header "Content-Type: application/json" \
-    | jq
+  --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+| jq
 ```
 
 14. The task is long running so you would need to run the command in the previous step multiple times, alternatively you can run the command over and over by running the following command:
 
 ```bash
 while curl -s -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${taskId}" \
-    --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
-    --header "Accept: application/json" \
-    --header "Content-Type: application/json" \
-    | jq '{status: .status}' \
-    | grep -q "RUNNING"; do
-    echo "Still in 'RUNNING' state... waiting 60 seconds."
-    sleep 60
+  --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  | jq '{status: .status}' \
+  | grep -q "RUNNING"; do
+  echo "Still in 'RUNNING' state... waiting 60 seconds."
+  sleep 60
 done
 ```
 
@@ -217,10 +217,10 @@ done
 
 [SDDC Manager APIs](https://developer.broadcom.com/xapis/vmware-cloud-foundation-api/latest/)
 
-* POST /v1/tokens
-* GET /v1/system/backup-configuration
-* PUT /v1/system/backup-configuration
-* GET /v1/tasks/<taskId>
+- POST /v1/tokens
+- GET /v1/system/backup-configuration
+- PUT /v1/system/backup-configuration
+- GET /v1/tasks/<taskId>
 
 **Procedure**
 
@@ -238,9 +238,9 @@ export sddcManagerPass='VMw@re1!VMw@re1!'
 
 ```bash
 sddcManagerToken=$(curl -k -X POST "https://$sddcManagerFqdn/v1/tokens" \
-    --header "Content-Type:application/json" \
-    -d "{\"username\":\"$sddcManagerUser\", \"password\":\"$sddcManagerPass\"}" \
-    | jq -r '.accessToken')
+  --header "Content-Type:application/json" \
+  -d "{\"username\":\"$sddcManagerUser\", \"password\":\"$sddcManagerPass\"}" \
+| jq -r '.accessToken')
 ```
 
 4. Verify you were able to successfully obtain an authentication token by running the following command:
@@ -269,10 +269,10 @@ export encryptionPassphrase='VMw@re1!VMw@re1!'
 
 ```bash
 sftpFingerprint=$(curl -k -X GET "https://${sddcManagerFqdn}/v1/system/backup-configuration/backup-locations?serverIp=${sftpServerIp}&port=22" \
-    --header "Authorization: Bearer ${sddcManagerToken}" \
-    --header "Accept: application/json" \
-    --header "Content-Type: application/json" \
-    | jq -r '.sshFingerprint')
+  --header "Authorization: Bearer ${sddcManagerToken}" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+| jq -r '.sshFingerprint')
 ```
 
 > [!TIP]
@@ -295,20 +295,20 @@ SHA256:pGLHaf7zhviq9ReTA75fj7wCHXftKKj6FLRbIcKp5xo
 ```bash
 cat << EOF > sftp-backup-location-sddcm.json
 {
-    "backupLocations": [
-    {
-        "directoryPath": "${sftpDirectory}",
-        "password": "${sftpPass}",
-        "port": 22,
-        "protocol": "SFTP",
-        "server": "${sftpServerIp}",
-        "sshFingerprint": "${sftpFingerprint}",
-        "username": "${sftpUser}"
-        }
-    ],
-    "encryption": {
-        "passphrase": "${encryptionPassphrase}"
+  "backupLocations": [
+  {
+    "directoryPath": "${sftpDirectory}",
+    "password": "${sftpPass}",
+    "port": 22,
+    "protocol": "SFTP",
+    "server": "${sftpServerIp}",
+    "sshFingerprint": "${sftpFingerprint}",
+    "username": "${sftpUser}"
     }
+  ],
+  "encryption": {
+    "passphrase": "${encryptionPassphrase}"
+  }
 }
 EOF
 ```
@@ -323,20 +323,20 @@ Example Output:
 
 ```json
 {
-    "backupLocations": [
-    {
-        "directoryPath": "/media/backups/",
-        "password": "VMw@re1!",
-        "port": 22,
-        "protocol": "SFTP",
-        "server": "10.167.173.55",
-        "sshFingerprint": "SHA256:pGLHaf7zhviq9ReTA75fj7wCHXftKKj6FLRbIcKp5xo",
-        "username": "svc-vcf-bck"
-        }
-    ],
-    "encryption": {
-        "passphrase": "VMw@re1!VMw@re1!"
+  "backupLocations": [
+  {
+    "directoryPath": "/media/backups/",
+    "password": "VMw@re1!",
+    "port": 22,
+    "protocol": "SFTP",
+    "server": "10.167.173.55",
+    "sshFingerprint": "SHA256:pGLHaf7zhviq9ReTA75fj7wCHXftKKj6FLRbIcKp5xo",
+    "username": "svc-vcf-bck"
     }
+  ],
+  "encryption": {
+    "passphrase": "VMw@re1!VMw@re1!"
+  }
 }
 ```
 
@@ -344,34 +344,34 @@ Example Output:
 
 ```bash
 taskId=$(curl -k -X PUT "https://${sddcManagerFqdn}/v1/system/backup-configuration" \
-    --header "Authorization: Bearer ${sddcManagerToken}" \
-    --header "Accept: application/json" \
-    --header "Content-Type: application/json" \
-    -d @sftp-backup-location-sddcm.json \
-  | jq -r '.id')
+  --header "Authorization: Bearer ${sddcManagerToken}" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  -d @sftp-backup-location-sddcm.json \
+| jq -r '.id')
 ```
 
-11.  Check the status of the task by running the following command:
+11. Check the status of the task by running the following command:
 
 ```bash
 curl -k -X GET "https://${sddcManagerFqdn}/v1/tasks/${taskId}" \
-    --header "Authorization: Bearer ${sddcManagerToken}" \
-    --header "Accept: application/json" \
-    --header "Content-Type: application/json" \
-    | jq
+  --header "Authorization: Bearer ${sddcManagerToken}" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+| jq
 ```
 
 12. You can monitor the command in the previous step, alternatively you can run the command over and over by running the following command:
 
 ```bash
 while curl -s -k -X GET "https://${sddcManagerFqdn}/v1/tasks/${taskId}" \
-    --header "Authorization: Bearer ${sddcManagerToken}" \
-    --header "Accept: application/json" \
-    --header "Content-Type: application/json" \
-    | jq '{status: .status}' \
-    | grep -q "In Progress"; do
-    echo "Still in 'In Progress' state... waiting 10 seconds."
-    sleep 10
+  --header "Authorization: Bearer ${sddcManagerToken}" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  | jq '{status: .status}' \
+  | grep -q "In Progress"; do
+  echo "Still in 'In Progress' state... waiting 10 seconds."
+  sleep 10
 done
 ```
 
@@ -381,8 +381,8 @@ done
 
 [vCenter APIs](https://developer.broadcom.com/xapis/vsphere-automation-api/latest/)
 
-* POST /api/session
-* POST /api/appliance/recovery/backup/schedules
+- POST /api/session
+- POST /api/appliance/recovery/backup/schedules
 
 **Procedure**
 
@@ -396,12 +396,12 @@ export vcenterUser='administrator@vsphere.local'
 export vcenterPass='VMw@re1!VMw@re1!'
 ```
 
-3. Authenticate to the vCenter intance and obtain a token by running the following command:
+3. Authenticate to the vCenter instance and obtain a token by running the following command:
 
 ```bash
 vcenterToken=$(curl -k -X POST "https://${vcenterFqdn}/api/session" \
   -u "$vcenterUser:$vcenterPass" \
-  | tr -d '"')
+| tr -d '"')
 ```
 
 4. Verify you successfully obtained an authentication token by running the following command:
@@ -431,16 +431,16 @@ export encryptionPassphrase='VMw@re1!VMw@re1!'
 ```bash
 cat << EOF > sftp-backup-location-vcenter.json
 {
-    "schedule": "default",
-    "spec": {
-        "location": "sftp://${sftpServerIp}${sftpDirectory}",
-        "location_user": "${sftpUser}",
-        "location_password": "${sftpPass}",
-        "parts": ["supervisors", "seat", "common"],
-        "backup_password": "${encryptionPassphrase}",
-        "recurrence_info": { "days": [], "hour": 23, "minute": "0" },
-        "retention_info": { "max_count": 3 }
-    }
+  "schedule": "default",
+  "spec": {
+    "location": "sftp://${sftpServerIp}${sftpDirectory}",
+    "location_user": "${sftpUser}",
+    "location_password": "${sftpPass}",
+    "parts": ["supervisors", "seat", "common"],
+    "backup_password": "${encryptionPassphrase}",
+    "recurrence_info": { "days": [], "hour": 23, "minute": "0" },
+    "retention_info": { "max_count": 3 }
+  }
 }
 EOF
 ```
@@ -455,16 +455,16 @@ Example Output:
 
 ```json
 {
-    "schedule": "default",
-    "spec": {
-        "location": "sftp://10.167.173.55/media/backups/",
-        "location_user": "svc-vcf-bck",
-        "location_password": "VMw@re1!",
-        "parts": ["supervisors", "seat", "common"],
-        "backup_password": "VMw@re1!VMw@re1!",
-        "recurrence_info": { "days": [], "hour": 23, "minute": "0" },
-        "retention_info": { "max_count": 3 }
-    }
+  "schedule": "default",
+  "spec": {
+    "location": "sftp://10.167.173.55/media/backups/",
+    "location_user": "svc-vcf-bck",
+    "location_password": "VMw@re1!",
+    "parts": ["supervisors", "seat", "common"],
+    "backup_password": "VMw@re1!VMw@re1!",
+    "recurrence_info": { "days": [], "hour": 23, "minute": "0" },
+    "retention_info": { "max_count": 3 }
+  }
 }
 ```
 
@@ -476,5 +476,5 @@ curl -S -k -X POST "https://${vcenterFqdn}/api/appliance/recovery/backup/schedul
   --header "Content-Type: application/json" \
   --header "Accept: application/json" \
   -d @sftp-backup-location-vcenter.json \
-  | jq
+| jq
 ```

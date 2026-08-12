@@ -109,7 +109,7 @@ cat << EOF > backup-schedule-vcfms.json
 EOF
 ```
 
-7. Verify the JSON payload has been populated correctly by running the following command:
+8. Verify the JSON payload has been populated correctly by running the following command:
 
 ```bash
 cat backup-schedule-vcfms.json
@@ -133,7 +133,7 @@ Example Output:
 }
 ```
 
-8. Configure a backup schedule by running the following command:
+9. Configure a backup schedule by running the following command:
 
 ```bash
 taskId=$(curl -k -X PATCH "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/sddc-lcms/${primarySddcLcms}" \
@@ -144,7 +144,7 @@ taskId=$(curl -k -X PATCH "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/sddc-lc
   | jq -r '.id')
 ```
 
-9. Check the status of the task by running the following command:
+10. Check the status of the task by running the following command:
 
 ```bash
 curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${taskId}" \
@@ -154,7 +154,7 @@ curl -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${taskId}" \
     | jq
 ```
 
-10. The task is long running so you would need to run the command in the previous step multiple times, alternatively you can run the command over and over by running the following command:
+11. The task is long running so you would need to run the command in the previous step multiple times, alternatively you can run the command over and over by running the following command:
 
 ```bash
 while curl -s -k -X GET "https://${vcfFleetLifecycleFqdn}/fleet-lcm/v1/tasks/${taskId}" \

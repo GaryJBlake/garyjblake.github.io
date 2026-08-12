@@ -179,7 +179,7 @@ validationId=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/fleet-lcm/v1/comp
   --header "Authorization: Bearer ${vcfFleetLifecycleToken}" \
   --header "Accept: application/json" \
   --header "Content-Type: application/json" \
-   -d @cloud-proxy-deploy.json | jq -r ".id")
+  --data @cloud-proxy-deploy.json | jq -r ".id")
 ```
 
 12. Check the status of the validation by running the following command:

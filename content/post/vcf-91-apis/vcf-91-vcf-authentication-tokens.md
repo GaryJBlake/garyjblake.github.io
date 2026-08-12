@@ -55,7 +55,7 @@ export vcfInstallerPass='VMw@re1!VMw@re1!'
 vcfInstallerToken=$(curl -k -X POST "https://${vcfInstallerFqdn}/v1/tokens" \
     --header "Content-Type:application/json" \
     -d "{\"username\":\"$vcfInstallerUser\", \"password\":\"$vcfInstallerPass\"}" \
-    | jq -r '.accessToken')
+| jq -r '.accessToken')
 ```
 
 4. Verify you were able to successfully obtain an authentication token by running the following command:
@@ -95,7 +95,7 @@ vcfOperationsToken=$(curl -k -X POST "https://$vcfOperationsFqdn/suite-api/api/a
     --header "Content-Type:application/json" \
     --header "Accept: application/json" \
     -d "{\"username\":\"$vcfOperationsUser\", \"password\":\"$vcfOperationsPass\"}" \
-    | jq -r '.token')
+| jq -r '.token')
 ```
 
 4. Verify you were able to successfully obtain an authentication token by running the following command:
@@ -134,7 +134,7 @@ export sddcManagerPass='VMw@re1!VMw@re1!'
 sddcManagerToken=$(curl -k -X POST "https://$sddcManagerFqdn/v1/tokens" \
     --header "Content-Type:application/json" \
     -d "{\"username\":\"$sddcManagerUser\", \"password\":\"$sddcManagerPass\"}" \
-    | jq -r '.accessToken')
+| jq -r '.accessToken')
 ```
 
 4. Verify you were able to successfully obtain an authentication token by running the following command:
@@ -171,11 +171,11 @@ export vcfServiceRuntimePass='VMw@re1!VMw@re1!'
 
 ```bash
 vcfServiceRuntimeToken=$(curl -k -X POST "https://"$vcfServiceRuntimeFqdn"/api/v1/identity/token" \
-    -H "Content-Type: application/x-www-form-urlencoded" \
+    --header "Content-Type: application/x-www-form-urlencoded" \
     --data "grant_type=password" \
     --data "username=$vcfServiceRuntimeUser" \
     --data "password=$vcfServiceRuntimePass" \
-    | jq -r '.access_token')
+| jq -r '.access_token')
 ```
 
 4. Verify you were able to successfully obtain an authentication token by running the following command:
@@ -216,7 +216,7 @@ vcfFleetLifecycleToken=$(curl -k -X POST "https://$vcfFleetLifecycleFqdn/api/v1/
     --data "grant_type=password" \
     --data "username=$vcfFleetLifecycleUser" \
     --data "password=$vcfFleetLifecyclePass" \
-    | jq -r '.access_token')
+| jq -r '.access_token')
 ```
 
 4. Verify you successfully obtained an authentication token by running the following command:
@@ -254,7 +254,7 @@ export vcenterPass='VMw@re1!VMw@re1!'
 ```bash
 vcenterToken=$(curl -k -X POST "https://${vcenterFqdn}/api/session" \
     -u "$vcenterUser:$vcenterPass" \
-    | tr -d '"')
+| tr -d '"')
 ```
 
 4. Verify you successfully obtained an authentication token by running the following command:
